@@ -1,7 +1,7 @@
 ---
 
 # Cenário de Testes: Gerenciamento de Avaliações Físicas
-
+---
 **Descrição:** Validação do módulo de Avaliações do SIFIT, contemplando filtros de busca e indicadores da listagem, cadastro de avaliação (busca de aluno e seleção do personal), validações de campos obrigatórios, preenchimento das medidas (IMC, Circunferências, Subcutâneas e Composição Corporal), alteração de data/hora, comparação entre avaliações, visualização detalhada, geração de PDF/impressão e exclusão de registros.
 
 ---
