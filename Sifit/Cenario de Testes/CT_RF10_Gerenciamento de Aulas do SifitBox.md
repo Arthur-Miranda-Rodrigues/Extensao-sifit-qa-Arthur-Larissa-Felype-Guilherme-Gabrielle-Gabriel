@@ -17,7 +17,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar a tentativa de filtragem de aulas inserindo o intervalo de datas de forma manual nos campos correspondentes.
+| **C10-CT01** | Validar a tentativa de filtragem de aulas inserindo o intervalo de datas de forma manual nos campos correspondentes.
 
  |
 
@@ -54,7 +54,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Validar a tentativa de filtragem de aulas utilizando o componente de calendário interativo para escolha das datas.
+| **C10-CT02** | Validar a tentativa de filtragem de aulas utilizando o componente de calendário interativo para escolha das datas.
 
  |
 
@@ -91,7 +91,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 | ID | Descrição |
 | --- | --- |
-| **C03-CT03** | Validar o comportamento do sistema ao definir incorretamente a data final como um período cronologicamente anterior à data inicial.
+| **C10-CT03** | Validar o comportamento do sistema ao definir incorretamente a data final como um período cronologicamente anterior à data inicial.
 
  |
 
@@ -128,7 +128,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 | ID | Descrição |
 | --- | --- |
-| **C04-CT04** | Validar o acionamento do botão **Gerar aulas** localizado no canto superior direito da tela.
+| **C10-CT04** | Validar o acionamento do botão **Gerar aulas** localizado no canto superior direito da tela.
 
  |
 
