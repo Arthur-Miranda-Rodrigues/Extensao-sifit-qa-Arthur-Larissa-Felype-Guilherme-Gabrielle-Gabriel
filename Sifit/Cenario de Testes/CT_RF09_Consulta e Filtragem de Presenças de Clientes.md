@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de Teste: Consulta e Filtragem de Presenças de Clientes
+# Cenário 9: Consulta e Filtragem de Presenças de Clientes
 
 ### Caso de Teste 01: Consulta de Presenças por Nome do Cliente
 
