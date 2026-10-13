@@ -42,10 +42,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | --- |
 | Os campos e o calendário aceitaram os filtros e as buscas por nome e código retornaram a grid vazia. **Inconsistência:** ao ampliar o período (Data Inicial 13/08/2026), os cards passaram a exibir *Entradas* e *Líquido* de R$ 100,00, mas a tabela continuou vazia, inclusive com os status *Recebido* e *Cancelado*. |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (cards com valor sem lançamento correspondente na grid) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1Q5qUKG9AYxhUzBbABLlQCp1XVjo2i30C/view?usp=sharing |
@@ -113,10 +109,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | A busca da cliente Lila, o preenchimento dos parâmetros da conta, a validação do campo obrigatório de tipo de pagamento e a persistência final do registro ocorreram exatamente conforme observado no fluxo do sistema.
 
  |
-
-| **Status** |
-| --- |
-| PASSOU |
 
 | **Evidência** |
 | --- |
