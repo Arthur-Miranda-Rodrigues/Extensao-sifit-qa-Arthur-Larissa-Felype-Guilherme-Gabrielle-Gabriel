@@ -1,177 +1,153 @@
+---
+
+# Cenário 15: Registro de Contas a Pagar
+
+**Descrição:** Validação do módulo de Contas a Pagar na plataforma SIFIT, englobando o cadastro de novas despesas com busca de fornecedor, a aplicação de filtros combinados por nome, tipo de data, período e status, a visualização detalhada do registro no modal e a exclusão de lançamentos com recálculo da listagem.
 
 ---
 
-# Cenário de Testes: Registro de Contas a Pagar (RF08)
-
-**Descrição:** Validação do módulo de Contas a Pagar na plataforma SIFIT, englobando o cadastro de novas despesas, pesquisa e consulta de fornecedores no modal, aplicação de filtros e busca avançada na listagem, visualização detalhada do registro e tratamento de exceções/erros de servidor no fluxo de exclusão.
-
----
-
-## Caso de Teste 01: Cadastro de Conta a Pagar com Dados Válidos
+## Caso de Teste 01: Cadastro de Conta a Pagar com Busca de Fornecedor
 
 | ID | Descrição |
 | --- | --- |
-| RF08-CT01 | Verificar se o sistema permite registrar uma nova conta a pagar preenchendo os campos obrigatórios. |
+| **C15-CT01** | Validar o registro de uma nova conta a pagar por meio do botão **Nova Conta**, utilizando o modal **Buscar Fornecedor** e o preenchimento dos dados da conta e do documento. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar autenticado e na página de "Contas a Pagar". |
+| Usuário autenticado e posicionado na página de **Contas a Pagar** do SIFIT; fornecedor cadastrado (ex.: 205 – Centrion Web). |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário acessa o módulo de "Contas a Pagar"<br>
-
-<br>
-
-<br>**E** clica no botão "+ Nova Conta"<br>
-
-<br>
-
-<br>**E** preenche os campos obrigatórios (Título, Valor a Pagar, Data de Emissão, Categoria e Tipo de Despesa)<br>
-
-<br>
-
-<br>**QUANDO** clicar no botão "Salvar"<br>
-
-<br>
-
-<br>**ENTÃO** a conta deve ser gravada com sucesso e exibida na listagem de Contas a Pagar com o estado "PENDENTE". |
+| **DADO** que o usuário acessa o módulo de "Contas a Pagar" |
+| **QUANDO** clicar no botão **Nova Conta** |
+| **ENTÃO** o modal **Cadastrar Conta a Pagar** deve abrir com o cadastrante (ex.: 11 – Jair), a data (13/10/2026), o *Status* "Pendente", o *Tipo Despesa* "Variável" e o *Tipo* "Contas e Despesas" |
+| **E QUANDO** clicar em **Pesquisar** ao lado do campo "Fornecedor" |
+| **ENTÃO** deve abrir o modal **Buscar Fornecedor**, permitindo digitar o nome (ex.: "Centrion Web"), clicar em **Buscar** e selecionar o registro (código 205), com a moeda "BRL — Real" |
+| **E QUANDO** o fornecedor for selecionado |
+| **ENTÃO** o código (205) e o nome (Centrion Web) devem ser preenchidos no cadastro |
+| **E QUANDO** preencher o **Tipo Doc.** (ex.: "salário"), o **Doc. Fornecedor** (ex.: "205"), a **Categoria** (ex.: "Pix") e o **Valor a Pagar** (ex.: "200,00") |
+| **E** manter a **Data Emissão** e a **Data Vencimento** (13/10/2026) |
+| **E** clicar em **Salvar** |
+| **ENTÃO** a conta deve ser gravada e exibida na listagem com o status **PENDENTE**. |
 
 | **Critérios de aceitação** |
 | --- |
-| A conta a pagar cadastrada deve ser adicionada e exibida corretamente na tabela de listagem principal. |
+| O modal de fornecedor deve localizar e selecionar o fornecedor, e a nova conta deve ser persistida e listada sem falhas. |
+
+| **Resultado obtido** |
+| --- |
+| A busca e a seleção do fornecedor funcionaram e a conta foi salva, aparecendo na listagem como **#24 – Centrion Web – R$ 200,00 – Valor Pago R$ 0,00 – PENDENTE** (indicador "Contas Listadas" passou de 2 para 3). **Observações:** o cadastro foi concluído com o campo **Título** em branco e sem **Local Pagamento** selecionado ("— Selecione —"), ou seja, nenhum dos dois foi exigido. |
+
+| **Evidência** |
+| --- |
+|  |
 
 ---
 
-## Caso de Teste 02: Pesquisa de Fornecedor no Cadastro de Conta
+## Caso de Teste 02: Filtros e Consultas na Listagem
 
 | ID | Descrição |
 | --- | --- |
-| RF08-CT02 | Validar a funcionalidade de busca/modal de fornecedor ao registrar uma conta. |
+| **C15-CT02** | Validar o funcionamento dos filtros por nome (fornecedor ou colaborador), tipo de data (Vencimento/Pagamento), período (Data Inicial/Final) e status na listagem de Contas a Pagar. |
 
 | **Pré-condições** |
 | --- |
-| Estar no formulário de "Cadastrar Conta a Pagar". |
+| Existirem contas a pagar cadastradas (ex.: Jasira Souzas – "Cadastro testes"; Centrion Web – "testes22"). |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está no formulário de "Cadastrar Conta a Pagar"<br>
-
-<br>
-
-<br>**E** clica no botão "Pesquisar" ao lado do campo "Fornecedor"<br>
-
-<br>
-
-<br>**E** introduz o nome do fornecedor (ex: "Marcelo") no campo de busca do modal<br>
-
-<br>
-
-<br>**QUANDO** clicar no botão "Buscar"<br>
-
-<br>
-
-<br>**ENTÃO** o sistema deve consultar a base de dados e retornar os fornecedores correspondentes à pesquisa ou indicar ausência de resultados. |
+| **DADO** que o usuário está na listagem de Contas a Pagar (período 01/10/2026 a 31/10/2026, tipo de data "Vencimento", status "Todos") e visualiza os cards *Total a Pagar*, *Valor Restante*, *Contas Listadas* e *Contas Atrasadas* |
+| **QUANDO** informar o nome de um fornecedor existente (ex.: "Jasira Souzas") e clicar em **Buscar** |
+| **ENTÃO** a tabela deve listar as contas do fornecedor (8 contas, R$ 15.000,00, status PENDENTE) |
+| **E QUANDO** informar o nome "Centri" no período vigente com o tipo de data "Vencimento" e clicar em **Buscar** |
+| **ENTÃO** a tabela deve exibir a mensagem **"Nenhuma conta encontrada"** com "Mostrando 0 a 0 de 0 contas" |
+| **E QUANDO** alterar o **Tipo de Data** para "Pagamento" e clicar em **Buscar** |
+| **ENTÃO** a tabela deve listar as contas encontradas (#21 e #20 – Centrion Web – testes22 – R$ 170,00), com o rodapé "Mostrando 1 a 2 de 2 contas" e a paginação "10 por página" |
+| **E QUANDO** alterar a **Data Inicial** pelo calendário (ex.: 01/07/2026) e abrir o filtro **Status** (opções: *Todos*, *Pendente*, *Pago*, *Vencido* e *Cancelado*) |
+| **E** selecionar um status e clicar em **Buscar** |
+| **ENTÃO** a listagem e os cards devem ser atualizados conforme os critérios. |
 
 | **Critérios de aceitação** |
 | --- |
-| O modal de pesquisa deve filtrar corretamente os fornecedores cadastrados conforme o parâmetro digitado. |
+| Os filtros devem retornar apenas os registros correspondentes ao nome, tipo de data, período e status selecionados; a ausência de resultados deve ser indicada por "Nenhuma conta encontrada". |
+
+| **Resultado obtido** |
+| --- |
+| Os filtros por nome, tipo de data e período funcionaram, inclusive a mensagem de lista vazia. **Inconsistências:** ao selecionar os status "Pago" e "Vencido", a grid continuou exibindo apenas contas PENDENTE (confirmar se o filtro de status é aplicado); os cards *Total a Pagar* e *Valor Restante* permaneceram em R$ 0 mesmo com contas de R$ 170,00 listadas; e as contas PENDENTE exibem *Valor Pago* de R$ 170,00. |
+
+| **Status** |
+| --- |
+| PASSOU COM OBSERVAÇÃO (filtro de status e cards financeiros a confirmar) |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1pe00FBa5cAaZT2N24IScniBUCc-O-urr/view?usp=sharing |
 
 ---
 
-## Caso de Teste 03: Filtro e Consulta na Tabela de Contas a Pagar
+## Caso de Teste 03: Visualização Detalhada da Conta a Pagar
 
 | ID | Descrição |
 | --- | --- |
-| RF08-CT03 | Verificar o funcionamento dos filtros por Nome/Título, Código e Tipo de Data na listagem. |
+| **C15-CT03** | Confirmar se os dados do registro são apresentados de forma íntegra no modal **Visualizar Conta a Pagar**. |
 
 | **Pré-condições** |
 | --- |
-| Existirem registros de contas a pagar previamente cadastrados na base de dados. |
+| Existir pelo menos uma conta cadastrada e visível na tabela principal (ex.: #21 – Centrion Web – testes22). |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela de listagem de Contas a Pagar<br>
-
-<br>
-
-<br>**QUANDO** filtrar pelo Nome/Título da conta e clicar em "Buscar"<br>
-
-<br>
-
-<br>**E** limpar os campos e filtrar por um Código específico (ex: #23)<br>
-
-<br>
-
-<br>**E** alterar o parâmetro do filtro "Tipo de Data" de "Vencimento" para "Pagamento"<br>
-
-<br>
-
-<br>**ENTÃO** a tabela deve atualizar exibindo exclusivamente os registros que cumprem os critérios informados. |
+| **DADO** que o usuário localiza a conta na listagem de Contas a Pagar |
+| **QUANDO** clicar no ícone de visualização (lupa) na linha do registro |
+| **ENTÃO** o sistema deve abrir o modal **Visualizar Conta a Pagar** com o status (PENDENTE) e as seções *Informações Gerais* (funcionário cadastrante, data de lançamento, tipo e tipo de despesa), *Dados da Conta* (código, título, valor a pagar e vencimento), *Dados Fornecedor* (código 205 e nome Centrion Web), *Documento* (tipo, doc. fornecedor, data de emissão e categoria) e *Observação* |
+| **E QUANDO** clicar em **Fechar** |
+| **ENTÃO** o modal deve ser fechado e o usuário deve retornar à listagem. |
 
 | **Critérios de aceitação** |
 | --- |
-| Os filtros combinados de título, código e tipo de data devem atualizar e exibir com precisão os registros na tabela. |
+| O modal de visualização deve carregar todas as informações da conta selecionada de maneira legível e correta. |
+
+| **Resultado obtido** |
+| --- |
+| O modal foi exibido com todas as seções (Título "testes22", R$ 170,00, Fornecedor 205 – Centrion Web, Observação "ttt") e fechou normalmente. **Observações de apresentação:** o *Tipo* aparece como "DESPESA_FORNECEDOR" e o tipo de despesa como "variavel"; a data de emissão aparece no formato "2025-10-01"; a *Categoria* aparece como o número "13" e o *Tipo* do documento como "1"; os campos *Código* e *Doc. Fornecedor* estão vazios; e os rótulos "Informacoes" e "Observacao" estão sem acentuação. |
+
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1KiWx9QYxlleZDS9Ns09cYcaOk2zXi1lg/view?usp=sharing |
 
 ---
 
-## Caso de Teste 04: Visualização dos Detalhes da Conta
+## Caso de Teste 04: Exclusão de Conta a Pagar
 
 | ID | Descrição |
 | --- | --- |
-| RF08-CT04 | Confirmar se os dados do registro são apresentados corretamente no modal de visualização. |
+| **C15-CT04** | Validar a exclusão de uma conta a pagar na listagem mediante confirmação no modal. |
 
 | **Pré-condições** |
 | --- |
-| Existir pelo menos uma conta cadastrada e visível na tabela principal. |
+| Usuário na tela de listagem de Contas a Pagar com registros visíveis (ex.: #24, #21 e #20 – 3 contas listadas). |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário localiza uma conta na listagem<br>
-
-<br>
-
-<br>**QUANDO** clicar no ícone de visualização (lupa) na linha do registro desejado<br>
-
-<br>
-
-<br>**ENTÃO** o sistema deve abrir um modal apresentando detalhadamente as seções "Informações Gerais", "Dados da Conta", "Dados do Fornecedor" e "Documento". |
+| **DADO** que o usuário visualiza a listagem de contas a pagar |
+| **QUANDO** passar o cursor sobre o ícone de lixeira da linha do registro (ex.: #21) |
+| **ENTÃO** deve ser exibida a dica "Deletar" |
+| **E QUANDO** clicar no ícone de lixeira |
+| **ENTÃO** o sistema deve exibir o modal *"Deseja deletar esta conta?"* com os botões **Cancelar** e **Confirmar** |
+| **E QUANDO** clicar em **Confirmar** |
+| **ENTÃO** a conta deve ser removida da tabela e o indicador "Contas Listadas" deve ser atualizado. |
 
 | **Critérios de aceitação** |
 | --- |
-| O modal deve exibir integralmente todos os campos e informações vinculados ao registro selecionado. |
+| A exclusão só deve ocorrer após a confirmação, e a conta excluída não deve mais aparecer na listagem. |
+
+| **Resultado obtido** |
+| --- |
+| A conta #21 foi removida e a listagem passou a exibir 2 contas (#24 e #20), com "Contas Listadas" atualizado de 3 para 2. Não ocorreu mensagem de erro no servidor nesta execução. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1a4XPvqhVO9lRqqgFaccGb4HOEwWTnx1S/view?usp=sharing |
 
 ---
-
-## Caso de Teste 05: Exclusão de Conta a Pagar (Tratamento de Erro no Servidor / Bug)
-
-| ID | Descrição |
-| --- | --- |
-| RF08-CT05 | Verificar o comportamento do sistema ao tentar eliminar uma conta a pagar e validar o tratamento de erros. |
-
-| **Pré-condições** |
-| --- |
-| Existir uma conta a pagar cadastrada na listagem. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário visualiza a listagem de contas a pagar<br>
-
-<br>
-
-<br>**E** clica no ícone de exclusão (lixeira) na linha do registro<br>
-
-<br>
-
-<br>**QUANDO** confirmar a ação na mensagem de confirmação ("Deseja deletar esta conta?") clicando em "Confirmar"<br>
-
-<br>
-
-<br>**ENTÃO** o sistema deve remover o registro da base de dados ou tratar a falha exibindo o alerta de erro: "Erro no servidor - Erro interno inesperado.". |
-
-| **Critérios de aceitação** |
-| --- |
-| O registro deve ser removido com sucesso do banco de dados ou, na ocorrência de erro interno (HTTP 500), notificar amigavelmente o usuário via modal de alerta. |
-
-
-https://jam.dev/c/a50b1c50-42ac-4b0d-84eb-9328bb0377d6
