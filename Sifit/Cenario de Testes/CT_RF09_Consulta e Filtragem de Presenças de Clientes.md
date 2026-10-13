@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT-01** | Validar a busca de registros de presença informando o nome ou parte do nome do cliente no campo "Buscar por cliente..." (ex.: pesquisando por "gabrielli bononi" ou "albetro"), conferindo a atualização dos cards de resumo e o feedback da listagem.
+| **CT09-01** | Validar a busca de registros de presença informando o nome ou parte do nome do cliente no campo "Buscar por cliente..." (ex.: pesquisando por "gabrielli bononi" ou "albetro"), conferindo a atualização dos cards de resumo e o feedback da listagem.
 
  |
 
@@ -44,7 +44,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT-02** | Validar a busca de registros de presença informando o número ou código identificador do aluno no campo de pesquisa.
+| **CT09-02** | Validar a busca de registros de presença informando o número ou código identificador do aluno no campo de pesquisa.
 
  |
 
@@ -85,7 +85,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT-03** | Validar o preenchimento automático das datas e a atualização imediata das métricas ao acionar os três botões de filtro rápido de período disponíveis (*"Hoje"*, *"Esta semana"* e *"Este mês"*).
+| **CT09-03** | Validar o preenchimento automático das datas e a atualização imediata das métricas ao acionar os três botões de filtro rápido de período disponíveis (*"Hoje"*, *"Esta semana"* e *"Este mês"*).
 
  |
 
@@ -126,7 +126,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT-04** | Validar a seleção manual de datas customizadas nos campos "DE" e "ATÉ", incluindo a navegação pelos meses através do componente de calendário (ex.: alternando entre setembro, agosto e outubro) e a aplicação da busca.
+| **CT09-04** | Validar a seleção manual de datas customizadas nos campos "DE" e "ATÉ", incluindo a navegação pelos meses através do componente de calendário (ex.: alternando entre setembro, agosto e outubro) e a aplicação da busca.
 
  |
 
