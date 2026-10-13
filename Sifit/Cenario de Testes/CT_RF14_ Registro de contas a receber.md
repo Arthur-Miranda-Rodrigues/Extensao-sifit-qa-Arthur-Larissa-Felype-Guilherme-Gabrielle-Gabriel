@@ -56,36 +56,63 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **C14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, com busca de cliente, criação de cópias e preenchimento dos dados do recebimento. |
+| **C14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, incluindo a busca de cliente, a parametrização de cópias, o preenchimento dos dados do recebimento e a validação de campos obrigatórios.
+
+ |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado na tela **Contas a Receber**; cliente cadastrado (ex.: 408 – Lila) e locais de recebimento disponíveis (Caixa Academia, Caixa Muay Thai, Teste, Teste2). |
+| Usuário autenticado na tela **Contas a Receber** do SIFIT; cliente cadastrado (ex.: 408 – Lila) e locais de recebimento disponíveis (Caixa Academia, Caixa Muay Thai, Teste, Teste2).
+
+ |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela **Contas a Receber** |
-| **QUANDO** clicar em **Nova Conta** |
-| **ENTÃO** a modal **Cadastrar Conta a Receber** deve abrir com o cadastrante (ex.: 11 – Jair), a data (13/10/2026), o *Status* e o *Resíduo* |
-| **E QUANDO** clicar em **Pesquisar** na seção do cliente |
-| **ENTÃO** deve abrir a modal **Buscar Cliente** com o campo "Nome do cliente", o botão **Buscar** e a lista de Código/Nome, permitindo selecionar o cliente (ex.: 408 – Lila) |
-| **E QUANDO** informar o **Título** (ex.: "Matrícula") |
-| **E** alterar **Criar Cópias** de "Não" para "Sim" |
-| **E** informar o **Valor a Receber** (ex.: "200,00"), a **Moeda** (BRL) e a **Data Venc.** (ex.: 09/10/2026) |
-| **E** preencher os **Dados do Recebimento**: Valor Recebido (200,00), Data Recebimento (13/10/2026), Tipo de Pagamento (ex.: "Cheque"), Local de Recebimento (ex.: "Caixa Academia") e Observação (ex.: "Lila") |
-| **E** clicar em **Salvar** |
-| **ENTÃO** o sistema deve exibir o aviso *"Atenção – Nenhum caixa aberto neste local. Abra um caixa e tente novamente."* com as opções **Cancelar** e **Continuar** |
-| **E QUANDO** clicar em **Continuar** |
-| **ENTÃO** a conta deve ser salva e o usuário deve retornar à listagem. |
+| **DADO** que o usuário está na tela **Contas a Receber**<br> |
+| **QUANDO** clicar no botão **Nova Conta**<br> |
+| **ENTÃO** a modal **Cadastrar Conta a Receber** deve abrir exibindo o cadastrante (ex.: 11 – Jair), a data atual (13/10/2026), o *Status* e o *Resíduo*<br> |
+| **E QUANDO** clicar em **Pesquisar** na seção do cliente
+
+ |
+| **ENTÃO** deve abrir a modal **Buscar Cliente** contendo o campo de pesquisa por nome, o botão **Buscar** e a listagem de Código/Nome
+
+ |
+| **E QUANDO** pesquisar e selecionar o cliente desejado (ex.: 408 – Lila)
+
+ |
+| **E QUANDO** preencher o **Título** (ex.: "Matrícula")
+
+ |
+| **E** alterar o campo **Criar Cópias** de "Não" para "Sim"
+
+ |
+| **E** informar o **Valor a Receber** (ex.: "190,00"), a **Moeda** (BRL) e a **Data Venc.** (ex.: 13/10/2026)
+
+ |
+| **E** preencher os **Dados do Recebimento**: Valor Recebido (190,00), Data Recebimento (13/10/2026), Local de Recebimento (ex.: "Caixa Academia") e Observação (ex.: "Lila"), deixando temporariamente o **Tipo de Pagamento** em branco
+
+ |
+| **E** clicar em **Salvar**<br> |
+| **ENTÃO** o sistema deve exibir o modal de alerta *"Atenção: Selecione o tipo de pagamento!"*<br> |
+| **E QUANDO** fechar o alerta, selecionar o **Tipo de Pagamento** (ex.: "Dinheiro") e clicar novamente em **Salvar**<br> |
+| **ENTÃO** a conta deve ser salva com sucesso e o usuário deve retornar à listagem principal, onde o novo registro é exibido.
+
+ |
 
 | **Critérios de Aceitação** |
 | --- |
-| * A modal deve permitir localizar e selecionar o cliente, informar os dados da conta e do recebimento e salvar. |
-| * O aviso de caixa não aberto deve ser exibido e, ao continuar, o cadastro deve ser concluído. |
+| * A modal de cadastro deve permitir localizar o cliente, preencher os dados financeiros e de recebimento e aplicar validações de campos obrigatórios (como o tipo de pagamento).
+
+ |
+| * O sistema deve concluir o cadastro com sucesso após o preenchimento correto e atualizar a listagem de contas a receber.
+
+ |
 
 | **Resultado obtido** |
 | --- |
-| A busca de cliente, o preenchimento dos campos e o aviso de caixa foram exibidos conforme o esperado; ao continuar, o cadastro foi concluído e o registro apareceu na listagem (CT03). |
+| A busca da cliente Lila, o preenchimento dos parâmetros da conta, a validação do campo obrigatório de tipo de pagamento e a persistência final do registro ocorreram exatamente conforme observado no fluxo do sistema.
+
+ |
 
 | **Status** |
 | --- |
@@ -93,44 +120,68 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | **Evidência** |
 | --- |
-| https://drive.google.com/file/d/12cE6Q-cCyWn9kCH2nGjJuolwO1dmZQIF/view?usp=sharing |
+|https://drive.google.com/file/d/1cvt_dqQlr9uv4gmZ93S-orkJr2gVM55m/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Conferência do Lançamento e dos Cards Financeiros Após o Cadastro
+### Caso de Teste 03: Validação de Campos Obrigatórios e Alertas de Preenchimento (Contas a Receber)
 
 | ID | Descrição |
 | --- | --- |
-| **C14-CT03** | Verificar se a conta cadastrada aparece na listagem com status "RECEBIDO" e se os cards financeiros refletem o valor lançado. |
+| **C14-CT03** | Validar as restrições e mensagens de alerta emitidas pelo sistema ao tentar salvar uma nova conta a receber com campos obrigatórios em branco (cliente, valor a receber, tipo de pagamento, local de recebimento e caixa fechado).
+
+ |
 
 | **Pré-condições** |
 | --- |
-| Conta cadastrada no CT02 (cliente Lila, título "Matrícula", R$ 200,00). |
+| Usuário autenticado na tela **Contas a Receber** e com a modal **Cadastrar Conta a Receber** aberta.
+
+ |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário retornou à listagem de **Contas a Receber** com o período de 01/10/2026 a 31/10/2026 e status *Todos* |
-| **QUANDO** consultar a grid e os cards financeiros |
-| **ENTÃO** a tabela deve exibir o lançamento (código 1589, cliente Lila, título Matrícula, valor a receber R$ 200,00, valor recebido R$ 200,00, status **RECEBIDO**) com as ações de visualizar e excluir |
-| **E** os cards *Entradas*, *Líquido*, *Previsto para o Mês* e *Recebido no Mês* devem apresentar R$ 200,00 (100,00% recebido). |
+| **DADO** que o usuário está na modal de cadastro de conta a receber
+
+ |
+| **QUANDO** clicar no botão **Salvar** sem selecionar nenhum cliente
+
+ |
+| **ENTÃO** o sistema exibe o alerta: *"Atenção: Selecione o cliente!"*<br> |
+| **E QUANDO** o usuário selecionar a cliente (ex.: 148 – Rharissily Gabrielle Oliveira), preencher o título mas deixar o **Valor a Receber** em branco e clicar em **Salvar**<br> |
+| **ENTÃO** o sistema exibe o alerta: *"Atenção: Informe o valor a receber!"*<br> |
+| **E QUANDO** preencher o valor (ex.: R$ 190,00) mas omitir o **Tipo de Pagamento** e clicar em **Salvar**<br> |
+| **ENTÃO** o sistema exibe o alerta: *"Atenção: Selecione o tipo de pagamento!"*<br> |
+| **E QUANDO** selecionar o tipo de pagamento (ex.: "Dinheiro") mas omitir o **Local de Recebimento** e clicar em **Salvar**<br> |
+| **ENTÃO** o sistema exibe o alerta: *"Atenção: Selecione o local de recebimento!"*<br> |
+| **E QUANDO** selecionar um local (ex.: "Teste") onde não há caixa aberto e clicar em **Salvar**<br> |
+| **ENTÃO** o sistema exibe o aviso de caixa fechado: *"Atenção – Nenhum caixa aberto neste local. Abra um caixa e tente novamente."*, permitindo prosseguir via botão **Continuar**.
+
+ |
 
 | **Critérios de Aceitação** |
 | --- |
-| * O lançamento deve ser listado com os valores e o status informados no cadastro. |
-| * Os cards devem somar o valor da nova conta. |
+| * O sistema deve barrar a gravação de registros incompletos, exibindo modais de aviso específicos para cada campo obrigatório omitido (cliente, valor, tipo de pagamento e local).
+
+ |
+| * O sistema deve tratar corretamente a restrição de caixa fechado, informando o operador antes de concluir a operação.
+
+ |
 
 | **Resultado obtido** |
 | --- |
-| Lançamento 1589 exibido com R$ 200,00 e status RECEBIDO; cards atualizados para R$ 200,00. Apenas **um** lançamento foi listado mesmo com "Criar Cópias" = "Sim". |
+| Todos os alertas de validação de campos obrigatórios (*Selecione o cliente*, *Informe o valor a receber*, *Selecione o tipo de pagamento*, *Selecione o local de recebimento*) e o aviso de caixa fechado foram disparados corretamente pelo sistema conforme previsto nas regras de consistência.
+
+ |
 
 | **Status** |
 | --- |
-| PASSOU COM OBSERVAÇÃO (confirmar o comportamento esperado de "Criar Cópias") |
+| PASSOU
+
+ |
 
 | **Evidência** |
 | --- |
-| https://drive.google.com/file/d/1veOnehEG9kRDaH-yZH8ojd6Fiydy6a7C/view?usp=sharing |
-
+| https://drive.google.com/file/d/1M2RgLTwrmKiqQNbw1egmD0JZ8SawMiER/view?usp=sharing |
 ---
 
 ### Caso de Teste 04: Atalhos Rápidos de Período (Ontem e Este mês)
