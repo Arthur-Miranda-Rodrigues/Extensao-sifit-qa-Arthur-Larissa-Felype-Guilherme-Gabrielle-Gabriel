@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de Testes: Gerenciamento de Matrículas
+# Cenário 12: Gerenciamento de Matrículas
 
 **Descrição:** Validação do módulo de gerenciamento de matrículas na operação da academia, englobando consultas por nome e código, validação de obrigatoriedade de cliente no cadastro, alteração e salvamento de observações no perfil da matrícula, e os fluxos de cancelamento e exclusão com tratamento de erros do servidor.
 
