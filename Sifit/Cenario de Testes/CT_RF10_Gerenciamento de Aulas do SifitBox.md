@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de teste: Gerenciamento de Aulas do SifitBox
+# Cenário 10: Gerenciamento de Aulas do SifitBox
 
 ## 1. Descrição
 
