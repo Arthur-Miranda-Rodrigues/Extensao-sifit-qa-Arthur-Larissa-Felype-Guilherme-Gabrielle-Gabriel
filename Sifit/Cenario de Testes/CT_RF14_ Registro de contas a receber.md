@@ -172,11 +172,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | Todos os alertas de validação de campos obrigatórios (*Selecione o cliente*, *Informe o valor a receber*, *Selecione o tipo de pagamento*, *Selecione o local de recebimento*) e o aviso de caixa fechado foram disparados corretamente pelo sistema conforme previsto nas regras de consistência.
 
  |
-
-| **Status** |
-| --- |
-| PASSOU
-
+ 
  |
 
 | **Evidência** |
@@ -251,10 +247,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | --- |
 | Aviso de ajuste administrativo exibido e valores salvos: grid com R$ 190,00 e cards *Entradas*/*Líquido* em R$ 190,00. **Inconsistências:** os cards *Previsto para o Mês* e *Recebido no Mês* permaneceram em R$ 200,00; na visualização, o Tipo de Pagamento aparece como "Dinheiro" e o Vencimento como 13/10/2026, diferentes do informado no cadastro (Cheque e 09/10/2026), e o Local de Recebimento aparece como "entrada" na visualização e "Caixa Academia" na edição. |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (cards de previsto/recebido não recalculados e divergência de dados entre cadastro e visualização) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/11hHSbnN18f9I9riwdkuww1Mwt237prY7/view?usp=sharing |
@@ -288,10 +280,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | **Resultado obtido** |
 | --- |
 | Modal de confirmação exibida e a conta removida da grid. **Falha:** os cards não foram recalculados após a exclusão (*Entradas* e *Líquido* em R$ 190,00; *Previsto* e *Recebido no Mês* em R$ 200,00), embora a grid esteja vazia. |
-
-| **Status** |
-| --- |
-| FALHOU (cards financeiros não recalculados após a exclusão) |
 
 | **Evidência** |
 | --- |
