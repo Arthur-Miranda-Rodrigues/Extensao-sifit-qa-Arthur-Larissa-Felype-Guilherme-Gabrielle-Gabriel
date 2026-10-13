@@ -1,7 +1,7 @@
 
 ---
 
-# Cenários:Gestão de Grupos Musculares
+# Cenário de teste:Gestão de Grupos Musculares
 
 ## 1. Descrição
 
