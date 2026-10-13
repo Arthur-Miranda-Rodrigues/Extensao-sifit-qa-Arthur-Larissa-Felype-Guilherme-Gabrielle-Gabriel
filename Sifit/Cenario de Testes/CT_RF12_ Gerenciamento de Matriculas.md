@@ -1,4 +1,3 @@
-Aqui está a reformulação completa e detalhada do cenário **Gerenciamento de Matrículas**, estruturada exatamente de acordo com as interações, filtros, validações de campos obrigatórios, edições, cancelamento e tratamento de exceções exibidos nos 5 vídeos enviados:
 
 ---
 
