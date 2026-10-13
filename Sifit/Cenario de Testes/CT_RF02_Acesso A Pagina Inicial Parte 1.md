@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de Teste: Página Inicial (Parte 1)
+# Cenário de 2: Página Inicial (Parte 1)
 
 ## 1. Descrição
 
