@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de Teste: Página Inicial (Parte 5)
+# Cenário de 5: Página Inicial (Parte 5)
 
 ### Caso de Teste 01: Acesso ao Perfil do Cliente a partir do Modal de Personais
 
