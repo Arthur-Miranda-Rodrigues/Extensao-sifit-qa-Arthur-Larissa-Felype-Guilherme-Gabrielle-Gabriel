@@ -11,7 +11,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF04-CT01** | Validar a busca por código ou nome diretamente no campo de pesquisa da listagem principal de check-ins.
+| **CT08-CT01** | Validar a busca por código ou nome diretamente no campo de pesquisa da listagem principal de check-ins.
 
  |
 
@@ -52,7 +52,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF04-CT02** | Confirmar a confirmação de presença clicando na ação "Registrar entrada" na linha do aluno com status Pendente.
+| **CT08-CT02** | Confirmar a confirmação de presença clicando na ação "Registrar entrada" na linha do aluno com status Pendente.
 
  |
 
@@ -93,7 +93,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF04-CT03** | Validar o comportamento do painel lateral "Entrada rápida" ao inserir um código de cliente e acionar "Realizar check-in".
+| **CT08-CT03** | Validar o comportamento do painel lateral "Entrada rápida" ao inserir um código de cliente e acionar "Realizar check-in".
 
  |
 
@@ -137,7 +137,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF04-CT04** | Validar o fluxo completo do modal "+ Check-in manual", incluindo busca por cliente, seleção e inserção de observação opcional.
+| **CT08-CT04** | Validar o fluxo completo do modal "+ Check-in manual", incluindo busca por cliente, seleção e inserção de observação opcional.
 
  |
 
