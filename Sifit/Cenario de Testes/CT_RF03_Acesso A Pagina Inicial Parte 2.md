@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT01** | Verificar se o modal/painel de "Mensalidades pendentes / Financeiro em Aberto" abre corretamente ao clicar em "Ver detalhes" e se os filtros por período de vencimento funcionam adequadamente.
+| **C03-CT01** | Verificar se o modal/painel de "Mensalidades pendentes / Financeiro em Aberto" abre corretamente ao clicar em "Ver detalhes" e se os filtros por período de vencimento funcionam adequadamente.
 
  |
 
@@ -51,7 +51,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Validar a exibição do modal de "Desistências no Período" ao clicar no card correspondente e testar a busca por nome ou código.
+| **C03-CT02** | Validar a exibição do modal de "Desistências no Período" ao clicar no card correspondente e testar a busca por nome ou código.
 
  |
 
@@ -92,7 +92,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT03** | Validar a abertura e o funcionamento da pesquisa no modal "Matrículas no Período" a partir do card do Dashboard.
+| **C03-CT03** | Validar a abertura e o funcionamento da pesquisa no modal "Matrículas no Período" a partir do card do Dashboard.
 
  |
 
@@ -133,7 +133,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT04** | Verificar se a modalidade/card de "Personais" abre a lista de profissionais cadastrados e permite a busca individualizada.
+| **C03-CT04** | Verificar se a modalidade/card de "Personais" abre a lista de profissionais cadastrados e permite a busca individualizada.
 
  |
 
@@ -176,7 +176,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT05** | Validar a expansão do modal "Agenda de hoje" ao clicar em "Ver agenda", a busca por aulas, a seleção de unidades e a alteração dinâmica de detalhes ao selecionar aulas como *Turma dos Bodybuilders*, *Teste* e *Horario da manhã*, disponibilizando os botões de ações rápidas.
+| **C03-CT05** | Validar a expansão do modal "Agenda de hoje" ao clicar em "Ver agenda", a busca por aulas, a seleção de unidades e a alteração dinâmica de detalhes ao selecionar aulas como *Turma dos Bodybuilders*, *Teste* e *Horario da manhã*, disponibilizando os botões de ações rápidas.
 
  |
 
