@@ -6,7 +6,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT01** | Validar a abertura do modal "Falar com inativos" a partir da seção "Ações recomendadas para hoje", a busca por alunos, personalização de mensagem e seleção do canal de envio.
+| **C04-CT01** | Validar a abertura do modal "Falar com inativos" a partir da seção "Ações recomendadas para hoje", a busca por alunos, personalização de mensagem e seleção do canal de envio.
 
  |
 
@@ -53,7 +53,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Verificar a funcionalidade do card "Cobrar alunos", validando a abertura do modal de cobrança, busca por alunos inadimplentes e personalização da mensagem de cobrança segura.
+| **C04-CT02** | Verificar a funcionalidade do card "Cobrar alunos", validando a abertura do modal de cobrança, busca por alunos inadimplentes e personalização da mensagem de cobrança segura.
 
  |
 
@@ -100,7 +100,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT03** | Validar o redirecionamento ao clicar em "Ver todos" na seção "Aniversariantes do dia" e a filtragem no modal por período (7 dias, 33 dias) e navegação mensal no calendário.
+| **C04-CT03** | Validar o redirecionamento ao clicar em "Ver todos" na seção "Aniversariantes do dia" e a filtragem no modal por período (7 dias, 33 dias) e navegação mensal no calendário.
 
  |
 
@@ -147,7 +147,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT04** | Garantir que o link "Ver todos" no bloco "Últimas entradas na academia" redireciona o utilizador para a tela operacional de Presenças.
+| **C04-CT04** | Garantir que o link "Ver todos" no bloco "Últimas entradas na academia" redireciona o utilizador para a tela operacional de Presenças.
 
  |
 
@@ -188,7 +188,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT05** | Validar o direcionamento para a "Central de Automações" através do link "Ver análise completa" na seção de Inteligência de Retenção e a interação com a execução de automações e relatórios de risco de evasão.
+| **C04-CT05** | Validar o direcionamento para a "Central de Automações" através do link "Ver análise completa" na seção de Inteligência de Retenção e a interação com a execução de automações e relatórios de risco de evasão.
 
  |
 
