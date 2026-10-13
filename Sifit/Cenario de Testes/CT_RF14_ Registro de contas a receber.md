@@ -16,7 +16,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT01** | Validar os filtros da listagem de Contas a Receber: Código, Nome do cliente, Tipo de Data (Vencimento/Recebimento), Data Inicial/Final e Status. |
+| **C14-CT01** | Validar os filtros da listagem de Contas a Receber: Código, Nome do cliente, Tipo de Data (Vencimento/Recebimento), Data Inicial/Final e Status. |
 
 | **Pré-condições** |
 | --- |
@@ -56,7 +56,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, com busca de cliente, criação de cópias e preenchimento dos dados do recebimento. |
+| **C14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, com busca de cliente, criação de cópias e preenchimento dos dados do recebimento. |
 
 | **Pré-condições** |
 | --- |
@@ -101,7 +101,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT03** | Verificar se a conta cadastrada aparece na listagem com status "RECEBIDO" e se os cards financeiros refletem o valor lançado. |
+| **C14-CT03** | Verificar se a conta cadastrada aparece na listagem com status "RECEBIDO" e se os cards financeiros refletem o valor lançado. |
 
 | **Pré-condições** |
 | --- |
@@ -137,7 +137,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT04** | Validar os botões de atalho de período (*Hoje*, *Ontem*, *Últimos 7 dias* e *Este mês*) na atualização das datas, da grid e dos cards. |
+| **C14-CT04** | Validar os botões de atalho de período (*Hoje*, *Ontem*, *Últimos 7 dias* e *Este mês*) na atualização das datas, da grid e dos cards. |
 
 | **Pré-condições** |
 | --- |
@@ -214,7 +214,7 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT06** | Validar a remoção de um lançamento na listagem de Contas a Receber mediante confirmação. |
+| **C14-CT06** | Validar a remoção de um lançamento na listagem de Contas a Receber mediante confirmação. |
 
 | **Pré-condições** |
 | --- |
