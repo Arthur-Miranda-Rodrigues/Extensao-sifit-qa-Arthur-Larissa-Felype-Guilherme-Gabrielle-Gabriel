@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT01** | Validar o direcionamento do modal "Personais" para a tela "Visualizar Cliente" ao clicar na ação correspondente do profissional cadastrado.
+| **C06-CT01** | Validar o direcionamento do modal "Personais" para a tela "Visualizar Cliente" ao clicar na ação correspondente do profissional cadastrado.
 
  |
 
@@ -45,7 +45,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Validar o fluxo de aplicação de anamnese para o aluno, selecionando o modelo disponível, preenchendo o questionário e finalizando o processo.
+| **C06-CT02** | Validar o fluxo de aplicação de anamnese para o aluno, selecionando o modelo disponível, preenchendo o questionário e finalizando o processo.
 
  |
 
@@ -92,7 +92,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT03** | Garantir a visualização do modal de histórico de presenças a partir do painel de desempenho do cliente.
+| **C06-CT03** | Garantir a visualização do modal de histórico de presenças a partir do painel de desempenho do cliente.
 
  |
 
@@ -133,7 +133,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT04** | Validar o comportamento do modal "Registrar pagamento" através das Ações Rápidas do cliente quando o aluno não possui contas pendentes.
+| **C06-CT04** | Validar o comportamento do modal "Registrar pagamento" através das Ações Rápidas do cliente quando o aluno não possui contas pendentes.
 
  |
 
