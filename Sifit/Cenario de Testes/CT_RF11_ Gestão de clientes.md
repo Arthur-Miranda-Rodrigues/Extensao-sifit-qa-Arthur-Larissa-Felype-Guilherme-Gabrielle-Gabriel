@@ -11,7 +11,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar o fluxo de cadastro de um novo cliente informando identificação, documentos, foto, contatos, endereço, dados biométricos, credenciais de aplicativo e informações complementares/responsável.
+| **C11-CT01** | Validar o fluxo de cadastro de um novo cliente informando identificação, documentos, foto, contatos, endereço, dados biométricos, credenciais de aplicativo e informações complementares/responsável.
 
  |
 
@@ -63,7 +63,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Validar o comportamento do sistema ao tentar submeter o formulário de cadastro de cliente deixando campos obrigatórios em branco.
+| **C11-CT02** | Validar o comportamento do sistema ao tentar submeter o formulário de cadastro de cliente deixando campos obrigatórios em branco.
 
  |
 
@@ -102,7 +102,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT03** | Validar a atualização cadastral de um cliente existente a partir de seu perfil, alterando dados de endereço, biometria, aplicativo e dados complementares.
+| **C11-CT03** | Validar a atualização cadastral de um cliente existente a partir de seu perfil, alterando dados de endereço, biometria, aplicativo e dados complementares.
 
  |
 
@@ -143,7 +143,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT04** | Validar o comportamento do sistema ao acionar a exclusão de um registro de cliente na listagem, tratando eventuais falhas de servidor (*Erro no servidor*).
+| **C11-CT04** | Validar o comportamento do sistema ao acionar a exclusão de um registro de cliente na listagem, tratando eventuais falhas de servidor (*Erro no servidor*).
 
  |
 
@@ -181,7 +181,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT05** | Validar a consulta de clientes combinando filtros de código e nome diretamente nos campos de busca da listagem principal.
+| **C11-CT05** | Validar a consulta de clientes combinando filtros de código e nome diretamente nos campos de busca da listagem principal.
 
  |
 
