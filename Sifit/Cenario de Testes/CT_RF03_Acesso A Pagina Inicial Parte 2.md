@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário de Teste: Página Inicial (Parte 2)
+# Cenário 3: Página Inicial (Parte 2)
 
 ### Caso de Teste 01: Visualização do Detalhamento Financeiro (Mensalidades Pendentes / Em Aberto)
 
