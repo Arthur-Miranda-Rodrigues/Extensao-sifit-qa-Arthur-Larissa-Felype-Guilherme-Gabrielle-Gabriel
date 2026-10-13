@@ -7,7 +7,7 @@
 
 | ID  | Descrição |
 | --- | --- |
-| **C02-CT01** | Validar a abertura do modal "Cadastrar Avaliação" a partir do painel de Ações Rápidas, a busca/substituição do aluno, seleção do personal responsável, data e horário, finalizando com o salvamento da avaliação.
+| **C05-CT01** | Validar a abertura do modal "Cadastrar Avaliação" a partir do painel de Ações Rápidas, a busca/substituição do aluno, seleção do personal responsável, data e horário, finalizando com o salvamento da avaliação.
 
  |
 
@@ -57,7 +57,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Validar o envio e troca de templates de mensagem (Falta, Cobrança, Retorno de treino, Aniversário, Avaliação) através das Ações Rápidas do painel "Inteligência Sifit" do cliente.
+| **C05-CT02** | Validar o envio e troca de templates de mensagem (Falta, Cobrança, Retorno de treino, Aniversário, Avaliação) através das Ações Rápidas do painel "Inteligência Sifit" do cliente.
 
  |
 
@@ -98,7 +98,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT03** | Validar a edição completa dos dados de um cliente (RG, foto de perfil, telefones, endereço, biometria e dados adicionais) salvando as alterações.
+| **C05-CT03** | Validar a edição completa dos dados de um cliente (RG, foto de perfil, telefones, endereço, biometria e dados adicionais) salvando as alterações.
 
  |
 
@@ -145,7 +145,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT04** | Verificar o direcionamento do modal "Clientes Sem Matrículas" (acessado pelos cards do Dashboard) para a tela de visualização do perfil do cliente.
+| **C05-CT04** | Verificar o direcionamento do modal "Clientes Sem Matrículas" (acessado pelos cards do Dashboard) para a tela de visualização do perfil do cliente.
 
  |
 
