@@ -10,7 +10,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT01** | Validar os filtros por Código, Nome e Status (Todos / Pendente / Realizado) e a exibição dos indicadores no topo da tela "Avaliações". |
+| **C13-CT01** | Validar os filtros por Código, Nome e Status (Todos / Pendente / Realizado) e a exibição dos indicadores no topo da tela "Avaliações". |
 
 | **Pré-condições** |
 | --- |
@@ -34,10 +34,6 @@
 | --- |
 | Os três filtros retornaram apenas os registros correspondentes (nome → 3 avaliações do aluno; código → 1 avaliação; status "Realizado" → somente realizadas). |
 
-| **Status** |
-| --- |
-| PASSOU |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1GzFSkiPYJp2B7jHmFxCPelhPwI07ibEl/view?usp=sharing |
@@ -48,7 +44,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT02** | Validar o fluxo do modal "Cadastrar Avaliação": busca do aluno por código ou nome, seleção do personal responsável, data e hora. |
+| **C13-CT02** | Validar o fluxo do modal "Cadastrar Avaliação": busca do aluno por código ou nome, seleção do personal responsável, data e hora. |
 
 | **Pré-condições** |
 | --- |
@@ -74,10 +70,6 @@
 | --- |
 | A busca e a seleção do aluno funcionaram; o modal foi concluído e o indicador "Avaliação no Mês" passou de 1 para 2. |
 
-| **Status** |
-| --- |
-| PASSOU |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1eDHQUO1sXqc3Rf2Jx6bPcJaqvyd26kfS/view?usp=sharing |
@@ -88,7 +80,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT03** | Verificar as mensagens de aviso ao tentar salvar a avaliação sem aluno, sem personal ou sem hora. |
+| **C13-CT03** | Verificar as mensagens de aviso ao tentar salvar a avaliação sem aluno, sem personal ou sem hora. |
 
 | **Pré-condições** |
 | --- |
@@ -114,10 +106,6 @@
 | --- |
 | Os três avisos foram exibidos na ordem esperada (aluno → personal → hora) e o cadastro não foi concluído. |
 
-| **Status** |
-| --- |
-| PASSOU |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1DRwKU8DjIcf1Y2W6hqIyrQYFX6raTZLw/view?usp=sharing |
@@ -128,7 +116,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT04** | Validar o lançamento das medidas em centímetros e milímetros e a exibição automática da aba "Composição" na avaliação de um aluno. |
+| **C13-CT04** | Validar o lançamento das medidas em centímetros e milímetros e a exibição automática da aba "Composição" na avaliação de um aluno. |
 
 | **Pré-condições** |
 | --- |
@@ -150,10 +138,6 @@
 | --- |
 | As medidas foram aceitas e a composição foi calculada (Densidade 1,06 g/cm³; 15,89%; Peso da Gordura 11,92 kg; Peso em Excesso 9,11 kg; Resultado "Muito Bom"). **Inconsistência:** o IMC aparece como 0,00 kg/m² e a Classificação Visual indica "Abaixo do Peso" ao mesmo tempo em que o resultado de gordura é "Muito Bom". |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (inconsistência de IMC/classificação) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1yIEklGcQNw3Cc8v-e9_UPLAEYJrIRdVT/view?usp=sharing |
@@ -164,7 +148,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT05** | Validar o modal "Alterar Data / Hora da avaliação" para uma avaliação com status Pendente. |
+| **C13-CT05** | Validar o modal "Alterar Data / Hora da avaliação" para uma avaliação com status Pendente. |
 
 | **Pré-condições** |
 | --- |
@@ -186,10 +170,6 @@
 | --- |
 | Os campos aceitaram os valores digitados, porém, após "Salvar", o modal permaneceu aberto e a avaliação continuou listada com 07/11/2026 07:30 nas gravações seguintes. A hora "7:00" também foi aceita sem formato fixo. |
 
-| **Status** |
-| --- |
-| FALHOU (a confirmar: alteração não refletida na listagem) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1hHRLjP7s7nbUKiq2rVbNZ7NuxxhOvSIj/view?usp=sharing |
@@ -200,7 +180,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT06** | Validar o preenchimento da aba "IMC" (idade, altura e peso) em uma avaliação pendente e a mudança de status ao salvar. |
+| **C13-CT06** | Validar o preenchimento da aba "IMC" (idade, altura e peso) em uma avaliação pendente e a mudança de status ao salvar. |
 
 | **Pré-condições** |
 | --- |
@@ -221,10 +201,6 @@
 | --- |
 | O campo "IMC kg/m²" permaneceu vazio durante o preenchimento (não houve cálculo em tempo real); após "Salvar", a avaliação passou para "REALIZADO" e o IMC (21,27) apareceu nas telas seguintes. |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (IMC só calculado após salvar) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1L49K38IjbDTWb1ZzaJw9g-j8JLeKQ_j1/view?usp=sharing |
@@ -235,7 +211,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT07** | Validar o modal "Comparar Avaliação" entre uma avaliação antiga e uma nova do mesmo aluno. |
+| **C13-CT07** | Validar o modal "Comparar Avaliação" entre uma avaliação antiga e uma nova do mesmo aluno. |
 
 | **Pré-condições** |
 | --- |
@@ -260,10 +236,6 @@
 | --- |
 | Aba IMC exibida com diferença 0,00 (única avaliação disponível comparada com ela mesma: peso 68,9; IMC 21,27; Peso Normal). A aba "Circunferência" apareceu em branco no momento da navegação. O modal fechou normalmente. |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (aba Circunferência sem conteúdo; só havia uma avaliação para comparar) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1KTLbavxMGWXBPCgc4r3pyKLA2XWZ8b34/view?usp=sharing |
@@ -274,7 +246,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT08** | Validar a página "Sua Avaliação Física" com dados pessoais, nível de gordura, composição corporal, índices e gráficos. |
+| **C13-CT08** | Validar a página "Sua Avaliação Física" com dados pessoais, nível de gordura, composição corporal, índices e gráficos. |
 
 | **Pré-condições** |
 | --- |
@@ -295,10 +267,6 @@
 | --- |
 | Página carregada com os dados da avaliação (27 anos, feminino, 1,80 m, 68,90 kg; % de gordura 2,66%; IMC 21,27 – Normal; TMB 1525 kcal; Massa Muscular 67,07 kg) e gráficos exibidos. Observações: RCQ 0,00 ("Baixo") e dobras com soma 0 mm por falta de medidas; nível de gordura "Abaixo" convive com classificação "Excelente". |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1ECa62YoTpXKJUUWPf0c5JQnKpqpmOD6S/view?usp=sharing |
@@ -309,7 +277,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT09** | Validar a geração e o download do relatório "avaliação completa" em PDF pelo botão verde da linha. |
+| **C13-CT09** | Validar a geração e o download do relatório "avaliação completa" em PDF pelo botão verde da linha. |
 
 | **Pré-condições** |
 | --- |
@@ -330,10 +298,6 @@
 | --- |
 | Download concluído (14,2 KB) e PDF aberto com 1 página; a evolução indicou "Primeira avaliação registrada" e o relatório foi assinado por Santhago. |
 
-| **Status** |
-| --- |
-| PASSOU |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1cm1mZp_zN-TmF99RXZmMeC5C-ZMbjhI_/view?usp=sharing |
@@ -344,7 +308,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT10** | Validar o relatório "Avaliação Física" (Dados Básicos, Circunferências, Dobras Subcutâneas e Composição Corporal) aberto pela ação de impressão da linha. |
+| **C13-CT10** | Validar o relatório "Avaliação Física" (Dados Básicos, Circunferências, Dobras Subcutâneas e Composição Corporal) aberto pela ação de impressão da linha. |
 
 | **Pré-condições** |
 | --- |
@@ -364,10 +328,6 @@
 | --- |
 | PDF aberto com os dados básicos (1,80 m; 27 anos; 68,90 kg; IMC 21,27 – Peso Normal) e fracionamento (Densidade 1,09354; 2,66% de gordura; Peso Ideal 89,42 kg). Circunferências exibidas como "0 cm" e dobras como "- mm" (não preenchidas). O campo "Resultado Gordura" aparece como "Muito Bom", enquanto o relatório do CT09 e a tela do CT08 indicam "Abaixo". |
 
-| **Status** |
-| --- |
-| PASSOU COM OBSERVAÇÃO (divergência na classificação de gordura entre relatórios) |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/19_uPyC-KLr65QY5S4uAatzAAIEwBNglL/view?usp=sharing |
@@ -378,7 +338,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RF06-CT11** | Validar a exclusão de uma avaliação mediante confirmação no modal. |
+| **C13-CT11** | Validar a exclusão de uma avaliação mediante confirmação no modal. |
 
 | **Pré-condições** |
 | --- |
@@ -399,10 +359,6 @@
 | **Resultado obtido** |
 | --- |
 | O modal de confirmação foi exibido, a tabela passou por carregamento e a avaliação #92 deixou de ser listada. |
-
-| **Status** |
-| --- |
-| PASSOU |
 
 | **Evidência** |
 | --- |
