@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT01** | Verificar o direcionamento para a tela "Dashboard" pelo menu lateral, a correta renderização dos painéis e o comportamento de alternância/mudança de tema de cores ao recarregar a página.
+| **C07-CT01** | Verificar o direcionamento para a tela "Dashboard" pelo menu lateral, a correta renderização dos painéis e o comportamento de alternância/mudança de tema de cores ao recarregar a página.
 
  |
 
@@ -50,7 +50,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT02** | Validar a interatividade dos gráficos do Dashboard ao posicionar o cursor sobre as barras e seções, conferindo a exibição das etiquetas informativas (*tooltips*).
+| **C07-CT02** | Validar a interatividade dos gráficos do Dashboard ao posicionar o cursor sobre as barras e seções, conferindo a exibição das etiquetas informativas (*tooltips*).
 
  |
 
@@ -88,7 +88,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT03** | Validar o acionamento do botão "Ver Inteligência" no card "Inteligência Sifit" e a atualização das métricas ao alternar os filtros de período temporal.
+| **C07-CT03** | Validar o acionamento do botão "Ver Inteligência" no card "Inteligência Sifit" e a atualização das métricas ao alternar os filtros de período temporal.
 
  |
 
