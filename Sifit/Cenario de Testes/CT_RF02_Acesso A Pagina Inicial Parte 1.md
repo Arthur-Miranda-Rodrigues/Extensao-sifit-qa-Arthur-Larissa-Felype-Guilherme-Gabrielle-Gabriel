@@ -153,7 +153,6 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | **Critérios de Aceitação** |
 | --- |
 | * O modal deve disponibilizar o botão **Exportar relatório** para extração das informações de evasão.|
-
 | * As explicações das regras de cálculo devem ser apresentadas com clareza em tela.|
 
  
