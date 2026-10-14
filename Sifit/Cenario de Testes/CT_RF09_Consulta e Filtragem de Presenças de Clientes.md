@@ -104,9 +104,7 @@
 
 | **Critérios de Aceitação** |
 | --- |
-| O sistema deve permitir a navegação livre pelo calendário e o filtro por datas customizadas, atualizando todas as métricas correspondentes ao intervalo definido.
-
- |
+| O sistema deve permitir a navegação livre pelo calendário e o filtro por datas customizadas, atualizando todas as métricas correspondentes ao intervalo definido. |
 
 | **Evidência** |
 | --- |
