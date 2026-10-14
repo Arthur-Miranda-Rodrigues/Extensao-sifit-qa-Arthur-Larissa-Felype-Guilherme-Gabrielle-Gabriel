@@ -18,9 +18,7 @@
 | **DADO** que o utilizador está autenticado no SIFIT. |
 | **QUANDO** clicar no item "Dashboard" do menu lateral principal. |
 | **E** recarregar/atualizar a página do Dashboard (F5 / Refresh). |
-| **ENTÃO** o sistema deve carregar a página de Dashboard (`/dashboard`), apresentando a alternância dinâmica na paleta de cores/tema dos gráficos e painéis a cada recarregamento, além de exibir o bloco de "Inteligência Sifit" e as métricas principais.
-
- |
+| **ENTÃO** o sistema deve carregar a página de Dashboard (`/dashboard`), apresentando a alternância dinâmica na paleta de cores/tema dos gráficos e painéis a cada recarregamento, além de exibir o bloco de "Inteligência Sifit" e as métricas principais. |
 
 | **Critérios de aceitação** |
 | --- |
@@ -38,9 +36,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C07-CT02** | Validar a interatividade dos gráficos do Dashboard ao posicionar o cursor sobre as barras e seções, conferindo a exibição das etiquetas informativas (*tooltips*).
-
- |
+| **C07-CT02** | Validar a interatividade dos gráficos do Dashboard ao posicionar o cursor sobre as barras e seções, conferindo a exibição das etiquetas informativas (*tooltips*). |
 
 | **Pré-condições** |
 | --- |
