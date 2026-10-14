@@ -38,10 +38,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | * Se nenhum lançamento for localizado, a tabela deve ficar vazia. |
 | * Os cards financeiros devem ser coerentes com os registros exibidos. |
 
-| **Resultado obtido** |
-| --- |
-| Os campos e o calendário aceitaram os filtros e as buscas por nome e código retornaram a grid vazia. **Inconsistência:** ao ampliar o período (Data Inicial 13/08/2026), os cards passaram a exibir *Entradas* e *Líquido* de R$ 100,00, mas a tabela continuou vazia, inclusive com os status *Recebido* e *Cancelado*. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1Q5qUKG9AYxhUzBbABLlQCp1XVjo2i30C/view?usp=sharing |
@@ -103,11 +99,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | * O sistema deve concluir o cadastro com sucesso após o preenchimento correto e atualizar a listagem de contas a receber.
 
  |
-
-| **Resultado obtido** |
-| --- |
-| A busca da cliente Lila, o preenchimento dos parâmetros da conta, a validação do campo obrigatório de tipo de pagamento e a persistência final do registro ocorreram exatamente conforme observado no fluxo do sistema.
-
  |
 
 | **Evidência** |
@@ -159,10 +150,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
  |
 
-| **Resultado obtido** |
-| --- |
-| Todos os alertas de validação de campos obrigatórios (*Selecione o cliente*, *Informe o valor a receber*, *Selecione o tipo de pagamento*, *Selecione o local de recebimento*) e o aviso de caixa fechado foram disparados corretamente pelo sistema conforme previsto nas regras de consistência.
-
  |
  
  |
@@ -194,10 +181,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | --- |
 | * O atalho selecionado deve ficar destacado e preencher automaticamente o período. |
 | * A grid e os cards devem refletir o período escolhido. |
-
-| **Resultado obtido** |
-| --- |
-| Os atalhos "Ontem" e "Este mês" preencheram as datas corretamente e atualizaram a grid e os cards *Entradas* e *Líquido*. |
 
 | **Status** |
 | --- |
@@ -235,10 +218,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | * A edição de conta recebida deve exigir a confirmação do ajuste administrativo. |
 | * Os novos valores devem ser persistidos e refletidos na listagem e nos cards. |
 
-| **Resultado obtido** |
-| --- |
-| Aviso de ajuste administrativo exibido e valores salvos: grid com R$ 190,00 e cards *Entradas*/*Líquido* em R$ 190,00. **Inconsistências:** os cards *Previsto para o Mês* e *Recebido no Mês* permaneceram em R$ 200,00; na visualização, o Tipo de Pagamento aparece como "Dinheiro" e o Vencimento como 13/10/2026, diferentes do informado no cadastro (Cheque e 09/10/2026), e o Local de Recebimento aparece como "entrada" na visualização e "Caixa Academia" na edição. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/11hHSbnN18f9I9riwdkuww1Mwt237prY7/view?usp=sharing |
@@ -269,9 +248,6 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | * A exclusão só deve ocorrer após a confirmação. |
 | * Após excluir, a conta não deve mais constar na grid e os cards devem ser recalculados. |
 
-| **Resultado obtido** |
-| --- |
-| Modal de confirmação exibida e a conta removida da grid. **Falha:** os cards não foram recalculados após a exclusão (*Entradas* e *Líquido* em R$ 190,00; *Previsto* e *Recebido no Mês* em R$ 200,00), embora a grid esteja vazia. |
 
 | **Evidência** |
 | --- |
