@@ -30,10 +30,6 @@
 | --- |
 | A listagem deve ser filtrada de acordo com o código, nome ou status informados, e os indicadores do topo devem ser exibidos. |
 
-| **Resultado obtido** |
-| --- |
-| Os três filtros retornaram apenas os registros correspondentes (nome → 3 avaliações do aluno; código → 1 avaliação; status "Realizado" → somente realizadas). |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1GzFSkiPYJp2B7jHmFxCPelhPwI07ibEl/view?usp=sharing |
@@ -65,10 +61,6 @@
 | **Critérios de aceitação** |
 | --- |
 | O sistema deve permitir localizar o aluno, selecioná-lo, informar o personal, data e hora e concluir o cadastro da avaliação. |
-
-| **Resultado obtido** |
-| --- |
-| A busca e a seleção do aluno funcionaram; o modal foi concluído e o indicador "Avaliação no Mês" passou de 1 para 2. |
 
 | **Evidência** |
 | --- |
@@ -102,10 +94,6 @@
 | --- |
 | O cadastro não deve ser concluído enquanto aluno, personal e hora não forem informados, e cada ausência deve gerar o aviso correspondente. |
 
-| **Resultado obtido** |
-| --- |
-| Os três avisos foram exibidos na ordem esperada (aluno → personal → hora) e o cadastro não foi concluído. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1DRwKU8DjIcf1Y2W6hqIyrQYFX6raTZLw/view?usp=sharing |
@@ -133,10 +121,6 @@
 | **Critérios de aceitação** |
 | --- |
 | As medidas devem ser aceitas e os indicadores da aba "Composição" devem ser calculados e classificados de forma consistente. |
-
-| **Resultado obtido** |
-| --- |
-| As medidas foram aceitas e a composição foi calculada (Densidade 1,06 g/cm³; 15,89%; Peso da Gordura 11,92 kg; Peso em Excesso 9,11 kg; Resultado "Muito Bom"). **Inconsistência:** o IMC aparece como 0,00 kg/m² e a Classificação Visual indica "Abaixo do Peso" ao mesmo tempo em que o resultado de gordura é "Muito Bom". |
 
 | **Evidência** |
 | --- |
@@ -166,10 +150,6 @@
 | --- |
 | A nova data/hora informada deve ser persistida e refletida na listagem. |
 
-| **Resultado obtido** |
-| --- |
-| Os campos aceitaram os valores digitados, porém, após "Salvar", o modal permaneceu aberto e a avaliação continuou listada com 07/11/2026 07:30 nas gravações seguintes. A hora "7:00" também foi aceita sem formato fixo. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1hHRLjP7s7nbUKiq2rVbNZ7NuxxhOvSIj/view?usp=sharing |
@@ -196,10 +176,6 @@
 | **Critérios de aceitação** |
 | --- |
 | Após informar altura e peso e salvar, o IMC deve ser calculado e a avaliação deve passar a "REALIZADO". |
-
-| **Resultado obtido** |
-| --- |
-| O campo "IMC kg/m²" permaneceu vazio durante o preenchimento (não houve cálculo em tempo real); após "Salvar", a avaliação passou para "REALIZADO" e o IMC (21,27) apareceu nas telas seguintes. |
 
 | **Evidência** |
 | --- |
@@ -232,10 +208,6 @@
 | --- |
 | A comparação deve apresentar os valores das duas avaliações e a diferença entre eles em todas as abas. |
 
-| **Resultado obtido** |
-| --- |
-| Aba IMC exibida com diferença 0,00 (única avaliação disponível comparada com ela mesma: peso 68,9; IMC 21,27; Peso Normal). A aba "Circunferência" apareceu em branco no momento da navegação. O modal fechou normalmente. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1KTLbavxMGWXBPCgc4r3pyKLA2XWZ8b34/view?usp=sharing |
@@ -262,10 +234,6 @@
 | **Critérios de aceitação** |
 | --- |
 | Todas as seções devem ser carregadas com os dados da avaliação e os gráficos devem ser renderizados. |
-
-| **Resultado obtido** |
-| --- |
-| Página carregada com os dados da avaliação (27 anos, feminino, 1,80 m, 68,90 kg; % de gordura 2,66%; IMC 21,27 – Normal; TMB 1525 kcal; Massa Muscular 67,07 kg) e gráficos exibidos. Observações: RCQ 0,00 ("Baixo") e dobras com soma 0 mm por falta de medidas; nível de gordura "Abaixo" convive com classificação "Excelente". |
 
 | **Evidência** |
 | --- |
@@ -294,10 +262,6 @@
 | --- |
 | O PDF deve ser gerado, baixado e aberto com os dados da avaliação. |
 
-| **Resultado obtido** |
-| --- |
-| Download concluído (14,2 KB) e PDF aberto com 1 página; a evolução indicou "Primeira avaliação registrada" e o relatório foi assinado por Santhago. |
-
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1cm1mZp_zN-TmF99RXZmMeC5C-ZMbjhI_/view?usp=sharing |
@@ -323,10 +287,6 @@
 | **Critérios de aceitação** |
 | --- |
 | O relatório deve refletir fielmente os dados registrados na avaliação. |
-
-| **Resultado obtido** |
-| --- |
-| PDF aberto com os dados básicos (1,80 m; 27 anos; 68,90 kg; IMC 21,27 – Peso Normal) e fracionamento (Densidade 1,09354; 2,66% de gordura; Peso Ideal 89,42 kg). Circunferências exibidas como "0 cm" e dobras como "- mm" (não preenchidas). O campo "Resultado Gordura" aparece como "Muito Bom", enquanto o relatório do CT09 e a tela do CT08 indicam "Abaixo". |
 
 | **Evidência** |
 | --- |
@@ -355,10 +315,6 @@
 | **Critérios de aceitação** |
 | --- |
 | O sistema deve exigir confirmação antes de excluir e remover o registro da listagem após confirmar. |
-
-| **Resultado obtido** |
-| --- |
-| O modal de confirmação foi exibido, a tabela passou por carregamento e a avaliação #92 deixou de ser listada. |
 
 | **Evidência** |
 | --- |
