@@ -25,19 +25,13 @@ Este documento especifica os casos de teste referentes ao módulo **Treinamento 
 | **Passos** |
 | --- |
 | **DADO** que o usuário está na tela **Fichas de Treino**<br> |
-| **QUANDO** preencher o campo **Código** (ex.: "236") ou selecionar um status específico no filtro (Ativo, Inativo, Cancelado, Finalizado)
-
- |
+| **QUANDO** preencher o campo **Código** (ex.: "236") ou selecionar um status específico no filtro (Ativo, Inativo, Cancelado, Finalizado).|
 | **E** clicar no botão **Buscar**<br> |
-| **ENTÃO** a tabela deve processar a consulta, porém os filtros de listagem por status ou código nada fazem ou retornam a mensagem *"Nenhuma ficha encontrada"* na grade de dados.
-
- |
+| **ENTÃO** a tabela deve processar a consulta, porém os filtros de listagem por status ou código nada fazem ou retornam a mensagem *"Nenhuma ficha encontrada"* na grade de dados. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * Identificar e registrar o comportamento da interface onde a filtragem da listagem por Status e Código não atualiza os registros esperados na tabela.
-
- |
+| * Identificar e registrar o comportamento da interface onde a filtragem da listagem por Status e Código não atualiza os registros esperados na tabela. |
 
 | **Evidência** |
 | --- |
@@ -53,29 +47,19 @@ Este documento especifica os casos de teste referentes ao módulo **Treinamento 
 
 | **Pré-condições** |
 | --- |
-| Usuário na página **Fichas de Treino** do SIFIT.
-
- |
+| Usuário na página **Fichas de Treino** do SIFIT. |
 
 | **Passos** |
 | --- |
 | **DADO** que o usuário clica no botão **Cadastrar Ficha**<br> |
-| **QUANDO** selecionar o aluno (ex.: *Marcelo Longo Zandonadi*), o personal (*Gabriella*), definir o período de datas, preencher o objetivo (*Perder peso*) e a observação
-
- |
+| **QUANDO** selecionar o aluno (ex.: *Marcelo Longo Zandonadi*), o personal (*Gabriella*), definir o período de datas, preencher o objetivo (*Perder peso*) e a observação. |
 | **E** clicar no botão **Criar Nova Ficha**<br> |
-| **ENTÃO** o sistema deve tentar gravar o registro, mas exibir um modal de erro com a mensagem: *"Erro: Erro ao salvar ficha"* acompanhado do botão **Fechar**.
-
- |
+| **ENTÃO** o sistema deve tentar gravar o registro, mas exibir um modal de erro com a mensagem: *"Erro: Erro ao salvar ficha"* acompanhado do botão **Fechar**. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * O formulário deve permitir o preenchimento de todos os campos de controle da ficha de treino.
-
- |
-| * Em caso de falha de persistência no backend, o sistema deve exibir uma mensagem de erro clara ao operador sem corromper a navegação.
-
- |
+| * O formulário deve permitir o preenchimento de todos os campos de controle da ficha de treino. |
+| * Em caso de falha de persistência no backend, o sistema deve exibir uma mensagem de erro clara ao operador sem corromper a navegação. |
 
 | **Evidência** |
 | --- |
