@@ -48,58 +48,33 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **C14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, incluindo a busca de cliente, a parametrização de cópias, o preenchimento dos dados do recebimento e a validação de campos obrigatórios.
-
- |
+| **C14-CT02** | Validar o cadastro de uma conta a receber pelo botão **Nova Conta**, incluindo a busca de cliente, a parametrização de cópias, o preenchimento dos dados do recebimento e a validação de campos obrigatórios. |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado na tela **Contas a Receber** do SIFIT; cliente cadastrado (ex.: 408 – Lila) e locais de recebimento disponíveis (Caixa Academia, Caixa Muay Thai, Teste, Teste2).
-
- |
+| Usuário autenticado na tela **Contas a Receber** do SIFIT; cliente cadastrado (ex.: 408 – Lila) e locais de recebimento disponíveis (Caixa Academia, Caixa Muay Thai, Teste, Teste2). |
 
 | **Passos** |
 | --- |
 | **DADO** que o usuário está na tela **Contas a Receber**<br> |
 | **QUANDO** clicar no botão **Nova Conta**<br> |
 | **ENTÃO** a modal **Cadastrar Conta a Receber** deve abrir exibindo o cadastrante (ex.: 11 – Jair), a data atual (13/10/2026), o *Status* e o *Resíduo*<br> |
-| **E QUANDO** clicar em **Pesquisar** na seção do cliente
-
- |
-| **ENTÃO** deve abrir a modal **Buscar Cliente** contendo o campo de pesquisa por nome, o botão **Buscar** e a listagem de Código/Nome
-
- |
-| **E QUANDO** pesquisar e selecionar o cliente desejado (ex.: 408 – Lila)
-
- |
-| **E QUANDO** preencher o **Título** (ex.: "Matrícula")
-
- |
-| **E** alterar o campo **Criar Cópias** de "Não" para "Sim"
-
- |
-| **E** informar o **Valor a Receber** (ex.: "190,00"), a **Moeda** (BRL) e a **Data Venc.** (ex.: 13/10/2026)
-
- |
-| **E** preencher os **Dados do Recebimento**: Valor Recebido (190,00), Data Recebimento (13/10/2026), Local de Recebimento (ex.: "Caixa Academia") e Observação (ex.: "Lila"), deixando temporariamente o **Tipo de Pagamento** em branco
-
- |
+| **E QUANDO** clicar em **Pesquisar** na seção do cliente.|
+| **ENTÃO** deve abrir a modal **Buscar Cliente** contendo o campo de pesquisa por nome, o botão **Buscar** e a listagem de Código/Nome. |
+| **E QUANDO** pesquisar e selecionar o cliente desejado (ex.: 408 – Lila). |
+| **E QUANDO** preencher o **Título** (ex.: "Matrícula").|
+| **E** alterar o campo **Criar Cópias** de "Não" para "Sim". |
+| **E** informar o **Valor a Receber** (ex.: "190,00"), a **Moeda** (BRL) e a **Data Venc.** (ex.: 13/10/2026). |
+| **E** preencher os **Dados do Recebimento**: Valor Recebido (190,00), Data Recebimento (13/10/2026), Local de Recebimento (ex.: "Caixa Academia") e Observação (ex.: "Lila"), deixando temporariamente o **Tipo de Pagamento** em branco.  |
 | **E** clicar em **Salvar**<br> |
 | **ENTÃO** o sistema deve exibir o modal de alerta *"Atenção: Selecione o tipo de pagamento!"*<br> |
 | **E QUANDO** fechar o alerta, selecionar o **Tipo de Pagamento** (ex.: "Dinheiro") e clicar novamente em **Salvar**<br> |
-| **ENTÃO** a conta deve ser salva com sucesso e o usuário deve retornar à listagem principal, onde o novo registro é exibido.
-
- |
+| **ENTÃO** a conta deve ser salva com sucesso e o usuário deve retornar à listagem principal, onde o novo registro é exibido. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * A modal de cadastro deve permitir localizar o cliente, preencher os dados financeiros e de recebimento e aplicar validações de campos obrigatórios (como o tipo de pagamento).
-
- |
-| * O sistema deve concluir o cadastro com sucesso após o preenchimento correto e atualizar a listagem de contas a receber.
-
- |
- |
+| * A modal de cadastro deve permitir localizar o cliente, preencher os dados financeiros e de recebimento e aplicar validações de campos obrigatórios (como o tipo de pagamento). |
+| * O sistema deve concluir o cadastro com sucesso após o preenchimento correto e atualizar a listagem de contas a receber.|
 
 | **Evidência** |
 | --- |
@@ -111,24 +86,16 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 
 | ID | Descrição |
 | --- | --- |
-| **C14-CT03** | Validar as restrições e mensagens de alerta emitidas pelo sistema ao tentar salvar uma nova conta a receber com campos obrigatórios em branco (cliente, valor a receber, tipo de pagamento, local de recebimento e caixa fechado).
-
- |
+| **C14-CT03** | Validar as restrições e mensagens de alerta emitidas pelo sistema ao tentar salvar uma nova conta a receber com campos obrigatórios em branco (cliente, valor a receber, tipo de pagamento, local de recebimento e caixa fechado). |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado na tela **Contas a Receber** e com a modal **Cadastrar Conta a Receber** aberta.
-
- |
+| Usuário autenticado na tela **Contas a Receber** e com a modal **Cadastrar Conta a Receber** aberta. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na modal de cadastro de conta a receber
-
- |
-| **QUANDO** clicar no botão **Salvar** sem selecionar nenhum cliente
-
- |
+| **DADO** que o usuário está na modal de cadastro de conta a receber. |
+| **QUANDO** clicar no botão **Salvar** sem selecionar nenhum cliente. |
 | **ENTÃO** o sistema exibe o alerta: *"Atenção: Selecione o cliente!"*<br> |
 | **E QUANDO** o usuário selecionar a cliente (ex.: 148 – Rharissily Gabrielle Oliveira), preencher o título mas deixar o **Valor a Receber** em branco e clicar em **Salvar**<br> |
 | **ENTÃO** o sistema exibe o alerta: *"Atenção: Informe o valor a receber!"*<br> |
@@ -137,22 +104,12 @@ Este documento especifica os casos de teste referentes ao ** Cenário e Teste - 
 | **E QUANDO** selecionar o tipo de pagamento (ex.: "Dinheiro") mas omitir o **Local de Recebimento** e clicar em **Salvar**<br> |
 | **ENTÃO** o sistema exibe o alerta: *"Atenção: Selecione o local de recebimento!"*<br> |
 | **E QUANDO** selecionar um local (ex.: "Teste") onde não há caixa aberto e clicar em **Salvar**<br> |
-| **ENTÃO** o sistema exibe o aviso de caixa fechado: *"Atenção – Nenhum caixa aberto neste local. Abra um caixa e tente novamente."*, permitindo prosseguir via botão **Continuar**.
-
- |
+| **ENTÃO** o sistema exibe o aviso de caixa fechado: *"Atenção – Nenhum caixa aberto neste local. Abra um caixa e tente novamente."*, permitindo prosseguir via botão **Continuar**. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * O sistema deve barrar a gravação de registros incompletos, exibindo modais de aviso específicos para cada campo obrigatório omitido (cliente, valor, tipo de pagamento e local).
-
- |
-| * O sistema deve tratar corretamente a restrição de caixa fechado, informando o operador antes de concluir a operação.
-
- |
-
- |
- 
- |
+| * O sistema deve barrar a gravação de registros incompletos, exibindo modais de aviso específicos para cada campo obrigatório omitido (cliente, valor, tipo de pagamento e local). |
+| * O sistema deve tratar corretamente a restrição de caixa fechado, informando o operador antes de concluir a operação. |
 
 | **Evidência** |
 | --- |
