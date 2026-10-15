@@ -5,6 +5,7 @@
 # Cenário 1: Login na plataforma.
 
 ### Caso de Teste 01: Login com as credenciais válidas.
+<img width="1916" height="900" alt="Caso login com sucesso" src="https://github.com/user-attachments/assets/4d35c4f7-a09c-4689-9676-7aeb94dc20f8" />
 
 | ID | Descrição |
 | --- | --- |
@@ -33,6 +34,8 @@
 ---
 
 ### Caso de Teste 02: Tentativa de login com credenciais incorretas.
+<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/60274840-12ff-428c-ae5e-6955c90cde31" />
+
 
 | ID | Descrição |
 | --- | --- |
@@ -61,6 +64,8 @@
 ---
 
 ### Caso de Teste 03: Tentativa de login com campos em branco.
+<img width="1919" height="926" alt="Captura de tela 2026-10-14 221348" src="https://github.com/user-attachments/assets/2ef75245-1845-452c-b4f3-78ef04356f57" />
+
 
 | ID | Descrição |
 | --- | --- |
