@@ -64,9 +64,7 @@
 ---
 
 ### Caso de Teste 03: Tentativa de login com campos em branco.
-![Uploading Captura de tela 2026-10-14 221649.png…]()
-
-
+<img width="1915" height="893" alt="Captura de tela 2026-10-14 221649" src="https://github.com/user-attachments/assets/1fd2c394-7fcb-4e06-b0e4-cb97e943fd28" />
 
 | ID | Descrição |
 | --- | --- |
