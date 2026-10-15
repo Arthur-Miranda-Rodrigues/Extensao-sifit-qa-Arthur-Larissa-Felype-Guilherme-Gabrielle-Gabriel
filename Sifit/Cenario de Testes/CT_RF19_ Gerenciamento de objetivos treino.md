@@ -114,5 +114,3 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | --- |
 | * Registros vinculados a fichas de treino ativas não podem ser excluídos da base. |
 | * O alerta de erro deve impedir a remoção indevida e manter a consistência dos dados. |
-
-https://jam.dev/c/47aadfe2-569d-413e-a2a4-0d5a7f5f1cff
