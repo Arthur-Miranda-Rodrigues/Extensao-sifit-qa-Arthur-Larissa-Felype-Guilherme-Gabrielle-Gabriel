@@ -5,7 +5,7 @@
 
 ## 1. Descrição
 
-Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão de Box** do módulo **Treinamento > Box - Turmas** do sistema **SiFit**. O objetivo é validar o cadastramento de modalidades de treino, a criação e edição de turmas recorrentes (horários, vagas e dias da semana), o gerenciamento de status de modalidades e a exclusão de turmas.
+Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão de Box** do módulo **Treinamento > Box - Turmas** do sistema **SiFit**. O objetivo é validar o cadastramento e edição de modalidades, criação e edição de turmas recorrentes (horários, vagas e dias da semana), exclusão de itens e alteração de status na gestão de turmas e modalidades.
 
 ---
 
@@ -13,132 +13,184 @@ Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão
 
 ### Cenário 01: Operações e Gestão de Box (Turmas e Modalidades)
 
-#### Caso de Teste 01: Cadastramento de Nova Modalidade
+#### Caso de Teste 01: Cadastro de Nova Modalidade de Treino
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar o cadastro de uma nova modalidade de treino no Box. |
+| **C23-CT01** | Validar o cadastro de uma nova modalidade preenchendo o nome correspondente no painel de Modalidades. |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado no sistema SiFit e localizado no menu **Box - Turmas**. |
+| Usuário autenticado no sistema SiFit na página **Box - Turmas**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na página **Box - Turmas** |
-| **QUANDO** preencher o campo **Nome da modalidade** com "Leo" no painel de *Modalidades* |
-| **E** preencher o campo **Descrição** com "Leo" |
-| **E** clicar no botão **+ Modalidade** |
-| **ENTÃO** a nova modalidade deve ser cadastrada com sucesso |
-| **E** ser exibida na tabela de modalidades com o status "Ativo". |
+| **DADO** que o usuário está na seção de **Modalidades**<br><br> |
+| **QUANDO** preencher o campo **Nome da modalidade** com "Modalidade Maromba" |
+| **E** clicar no botão de salvar/adicionar **+ Modalidade**<br><br>  |
+| **ENTÃO** a modalidade deve ser cadastrada com sucesso |
+| **E** ser exibida corretamente na listagem da tabela superior. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * A modalidade cadastrada deve ser gravada na base de dados e vinculada à listagem de modalidades do Box. |
-| * O status padrão da nova modalidade deve ser exibido como "Ativo". |
+| * A modalidade deve ser gravada na base de dados com o nome estipulado. |
+| * A tabela de modalidades deve ser atualizada exibindo o novo registro. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/11hAqVHfYQxMMLIDmC0GskR63QWAigEl1/view?usp=sharing |
 
 ---
 
-#### Caso de Teste 02: Cadastramento de Nova Turma Recorrente
+#### Caso de Teste 02: Cadastro de Turma Recorrente com Horários e Vagas Definidos
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Verificar o cadastro de uma turma recorrente vinculada a uma modalidade existente. |
+| **C23-CT02** | Validar o cadastro de uma nova turma recorrente vinculada a uma modalidade com configuração de horário e vagas. |
 
 | **Pré-condições** |
 | --- |
-| Existir a modalidade "Leo" cadastrada no sistema. |
+| Usuário autenticado no sistema SiFit na página **Box - Turmas** e modalidade existente cadastrada. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na página **Box - Turmas** |
-| **QUANDO** preencher o **Nome da turma** com "Leo" no painel *Turmas recorrentes* |
-| **E** selecionar a **Modalidade** "Leo" |
-| **E** marcar os dias da semana desejados (ex: Seg, Qua, Qui, Sex) |
-| **E** definir a quantidade de **Vagas** como "20" |
-| **E** configurar o horário (Início: "20:09" / Fim: "20:30") |
-| **E** clicar no botão **+ Turma** |
-| **ENTÃO** a turma recorrente deve ser criada com sucesso |
-| **E** ser exibida na tabela inferior com as informações de horário, dias da semana e quantidade de vagas ativas. |
+| **DADO** que o usuário está na seção de **Turmas recorrentes**<br><br> |
+| **QUANDO** preencher o campo **Nome da turma** com "Turma Maromba 2" |
+| **E** selecionar a **Modalidade** correspondente (ex: "Modalidade Maromba") |
+| **E** definir o horário de início ("09:00") e término ("16:00") |
+| **E** configurar a quantidade de **Vagas** para "16" |
+| **E** clicar no botão de salvar/adicionar **+ Turma**<br><br> |
+| **ENTÃO** a turma deve ser cadastrada com sucesso |
+| **E** ser exibida corretamente na listagem da tabela inferior.|
 
 | **Critérios de Aceitação** |
 | --- |
-| * A turma recorrente deve ser inserida na base de dados com todos os dias, horários e vagas configurados. |
-| * A listagem principal deve atualizar exibindo o novo registro de turma. |
+| * A turma recorrente deve ser gravada na base de dados com o intervalo de horário e número de vagas estipulados. |
+| * A tabela de turmas recorrentes deve ser atualizada exibindo o novo registro. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1Uw6czej6aLWaabbPSV5fov7Nbt24yPdf/view?usp=sharing |
 
 ---
 
-#### Caso de Teste 03: Edição de Modalidade (Status e Nome)
+#### Caso de Teste 03: Edição de Modalidade (Alteração de Nome e Status)
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT03** | Testar a alteração do nome/descrição e do status de uma modalidade existente. |
+| **C23-CT03** | Validar a edição do nome e do status de uma modalidade existente. |
 
 | **Pré-condições** |
 | --- |
-| Existir a modalidade "Leo" cadastrada no sistema. |
+| Existir uma modalidade cadastrada no painel de *Modalidades*. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário localiza a modalidade "Leo" no painel de *Modalidades* |
-| **QUANDO** alterar o nome/descrição para "Leo valesk" |
-| **E** alterar o seletor de status para "Inativo" e retornar para "Ativo" / salvar alterações |
-| **ENTÃO** os dados e o status da modalidade devem ser atualizados |
-| **E** a tabela deve refletir as novas informações de nome e status. |
+| **DADO** que o usuário clica no ícone de edição de uma modalidade existente |
+| **QUANDO** alterar o nome da modalidade no campo correspondente (ex: ajustar para "Léo Valeska"). |
+| **E** alterar o seletor de status (ex: alternar para "Ativo"). |
+| **E** confirmar/salvar as alterações no botão **Modalidade**<br><br> |
+| **ENTÃO** os dados da modalidade devem ser atualizados no sistema |
+| **E** a tabela de modalidades deve refletir as modificações imediatamente. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * As modificações de texto e status devem ser atualizadas na base de dados. |
-| * A tabela de modalidades deve recarregar exibindo os dados atualizados. |
+| * As alterações de nome e status da modalidade devem persistir corretamente no banco de dados.|
+| * A listagem de modalidades deve recarregar atualizada. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/17WI-vKXPTS43Ig9aDG4lOTUOnfmNO6Jt/view?usp=sharing |
 
 ---
 
-#### Caso de Teste 04: Edição de Horário e Atualização de Turma
-
-| ID | Descrição |
-| --- | --- |
-| **C01-CT04** | Validar a atualização dos parâmetros de horário e vagas de uma turma recorrente cadastrada. |
-
-| **Pré-condições** |
-| --- |
-| Existir uma turma recorrente cadastrada na listagem de turmas. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário localiza a turma cadastrada na listagem |
-| **QUANDO** alterar os horários de início e fim nos campos correspondentes (ex: definindo de "09:30" até "12:30") |
-| **E** clicar no botão **+ Turma** ou ícone de edição/salvar |
-| **ENTÃO** o intervalo de horário da turma deve ser atualizado |
-| **E** a tabela deve exibir a nova faixa de horário configurada. |
-
-| **Critérios de Aceitação** |
-| --- |
-| * As alterações nos campos de horário devem persistir corretamente no banco de dados. |
-| * A grade de exibição de turmas deve refletir o novo intervalo de tempo. |
+Aqui está o Caso de Teste 04 ajustado com base nas ações realizadas no vídeo:
 
 ---
 
-#### Caso de Teste 05: Exclusão de Turma
+#### Caso de Teste 04: Edição de Turma Recorrente
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT05** | Validar a funcionalidade de remoção de uma turma recorrente cadastrada no sistema. |
+| **C23-CT04** | Validar a edição dos dados de uma turma recorrente existente (nome, modalidade vinculada, horários, vagas, dias da semana e status). |
 
 | **Pré-condições** |
 | --- |
-| Existir uma turma recorrente cadastrada na listagem do Box. |
+| Usuário autenticado no sistema SiFit na página **Box - Turmas** e existência de uma turma recorrente cadastrada. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário localiza a turma na listagem de turmas recorrentes |
-| **QUANDO** clicar no botão de exclusão (lixeira) correspondente à turma |
-| **E** confirmar a ação no modal de confirmação, se exibido |
-| **ENTÃO** a turma deve ser removida da base de dados |
-| **E** a listagem deve ser atualizada deixando de exibir a turma excluída. |
+| **DADO** que o usuário clica no ícone de edição (lápis) de uma turma recorrente existente |
+| **QUANDO** alterar o **Nome da turma** para "Leonardo Valeska 2" |
+| **E** selecionar a **Modalidade** correspondente (ex: "Leo valeska") |
+| **E** manter/ajustar o horário de início ("09:30") e término ("12:30") |
+| **E** marcar os dias da semana desejados (ex: Dom, Seg, Ter, Qua, Qui, Sex, Sab) |
+| **E** definir a quantidade de **Vagas** (ex: "20") e o status (ex: "Inativo") |
+| **E** clicar no botão **+ Turma** para salvar as alterações |
+| **ENTÃO** as alterações da turma recorrente devem ser salvas com sucesso |
+| **E** a tabela de turmas recorrentes deve exibir os dados atualizados. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * A turma selecionada deve ser removida permanentemente do sistema. |
-| * O botão de exclusão deve disparar a rotina de deleção sem falhas de execução ou travamentos na interface. |
+| * As informações editadas da turma recorrente devem persistir corretamente no banco de dados. |
+| * A listagem na grade principal de turmas recorrentes deve ser atualizada imediatamente com os novos valores. |
 
-https://jam.dev/c/f3126bb6-21e6-4af8-ad30-bea4effe0d7a
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1LORLB3QegZ1je0MStozRoRM9Jzz_BKVB/view?usp=sharing |
+
+---
+
+#### Caso de Teste 05: Exclusão de Modalidade de Treino
+
+| ID | Descrição |
+| --- | --- |
+| **C23-CT05** | Validar a funcionalidade de exclusão de uma modalidade cadastrada na tabela de modalidades. |
+
+| **Pré-condições** |
+| --- |
+| Existir pelo menos uma modalidade cadastrada na listagem. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário localiza a modalidade desejada na tabela superior |
+| **QUANDO** clicar no ícone de exclusão (botão de lixeira na coluna de Ações) correspondente |
+| **ENTÃO** o registro da modalidade deve ser removido da base de dados do sistema |
+| **E** a tabela de modalidades deve ser atualizada, deixando de exibir o item excluído. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A modalidade selecionada deve ser excluída com sucesso ao acionar o botão de exclusão. |
+| * O sistema não deve apresentar travamentos ou erros de integridade ao remover o registro. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1Lgg4hLQyXctUGZZhh8h3jG_JFZyPfzNf/view?usp=sharing |
+
+---
+
+#### Caso de Teste 06: Exclusão de Turma Recorrente
+
+| ID | Descrição |
+| --- | --- |
+| **C23-CT06** | Testar a remoção de uma turma recorrente cadastrada na listagem de turmas do Box. |
+
+| **Pré-condições** |
+| --- |
+| Existir uma turma recorrente cadastrada na tabela inferior do painel. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário visualiza as turmas recorrentes cadastradas. |
+| **QUANDO** clicar no botão de exclusão (ícone de lixeira) na linha referente à turma alvo. |
+| **ENTÃO** a turma recorrente deve ser permanentemente excluída do sistema. |
+| **E** a listagem de turmas deve ser atualizada refletindo a remoção do registro. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A turma recorrente deve ser apagada corretamente da tabela e da base de dados. |
+| * A interface deve responder de forma fluida à ação de exclusão. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1hTepbhZ3kiV38R75GvsPAPJr0OrMy0YK/view?usp=sharing |
