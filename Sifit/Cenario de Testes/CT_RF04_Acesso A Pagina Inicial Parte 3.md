@@ -3,8 +3,6 @@
 ---
 ### Caso de Teste 01: Ações Recomendadas - Falar com Alunos Inativos
 
-<img width="1919" height="992" alt="image" src="https://github.com/user-attachments/assets/00bb3a86-1bf2-4a73-9fc8-de1a92226148" />
-
 | ID | Descrição |
 | --- | --- |
 | **C04-CT01** | Validar a abertura do modal "Falar com inativos" a partir da seção "Ações recomendadas para hoje", a busca por alunos, personalização de mensagem e seleção do canal de envio. |
