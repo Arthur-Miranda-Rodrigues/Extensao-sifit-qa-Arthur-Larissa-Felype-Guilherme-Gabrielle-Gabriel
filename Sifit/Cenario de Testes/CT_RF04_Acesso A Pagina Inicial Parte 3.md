@@ -68,9 +68,7 @@
 
 | **Pré-condições** |
 | --- |
-| Utilizador autenticado na Página Inicial do SIFIT.
-
- |
+| Utilizador autenticado na Página Inicial do SIFIT. |
 
 | **Passos** |
 | --- |
