@@ -37,6 +37,11 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | * A categoria cadastrada deve ser gravada na base de dados e inserida na grade de exibição. |
 | * As colunas de Código, Data de Criação e Data de Atualização devem ser preenchidas automaticamente pelo sistema. |
 
+| **Evidência** |
+| --- |
+|  |
+
+
 ---
 
 #### Caso de Teste 02: Edição de Categoria de Crossfit
@@ -62,6 +67,10 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | --- |
 | * A alteração do nome deve persistir corretamente no banco de dados. |
 | * A listagem principal deve ser recarregada exibindo a nomenclatura atualizada. |
+
+| **Evidência** |
+| --- |
+|  |
 
 ---
 
@@ -89,6 +98,10 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | * A grade deve apresentar estritamente os registros condizentes com os filtros aplicados. |
 | * Os contadores informativos da tela devem acompanhar o número exato de itens exibidos após a busca. |
 
+| **Evidência** |
+| --- |
+|  |
+
 ---
 
 #### Caso de Teste 04: Exclusão de Categoria de Crossfit
@@ -108,6 +121,10 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 | **E** clicar no botão **Confirmar** dentro do modal de confirmação (*"Deseja deletar esta categoria?"*) |
 | **ENTÃO** a categoria deve ser removida da base de dados |
 | **E** o sistema deve emitir uma mensagem de confirmação de exclusão e remover o item da tabela principal. |
+
+| **Evidência** |
+| --- |
+|  |
 
 | **Critérios de Aceitação** |
 | --- |
