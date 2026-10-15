@@ -1,15 +1,11 @@
 
-
-
-Aqui está a documentação reestruturada e padronizada do **Módulo de Gestão de Box (Turmas e Modalidades - RF17 - SIFIT)**, formatada no padrão em tabelas com cenários BDD/Gherkin e critérios de aceitação:
-
 ---
 
-# Cenário de teste: Gestão de Box (Turmas e Modalidades)
+# Cenário 23 : Gestão de Box (Turmas e Modalidades)
 
 ## 1. Descrição
 
-Este documento especifica os casos de teste referentes ao **Requisito Funcional 17 (RF17) - Gestão de Box** do módulo **Treinamento > Box - Turmas** do sistema **SiFit**. O objetivo é validar o cadastramento de modalidades de treino, a criação e edição de turmas recorrentes (horários, vagas e dias da semana), o gerenciamento de status de modalidades e a exclusão de turmas.
+Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão de Box** do módulo **Treinamento > Box - Turmas** do sistema **SiFit**. O objetivo é validar o cadastramento de modalidades de treino, a criação e edição de turmas recorrentes (horários, vagas e dias da semana), o gerenciamento de status de modalidades e a exclusão de turmas.
 
 ---
 
