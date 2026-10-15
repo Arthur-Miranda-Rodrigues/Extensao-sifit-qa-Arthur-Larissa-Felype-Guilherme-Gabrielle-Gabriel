@@ -1,7 +1,4 @@
 
-
-Aqui está a documentação reestruturada e padronizada do **Módulo de Gestão de Categorias Crossfit (RF16 - SIFIT)**, formatada em tabelas com cenários BDD/Gherkin e critérios de aceitação:
-
 ---
 
 # Cenario de teste: Gestão de Categorias Crossfit
