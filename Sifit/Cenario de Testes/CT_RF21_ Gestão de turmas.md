@@ -1,7 +1,6 @@
 ---
 
 # Cenário 21: Gestão de Turmas
----
 
 ## 1. Descrição
 
