@@ -1,12 +1,11 @@
-Aqui está a documentação reestruturada e padronizada do **Módulo de Gestão de Grupos (RF13 - SIFIT)**, formatada estritamente em tabelas com cenários BDD/Gherkin e critérios de aceitação:
 
 ---
 
-# Cenário de teste:Gestão de Grupos
+# Cenário 20:Gestão de Grupos
 
 ## 1. Descrição
 
-Este documento especifica os casos de teste referentes ao **Requisito Funcional 13 (RF13) - Gestão de Grupos** do módulo **Treinamento > Grupos** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa por múltiplos parâmetros, a edição de registros existentes, o cadastro de novos grupos com status inativo e o tratamento de integridade referencial em tentativas de exclusão de registros vinculados.
+Este documento especifica os casos de teste referentes ao **Cenário 20: Gestão de Grupos** do módulo **Treinamento > Grupos** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa por múltiplos parâmetros, a edição de registros existentes, o cadastro de novos grupos com status inativo e o tratamento de integridade referencial em tentativas de exclusão de registros vinculados.
 
 ---
 
@@ -18,7 +17,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar o funcionamento dos filtros por Código, Nome, Status e Tipo de Caixa na listagem de grupos. |
+| **C20-CT01** | Validar o funcionamento dos filtros por Código, Nome, Status e Tipo de Caixa na listagem de grupos. |
 
 | **Pré-condições** |
 | --- |
@@ -45,7 +44,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Verificar a alteração das configurações de status e tipo de caixa em grupos cadastrados. |
+| **C20-CT02** | Verificar a alteração das configurações de status e tipo de caixa em grupos cadastrados. |
 
 | **Pré-condições** |
 | --- |
@@ -72,7 +71,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT03** | Validar o registro de um novo grupo preenchendo os campos obrigatórios e definindo o status como inativo. |
+| **C20-CT03** | Validar o registro de um novo grupo preenchendo os campos obrigatórios e definindo o status como inativo. |
 
 | **Pré-condições** |
 | --- |
@@ -100,7 +99,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT04** | Verificar a validação de integridade referencial do sistema ao tentar excluir um grupo que possui vínculos ativos. |
+| **C20-CT04** | Verificar a validação de integridade referencial do sistema ao tentar excluir um grupo que possui vínculos ativos. |
 
 | **Pré-condições** |
 | --- |
