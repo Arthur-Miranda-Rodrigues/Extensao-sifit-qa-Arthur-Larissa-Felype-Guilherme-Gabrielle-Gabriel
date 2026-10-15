@@ -117,5 +117,3 @@ Este documento especifica os casos de teste referentes ao **Cenário 20: Gestão
 | --- |
 | * Registros com relacionamentos ou vínculos ativos na base de dados não podem ser excluídos. |
 | * Uma mensagem de alerta amigável deve ser apresentada ao usuário, preservando os dados cadastrados. |
-
-https://jam.dev/c/f449384d-fb57-4e6e-8acf-71fcfbb6a69d
