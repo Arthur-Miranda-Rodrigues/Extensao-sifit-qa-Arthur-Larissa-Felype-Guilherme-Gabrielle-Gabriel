@@ -2,6 +2,8 @@
 
 # Cenário 21: Gestão de Turmas
 
+---
+
 ## 1. Descrição
 
 Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão de Turmas** do módulo **Treinamento > Turmas** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa de turmas, o cadastro de novas turmas com plano, horários, personal e dias de aula, as validações de campos obrigatórios do cadastro, a edição de turmas existentes e a exclusão de turmas.
