@@ -17,7 +17,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar a abertura e a busca por nome de alunos no modal de "Clientes Sem Matrículas" a partir da Página Inicial.
+| **C02-CT01** | Validar a abertura e a busca por nome de alunos no modal de "Clientes Sem Matrículas" a partir da Página Inicial.
 
 
 | **Pré-condições** |
@@ -50,7 +50,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Validar a consulta detalhada de alunos sumidos ou ausentes há mais tempo na academia.
+| **C02-CT02** | Validar a consulta detalhada de alunos sumidos ou ausentes há mais tempo na academia.
 
 | **Pré-condições** |
 | --- |
@@ -79,7 +79,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT03** | Validar o redirecionamento direto da Página Inicial para a tela de gestão de Avaliações físicas.
+| **C02-CT03** | Validar o redirecionamento direto da Página Inicial para a tela de gestão de Avaliações físicas.
 
 | **Pré-condições** |
 | --- |
@@ -108,7 +108,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT04** | Validar a exibição do modal de mensalidades pendentes e a alternância de atalhos por período de atraso.
+| **C02-CT04** | Validar a exibição do modal de mensalidades pendentes e a alternância de atalhos por período de atraso.
 
 | **Pré-condições** |
 | --- |
@@ -136,7 +136,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT05** | Validar a abertura do Radar de Evasão e a visualização das regras de pontuação/risco de cancelamento do aluno.
+| **C02-CT05** | Validar a abertura do Radar de Evasão e a visualização das regras de pontuação/risco de cancelamento do aluno.
 
 | **Pré-condições** |
 | --- |
