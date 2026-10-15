@@ -1,12 +1,11 @@
-Aqui está a documentação reestruturada e padronizada do **Módulo de Gestão de Turmas (RF15 - SIFIT)**, formatada em tabelas com cenários BDD/Gherkin e critérios de aceitação:
 
 ---
 
-# Cenário de teste:Gestão de Turmas
+# Cenário 21:Gestão de Turmas
 
 ## 1. Descrição
 
-Este documento especifica os casos de teste referentes ao **Requisito Funcional 15 (RF15) - Gestão de Turmas** do módulo **Treinamento > Turmas** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa de turmas por múltiplos parâmetros, a alteração de status/configurações de turmas cadastradas, a inclusão de novas turmas com seus respectivos planos e horários, e a remoção de registros inativos.
+Este documento especifica os casos de teste referentes ao **Cenário 21 : Gestão de Turmas** do módulo **Treinamento > Turmas** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa de turmas por múltiplos parâmetros, a alteração de status/configurações de turmas cadastradas, a inclusão de novas turmas com seus respectivos planos e horários, e a remoção de registros inativos.
 
 ---
 
@@ -18,7 +17,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar o funcionamento dos filtros por Código, Nome da Turma e Status na listagem de turmas. |
+| **C21-CT01** | Validar o funcionamento dos filtros por Código, Nome da Turma e Status na listagem de turmas. |
 
 | **Pré-condições** |
 | --- |
@@ -44,7 +43,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Verificar a alteração de configurações e status de uma turma já cadastrada no sistema. |
+| **C21-CT02** | Verificar a alteração de configurações e status de uma turma já cadastrada no sistema. |
 
 | **Pré-condições** |
 | --- |
@@ -70,7 +69,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT03** | Validar o registro de uma nova turma preenchendo os campos obrigatórios, planos, personal e dias de aula. |
+| **C21-CT03** | Validar o registro de uma nova turma preenchendo os campos obrigatórios, planos, personal e dias de aula. |
 
 | **Pré-condições** |
 | --- |
@@ -98,7 +97,7 @@ Este documento especifica os casos de teste referentes ao **Requisito Funcional 
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT04** | Verificar a funcionalidade de remoção de uma turma inativa do sistema. |
+| **C21-CT04** | Verificar a funcionalidade de remoção de uma turma inativa do sistema. |
 
 | **Pré-condições** |
 | --- |
