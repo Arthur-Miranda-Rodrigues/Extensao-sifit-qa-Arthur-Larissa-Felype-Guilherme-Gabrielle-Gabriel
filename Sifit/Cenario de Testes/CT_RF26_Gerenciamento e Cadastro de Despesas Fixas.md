@@ -27,6 +27,10 @@
 | --- |
 | A nova despesa deve ser listada corretamente e o valor total somado no card de "Valor Listado" ao buscar pelas despesas ativas. |
 
+| **Evidência** |
+| --- |
+|  |
+
 ---
 
 ### Caso de Teste 02: Inativar e excluir uma despesa fixa
@@ -51,6 +55,10 @@
 | --- |
 | O contador de "Inativas" deve atualizar e a mensagem "Nenhuma despesa fixa encontrada" deve ser exibida quando não houver registros inativos. |
 
+| **Evidência** |
+| --- |
+|  |
+
 ---
 
 ### Caso de Teste 03: Filtrar despesas fixas por código, nome e status
@@ -73,5 +81,9 @@
 | **Critérios de aceitação** |
 | --- |
 | A tabela e o indicador "Valor Listado" devem recalcular e apresentar apenas a soma das despesas resultantes da busca. |
+
+| **Evidência** |
+| --- |
+|  |
 
 
