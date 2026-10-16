@@ -15,27 +15,13 @@
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica no botão "Nova Despesa" (ícone `+`)
-
- |
-| **E** preenche o campo "Nome da despesa" (ex.: "Funcionários")
-
- |
-| **E** define o "Status" como "Ativo"
-
- |
-| **E** insere o "Valor" (ex.: "3000,00")
-
- |
-| **E** seleciona a "Recorrência" (ex.: "1 Ano")
-
- |
-| **QUANDO** clicar em "Salvar Despesa"
-
- |
-| **ENTÃO** a despesa deve ser salva e exibida na listagem com o status "ATIVO"
-
- |
+| **DADO** que o usuário clica no botão "Nova Despesa" (ícone `+`) |
+| **E** preenche o campo "Nome da despesa" (ex.: "Funcionários") |
+| **E** define o "Status" como "Ativo" |
+| **E** insere o "Valor" (ex.: "3000,00") |
+| **E** seleciona a "Recorrência" (ex.: "1 Ano")  |
+| **QUANDO** clicar em "Salvar Despesa" |
+| **ENTÃO** a despesa deve ser salva e exibida na listagem com o status "ATIVO" |
 
 | **Critérios de aceitação** |
 | --- |
@@ -55,21 +41,11 @@
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica no ícone de edição de uma despesa (ex.: "Teste")
-
- |
-| **E** altera o status de "Ativo" para "Inativo" e clica em "Salvar Despesa"
-
- |
-| **E** filtra as despesas por status "Inativo"
-
- |
-| **QUANDO** clicar no ícone de lixeira e confirmar a remoção no modal "Deseja deletar a despesa fixa?"
-
- |
-| **ENTÃO** a despesa deve ser permanentemente removida da listagem
-
- |
+| **DADO** que o usuário clica no ícone de edição de uma despesa (ex.: "Teste") |
+| **E** altera o status de "Ativo" para "Inativo" e clica em "Salvar Despesa" |
+| **E** filtra as despesas por status "Inativo" |
+| **QUANDO** clicar no ícone de lixeira e confirmar a remoção no modal "Deseja deletar a despesa fixa?" |
+| **ENTÃO** a despesa deve ser permanentemente removida da listagem |
 
 | **Critérios de aceitação** |
 | --- |
@@ -89,21 +65,13 @@
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário acessa a tela de "Despesas Fixas"
-
- |
-| **QUANDO** digita um número no campo "Código" (ex.: "3") ou um texto no campo "Nome da despesa" (ex.: "Teste")
-
- |
-| **E** clica no botão "Buscar" (ícone de lupa)
-
- |
-| **ENTÃO** a tabela deve atualizar e listar apenas as despesas correspondentes aos critérios informados
-
- |
+| **DADO** que o usuário acessa a tela de "Despesas Fixas" |
+| **QUANDO** digita um número no campo "Código" (ex.: "3") ou um texto no campo "Nome da despesa" (ex.: "Teste") |
+| **E** clica no botão "Buscar" (ícone de lupa) |
+| **ENTÃO** a tabela deve atualizar e listar apenas as despesas correspondentes aos critérios informados |
 
 | **Critérios de aceitação** |
 | --- |
 | A tabela e o indicador "Valor Listado" devem recalcular e apresentar apenas a soma das despesas resultantes da busca. |
 
-https://jam.dev/c/60a97112-4d54-4458-98dd-bbf6c2031909
+
