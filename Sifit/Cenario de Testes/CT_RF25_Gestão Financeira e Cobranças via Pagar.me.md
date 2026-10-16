@@ -1,4 +1,3 @@
-Aqui está o documento de casos de teste estruturado e nomeado como **Gestão Financeira e Cobranças via Pagar.me no SIFIT** para o **Cenário 25**, contendo exatamente **10 casos de teste** (um caso de teste correspondente a cada um dos 10 vídeos fornecidos):
 
 ---
 
