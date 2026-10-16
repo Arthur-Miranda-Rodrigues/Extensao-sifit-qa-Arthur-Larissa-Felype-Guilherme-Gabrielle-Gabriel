@@ -1,13 +1,13 @@
 
 ---
 
-## Cenário de teste: Gerenciamento e Cadastro de Despesas Fixas
+# Cenário de teste: Gerenciamento e Cadastro de Despesas Fixas
 
 ### Caso de Teste 01: Cadastrar uma nova despesa fixa com sucesso
 
 | ID | Descrição |
 | --- | --- |
-| C08-CT01 | O sistema deve permitir o cadastro de uma nova despesa fixa preenchendo todos os campos obrigatórios. |
+| **C26-CT01** | O sistema deve permitir o cadastro de uma nova despesa fixa preenchendo todos os campos obrigatórios. |
 
 | **Pré-condições** |
 | --- |
@@ -37,7 +37,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C08-CT02 | O sistema deve permitir alterar o status de uma despesa para "Inativo" e posteriormente realizar a sua exclusão. |
+| **C26-CT02** | O sistema deve permitir alterar o status de uma despesa para "Inativo" e posteriormente realizar a sua exclusão. |
 
 | **Pré-condições** |
 | --- |
@@ -65,7 +65,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C08-CT03 | O sistema deve filtrar corretamente a listagem de despesas fixas de acordo com os filtros aplicados. |
+| **C26-CT03** | O sistema deve filtrar corretamente a listagem de despesas fixas de acordo com os filtros aplicados. |
 
 | **Pré-condições** |
 | --- |
