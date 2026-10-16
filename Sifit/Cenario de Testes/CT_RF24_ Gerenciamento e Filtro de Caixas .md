@@ -1,11 +1,11 @@
 
-## Cenário de teste: Gerenciamento e Filtro de Caixas no Módulo Financeiro
+# Cenário 24: Gerenciamento e Filtro de Caixas no Módulo Financeiro
 
-### Caso de Teste 01: Abrir um novo caixa com dados válidos
+## Caso de Teste 01: Abrir um novo caixa com dados válidos
 
 | ID | Descrição |
 | --- | --- |
-| C06-CT01 | O sistema deve permitir a abertura de um novo caixa selecionando um local válido. |
+| **C24-CT01** | O sistema deve permitir a abertura de um novo caixa selecionando um local válido. |
 
 | **Pré-condições** |
 | --- |
@@ -29,7 +29,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C06-CT02 | O sistema deve filtrar e exibir apenas os caixas correspondentes ao status selecionado. |
+| **C24-CT02** | O sistema deve filtrar e exibir apenas os caixas correspondentes ao status selecionado. |
 
 | **Pré-condições** |
 | --- |
@@ -52,7 +52,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C06-CT03 | O sistema deve exigir a inclusão de um motivo ao registrar a conferência física do caixa. |
+| **C24-CT03** | O sistema deve exigir a inclusão de um motivo ao registrar a conferência física do caixa. |
 
 | **Pré-condições** |
 | --- |
@@ -71,4 +71,3 @@
 | --- |
 | A conferência só deve ser concluída se o campo "Motivo" estiver devidamente preenchido. |
 
-https://jam.dev/c/504c40b9-a1f4-4b1a-87b9-ac134afdf171
