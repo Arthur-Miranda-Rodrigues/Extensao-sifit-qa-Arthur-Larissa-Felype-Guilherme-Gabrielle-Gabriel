@@ -3,13 +3,13 @@
 
 ---
 
-## Cenário de teste: Gestão de colaboradores via sistema SIFIT
+## Cenário 28: Gestão de colaboradores via sistema SIFIT
 
 ### Caso de Teste 01: Adicionar novo colaborador com dados válidos
 
 | Item | Descrição |
 | --- | --- |
-| **ID** | C03-CT01 |
+| **C28-CT01**  |
 | **Descrição** | O sistema deve permitir o cadastro de um novo colaborador com dados válidos. |
 | **Pré-condições** | O usuário deve estar logado no sistema SIFIT e ter permissão de acesso à tela de Colaboradores. |
 | **Passos** | **DADO** que o usuário acessa o menu "Colaboradores"
@@ -31,7 +31,7 @@
 
 | Item | Descrição |
 | --- | --- |
-| **ID** | C03-CT02 |
+| **C28-CT02** |
 | **Descrição** | O sistema deve impedir o cadastro e indicar obrigatoriedade ao tentar salvar um colaborador com campos obrigatórios em branco. |
 | **Pré-condições** | O usuário deve estar logado no sistema e na tela de "Cadastrar Colaborador". |
 | **Passos** | **DADO** que o usuário acessa a tela de "Cadastrar Colaborador"<br>
@@ -49,7 +49,7 @@
 
 | Item | Descrição |
 | --- | --- |
-| **ID** | C03-CT03 |
+| **C28-CT03** |
 | **Descrição** | O sistema deve filtrar e retornar corretamente o colaborador pesquisado por Código ou Nome. |
 | **Pré-condições** | O colaborador pesquisado deve estar previamente cadastrado no sistema. |
 | **Passos** | **DADO** que o usuário acessa o menu "Colaboradores"
