@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário: Gerenciamento de Fornecedores no SIFIT
+# Cenário 30: Gerenciamento de Fornecedores no SIFIT
 
 ## 1. Descrição
 
