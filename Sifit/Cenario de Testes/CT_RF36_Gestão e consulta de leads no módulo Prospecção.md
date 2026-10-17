@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário de teste: Gestão e consulta de leads no módulo Prospecção (CT_RF31)
+## Cenário de teste: Gestão e consulta de leads no módulo Prospecção
 
 ### Caso de Teste 01: Buscar lead por nome com sucesso
 
