@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário: Gerenciamento de Atividades no SIFIT
+## Cenário 32: Gerenciamento de Atividades no SIFIT
 
 ### Caso de Teste 01: Buscar atividades por Código ou Nome
 
@@ -9,7 +9,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **ATI-CT01** | O sistema deve permitir a filtragem de atividades cadastradas por código ou nome.
+| **C32-CT01** | O sistema deve permitir a filtragem de atividades cadastradas por código ou nome.
 
  |
 
@@ -51,7 +51,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **ATI-CT02** | O sistema deve permitir o cadastro de uma nova atividade via modal "Nova Atividade".
+| **C32-CT02** | O sistema deve permitir o cadastro de uma nova atividade via modal "Nova Atividade".
 
  |
 
@@ -96,7 +96,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **ATI-CT03** | O sistema deve permitir a visualização e atualização das informações de uma atividade existente.
+| **C32-CT03** | O sistema deve permitir a visualização e atualização das informações de uma atividade existente.
 
  |
 
@@ -127,4 +127,4 @@
 
  |
 
- https://jam.dev/c/6471ff44-b8aa-437b-b41d-436061366b55
+
