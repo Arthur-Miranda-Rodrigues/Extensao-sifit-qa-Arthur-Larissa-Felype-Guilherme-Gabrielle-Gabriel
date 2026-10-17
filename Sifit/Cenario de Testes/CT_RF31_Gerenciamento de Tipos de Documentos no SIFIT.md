@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário31: Gerenciamento de Tipos de Documentos no SIFIT
+## Cenário 31: Gerenciamento de Tipos de Documentos no SIFIT
 
 ### Caso de Teste 01: Buscar tipos de documentos por Código ou Nome
 
