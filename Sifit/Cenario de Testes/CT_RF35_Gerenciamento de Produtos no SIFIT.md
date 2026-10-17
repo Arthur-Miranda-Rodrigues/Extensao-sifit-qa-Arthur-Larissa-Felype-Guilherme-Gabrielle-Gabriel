@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário 33: Gerenciamento de Produtos no SIFIT
+## Cenário 34: Gerenciamento de Produtos no SIFIT
 
 ### Caso de Teste 01: Filtrar Produtos por Código, Nome, Status e Tipo
 
