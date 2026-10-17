@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário: Gerenciamento de Tipos de Documentos no SIFIT
+## Cenário31: Gerenciamento de Tipos de Documentos no SIFIT
 
 ### Caso de Teste 01: Buscar tipos de documentos por Código ou Nome
 
@@ -9,7 +9,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **DOC-CT01** | O sistema deve permitir a filtragem de tipos de documentos por código ou por nome.
+| **C31-CT01** | O sistema deve permitir a filtragem de tipos de documentos por código ou por nome.
 
  |
 
@@ -51,7 +51,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **DOC-CT02** | O sistema deve permitir a criação de um novo tipo de documento definindo seu nome e aplicação.
+| **C31-CT02** | O sistema deve permitir a criação de um novo tipo de documento definindo seu nome e aplicação.
 
  |
 
@@ -93,7 +93,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **DOC-CT03** | O sistema deve permitir alterar a aplicação de um tipo de documento existente e removê-lo do cadastro.
+| **C31-CT03** | O sistema deve permitir alterar a aplicação de um tipo de documento existente e removê-lo do cadastro.
 
  |
 
@@ -130,4 +130,3 @@
 
  |
 
-https://jam.dev/c/7dda0042-47b2-496a-b614-7b3bde126852
