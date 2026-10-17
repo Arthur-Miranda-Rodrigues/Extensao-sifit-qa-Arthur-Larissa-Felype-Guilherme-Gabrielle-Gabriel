@@ -1,133 +1,141 @@
 
 ---
 
-## Cenário: Gerenciamento de Fornecedores no SIFIT
+# Cenário: Gerenciamento de Fornecedores no SIFIT
 
-### Caso de Teste 01: Buscar fornecedores por Código ou Nome
+## 1. Descrição
 
-
-
-| ID | Descrição |
-| --- | --- |
-| **FOR-CT01** | O sistema deve permitir a busca de fornecedores cadastrados utilizando o código ou o nome.
-
- |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar autenticado no SIFIT e na tela de "Fornecedores".
-
- |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está no menu de "Fornecedores"
-
- |
-| **QUANDO** preencher o campo "Código" (ex: "215") e clicar em "Buscar"
-
- |
-| **ENTÃO** o sistema deve listar apenas o fornecedor correspondente
-
- |
-| **E** ao limpar o código, preencher o campo "Nome" (ex: "Equipamentos Polmet") e clicar em "Buscar"
-
- |
-| **ENTÃO** o sistema deve filtrar a listagem pelo nome informado.
-
- |
-
-| **Critérios de aceitação** |
-| --- |
-| A tabela de fornecedores deve atualizar exibindo apenas os registros que satisfaçam os filtros informados.
-
- |
+Este documento especifica os casos de teste referentes ao módulo de **Financeiro > Fornecedores** do sistema **SiFit**. O objetivo é validar as funcionalidades de pesquisa/filtragem de fornecedores por código e nome, cadastro de novos fornecedores com dados válidos, validação de preenchimento obrigatório, visualização detalhada de registros e tentativa de exclusão de fornecedores cadastrados.
 
 ---
 
-### Caso de Teste 02: Cadastrar um novo fornecedor com dados válidos
+## 2. Cenários de Teste
 
-
+### Caso de Teste 01: Pesquisa de Fornecedor por Código ou Nome
 
 | ID | Descrição |
 | --- | --- |
-| **FOR-CT02** | O sistema deve permitir o cadastro de um novo fornecedor via modal "Novo Fornecedor".
-
- |
+| **C30-CT01** | O sistema deve permitir a busca e filtragem de fornecedores cadastrados utilizando os campos de código ou nome. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar na tela de "Fornecedores".
-
- |
+| O usuário deve estar autenticado no SIFIT e posicionado na tela de **Fornecedores**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica no botão "Novo Fornecedor"
+| **DADO** que o usuário acessa o menu de **Fornecedores**<br> |
+| **QUANDO** preenche o campo "Código" (ex: "205") ou o campo "Nome" (ex: "Jayna Souza") e clica no botão **Buscar**<br> |
+| **ENTÃO** o sistema deve filtrar e exibir na tabela apenas o registro correspondente aos critérios informados. |
 
- |
-| **E** preenche o campo "Nome do fornecedor" (ex: "Jeremias Castro")
-
- |
-| **E** preenche os dados de CNPJ, Telefones, E-mail e Endereço completo
-
- |
-| **QUANDO** clicar no botão "Salvar"
-
- |
-| **ENTÃO** o novo fornecedor deve ser adicionado e exibido na lista principal.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O fornecedor criado deve aparecer na listagem geral com o status "ATIVO" e o contador de fornecedores deve ser incrementado.
+| * A tabela de fornecedores deve atualizar dinamicamente exibindo apenas os registros que satisfaçam a busca realizada. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1ZDVpVulOATOYG8SfbfXpo4WGNofro_Tk/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Visualizar, editar e tentar deletar um fornecedor
-
-
+### Caso de Teste 02: Cadastro de Novo Fornecedor com Dados Válidos
 
 | ID | Descrição |
 | --- | --- |
-| **FOR-CT03** | O sistema deve permitir a visualização, edição de dados e a solicitação de exclusão de um fornecedor.
-
- |
+| **C30-CT02** | O sistema deve permitir o cadastro de um novo fornecedor preenchendo corretamente os campos obrigatórios e complementares no modal "Novo Fornecedor". |
 
 | **Pré-condições** |
 | --- |
-| Deve haver fornecedores já cadastrados na listagem.
-
- |
+| O usuário deve estar na tela de **Fornecedores** com o modal de cadastro aberto. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica no ícone de "Visualizar/Editar" de um fornecedor na lista
+| **DADO** que o usuário clica no botão **Novo Fornecedor**<br> |
+| **QUANDO** preenche o nome (ex: "Lucas Castro"), documentos, contatos (telefones e e-mail), endereço completo (Estado, Cidade, CEP, Número, Bairro, Complemento) e observações |
+| **E** clica no botão **Salvar**<br> |
+| **ENTÃO** o novo fornecedor deve ser adicionado com sucesso e exibido na listagem principal. |
 
- |
-| **E** altera um dado (ex: altera o número do endereço de "5050" para "5052")
-
- |
-| **QUANDO** clicar no botão "Salvar"
-
- |
-| **ENTÃO** as alterações devem ser gravadas
-
- |
-| **E** ao clicar no ícone de "Excluir" (X) do registro e confirmar a ação na modal
-
- |
-| **ENTÃO** o sistema deve processar a solicitação ou retornar a mensagem de validação do servidor.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| Os dados alterados devem permanecer salvos no cadastro do fornecedor e a tentativa de exclusão deve acionar a confirmação.
+| * O fornecedor criado deve aparecer na listagem geral com o status ativo e os contadores da tela devem ser incrementados. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/19U34BvJM8nNhDbGxHMGBGblR5BjaIM1k/view?usp=sharing |
 
- https://jam.dev/c/7665800f-fc1f-4d0f-90f1-d9c24924f244
+---
+
+### Caso de Teste 03: Validação de Campos Obrigatórios no Cadastro de Fornecedor
+
+| ID | Descrição |
+| --- | --- |
+| **C30-CT03** | O sistema deve impedir o cadastro e emitir mensagens de alerta caso o usuário tente salvar um fornecedor sem preencher os campos obrigatórios. |
+
+| **Pré-condições** |
+| --- |
+| O usuário deve estar no modal "Novo Fornecedor". |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário deixa campos obrigatórios em branco (como o Nome do fornecedor ou dados essenciais) |
+| **QUANDO** tenta clicar no botão **Salvar**<br> |
+| **ENTÃO** o sistema deve bloquear a operação e exibir mensagens de aviso/erro sinalizando a obrigatoriedade dos campos (ex: "Insira o nome do fornecedor" / "Erro ao salvar fornecedor"). |
+
+| **Critérios de Aceitação** |
+| --- |
+| * O sistema não deve permitir a gravação de registros incompletos, alertando o usuário sobre as pendências. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1twhWPHchIr378KEPXb_NnglgAF2-hEzT/view?usp=sharing |
+
+---
+
+### Caso de Teste 04: Visualização Detalhada do Fornecedor
+
+| ID | Descrição |
+| --- | --- |
+| **C30-CT04** | O sistema deve exibir todas as informações consolidadas de um fornecedor ao acionar a opção de visualização de cadastro. |
+
+| **Pré-condições** |
+| --- |
+| Existir um fornecedor previamente cadastrado na tabela. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário localiza um fornecedor na tabela principal |
+| **QUANDO** clica no ícone de visualização (olho) na coluna de Ações |
+| **ENTÃO** o modal "Visualizar Fornecedor" deve abrir exibindo detalhadamente os dados de cadastro, contatos, endereços e observações. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * As informações detalhadas do fornecedor selecionado devem ser apresentadas corretamente para consulta. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1SOkoJ69Mxnc7aizsR6R_kksNUVm0foAl/view?usp=sharing |
+
+---
+
+### Caso de Teste 05: Tentativa de Exclusão de Fornecedor com Confirmação
+
+| ID | Descrição |
+| --- | --- |
+| **C30-CT05** | O sistema deve exigir confirmação em modal ao solicitar a exclusão de um fornecedor e processar a requisição de remoção. |
+
+| **Pré-condições** |
+| --- |
+| Existir um fornecedor listado na tabela. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário clica no ícone de exclusão (lixeira/X) de um fornecedor na tabela |
+| **QUANDO** o modal de confirmação "Deseja deletar este fornecedor?" é exibido e o usuário clica em **Continuar**<br> |
+| **ENTÃO** o sistema deve processar a solicitação de exclusão ou retornar tratativas de resposta do servidor. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A ação de exclusão deve ser submetida após a confirmação explícita do usuário no modal de segurança. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/19nWDHldALiY5XZoa_9GRiJjjGmjTU5pK/view?usp=sharing |
