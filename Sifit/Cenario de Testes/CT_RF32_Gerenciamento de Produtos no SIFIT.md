@@ -1,13 +1,13 @@
 
 ---
 
-## Cenário de teste: Gerenciamento de Produtos no SIFIT
+## Cenário 32: Gerenciamento de Produtos no SIFIT
 
 ### Caso de Teste 01: Filtrar Produtos por Código, Nome, Status e Tipo
 
 | ID | Descrição |
 | --- | --- |
-| **PROD-CT01** | O sistema deve permitir filtrar a listagem de produtos por Código, Nome, Status (Ativo/Inativo) e Tipo (Venda/Pontuação).
+| **C32-CT01** | O sistema deve permitir filtrar a listagem de produtos por Código, Nome, Status (Ativo/Inativo) e Tipo (Venda/Pontuação).
 
  |
 
@@ -59,7 +59,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PROD-CT02** | O sistema deve permitir cadastrar um novo produto informando Nome, Descrição, Tipo, Preço e Imagem.
+| **C32-CT02** | O sistema deve permitir cadastrar um novo produto informando Nome, Descrição, Tipo, Preço e Imagem.
 
  |
 
@@ -108,7 +108,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PROD-CT03** | O sistema deve permitir a alteração das informações de um produto previamente cadastrado.
+| **C32-CT03** | O sistema deve permitir a alteração das informações de um produto previamente cadastrado.
 
  |
 
@@ -145,7 +145,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PROD-CT04** | O sistema deve solicitar confirmação antes de remover um produto do cadastro.
+| **C32-CT04** | O sistema deve solicitar confirmação antes de remover um produto do cadastro.
 
  |
 
@@ -170,7 +170,6 @@
 
  |
 
- https://jam.dev/c/379e33b4-4a28-400f-a51d-145934dea313
 
 | **Critérios de Aceitação** |
 | --- |
