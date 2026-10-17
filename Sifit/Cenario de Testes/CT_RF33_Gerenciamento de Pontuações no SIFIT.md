@@ -9,7 +9,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT01** | O sistema deve permitir filtrar pontuações por código, nome da pontuação e status (Ativo/Inativo).
+| **C33-CT01** | O sistema deve permitir filtrar pontuações por código, nome da pontuação e status (Ativo/Inativo).
 
  |
 
@@ -57,7 +57,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT02** | O sistema deve permitir a criação de uma nova campanha de pontuação com período e produto de resgate.
+| **C33-CT02** | O sistema deve permitir a criação de uma nova campanha de pontuação com período e produto de resgate.
 
  |
 
@@ -105,7 +105,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT03** | O sistema deve permitir vincular atividades a uma campanha de pontuação.
+| **C33-CT03** | O sistema deve permitir vincular atividades a uma campanha de pontuação.
 
  |
 
@@ -144,7 +144,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT04** | O sistema deve permitir visualizar o ranking de participantes associados a uma pontuação.
+| **C33-CT04** | O sistema deve permitir visualizar o ranking de participantes associados a uma pontuação.
 
  |
 
@@ -180,7 +180,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT05** | O sistema deve permitir excluir uma pontuação existente após confirmação.
+| **C33-CT05** | O sistema deve permitir excluir uma pontuação existente após confirmação.
 
  |
 
@@ -219,7 +219,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **PON-CT06** | O sistema deve apresentar mensagem de erro amigável ao falhar ao salvar alterações de pontuação.
+| **C33-CT06** | O sistema deve apresentar mensagem de erro amigável ao falhar ao salvar alterações de pontuação.
 
  |
 
