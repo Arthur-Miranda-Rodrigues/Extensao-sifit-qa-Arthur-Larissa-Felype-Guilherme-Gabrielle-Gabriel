@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C32-CT01** | O sistema deve permitir filtrar a listagem de produtos por Código, Nome, Status (Ativo/Inativo) e Tipo (Venda/Pontuação).
+| **C33-CT01** | O sistema deve permitir filtrar a listagem de produtos por Código, Nome, Status (Ativo/Inativo) e Tipo (Venda/Pontuação).
 
  |
 
@@ -59,7 +59,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C32-CT02** | O sistema deve permitir cadastrar um novo produto informando Nome, Descrição, Tipo, Preço e Imagem.
+| **C33-CT02** | O sistema deve permitir cadastrar um novo produto informando Nome, Descrição, Tipo, Preço e Imagem.
 
  |
 
@@ -108,7 +108,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C32-CT03** | O sistema deve permitir a alteração das informações de um produto previamente cadastrado.
+| **C33-CT03** | O sistema deve permitir a alteração das informações de um produto previamente cadastrado.
 
  |
 
@@ -145,7 +145,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C32-CT04** | O sistema deve solicitar confirmação antes de remover um produto do cadastro.
+| **C33-CT04** | O sistema deve solicitar confirmação antes de remover um produto do cadastro.
 
  |
 
