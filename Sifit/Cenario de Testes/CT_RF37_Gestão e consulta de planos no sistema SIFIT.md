@@ -1,13 +1,13 @@
 
 ---
 
-## Cenário de teste: Gestão e consulta de planos no sistema SIFIT
+## Cenário 37: Gestão e consulta de planos no sistema SIFIT
 
 ### Caso de Teste 01: Consultar plano por código ou nome com sucesso
 
 | ID | Descrição |
 | --- | --- |
-| C10-CT01 | O sistema deve filtrar e retornar o plano correto ao buscar pelo seu código ou pelo nome. |
+| **C37-CT01** | O sistema deve filtrar e retornar o plano correto ao buscar pelo seu código ou pelo nome. |
 
 | **Pré-condições** |
 | --- |
@@ -30,7 +30,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C10-CT02 | O sistema deve permitir o cadastro de um novo plano com período fixo, valores, grupo e equipe definidos. |
+| **C37-CT02** | O sistema deve permitir o cadastro de um novo plano com período fixo, valores, grupo e equipe definidos. |
 
 | **Pré-condições** |
 | --- |
@@ -56,7 +56,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C10-CT03 | O sistema deve permitir a alteração das informações e do status (Ativo/Inativo) de um plano existente. |
+| **C37-CT03** | O sistema deve permitir a alteração das informações e do status (Ativo/Inativo) de um plano existente. |
 
 | **Pré-condições** |
 | --- |
@@ -80,7 +80,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C10-CT04 | O sistema deve impedir a exclusão de um plano que possua vínculos/restrições ativas e apresentar mensagem de erro apropriada. |
+| **C37-CT04** | O sistema deve impedir a exclusão de um plano que possua vínculos/restrições ativas e apresentar mensagem de erro apropriada. |
 
 | **Pré-condições** |
 | --- |
@@ -97,4 +97,3 @@
 | --- |
 | O plano não deve ser removido do banco de dados e a mensagem de erro deve ser exibida de forma visível para o usuário. |
 
-https://jam.dev/c/ce82077d-9ab0-4cb7-917d-22cdd235d920
