@@ -1,151 +1,97 @@
 
+---
+
+# Cenário 41: Aplicação de Fichas de Anamnese no sistema SIFIT
+
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 41: Aplicação de Fichas de Anamnese** no sistema **SiFit**. O objetivo é validar o processo completo de busca e seleção de alunos para aplicação de fichas, a escolha de modelos e preenchimento de formulários dinâmicos, salvamento de rascunhos, revisão e finalização ou tratamento de exceções de servidor durante a gravação das avaliações.
 
 ---
 
-## Cenário 41: Aplicação de Fichas de Anamnese no sistema SIFIT
+## 2. Cenários de Teste
 
-### Caso de Teste 01: Buscar aluno para aplicação de anamnese
+### Caso de Teste 01: Buscar Aluno e Selecionar Modelo de Anamnese
 
 | ID | Descrição |
 | --- | --- |
-| C14-CT01 | O sistema deve filtrar e exibir os alunos correspondentes ao nome informado no modal de seleção. |
+| **C41-CT01** | Validar a busca por um aluno no modal de aplicação, o tratamento de registros não encontrados e a seleção subsequente de um modelo de anamnese. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar autenticado e na tela **Fichas de Anamnese**.
-
- |
+| O usuário deve estar autenticado e na tela **Fichas de Anamnese** do sistema SiFit. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela "Fichas de Anamnese"
+| **DADO** que o usuário clica no botão **"Nova Anamnese"** no canto superior direito<br> |
+| **QUANDO** digita o nome de um aluno e clica no ícone de busca |
+| **ENTÃO** o sistema exibe o resultado ou a mensagem de que nenhum aluno foi encontrado caso não localize. |
+| **DADO** que o usuário localiza e seleciona o aluno correto avançando para a etapa seguinte<br> |
+| **QUANDO** escolhe um modelo de anamnese disponível na lista e clica em **"Iniciar"**<br><br> |
+| **ENTÃO** o sistema direciona para a etapa de preenchimento das perguntas da ficha de anamnese. |
+| **E** o ao clicar em **Finalizar Anamnese** nada acontece  e na listagem permanece a mensagem **Nenhuma ficha encontrada** |
 
- |
-| **E** clica no botão "Nova Anamnese" no canto superior direito
-
- |
-| **QUANDO** digita o nome do aluno no campo "Nome do aluno" (ex: "Rhaniely")
-
- |
-| **E** clica no botão de busca (ícone de lupa)
-
- |
-| **ENTÃO** o sistema deve listar o aluno encontrado para seleção.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| Caso o aluno não exista, deve ser exibida a mensagem "Nenhum aluno encontrado". Ao encontrar o aluno, suas informações devem ser apresentadas com uma seta de seleção.
+| * A busca deve filtrar corretamente os cadastros de alunos. |
+| * O modelo de anamnese selecionado deve abrir com sucesso para o preenchimento das perguntas estruturadas. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1V7sDdPIEofzjCAJTtkYiNBRupi0qRDVc/view?usp=sharing |
 
 ---
 
-### Caso de Teste 02: Selecionar modelo de anamnese e preencher respostas
+### Caso de Teste 02: Preenchimento, Tentativa de Finalização com Erro no Servidor e Salvamento de Rascunho
 
 | ID | Descrição |
 | --- | --- |
-| C14-CT02 | O sistema deve permitir a seleção de um modelo de anamnese e o preenchimento de suas perguntas. |
+| **C41-CT02** | Validar o fluxo de revisão e finalização da anamnese, o tratamento de exceção em caso de erro no servidor e a funcionalidade de salvar rascunho. |
 
 | **Pré-condições** |
 | --- |
-| O aluno deve ser selecionado no modal "Aplicar Anamnese".
-
- |
+| O usuário estar na etapa de revisão e finalização de uma ficha de anamnese aberta para um aluno. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário selecionou o aluno (ex: "Rhaniely Gabriely Oliveira") e avançou para a etapa "Selecionar Modelo"
+| **DADO** que o usuário visualiza a tela **"Revisar e Finalizar"** com as respostas inseridas<br> |
+| **QUANDO** clica no botão **"Finalizar Anamnese"** e o sistema simula uma falha de conexão/servidor exibindo o pop-up **"Erro no servidor"**<br> |
+| **E** fecha a mensagem de erro clicando em "Fechar" |
+| **QUANDO** aciona o botão **"Salvar rascunho"** para preservar os dados preenchidos sem concluir formalmente a ficha<br> |
+| **ENTÃO** o sistema processa a solicitação de rascunho temporariamente e retorna ao estado padrão de salvamento. |
 
- |
-| **E** escolhe um modelo de anamnese disponível (ex: "Esteira") e clica em "Iniciar"
-
- |
-| **QUANDO** digita a resposta da pergunta exibida (ex: "2") no campo "Digite sua resposta aqui..."
-
- |
-| **ENTÃO** o sistema exibe o indicador "Resposta registrada" abaixo do campo de texto.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O sistema deve aceitar e registrar as respostas inseridas no formulário dinâmico.
+| * O sistema deve tratar falhas de servidor exibindo mensagens claras de erro por meio de pop-up. |
+| * A opção de salvar rascunho deve permitir gravar o andamento do preenchimento quando houver interrupções no envio. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1TxdKmCaGbufBF7FS42Sx4AtkSjMvqGQ0/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Salvar rascunho da anamnese em andamento
+### Caso de Teste 03: Filtragem de Fichas de Anamnese por Status na Tela Principal
 
 | ID | Descrição |
 | --- | --- |
-| C14-CT03 | O sistema deve permitir que o progresso da anamnese seja salvo como rascunho. |
+| **C41-CT03** | O sistema deve permitir a filtragem e consulta de fichas de anamnese cadastradas através do seletor de status e barra de pesquisa na tela principal.|
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar no processo de preenchimento ou revisão da anamnese.
-
- |
+| O usuário estar posicionado na página principal de **Fichas de Anamnese**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário preencheu ou editou uma resposta na anamnese
+| **DADO** que o usuário visualiza os cards de indicadores (Total de fichas, Concluídas, Pendentes, Clientes avaliados)<br> |
+| **QUANDO** utiliza a barra de pesquisa por nome de aluno e o filtro de status (alternando entre "Todos os status", "Concluído" ou "Pendente")<br> |
+| **ENTÃO** a tabela ou o painel central deve atualizar os registros exibidos de acordo com o filtro selecionado. |
+| **E** pela ausência de conteúdo, na listagem permanece a mensagem **Nenhuma ficha encontrada** |
 
- |
-| **QUANDO** clica no botão "Salvar rascunho" no canto inferior esquerdo do modal
-
- |
-| **ENTÃO** o botão exibe temporariamente o status "Salvando..."
-
- |
-| **E** em seguida retorna ao estado "Salvar rascunho", garantindo a gravação do progresso sem finalizar a ficha.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| Os dados preenchidos até o momento devem ser gravados sem concluir formalmente o status da anamnese.
+| * Os filtros de status devem atualizar dinamicamente a exibição das fichas e refletir a listagem correta correspondente aos critérios aplicados. |
 
- |
-
----
-
-### Caso de Teste 04: Revisar e finalizar a ficha de anamnese
-
-| ID | Descrição |
-| --- | --- |
-| C14-CT04 | O sistema deve permitir a revisão das respostas antes de concluir definitivamente a anamnese. |
-
-| **Pré-condições** |
+| **Evidência** |
 | --- |
-| As perguntas obrigatórias do modelo de anamnese devem estar respondidas.
-
- |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário respondeu às perguntas do modelo
-
- |
-| **E** clica no botão "Revisar"
-
- |
-| **E** visualiza a tela "Revisar e Finalizar" com a síntese das respostas inseridas
-
- |
-| **QUANDO** clica no botão "Finalizar Anamnese"
-
- |
-| **ENTÃO** o modal é encerrado e a anamnese é concluída no sistema.
-
- |
-
-| **Critérios de aceitação** |
-| --- |
-| A anamnese finalizada deve ser salva e contabilizada nos cards de indicadores da tela "Fichas de Anamnese".
-
- |
-
- https://jam.dev/c/116c178d-30f4-43ed-b9d8-8aaf8ffb0864
+| https://drive.google.com/file/d/11LuK3RJrX1qypahSx4SAlgFt0T-2FSlE/view?usp=sharing |
