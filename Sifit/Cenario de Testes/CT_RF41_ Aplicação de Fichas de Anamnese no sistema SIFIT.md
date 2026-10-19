@@ -2,7 +2,7 @@
 
 ---
 
-## Cenário de teste: Aplicação de Fichas de Anamnese no sistema SIFIT
+## Cenário 41: Aplicação de Fichas de Anamnese no sistema SIFIT
 
 ### Caso de Teste 01: Buscar aluno para aplicação de anamnese
 
