@@ -1,198 +1,144 @@
 
+---
+
+# Cenário 42: Gerenciamento de Modelos de Anamnese no Sistema SIFIT
+
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 42: Gerenciamento de Modelos de Anamnese** no sistema **SiFit**. O objetivo é validar as operações de criação de novos modelos de anamnese, pré-visualização (preview) de fichas sem perguntas, alteração de status (ativo/inativo), exclusão de modelos com confirmação e vinculação de perguntas por meio do montador visual com marcação de obrigatoriedade.
 
 ---
 
-## Cenário de teste: Gerenciamento de Modelos de Anamnese no sistema SIFIT
+## 2. Cenários de Teste
 
-### Caso de Teste 01: Criar um novo modelo de anamnese
+### Caso de Teste 01: Exclusão de Modelo de Anamnese com Confirmação
 
 | ID | Descrição |
 | --- | --- |
-| C15-CT01 | O sistema deve permitir cadastrar um novo modelo de anamnese definindo nome, descrição e status. |
+| **C42-CT01** | Validar a exibição do modal de confirmação de exclusão e a remoção definitiva de um modelo de anamnese do sistema. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar autenticado e na tela **Modelos de Anamnese** (Menu Dados > Modelos).
-
- |
+| O usuário deve estar autenticado e posicionado na tela **Modelos de Anamnese** com registros cadastrados. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela "Modelos de Anamnese"
+| **DADO** que o usuário visualiza a listagem de modelos de anamnese<br> |
+| **QUANDO** clica no ícone de lixeira (Excluir) em um dos cards (ex.: "Triplet 3") |
+| **E** visualiza o modal de confirmação "Excluir o modelo 'Triplet 3'?" e clica em **"Confirmar"**<br><br> |
+| **ENTÃO** o modelo deve ser removido da tela e os contadores do topo da página devem ser atualizados. |
 
- |
-| **E** clica no botão "Novo Modelo" no canto superior direito
-
- |
-| **E** preenche o campo "Nome do Modelo" (ex: "Triplet")
-
- |
-| **E** preenche o campo "Descrição" (ex: "Triplet")
-
- |
-| **E** mantém o status como "Ativo"
-
- |
-| **QUANDO** clica em "Salvar Modelo"
-
- |
-| **ENTÃO** o sistema redireciona para a listagem e exibe o novo modelo cadastrado no card.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O novo modelo deve ser exibido na listagem com o status "Ativo" e atualizar os cards de métricas no topo da página.
+| * O modal de confirmação deve ser exibido adequadamente e o registro deve deixar de existir na listagem após a confirmação. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/13JHjQP5yygz_8tH9SlZ62w5SorWPnPKn/view?usp=sharing |
 
 ---
 
-### Caso de Teste 02: Visualizar preview do modelo e mensagem de modelo sem perguntas
+### Caso de Teste 02: Edição e Alteração de Status do Modelo para Inativo
 
 | ID | Descrição |
 | --- | --- |
-| C15-CT02 | O sistema deve permitir a pré-visualização (preview) do modelo e alertar caso não existam perguntas vinculadas. |
+| **C42-CT02** | Validar a alteração do status de um modelo de anamnese de "Ativo" para "Inativo" através da tela de edição. |
 
 | **Pré-condições** |
 | --- |
-| Deve existir pelo menos um modelo cadastrado na listagem sem perguntas vinculadas.
-
- |
+| O usuário estar na tela de listagem de modelos com pelo menos um registro cadastrado. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na listagem de "Modelos de Anamnese"
+| **DADO** que o usuário clica no botão **"Editar"** no card de um modelo desejado<br> |
+| **QUANDO** altera o campo **"Status"** de "Ativo" para "Inativo" e clica no botão **"Salvar Modelo"**<br><br> |
+| **ENTÃO** o sistema exibe o indicador "Salvando...", redireciona para a listagem e atualiza a tag do modelo para a cor vermelha com o texto "Inativo". |
 
- |
-| **QUANDO** clica na opção "Preview" do card de um modelo sem perguntas (ex: "Esteira")
-
- |
-| **ENTÃO** o sistema exibe um modal com a mensagem "Nenhuma pergunta adicionada ainda".
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O modal de preview deve ser exibido com o título correspondente ao modelo e permitir o fechamento pelo ícone "X".
+| * O status alterado deve refletir na listagem e os contadores de ativos/inativos no cabeçalho devem ser recalculados corretamente. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1zzEM7M0NkQRlWdWZmBa3CKeSvjCaqWtf/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Alterar status do modelo para inativo
+### Caso de Teste 03: Filtragem de Modelos de Anamnese por Status
 
 | ID | Descrição |
 | --- | --- |
-| C15-CT03 | O sistema deve permitir a edição do modelo para alterar seu status de "Ativo" para "Inativo". |
+| **C42-CT03** | Validar a filtragem dos modelos de anamnese na listagem principal utilizando o seletor de status (Ativo, Inativo ou Todos). |
 
 | **Pré-condições** |
 | --- |
-| Deve existir um modelo ativo cadastrado no sistema.
-
- |
+| O usuário estar na página principal de **Modelos de Anamnese**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica em "Editar" no card do modelo desejado (ex: "Esteira")
+| **DADO** que o usuário visualiza os modelos cadastrados e os cards de métricas no topo<br> |
+| **QUANDO** clica no filtro de status (alternando entre "Todos os status", "Ativo" e "Inativo") e realiza buscas textuais<br> |
+| **ENTÃO** a listagem de modelos deve atualizar dinamicamente para exibir apenas os registros que correspondem ao filtro selecionado. |
 
- |
-| **E** altera o campo "Status" de "Ativo" para "Inativo"
-
- |
-| **QUANDO** clica no botão "Salvar Modelo"
-
- |
-| **ENTÃO** o sistema exibe o indicador "Salvando..." e redireciona para a listagem
-
- |
-| **E** a tag do modelo é atualizada para a cor vermelha com o texto "Inativo".
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O status do modelo deve ser atualizado na listagem e o contador de modelos "Ativos" no cabeçalho deve ser decrementado.
+| * O sistema deve filtrar com precisão os modelos de acordo com o status escolhido na interface. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1tq9wVmTqXbINtKu-6LU2LsI6jPtXv8tZ/view?usp=sharing |
 
 ---
 
-### Caso de Teste 04: Excluir um modelo de anamnese
+### Caso de Teste 04: Cadastro de Novo Modelo de Anamnese
 
 | ID | Descrição |
 | --- | --- |
-| C15-CT04 | O sistema deve solicitar confirmação antes de remover definitivamente um modelo de anamnese. |
+| **C42-CT04** | Validar o fluxo de cadastro de um novo modelo de anamnese preenchendo as informações gerais e definindo seu status inicial. |
 
 | **Pré-condições** |
 | --- |
-| Deve existir pelo menos um modelo cadastrado na listagem.
-
- |
+| O usuário estar na tela principal de **Modelos de Anamnese**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na listagem de "Modelos de Anamnese"
+| **DADO** que o usuário clica no botão **"Novo Modelo"** no canto superior direito<br> |
+| **QUANDO** preenche os campos "Nome do Modelo" e "Descrição" |
+| **E** clica no botão **"Salvar Modelo"**<br><br> |
+| **ENTÃO** o novo modelo deve ser gravado com sucesso e exibido na listagem principal. |
 
- |
-| **E** clica no ícone de lixeira (Excluir) do card do modelo desejado (ex: "Esteira")
-
- |
-| **E** visualiza o modal de confirmação "Excluir o modelo 'Esteira'?"
-
- |
-| **QUANDO** clica no botão "Confirmar"
-
- |
-| **ENTÃO** o modelo é removido da tela e os contadores do topo da página são atualizados.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O modelo excluído não deve mais ser exibido na listagem de modelos.
+| * O novo modelo deve ser incluído na tabela/cards com os dados fornecidos e atualizar os totalizadores da tela. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1TMSIq8VsB8ukO8-bXjVjPBM68oeVQc4F/view?usp=sharing |
 
 ---
 
-### Caso de Teste 05: Adicionar perguntas ao modelo através do Montador Visual
+### Caso de Teste 05: Vinculação de Perguntas e Configuração de Obrigatoriedade no Montador Visual
 
 | ID | Descrição |
 | --- | --- |
-| C15-CT05 | O sistema deve permitir a vinculação de perguntas a um modelo utilizando a estrutura de arrastar ou selecionar no montador visual. |
+| **C42-CT05** | Validar a seleção e adição de perguntas ao modelo através do montador visual, incluindo a marcação de campos obrigatórios. |
 
 | **Pré-condições** |
 | --- |
-| Existirem perguntas cadastradas disponíveis na seção "Perguntas Disponíveis".
-
- |
+| O usuário estar na tela de criação ou edição de um modelo de anamnese contendo perguntas disponíveis no painel esquerdo. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela de edição do modelo (ex: "Triplet")
+| **DADO** que o usuário visualiza as perguntas disponíveis no painel esquerdo do montador visual<br> |
+| **QUANDO** seleciona as perguntas desejadas para compor o "Modelo Atual" |
+| **E** marca a opção **"Obrigatória"** nas perguntas selecionadas conforme a regra de negócio |
+| **E** clica em **"Salvar Modelo"**<br><br> |
+| **ENTÃO** o modelo deve ser atualizado salvando as perguntas vinculadas e refletindo a contagem no resumo lateral. |
 
- |
-| **E** localiza a pergunta disponível no painel esquerdo "Montador Visual"
-
- |
-| **QUANDO** seleciona a pergunta desejada (ex: "Quantos tipos") para movê-la para o quadro "Modelo Atual"
-
- |
-| **E** marca a caixa de seleção "Obrigatória" (se aplicável)
-
- |
-| **E** clica em "Salvar Modelo"
-
- |
-| **ENTÃO** o modelo é atualizado e o indicador de quantidade de perguntas no card exibe a contagem atualizada.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| As perguntas vinculadas devem ser salvas no modelo e refletidas no contador "Resumo do Modelo".
+| * As perguntas devem ser associadas corretamente ao modelo e os indicadores de obrigatoriedade devem ser persistidos sem falhas. |
 
- |
-
- https://jam.dev/c/0183812d-efe0-4616-bafc-3901c2443f77
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1DMR446oaawDMBouwS94V487PNOviNyG0/view?usp=sharing |
