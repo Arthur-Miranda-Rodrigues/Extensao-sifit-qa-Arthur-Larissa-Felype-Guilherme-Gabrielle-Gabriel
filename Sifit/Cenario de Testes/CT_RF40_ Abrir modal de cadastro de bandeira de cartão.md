@@ -1,141 +1,95 @@
 
 ---
 
-## Cenário: Gestão de Bandeiras de Cartão no sistema SIFIT
+# Cenário 40: Gestão de Bandeiras de Cartão no Sistema SIFIT
 
-### Caso de Teste 01: Abrir modal de cadastro de bandeira de cartão
+## 1. Descrição
 
-| ID | Descrição |
-| --- | --- |
-| C13-CT01 | O sistema deve abrir o modal "Nova Bandeira" com os campos zerados e prontos para preenchimento. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar autenticado e na tela **Bandeiras de Cartão**.
-
- |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela "Bandeiras de Cartão"
-
- |
-| **QUANDO** clica no botão "Nova Bandeira" no canto superior direito
-
- |
-| **ENTÃO** o modal "Nova Bandeira" deve ser exibido com os campos Nome, Taxa Adicional, Taxa Débito e a seção de Parcelas vazios/zerados.
-
- |
-
-| **Critérios de aceitação** |
-| --- |
-| O modal deve carregar corretamente e permitir a inserção das informações de taxas e parcelas.
-
- |
+Este documento especifica os casos de teste referentes ao **Cenário 40: Gestão de Bandeiras de Cartão** no sistema **SiFit**. O objetivo é validar o gerenciamento de bandeiras de cartão de crédito e débito, abrangendo a abertura do modal de cadastro com validação de campos obrigatórios, configuração de taxas adicionais, taxas de débito e regras de parcelamento, além de consultas e filtros por código ou nome na tabela principal.
 
 ---
 
-### Caso de Teste 02: Adicionar taxas e regras de parcelamento a uma nova bandeira
+## 2. Cenários de Teste
+
+### Caso de Teste 01: Validação de Campos Obrigatórios e Abertura do Modal de Nova Bandeira
 
 | ID | Descrição |
 | --- | --- |
-| C13-CT02 | O sistema deve permitir a configuração do número de parcelas e suas respectivas taxas para a bandeira. |
+| **C40-CT01** | O sistema deve abrir o modal "Nova Bandeira" com os campos limpos e validar o preenchimento obrigatório ao tentar salvar sem o nome da bandeira. |
 
 | **Pré-condições** |
 | --- |
-| O modal "Nova Bandeira" deve estar aberto.
-
- |
+| O usuário deve estar autenticado e posicionado na tela **Bandeiras de Cartão**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário preenche o "Nome" da bandeira (ex: "Loo")
+| **DADO** que o usuário está na tela "Bandeiras de Cartão<br> |
+| **QUANDO** clica no botão **"Nova Bandeira"** no canto superior direito |
+| **ENTÃO** o modal "Nova Bandeira" deve ser exibido com os campos de código, nome, taxas e parcelas zerados/vazios. |
+| **DADO** que o usuário tenta clicar no botão **"Salvar"** com o campo "Nome" vazio<br> |
+| **ENTÃO** o sistema deve exibir um aviso de alerta informando "Informe o nome da bandeira". |
 
- |
-| **E** informa a "Taxa Adicional" (ex: "20,00") e "Taxa Débito" (ex: "5,00")
-
- |
-| **QUANDO** clica no botão "+ Adicionar Parcela"
-
- |
-| **E** preenche os campos "Nº Parcela" (ex: "10") e "Taxa" (ex: "2,50")
-
- |
-| **E** clica no botão de confirmação (Check Azul)
-
- |
-| **ENTÃO** a parcela configurada deve ser adicionada à listagem de parcelas no modal.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| As taxas de débito, adicionais e o parcelamento configurado devem ser vinculados corretamente à nova bandeira de cartão.
+| * O modal deve carregar corretamente permitindo a inserção de dados. |
+| * O sistema deve bloquear o salvamento caso o campo obrigatório "Nome" não esteja preenchido, exibindo o pop-up de aviso. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/14_n6VY4kp9UXFn_QR8N-qEjqOvZ4GpAo/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Cancelar o cadastro de uma nova bandeira de cartão
+### Caso de Teste 02: Cadastro de Nova Bandeira com Taxas e Regras de Parcelamento
 
 | ID | Descrição |
 | --- | --- |
-| C13-CT03 | O sistema deve descartar as informações inseridas ao clicar no botão "Cancelar". |
+| **C40-CT02** | O sistema deve permitir o preenchimento do nome, taxas adicionais, taxa de débito e a adição de regras de parcelamento para uma nova bandeira. |
 
 | **Pré-condições** |
 | --- |
-| O modal "Nova Bandeira" deve estar aberto com dados preenchidos.
-
- |
+| O modal "Nova Bandeira" deve estar aberto na tela. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário preencheu os campos da bandeira e/ou adicionou parcelas no modal
+| **DADO** que o usuário preenche o campo **"Nome"** da bandeira (ex.: "Bandeira Azul")<br>|
+| **QUANDO** informa a **"Taxa Adicional"** (ex.: "20,00") e a **"Taxa Débito"** (ex.: "10,00") |
+| **E** clica no botão **"+ Adicionar Parcela"** preenchendo o número da parcela e a taxa correspondente, confirmando com o ícone de check |
+| **E** clica no botão **"Salvar"** para concluir o cadastro<br> |
+| **ENTÃO** a nova bandeira e suas respectivas configurações de taxas e parcelas devem ser gravadas no sistema. |
+| **E** ao clica no botão **"Salvar"** nada acontece e continua vazio com a mensagem **Nenhuma bandeira encontrada.**<br> |
 
- |
-| **QUANDO** clica no botão "Cancelar"
-
- |
-| **ENTÃO** o modal deve ser fechado e nenhuma bandeira deve ser salva ou exibida na listagem.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| As alterações não devem ser persistidas no banco de dados e a tela deve retornar ao estado original de busca.
+| * As informações de taxas de débito, adicionais e parcelas configuradas devem ser vinculadas com sucesso ao registro da bandeira. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1C8jVC7gSKOwovdkp4g04xzEWm9ywy1Vp/view?usp=sharing |
 
 ---
 
-### Caso de Teste 04: Consultar bandeiras de cartão por filtro de busca
+### Caso de Teste 03: Consulta e Filtragem de Bandeiras de Cartão
 
 | ID | Descrição |
 | --- | --- |
-| C12-CT04 | O sistema deve executar a consulta de bandeiras com base nos filtros informados. |
+| **C40-CT03** | O sistema deve executar a consulta e filtragem de bandeiras de cartão cadastradas com base nos parâmetros informados nos campos de busca. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar na tela **Bandeiras de Cartão**.
-
- |
+| O usuário deve estar na tela **Bandeiras de Cartão**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário informa um termo no campo "Código" ou "Nome"
+| **DADO** que o usuário está na listagem de bandeiras de cartão<br> |
+| **QUANDO** informa um termo de pesquisa no campo **"Código"** ou no campo **"Nome"** (ex.: "Bandeira Azul") |
+| **E** clica no botão de busca (ícone de lupa azul)<br> |
+| **ENTÃO** a tabela deve ser atualizada exibindo os resultados correspondentes ou a mensagem de ausência de registros caso não localize. |
 
- |
-| **QUANDO** clica no botão de busca (ícone de lupa azul)
-
- |
-| **ENTÃO** a tabela deve atualizar exibindo os resultados correspondentes ou a mensagem "Nenhuma bandeira encontrada" caso não haja registros.
-
- |
-
-https://jam.dev/c/9fad678d-1a1b-4383-beff-a706ec7b55e7
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A busca deve filtrar com precisão e apresentar a lista atualizada ou o feedback de ausência de dados.
+| * A busca deve filtrar com precisão os dados cadastrados, retornando a linha correspondente ou o feedback adequado na interface. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1npVhrbMEmlaSiAXKjUViSorlnW31-EWO/view?usp=sharing |
