@@ -64,7 +64,6 @@
 ---
 
 ### Caso de Teste 03: Tentativa de login com campos em branco.
-<img width="1915" height="893" alt="Captura de tela 2026-10-14 221649" src="https://github.com/user-attachments/assets/1fd2c394-7fcb-4e06-b0e4-cb97e943fd28" />
 
 | ID | Descrição |
 | --- | --- |
@@ -85,7 +84,7 @@
 | --- |
 | Os campos obrigatórios devem impedir o acesso e exibir alertas de validação apropriados. |
 
-| **Evidência** |
+| **Evidências** |
 | --- |
 | <img width="1915" height="893" alt="Captura de tela 2026-10-14 221649" src="https://github.com/user-attachments/assets/1fd2c394-7fcb-4e06-b0e4-cb97e943fd28" /> |
 | https://drive.google.com/file/d/15jQmL5k1DMN9DpuNNUPi9_B7Yh9MQPnx/view?usp=sharing  |
