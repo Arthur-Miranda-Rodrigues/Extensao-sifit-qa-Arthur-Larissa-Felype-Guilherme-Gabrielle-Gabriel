@@ -5,7 +5,6 @@
 # Cenário 1: Login na plataforma.
 
 ### Caso de Teste 01: Login com as credenciais válidas.
-<img width="1916" height="900" alt="Caso login com sucesso" src="https://github.com/user-attachments/assets/4d35c4f7-a09c-4689-9676-7aeb94dc20f8" />
 
 | ID | Descrição |
 | --- | --- |
@@ -27,15 +26,15 @@
 | --- |
 | O redirecionamento para a Página Inicial ("Bom dia, Jair!") deve ocorrer corretamente. |
 
-| **Evidência** |
+| **Evidências** |
 | --- |
+| <img width="1916" height="900" alt="Caso login com sucesso" src="https://github.com/user-attachments/assets/4d35c4f7-a09c-4689-9676-7aeb94dc20f8" /> |
 | https://drive.google.com/file/d/12YnKA9VnajzPptMiPn6LI3pPnC87LwmF/view?usp=sharing   |
+
 
 ---
 
 ### Caso de Teste 02: Tentativa de login com credenciais incorretas.
-<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/60274840-12ff-428c-ae5e-6955c90cde31" />
-
 
 | ID | Descrição |
 | --- | --- |
@@ -57,8 +56,9 @@
 | --- |
 | A mensagem de alerta "O nome de usuário e senha não correspondem." deve ser exibida ao usuário. |
 
-| **Evidência** |
+| **Evidências** |
 | --- |
+| <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/60274840-12ff-428c-ae5e-6955c90cde31" /> |
 |  https://drive.google.com/file/d/18LbwX2OkkQhCwBqHVwqWjKxsCmdd2GdA/view?usp=sharing  |
 
 ---
@@ -87,6 +87,7 @@
 
 | **Evidência** |
 | --- |
+| <img width="1915" height="893" alt="Captura de tela 2026-10-14 221649" src="https://github.com/user-attachments/assets/1fd2c394-7fcb-4e06-b0e4-cb97e943fd28" /> |
 | https://drive.google.com/file/d/15jQmL5k1DMN9DpuNNUPi9_B7Yh9MQPnx/view?usp=sharing  |
   
 
