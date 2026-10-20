@@ -2,7 +2,15 @@
 
 ---
 
-# Cenário 1: Login na plataforma.
+# Cenário: Login na plataforma
+
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao módulo de **Autenticação / Login** do sistema **SiFit**. O objetivo é validar o comportamento da tela de acesso ao sistema sob diferentes cenários, incluindo a autenticação bem-sucedida com credenciais válidas, falhas com credenciais incorretas, validação de campos obrigatórios em branco e a funcionalidade de recuperação de senha.
+
+---
+
+## 2. Cenários de Teste
 
 ### Caso de Teste 01: Login com as credenciais válidas.
 
@@ -28,7 +36,6 @@
 
 | **Evidências** |
 | --- |
-| <img width="1916" height="900" alt="Caso login com sucesso" src="https://github.com/user-attachments/assets/4d35c4f7-a09c-4689-9676-7aeb94dc20f8" /> |
 | https://drive.google.com/file/d/12YnKA9VnajzPptMiPn6LI3pPnC87LwmF/view?usp=sharing   |
 
 
@@ -58,7 +65,6 @@
 
 | **Evidências** |
 | --- |
-| <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/60274840-12ff-428c-ae5e-6955c90cde31" /> |
 |  https://drive.google.com/file/d/18LbwX2OkkQhCwBqHVwqWjKxsCmdd2GdA/view?usp=sharing  |
 
 ---
@@ -86,7 +92,31 @@
 
 | **Evidências** |
 | --- |
-| <img width="1915" height="893" alt="Captura de tela 2026-10-14 221649" src="https://github.com/user-attachments/assets/1fd2c394-7fcb-4e06-b0e4-cb97e943fd28" /> |
 | https://drive.google.com/file/d/15jQmL5k1DMN9DpuNNUPi9_B7Yh9MQPnx/view?usp=sharing  |
+
+### Caso de Teste 04: Acesso à Funcionalidade de Recuperação de Senha (Extra)
+
+| ID | Descrição |
+| --- | --- |
+| **C01-CT04** | O sistema deve redirecionar o usuário para a interface de recuperação/redefinição de senha ao acionar o link correspondente na tela de login. |
+
+| **Pré-condições** |
+| --- |
+| O usuário deve estar na página inicial de autenticação do SIFIT. |
+
+| **Passos** |
+| --- |
+| **DADO** que estamos na página de login do SIFIT |
+| **QUANDO** clicamos no link "Esqueci minha senha" |
+| **ENTÃO** o sistema deve direcionar o usuário para a tela ou modal de recuperação de senha da aplicação. |
+| **E** nada acontece. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * O link de recuperação de senha deve estar funcional e direcionar o usuário para o fluxo adequado de redefinição de credenciais. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1UVEJmPtjgyMDTs_6nrJcX1i0ldW5D671/view?usp=sharing |
   
 
