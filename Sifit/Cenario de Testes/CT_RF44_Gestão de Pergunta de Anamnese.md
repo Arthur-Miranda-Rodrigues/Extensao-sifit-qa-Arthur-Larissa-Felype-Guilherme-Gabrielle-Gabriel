@@ -1,13 +1,13 @@
 
 ---
 
-## Cenário de teste: Cadastro, Edição e Erro de Alteração em Pergunta de Anamnese
+## Cenário de 44: Gestão de Pergunta de Anamnese
 
 ### Caso de Teste 01: Cadastrar pergunta e validar erro ao alterar tipo de resposta.
 
 | ID | Descrição |
 | --- | --- |
-| C01-CT01 | O sistema deve permitir o cadastro de uma nova pergunta, mas deve exibir uma mensagem de erro ao tentar salvar uma alteração do tipo de resposta não permitida. |
+| **C44-CT01** | O sistema deve permitir o cadastro de uma nova pergunta, mas deve exibir uma mensagem de erro ao tentar salvar uma alteração do tipo de resposta não permitida. |
 
 | **Pré-condições** |
 | --- |
@@ -39,7 +39,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C02-CT01 | O sistema deve permitir a exclusão de uma pergunta existente mediante confirmação. |
+| **C44-CT02** | O sistema deve permitir a exclusão de uma pergunta existente mediante confirmação. |
 
 | **Pré-condições** |
 | --- |
@@ -61,13 +61,12 @@
 
 ---
 
-## Cenário 02: Consulta, Filtros e Duplicidade na Anamnese
 
-### Caso de Teste 01: Filtrar perguntas por Código e por Nome.
+### Caso de Teste 03: Filtrar perguntas por Código e por Nome.
 
 | ID | Descrição |
 | --- | --- |
-| C02-CT02 | O sistema deve filtrar corretamente as perguntas exibidas conforme os critérios de busca inseridos nos campos Código ou Nome. |
+| **C44-CT03** | O sistema deve filtrar corretamente as perguntas exibidas conforme os critérios de busca inseridos nos campos Código ou Nome. |
 
 | **Pré-condições** |
 | --- |
