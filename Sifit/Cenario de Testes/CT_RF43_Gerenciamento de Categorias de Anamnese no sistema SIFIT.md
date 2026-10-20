@@ -1,13 +1,13 @@
 
 ---
 
-## Cenário de teste: Gerenciamento de Categorias de Anamnese no sistema SIFIT
+## Cenário 43: Gerenciamento de Categorias de Anamnese no sistema SIFIT
 
 ### Caso de Teste 01: Criar uma nova categoria de anamnese
 
 | ID | Descrição |
 | --- | --- |
-| C16-CT01 | O sistema deve permitir cadastrar uma nova categoria definindo nome, status, ícone e cor visual. |
+| **C43-CT01** | O sistema deve permitir cadastrar uma nova categoria definindo nome, status, ícone e cor visual. |
 
 | **Pré-condições** |
 | --- |
@@ -54,7 +54,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C16-CT02 | O sistema deve permitir alterar as informações (nome, status, ícone ou cor) de uma categoria cadastrada. |
+| **C43-CT02** | O sistema deve permitir alterar as informações (nome, status, ícone ou cor) de uma categoria cadastrada. |
 
 | **Pré-condições** |
 | --- |
@@ -89,7 +89,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C16-CT03 | O sistema deve filtrar o grid de categorias de acordo com o status selecionado no menu suspenso. |
+| **C43-CT03** | O sistema deve filtrar o grid de categorias de acordo com o status selecionado no menu suspenso. |
 
 | **Pré-condições** |
 | --- |
@@ -127,7 +127,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C16-CT04 | O sistema deve permitir excluir uma categoria mediante confirmação do usuário. |
+| **C43-CT04** | O sistema deve permitir excluir uma categoria mediante confirmação do usuário. |
 
 | **Pré-condições** |
 | --- |
@@ -165,7 +165,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C16-CT05 | O sistema deve filtrar em tempo real as categorias conforme o termo digitado no campo de busca. |
+| **C43-CT05** | O sistema deve filtrar em tempo real as categorias conforme o termo digitado no campo de busca. |
 
 | **Pré-condições** |
 | --- |
@@ -191,4 +191,4 @@
 
  |
 
- https://jam.dev/c/1af2ebf7-99df-4d1f-88fe-32da7ce2ecea
+ 
