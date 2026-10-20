@@ -1,9 +1,102 @@
 
 ---
 
-## Cenário 43: Gerenciamento de Categorias de Anamnese no sistema SIFIT
+# Cenário 43: Gerenciamento de Categorias de Anamnese no sistema SIFIT
 
-### Caso de Teste 01: Criar uma nova categoria de anamnese
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao módulo de **Configurações > Categorias de Anamnese** do sistema **SiFit**. O objetivo é validar as funcionalidades de cadastro de novas categorias com seleção de ícones e cores, edição e alteração de status de registros existentes, filtragem do grid por status (Ativo/Inativo), exclusão de categorias com confirmação modal e a pesquisa dinâmica por nome.
+
+---
+
+## 2. Cenários de Teste
+
+### Caso de Teste 01: Exclusão de Categoria de Anamnese com Confirmação
+
+| ID | Descrição |
+| --- | --- |
+| **C43-CT01** | O sistema deve permitir a exclusão de uma categoria de anamnese após a confirmação do usuário no modal correspondente. |
+
+| **Pré-condições** |
+| --- |
+| O usuário deve estar autenticado no SIFIT e na tela de **Categorias de Anamnese** com registros cadastrados. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário está na tela de "Categorias de Anamnese" |
+| **QUANDO** clica no ícone de exclusão (lixeira) em um card de categoria e o modal "Excluir a categoria..." é exibido |
+| **E** clica no botão **Confirmar**<br> |
+| **ENTÃO** a categoria deve ser removida da listagem e os contadores atualizados. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A categoria excluída não deve mais aparecer no grid e os indicadores do topo devem ser recalculados. |
+
+| **Evidência** |
+| --- |
+|  |
+
+---
+
+### Caso de Teste 02: Edição de Categoria Existente (Status, Ícone e Cor)
+
+| ID | Descrição |
+| --- | --- |
+| **C43-CT02** | O sistema deve permitir alterar as informações cadastrais (como nome, status, ícone ou cor) de uma categoria existente. |
+
+| **Pré-condições** |
+| --- |
+| Existir pelo menos uma categoria cadastrada na listagem. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário clica no ícone de edição (lápis) no card de uma categoria |
+| **QUANDO** altera o status (ex: de "Ativo" para "Inativo") ou modifica a cor/ícone no modal |
+| **E** clica no botão **Atualizar**<br> |
+| **ENTÃO** as alterações devem ser salvas e refletidas visualmente no card e nos contadores da tela. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A alteração deve atualizar a tag visual do card e reajustar os contadores de ativos e inativos no cabeçalho. |
+
+| **Evidência** |
+| --- |
+|  |
+
+---
+
+### Caso de Teste 03: Criação de Nova Categoria de Anamnese
+
+| ID | Descrição |
+| --- | --- |
+| **C43-CT03** | O sistema deve permitir o cadastro de uma nova categoria preenchendo o nome, selecionando um ícone e escolhendo uma cor na paleta. |
+
+| **Pré-condições** |
+| --- |
+| O usuário deve estar na tela de **Categorias de Anamnese** com o modal de nova categoria acessível. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário clica no botão **Nova Categoria**<br> |
+| **QUANDO** preenche o nome (ex: "Água"), seleciona o ícone da lista e escolhe a cor desejada
+
+ |
+| **E** clica no botão **Criar Categoria**<br> |
+| **ENTÃO** a nova categoria deve ser gravada e adicionada ao grid com a pré-visualização correspondente.
+
+ |
+
+| **Critérios de Aceitação** |
+| --- |
+| * A nova categoria deve ser exibida no grid com a cor e o ícone configurados, incrementando os totais gerais. |
+
+| **Evidência** |
+| --- |
+|  |
+
+---
+
+### Caso de Teste 01: Criação de Nova Categoria de Anamnese com Sucesso
 
 | ID | Descrição |
 | --- | --- |
@@ -11,184 +104,125 @@
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar autenticado e na tela **Categorias de Anamnese**.
-
- |
+| O usuário deve estar autenticado e na tela de **Categorias de Anamnese**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela "Categorias de Anamnese"
+| **DADO** que o usuário está na tela "Categorias de Anamnese" |
+| **E** clica no botão **+ Nova Categoria**<br> |
+| **E** preenche o campo "Nome da Categoria" (ex: "Saúde"), seleciona um ícone (ex: `bi-capsule`) e escolhe uma cor na paleta |
+| **QUANDO** clica em **Criar Categoria**<br> |
+| **ENTÃO** a nova categoria deve ser gravada e exibida no grid com os parâmetros configurados.|
 
- |
-| **E** clica no botão "+ Nova Categoria"
-
- |
-| **E** preenche o campo "Nome da Categoria" (ex: "Alimentação")
-
- |
-| **E** seleciona um ícone da lista (ex: `bi-apple`)
-
- |
-| **E** escolhe uma cor na paleta disponível
-
- |
-| **QUANDO** clica em "Criar Categoria"
-
- |
-| **ENTÃO** o sistema exibe a animação "Salvando..."
-
- |
-| **E** a nova categoria é adicionada à listagem exibindo o ícone e a cor configurados.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A nova categoria deve ser exibida no grid com a barra de pré-visualização na cor selecionada, e os contadores do topo da página devem ser incrementados.
+| * A nova categoria deve ser exibida no grid com a barra de pré-visualização na cor selecionada, e os contadores de totais devem ser atualizados. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1bTePKaWPkGrz-KM5Ifd9D717Wql2HKeJ/view?usp=sharing |
 
 ---
 
-### Caso de Teste 02: Editar uma categoria existente
+### Caso de Teste 02: Validação de Campos Obrigatórios ao Criar Categoria
 
 | ID | Descrição |
 | --- | --- |
-| **C43-CT02** | O sistema deve permitir alterar as informações (nome, status, ícone ou cor) de uma categoria cadastrada. |
+| **C43-CT02** | O sistema deve impedir o salvamento e sinalizar a obrigatoriedade caso o usuário tente cadastrar uma categoria sem preencher o nome. |
 
 | **Pré-condições** |
 | --- |
-| Deve existir pelo menos uma categoria cadastrada no sistema.
-
- |
+| O usuário deve estar com o modal "Nova Categoria" aberto. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário clica no ícone de lápis (Editar) no card da categoria desejada
+| **DADO** que o usuário mantém o campo "Nome da Categoria" em branco no modal de cadastro |
+| **QUANDO** tenta prosseguir e clica em **Criar Categoria**<br> |
+| **ENTÃO** o sistema deve bloquear a operação e exibir e validar o preenchimento obrigatório. |
 
- |
-| **E** altera o status de "Ativo" para "Inativo" (ou altera o ícone/cor)
-
- |
-| **QUANDO** clica no botão "Atualizar"
-
- |
-| **ENTÃO** as alterações são salvas e refletidas no card da categoria.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A alteração de status deve atualizar a tag visual do card (ex: "Inativo" em vermelho) e reajustar os contadores "Ativas" e "Inativas" no cabeçalho.
+| * O sistema não deve permitir a gravação de registros incompletos, alertando o usuário sobre a pendência no campo de nome. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1TH9F29TriAYocA0qINtF1lC-ADlKarFT/view?usp=sharing |
 
 ---
 
-### Caso de Teste 03: Filtrar categorias por status
+### Caso de Teste 03: Edição de Categoria Existente
 
 | ID | Descrição |
 | --- | --- |
-| **C43-CT03** | O sistema deve filtrar o grid de categorias de acordo com o status selecionado no menu suspenso. |
+| **C43-CT03** | O sistema deve permitir alterar as informações (como status, nome, ícone ou cor) de uma categoria cadastrada. |
 
 | **Pré-condições** |
 | --- |
-| Devem existir categorias ativas e inativas cadastradas.
-
- |
+| Deve existir pelo menos uma categoria cadastrada no sistema. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela de "Categorias de Anamnese"
+| **DADO** que o usuário clica no ícone de lápis (Editar) no card da categoria desejada |
+| **E** altera o status de "Ativo" para "Inativo" e ajusta a cor ou o ícone |
+| **QUANDO** clica no botão **Atualizar**<br> |
+| **ENTÃO** as alterações devem ser salvas e refletidas imediatamente no card correspondente. |
 
- |
-| **QUANDO** altera o filtro "Todos os status" no canto superior direito para "Ativo"
-
- |
-| **ENTÃO** o sistema exibe apenas as categorias com status ativo
-
- |
-| **QUANDO** altera o filtro para "Inativo"
-
- |
-| **ENTÃO** o sistema exibe apenas as categorias com status inativo.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| Caso não existam categorias correspondentes ao filtro selecionado, o sistema deve exibir a mensagem padrão "Nenhuma categoria encontrada".
+| * A alteração de status e dados deve atualizar a tag visual do card e reajustar os contadores no cabeçalho. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1wGufL84tPgLa68my1udJp_-rRk5Q2ADB/view?usp=sharing |
 
 ---
 
-### Caso de Teste 04: Excluir uma categoria de anamnese
+### Caso de Teste 04: Filtragem de Categorias por Status e Busca Dinâmica
 
 | ID | Descrição |
 | --- | --- |
-| **C43-CT04** | O sistema deve permitir excluir uma categoria mediante confirmação do usuário. |
+| **C43-CT04** | O sistema deve filtrar o grid de categorias conforme o status selecionado (Ativo/Inativo) e permitir a busca por termos no campo de pesquisa. |
 
 | **Pré-condições** |
 | --- |
-| Deve existir pelo menos uma categoria disponível para exclusão.
-
- |
+| Devem existir categorias cadastradas na listagem. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário localiza a categoria que deseja remover
+| **DADO** que o usuário está na tela de **Categorias de Anamnese**<br> |
+| **QUANDO** seleciona um filtro de status (ex: "Inativo") ou digita um termo no campo "Buscar categoria..." |
+| **ENTÃO** o sistema deve atualizar dinamicamente a exibição dos cards correspondentes ou retornar a mensagem "Nenhuma categoria encontrada". |
 
- |
-| **E** clica no ícone de lixeira (Excluir)
-
- |
-| **E** visualiza o modal de confirmação "Excluir a categoria 'Nome'?"
-
- |
-| **QUANDO** clica no botão "Confirmar"
-
- |
-| **ENTÃO** a categoria é removida e a listagem é atualizada.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A categoria excluída não deve mais aparecer no grid e os indicadores de total de categorias devem ser recalculados.
+| * Os filtros e campos de busca devem responder instantaneamente exibindo apenas os registros compatíveis com o critério aplicado. |
 
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1Bmw_dJJIFgTOqspbcplQn6mQWyOb11jB/view?usp=sharing |
 
 ---
 
-### Caso de Teste 05: Buscar categoria por nome
+### Caso de Teste 05: Exclusão de Categoria de Anamnese com Confirmação
 
 | ID | Descrição |
 | --- | --- |
-| **C43-CT05** | O sistema deve filtrar em tempo real as categorias conforme o termo digitado no campo de busca. |
+| **C43-CT05** | O sistema deve solicitar confirmação via modal e remover permanentemente uma categoria selecionada. |
 
 | **Pré-condições** |
 | --- |
-| Devem existir múltiplas categorias cadastradas na listagem.
-
- |
+| Deve existir pelo menos uma categoria disponível para exclusão na listagem. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela "Categorias de Anamnese"
+| **DADO** que o usuário localiza a categoria que deseja remover e clica no ícone de lixeira (Excluir) |
+| **QUANDO** o modal de confirmação "Excluir a categoria [Nome]?" é exibido e o usuário clica em **Confirmar**<br> |
+| **ENTÃO** a categoria deve ser removida do grid e os contadores da página devem ser recalculados. |
 
- |
-| **QUANDO** digita o nome de uma categoria (ex: "ene" ou "ali") no campo "Buscar categoria..."
-
- |
-| **ENTÃO** o sistema oculta as categorias divergentes e mantém visíveis apenas os cards que contêm o termo buscado.
-
- |
-
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| O filtro deve funcionar de forma dinâmica conforme a digitação do usuário no campo de busca.
+| * A exclusão deve ocorrer com sucesso após a confirmação explícita do usuário no modal. |
 
- |
-
- 
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1_Vc6ZYeEKZ-Ff3qCkbXedDTJXF7eVxaF/view?usp=sharing |
