@@ -1,9 +1,8 @@
 ---
 
 ## Cenário 17: Gerenciamento de Exercícios
----
 
-## 2. Cenários de Teste
+---
 
 ### Caso de Teste 01: Cadastro de Novo Exercício em Grupo Muscular
 
