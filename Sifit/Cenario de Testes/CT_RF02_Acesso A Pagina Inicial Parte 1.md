@@ -1,13 +1,7 @@
 
 ---
 
-# Cenário 2: Página Inicial (Parte 1)
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Requisito Funcional - Página Inicial (Parte 1)** do sistema **SiFit**. O objetivo é validar o carregamento dos cards de resumo operacional (Clientes Sem Matrículas, Clientes Ausentes, Avaliações, Financeiro em Aberto e Radar de Evasão), além da interação com os modais de consulta e detalhamento acionados a partir do dashboard inicial.
-
----
+## Cenário 2: Página Inicial (Parte 1)
 
 ## 2. Cenários de Teste
 
