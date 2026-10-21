@@ -1,5 +1,5 @@
 ## Cenário 2: Página Inicial (Parte 1)
-#### Caso de Teste 01: Consulta e Filtro no Modal "Clientes Sem Matrículas"
+### Caso de Teste 01: Consulta e Filtro no Modal "Clientes Sem Matrículas"
 
 | ID | Descrição |
 | --- | --- |
@@ -32,7 +32,7 @@
 
 ---
 
-#### Caso de Teste 02: Visualização e Filtragem no Modal "Clientes Ausentes"
+### Caso de Teste 02: Visualização e Filtragem no Modal "Clientes Ausentes"
 
 | ID | Descrição |
 | --- | --- |
@@ -61,7 +61,7 @@
 
 ---
 
-#### Caso de Teste 03: Redirecionamento e Filtro no Card "Avaliações"
+### Caso de Teste 03: Redirecionamento e Filtro no Card "Avaliações"
 
 | ID | Descrição |
 | --- | --- |
@@ -90,7 +90,7 @@
 
 ---
 
-#### Caso de Teste 04: Detalhamento do Modal "Financeiro em Aberto" e Filtros de Vencimento
+### Caso de Teste 04: Detalhamento do Modal "Financeiro em Aberto" e Filtros de Vencimento
 
 | ID | Descrição |
 | --- | --- |
@@ -118,7 +118,7 @@
 
 ---
 
-#### Caso de Teste 05: Consulta ao "Radar de Evasão" e Explicação da Regra de Cálculo
+### Caso de Teste 05: Consulta ao "Radar de Evasão" e Explicação da Regra de Cálculo
 
 | ID | Descrição |
 | --- | --- |
