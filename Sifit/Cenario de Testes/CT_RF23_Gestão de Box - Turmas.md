@@ -1,19 +1,6 @@
-
----
-
 # Cenário 23 : Gestão de Box (Turmas e Modalidades)
 
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão de Box** do módulo **Treinamento > Box - Turmas** do sistema **SiFit**. O objetivo é validar o cadastramento e edição de modalidades, criação e edição de turmas recorrentes (horários, vagas e dias da semana), exclusão de itens e alteração de status na gestão de turmas e modalidades.
-
----
-
-## 2. Cenários de Teste
-
-### Cenário 01: Operações e Gestão de Box (Turmas e Modalidades)
-
-#### Caso de Teste 01: Cadastro de Nova Modalidade de Treino
+### Caso de Teste 01: Cadastro de Nova Modalidade de Treino
 
 | ID | Descrição |
 | --- | --- |
@@ -42,7 +29,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão
 
 ---
 
-#### Caso de Teste 02: Cadastro de Turma Recorrente com Horários e Vagas Definidos
+### Caso de Teste 02: Cadastro de Turma Recorrente com Horários e Vagas Definidos
 
 | ID | Descrição |
 | --- | --- |
@@ -74,7 +61,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 23: Gestão
 
 ---
 
-#### Caso de Teste 03: Edição de Modalidade (Alteração de Nome e Status)
+### Caso de Teste 03: Edição de Modalidade (Alteração de Nome e Status)
 
 | ID | Descrição |
 | --- | --- |
@@ -108,7 +95,7 @@ Aqui está o Caso de Teste 04 ajustado com base nas ações realizadas no vídeo
 
 ---
 
-#### Caso de Teste 04: Edição de Turma Recorrente
+### Caso de Teste 04: Edição de Turma Recorrente
 
 | ID | Descrição |
 | --- | --- |
@@ -141,7 +128,7 @@ Aqui está o Caso de Teste 04 ajustado com base nas ações realizadas no vídeo
 
 ---
 
-#### Caso de Teste 05: Exclusão de Modalidade de Treino
+### Caso de Teste 05: Exclusão de Modalidade de Treino
 
 | ID | Descrição |
 | --- | --- |
