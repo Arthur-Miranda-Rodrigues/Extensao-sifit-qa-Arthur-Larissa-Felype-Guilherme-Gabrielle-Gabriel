@@ -1,15 +1,4 @@
-
----
-
-# Cenário 42: Gerenciamento de Modelos de Anamnese no Sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 42: Gerenciamento de Modelos de Anamnese** no sistema **SiFit**. O objetivo é validar as operações de criação de novos modelos de anamnese, pré-visualização (preview) de fichas sem perguntas, alteração de status (ativo/inativo), exclusão de modelos com confirmação e vinculação de perguntas por meio do montador visual com marcação de obrigatoriedade.
-
----
-
-## 2. Cenários de Teste
+## Cenário 42: Gerenciamento de Modelos de Anamnese no Sistema SIFIT
 
 ### Caso de Teste 01: Exclusão de Modelo de Anamnese com Confirmação
 
