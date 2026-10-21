@@ -1,11 +1,6 @@
 ---
 
-# Cenário 17: Gerenciamento de Exercícios
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo **Treinamento > Exercícios** do sistema **SiFit**. O objetivo é validar a gestão da biblioteca de exercícios por grupos musculares, contemplando exatamente os fluxos de cadastro com preenchimento de nome e mídias, edição de registros existentes e exclusão de itens na interface.
-
+## Cenário 17: Gerenciamento de Exercícios
 ---
 
 ## 2. Cenários de Teste
