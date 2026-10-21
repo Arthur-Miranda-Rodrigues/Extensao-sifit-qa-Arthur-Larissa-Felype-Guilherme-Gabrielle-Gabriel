@@ -1,12 +1,4 @@
-# Cenário 35: Módulo de Enquetes
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário Módulo de Enquetes** do menu **Enquetes** do sistema **SIFIT**. O objetivo é validar a filtragem da listagem por Código, Nome e Status, e o tratamento das mensagens de erro exibidas ao cadastrar, editar e excluir enquetes quando a operação não é concluída pelo servidor, conferindo também que a listagem e os indicadores do topo (Enquetes, Ativas, Inativas e Respostas) permanecem consistentes.
-
----
-
-## 2. Casos de Teste
+## Cenário 35: Módulo de Enquetes
 
 ### Caso de Teste 01: Filtrar enquetes por Código, Nome e Status
 
