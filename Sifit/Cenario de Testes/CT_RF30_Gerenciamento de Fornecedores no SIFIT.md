@@ -1,13 +1,4 @@
-
----
-
-# Cenário 30: Gerenciamento de Fornecedores no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Financeiro > Fornecedores** do sistema **SiFit**. O objetivo é validar as funcionalidades de pesquisa/filtragem de fornecedores por código e nome, cadastro de novos fornecedores com dados válidos, validação de preenchimento obrigatório, visualização detalhada de registros e tentativa de exclusão de fornecedores cadastrados.
-
----
+## Cenário 30: Gerenciamento de Fornecedores no SIFIT
 
 ## 2. Cenários de Teste
 
