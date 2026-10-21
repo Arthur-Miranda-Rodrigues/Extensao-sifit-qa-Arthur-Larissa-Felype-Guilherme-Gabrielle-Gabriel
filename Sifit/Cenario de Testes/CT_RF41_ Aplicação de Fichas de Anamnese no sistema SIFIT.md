@@ -1,15 +1,4 @@
-
----
-
-# Cenário 41: Aplicação de Fichas de Anamnese no sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 41: Aplicação de Fichas de Anamnese** no sistema **SiFit**. O objetivo é validar o processo completo de busca e seleção de alunos para aplicação de fichas, a escolha de modelos e preenchimento de formulários dinâmicos, salvamento de rascunhos, revisão e finalização ou tratamento de exceções de servidor durante a gravação das avaliações.
-
----
-
-## 2. Cenários de Teste
+## Cenário 41: Aplicação de Fichas de Anamnese no sistema SIFIT
 
 ### Caso de Teste 01: Buscar Aluno e Selecionar Modelo de Anamnese
 
