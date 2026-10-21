@@ -1,15 +1,4 @@
-
----
-
-# Cenário 43: Gerenciamento de Categorias de Anamnese no sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Configurações > Categorias de Anamnese** do sistema **SiFit**. O objetivo é validar as funcionalidades de cadastro de novas categorias com seleção de ícones e cores, edição e alteração de status de registros existentes, filtragem do grid por status (Ativo/Inativo), exclusão de categorias com confirmação modal e a pesquisa dinâmica por nome.
-
----
-
-## 2. Cenários de Teste
+## Cenário 43: Gerenciamento de Categorias de Anamnese no sistema SIFIT
 
 ### Caso de Teste 01: Exclusão de Categoria de Anamnese com Confirmação
 
