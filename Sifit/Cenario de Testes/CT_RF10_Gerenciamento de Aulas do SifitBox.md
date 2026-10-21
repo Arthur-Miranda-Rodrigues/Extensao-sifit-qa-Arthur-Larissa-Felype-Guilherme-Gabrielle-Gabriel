@@ -1,19 +1,10 @@
 
 ---
 
-# Cenário 10: Gerenciamento de Aulas do SifitBox
+## Cenário 10: Gerenciamento de Aulas do SifitBox
 
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo **SifitBox > Aulas** do sistema **SiFit**. O objetivo é validar as diferentes formas de interação de busca e ações da tela (busca por período digitando manualmente, busca por período selecionando no calendário, tentativa com data final anterior à inicial e o botão de gerar aulas), documentando o comportamento observado em que as ações acionadas não geram retorno ou alteração na interface (*nada acontece*).
-
+### Caso de Teste 01: Busca por Período Digitando a Data Manualmente
 ---
-
-## 2. Cenários de Teste
-
-### Cenário 01: Operações e Gestão de Aulas do SifitBox
-
-#### Caso de Teste 01: Busca por Período Digitando a Data Manualmente
 
 | ID | Descrição |
 | --- | --- |
@@ -40,7 +31,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 ---
 
-#### Caso de Teste 02: Busca por Período Selecionando as Opções de Calendário
+### Caso de Teste 02: Busca por Período Selecionando as Opções de Calendário
 
 | ID | Descrição |
 | --- | --- |
@@ -67,7 +58,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 ---
 
-#### Caso de Teste 03: Validação de Data Inválida (Data Final Anterior à Inicial)
+### Caso de Teste 03: Validação de Data Inválida (Data Final Anterior à Inicial)
 
 | ID | Descrição |
 | --- | --- |
@@ -94,7 +85,7 @@ Este documento especifica os casos de teste referentes ao módulo **SifitBox > A
 
 ---
 
-#### Caso de Teste 04: Acionamento da Funcionalidade de Gerar Aulas
+### Caso de Teste 04: Acionamento da Funcionalidade de Gerar Aulas
 
 | ID | Descrição |
 | --- | --- |
