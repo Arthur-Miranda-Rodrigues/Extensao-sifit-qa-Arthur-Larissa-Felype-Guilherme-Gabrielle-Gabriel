@@ -1,15 +1,4 @@
-
----
-
-# Cenário 38: Gestão de Modelos de Contrato no sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Configurações > Modelos de Contrato** do sistema **SiFit**. O objetivo é validar o acesso à tela de cadastro, a inserção de variáveis dinâmicas (como dados do aluno, do plano, da academia e do contrato) no editor de texto, a atualização da pré-visualização (preview) do contrato, a alteração de status e o salvamento de novos modelos na plataforma.
-
----
-
-## 2. Cenários de Teste
+## Cenário 38: Gestão de Modelos de Contrato no sistema SIFIT
 
 ### Caso de Teste 01: Acesso ao Formulário de Criação de Modelo de Contrato
 
