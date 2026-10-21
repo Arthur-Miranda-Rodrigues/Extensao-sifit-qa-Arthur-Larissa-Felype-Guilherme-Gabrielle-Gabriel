@@ -1,15 +1,4 @@
-
----
-
-# Cenário 44: Gestão de Pergunta de Anamnese no Sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 44: Gestão de Pergunta de Anamnese** no sistema **SiFit**. O objetivo é validar as operações de cadastro de novas perguntas, tratamento de exceções/erros ao alterar o tipo de resposta de um registro já existente, exclusão de perguntas com confirmação via modal, e filtragem avançada por códigos, nomes e status na listagem principal.
-
----
-
-## 2. Cenários de Teste
+## Cenário 44: Gestão de Pergunta de Anamnese no Sistema SIFIT
 
 ### Caso de Teste 01: Exclusão de Pergunta da Lista
 
