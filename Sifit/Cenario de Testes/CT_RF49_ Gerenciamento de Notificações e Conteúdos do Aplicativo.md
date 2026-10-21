@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário de teste: Gerenciamento de Notificações e Conteúdos do Aplicativo
+## Cenário 49: Gerenciamento de Notificações e Conteúdos do Aplicativo
 
 ### Caso de Teste 01: Criar e enviar nova notificação para os alunos
 
