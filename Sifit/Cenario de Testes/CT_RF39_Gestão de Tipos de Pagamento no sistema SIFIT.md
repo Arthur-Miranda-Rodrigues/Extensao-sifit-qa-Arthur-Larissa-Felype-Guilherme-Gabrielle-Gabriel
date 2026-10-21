@@ -1,15 +1,4 @@
-
----
-
-# Cenário 39: Gestão de Tipos de Pagamento no Sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 39: Gestão de Tipos de Pagamento** no sistema **SiFit**. O objetivo é validar as operações de filtragem por código, nome e tipo, cadastro de novos tipos de pagamento com preenchimento obrigatório de campos, edição de dados, tratamento de erro ao tentar excluir registros vinculados e filtros avançados de status e tipo.
-
----
-
-## 2. Cenários de Teste
+## Cenário 39: Gestão de Tipos de Pagamento no Sistema SIFIT
 
 ### Caso de Teste 01: Validação de Campos Obrigatórios ao Cadastrar Tipo de Pagamento
 
