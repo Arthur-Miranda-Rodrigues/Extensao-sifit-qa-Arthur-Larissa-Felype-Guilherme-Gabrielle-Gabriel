@@ -1,7 +1,5 @@
 ## Cenário 30: Gerenciamento de Fornecedores no SIFIT
 
-## 2. Cenários de Teste
-
 ### Caso de Teste 01: Pesquisa de Fornecedor por Código ou Nome
 
 | ID | Descrição |
