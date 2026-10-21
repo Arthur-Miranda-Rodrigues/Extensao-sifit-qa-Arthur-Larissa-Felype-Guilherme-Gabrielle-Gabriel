@@ -3,6 +3,15 @@
 
 # Cenário 3: Página Inicial (Parte 2)
 
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 3: Página Inicial (Parte 2)** no sistema **SiFit**. O objetivo é validar as funcionalidades de visualização e interatividade dos indicadores e painéis da dashboard principal, abrangendo a consulta e filtragem de mensalidades pendentes/em aberto por períodos de vencimento, a listagem e busca por nome ou código de desistências e matrículas no período, a verificação e busca de personal trainers cadastrados com seus respectivos históricos de atendimento, além da abertura e gestão completa da agenda de aulas do dia (incluindo filtros por unidade, busca textual, alteração dinâmica de turmas como *Turma dos Bodybuilders*, *Teste* e *Horario da manhã*, e o acesso às ações rápidas de check-in, envio de lembretes e cancelamento).
+
+---
+
+## 2. Cenários de Teste
+
+
 ### Caso de Teste 01: Visualização do Detalhamento Financeiro (Mensalidades Pendentes / Em Aberto)
 
 | ID | Descrição |
