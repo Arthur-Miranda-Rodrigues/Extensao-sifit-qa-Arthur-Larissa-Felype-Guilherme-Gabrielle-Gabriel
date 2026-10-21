@@ -1,19 +1,6 @@
-
----
-
 # Cenario 22: Gestão de Categorias Crossfit
 
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão de Categorias Crossfit** do módulo **Treinamento > Categorias Crossfit** do sistema **SiFit**. O objetivo é validar as operações de consulta, cadastramentos (comportamento de sucesso e validação de campo obrigatório), alteração de registros e tentativas de exclusão (incluindo o tratamento de erro ao deletar registros vinculados).
-
----
-
-## 2. Cenários de Teste
-
-### Cenário 01: Operações e Gestão de Categorias Crossfit
-
-#### Caso de Teste 01: Pesquisa/Filtro de Categoria por Código
+### Caso de Teste 01: Pesquisa/Filtro de Categoria por Código
 
 | ID | Descrição |
 | --- | --- |
@@ -41,7 +28,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão
 
 ---
 
-#### Caso de Teste 02: Cadastramento de Nova Categoria com Sucesso
+### Caso de Teste 02: Cadastramento de Nova Categoria com Sucesso
 
 | ID | Descrição |
 | --- | --- |
@@ -70,7 +57,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão
 
 ---
 
-#### Caso de Teste 03: Validação de Campo Obrigatório ao Cadastrar Categoria
+### Caso de Teste 03: Validação de Campo Obrigatório ao Cadastrar Categoria
 
 | ID | Descrição |
 | --- | --- |
@@ -96,7 +83,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão
 
 ---
 
-#### Caso de Teste 04: Visualização da listagem atualizada após cadastro
+### Caso de Teste 04: Visualização da listagem atualizada após cadastro
 
 | ID | Descrição |
 | --- | --- |
@@ -122,7 +109,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão
 
 ---
 
-#### Caso de Teste 05: Edição de Registro Existente
+### Caso de Teste 05: Edição de Registro Existente
 
 | ID | Descrição |
 | --- | --- |
@@ -149,7 +136,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 22: Gestão
 
 ---
 
-#### Caso de Teste 06: Tratamento de Erro ao Tentar Deletar Categoria Vinculada
+### Caso de Teste 06: Tratamento de Erro ao Tentar Deletar Categoria Vinculada
 
 | ID | Descrição |
 | --- | --- |
