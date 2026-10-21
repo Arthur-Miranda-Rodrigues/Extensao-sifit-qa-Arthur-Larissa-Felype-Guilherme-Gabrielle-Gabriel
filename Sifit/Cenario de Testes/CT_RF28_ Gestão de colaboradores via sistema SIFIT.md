@@ -1,13 +1,4 @@
-
----
-
-# Cenário 28: Gestão de Colaboradores via Sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Operações da Academia > Colaboradores** do sistema **SiFit**. O objetivo é validar as funcionalidades de cadastro de novos colaboradores, validação de campos obrigatórios, filtragem por código e nome, gerenciamento/vinculação de funções, visualização do perfil detalhado e edição/atualização de cadastros existentes.
-
----
+## Cenário 28: Gestão de Colaboradores via Sistema SIFIT
 
 ## 2. Cenários de Teste
 
