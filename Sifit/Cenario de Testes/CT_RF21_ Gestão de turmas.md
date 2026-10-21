@@ -1,20 +1,6 @@
----
+## Cenário 21: Gestão de Turmas
 
-# Cenário 21: Gestão de Turmas
-
----
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão de Turmas** do módulo **Treinamento > Turmas** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa de turmas, o cadastro de novas turmas com plano, horários, personal e dias de aula, as validações de campos obrigatórios do cadastro, a edição de turmas existentes e a exclusão de turmas.
-
----
-
-## 2. Cenários de Teste
-
-### Cenário 01: Gestão de Turmas
-
-#### Caso de Teste 01: Filtragem e Pesquisa de Turmas
+### Caso de Teste 01: Filtragem e Pesquisa de Turmas
 
 | ID | Descrição |
 | --- | --- |
@@ -50,7 +36,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão
 
 ---
 
-#### Caso de Teste 02: Cadastro de Nova Turma
+### Caso de Teste 02: Cadastro de Nova Turma
 
 | ID | Descrição |
 | --- | --- |
@@ -88,7 +74,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão
 
 ---
 
-#### Caso de Teste 03: Validação de Campos Obrigatórios no Cadastro de Turma
+### Caso de Teste 03: Validação de Campos Obrigatórios no Cadastro de Turma
 
 | ID | Descrição |
 | --- | --- |
@@ -123,7 +109,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão
 
 ---
 
-#### Caso de Teste 04: Edição e Atualização de Turma Existente
+### Caso de Teste 04: Edição e Atualização de Turma Existente
 
 | ID | Descrição |
 | --- | --- |
@@ -163,7 +149,7 @@ Este documento especifica os casos de teste referentes ao **Cenário 21: Gestão
 
 ---
 
-#### Caso de Teste 05: Exclusão de Turma
+### Caso de Teste 05: Exclusão de Turma
 
 | ID | Descrição |
 | --- | --- |
