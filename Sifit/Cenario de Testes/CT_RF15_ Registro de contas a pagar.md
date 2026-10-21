@@ -1,6 +1,6 @@
 ---
 
-# Cenário 15: Registro de Contas a Pagar
+## Cenário 15: Registro de Contas a Pagar
 
 ---
 
