@@ -1,15 +1,4 @@
-
----
-
-# Cenário de Teste: Gerenciamento e Cadastro de Despesas Fixas
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Financeiro > Despesas Fixas** do sistema **SiFit**. O objetivo é validar as operações de listagem e filtragem de despesas, cadastramento de nova despesa fixa, edição/atualização de dados e exclusão de registros na tabela.
-
----
-
-## 2. Cenários de Teste
+## Cenário 26: Gerenciamento e Cadastro de Despesas Fixas
 
 ### Caso de Teste 01: Filtragem de Despesas Fixas por Nome e Recorrência
 
