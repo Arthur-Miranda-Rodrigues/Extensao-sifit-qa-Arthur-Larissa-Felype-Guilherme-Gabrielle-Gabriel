@@ -1,12 +1,4 @@
-# Cenário 34: Gerenciamento de Produtos no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário Gerenciamento de Produtos** do menu **Produtos** do sistema **SIFIT**. O objetivo é validar a filtragem da listagem por Código, Nome, Status e Tipo, o cadastro de novos produtos (do tipo Pontuação, com imagem), a edição de produtos já cadastrados, a exclusão mediante confirmação e o comportamento do sistema ao tentar cadastrar um produto sem preencher os campos, conferindo também a atualização dos indicadores do topo da tela (Total de produtos, Ativos, Inativos e Para venda).
-
----
-
-## 2. Casos de Teste
+## Cenário 34: Gerenciamento de Produtos no SIFIT
 
 ### Caso de Teste 01: Filtrar produtos por Código, Nome, Status e Tipo
 
