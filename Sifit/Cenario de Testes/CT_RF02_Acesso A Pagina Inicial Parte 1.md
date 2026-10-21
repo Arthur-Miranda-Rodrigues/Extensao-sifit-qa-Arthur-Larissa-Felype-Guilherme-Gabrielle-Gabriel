@@ -1,6 +1,4 @@
 ## Cenário 2: Página Inicial (Parte 1)
-
----
 #### Caso de Teste 01: Consulta e Filtro no Modal "Clientes Sem Matrículas"
 
 | ID | Descrição |
