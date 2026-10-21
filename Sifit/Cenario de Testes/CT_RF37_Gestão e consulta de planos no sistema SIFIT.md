@@ -1,15 +1,4 @@
-
----
-
-# Cenário 37: Gestão e consulta de planos no sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Configurações > Planos** do sistema **SiFit**. O objetivo é validar as funcionalidades de pesquisa/filtragem de planos por código, nome e status, o cadastro de novos planos com preenchimento de contratos e valores, a validação de campos obrigatórios, a edição de registros existentes e a tentativa de exclusão de planos com validação de restrições.
-
----
-
-## 2. Cenários de Teste
+## Cenário 37: Gestão e consulta de planos no sistema SIFIT
 
 ### Caso de Teste 01: Pesquisa de Plano por Código, Nome ou Status
 
