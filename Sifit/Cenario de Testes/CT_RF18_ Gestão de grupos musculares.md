@@ -1,9 +1,4 @@
-# Cenário 18: Gestão de Grupos Musculares
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Requisito Funcional 11 (RF11) - Gestão de Grupos Musculares** do módulo **Treinamento > Grupos Musculares** do sistema **SiFit**. O objetivo é validar a filtragem por múltiplos parâmetros, o cadastro de novos grupos (com e sem preenchimento dos campos), a edição com troca de imagem e a exclusão de registros.
-
+## Cenário 18: Gestão de Grupos Musculares
 ---
 
 ## 2. Cenários de Teste
