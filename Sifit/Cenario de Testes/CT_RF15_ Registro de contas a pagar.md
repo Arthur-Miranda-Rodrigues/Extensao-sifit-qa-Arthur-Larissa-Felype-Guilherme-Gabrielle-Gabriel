@@ -1,8 +1,6 @@
 ---
 
 # Cenário 15: Registro de Contas a Pagar
----
-**Descrição:** Validação do módulo de Contas a Pagar na plataforma SIFIT, englobando o cadastro de novas despesas com busca de fornecedor, a aplicação de filtros combinados por nome, tipo de data, período e status, a visualização detalhada do registro no modal e a exclusão de lançamentos com recálculo da listagem.
 
 ---
 
