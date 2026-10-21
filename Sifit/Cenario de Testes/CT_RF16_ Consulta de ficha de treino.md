@@ -1,11 +1,6 @@
 ---
 
 # Cenário de Teste: Gerenciamento de Fichas de Treino
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo **Treinamento > Fichas de Treino** do sistema **SiFit**. O objetivo é validar a listagem, os filtros de busca por código, nome e status, e a tentativa de cadastro de novas fichas de treino com tratamento de exceções do sistema.
-
 ---
 
 ## 2. Cenários de Teste
