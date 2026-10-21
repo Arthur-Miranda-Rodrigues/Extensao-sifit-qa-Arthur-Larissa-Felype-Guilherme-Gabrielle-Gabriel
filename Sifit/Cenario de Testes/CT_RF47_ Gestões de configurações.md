@@ -1,4 +1,4 @@
-## Cenário 45: Gestão de configurações 
+## Cenário 47: Gestão de configurações 
 
 ### Caso de Teste 01: Realizar Check-in manual de presença com sucesso.
 
