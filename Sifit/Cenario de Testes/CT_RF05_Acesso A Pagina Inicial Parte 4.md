@@ -1,17 +1,7 @@
 
 ---
-
-# Cenário 5: Página Inicial (Parte 4)
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 5: Página Inicial (Parte 4)** no sistema **SiFit**. O objetivo é validar as ações de gestão operacional e interações avançadas a partir da dashboard principal, abrangendo o agendamento de avaliações pelo painel de ações rápidas com busca e substituição de alunos, definição de personal e horário, o envio e alternância dinâmica de templates de mensagens operacionais e de cobrança pelo painel de inteligência do cliente, a edição completa de cadastros e dados pessoais (incluindo documentos, foto de perfil, telefones e biometria), o redirecionamento a partir da lista de clientes sem matrículas para o perfil completo, além do atalho de navegação para a tela de gestão de avaliações pendentes.
-
+## Cenário 5: Página Inicial (Parte 4)
 ---
-
-## 2. Cenários de Teste
-
-
 ### Caso de Teste 01: Agendamento de Avaliação através de Ações Rápidas no Perfil do Cliente
 
 | ID  | Descrição |
