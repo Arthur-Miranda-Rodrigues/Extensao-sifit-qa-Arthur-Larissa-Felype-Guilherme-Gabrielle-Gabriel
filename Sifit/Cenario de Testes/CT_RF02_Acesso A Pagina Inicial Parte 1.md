@@ -1,12 +1,4 @@
-
----
-
 ## Cenário 2: Página Inicial (Parte 1)
-
-## 2. Cenários de Teste
-
-### Cenário 01: Visualização de Indicadores e Gestão por Modais na Página Inicial (Parte 1)
-
 #### Caso de Teste 01: Consulta e Filtro no Modal "Clientes Sem Matrículas"
 
 | ID | Descrição |
