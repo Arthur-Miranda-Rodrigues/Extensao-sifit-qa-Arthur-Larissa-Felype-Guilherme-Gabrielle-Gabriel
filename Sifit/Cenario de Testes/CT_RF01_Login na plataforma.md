@@ -1,5 +1,5 @@
 ## Cenário 1: Login na plataforma
----
+
 ### Caso de Teste 01: Login com as credenciais válidas.
 
 | ID | Descrição |
