@@ -3,15 +3,6 @@
 # Cenário 14: Registro e Gestão de Contas a Receber
 
 ---
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao ** Cenário e Teste - Registro e Gestão de Contas a Receber** do sistema **SiFit**. O objetivo é validar os filtros da listagem (código, cliente, tipo de data, período e status), o cadastro de uma nova conta com recebimento, a atualização dos cards financeiros, os atalhos rápidos de período, a visualização e edição de uma conta já recebida (ajuste administrativo) e a exclusão de lançamentos.
-
----
-
-## 2. Casos de Teste
-
 ### Caso de Teste 01: Filtros de Pesquisa por Código, Cliente, Tipo de Data, Período e Status
 
 | ID | Descrição |
