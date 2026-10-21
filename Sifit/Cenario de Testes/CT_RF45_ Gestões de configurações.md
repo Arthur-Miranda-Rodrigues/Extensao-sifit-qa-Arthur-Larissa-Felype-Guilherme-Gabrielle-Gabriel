@@ -1,13 +1,10 @@
-
----
-
-## Cenário de Teste: Controle de Presença e Registro de Check-in
+## Cenário 45: Controle de Presença e Registro de Check-in
 
 ### Caso de Teste 01: Realizar Check-in manual de presença com sucesso.
 
 | ID | Descrição |
 | --- | --- |
-| C40-CT01 | O sistema deve permitir que o usuário realize o check-in do aluno com sucesso. |
+| C45-CT01 | O sistema deve permitir que o usuário realize o check-in do aluno com sucesso. |
 
 | **Pré-condições** |
 | --- |
@@ -30,7 +27,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C40-CT02 | O sistema deve ocultar ou restringir o check-in manual caso o controle seja exclusivo por Biometria. |
+| C45-CT02 | O sistema deve ocultar ou restringir o check-in manual caso o controle seja exclusivo por Biometria. |
 
 | **Pré-condições** |
 | --- |
@@ -52,7 +49,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C40-CT03 | O sistema deve permitir a consulta do histórico de presenças e check-ins. |
+| C45-CT03 | O sistema deve permitir a consulta do histórico de presenças e check-ins. |
 
 | **Pré-condições** |
 | --- |
