@@ -1,6 +1,6 @@
 ---
 
-# Cenário de Teste: Gerenciamento de Fichas de Treino
+## Cenário 16: Gerenciamento de Fichas de Treino
 ---
 
 ## 2. Cenários de Teste
