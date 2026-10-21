@@ -1,15 +1,4 @@
-
----
-
-# Cenário 29: Gestão de Funções
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Configurações > Funções** do sistema **SiFit**. O objetivo é validar as funcionalidades de pesquisa de funções por nome e tipo (interno/externo), validação de campos obrigatórios ao cadastrar nova função, criação de nova função no sistema, configuração de permissões associadas e visualização detalhada dos dados de funções existentes.
-
----
-
-## 2. Cenários de Teste
+## Cenário 29: Gestão de Funções
 
 ### Caso de Teste 01: Pesquisa e Filtragem de Funções por Nome e Tipo
 
