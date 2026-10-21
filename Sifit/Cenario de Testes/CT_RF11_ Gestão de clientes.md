@@ -3,11 +3,8 @@
 
 # Cenário 11: Gestão de Clientes
 
-**Descrição:** Validação do módulo de Gestão de Clientes na plataforma SIFIT, englobando o cadastro completo com foto e dados de endereço/aplicativo, validação de campos obrigatórios em branco, ações no perfil do cliente, tratamento de exceções de exclusão e refinamento de buscas combinadas.
-
----
-
 ## Caso de Teste 01: Preenchimento Completo e Cadastro de Novo Cliente
+---
 
 | ID | Descrição |
 | --- | --- |
