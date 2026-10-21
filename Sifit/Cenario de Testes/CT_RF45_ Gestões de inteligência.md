@@ -3,7 +3,7 @@
 
 ---
 
-## Cenário de teste: Módulo Inteligência & Automação e Gestão de Clientes
+## Cenário 45: Módulo Inteligência & Automação e Gestão de Clientes
 
 ### Caso de Teste 01: Execução da automação de Risco de Evasão e consulta do relatório de alunos
 
