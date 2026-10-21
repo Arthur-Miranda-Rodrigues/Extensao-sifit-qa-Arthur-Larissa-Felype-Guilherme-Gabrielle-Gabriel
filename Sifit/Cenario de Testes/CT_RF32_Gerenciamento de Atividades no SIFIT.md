@@ -1,12 +1,4 @@
-# Cenário 32: Gerenciamento de Atividades no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário Gerenciamento de Atividades** do menu **Gestão > Atividades** do sistema **SIFIT**. O objetivo é validar a pesquisa de atividades por Código e Nome, o cadastro de novas atividades pelo modal "Atividade" (com dados válidos e com os campos em branco), a edição de atividades existentes e a exclusão de atividades, conferindo também a atualização dos indicadores do topo da tela (Total de atividades, Com pontuação, Sem pontuação e Com descrição).
-
----
-
-## 2. Casos de Teste
+## Cenário 32: Gerenciamento de Atividades no SIFIT
 
 ### Caso de Teste 01: Buscar atividades por Nome e por Código
 
