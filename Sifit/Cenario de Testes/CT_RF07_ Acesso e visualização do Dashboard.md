@@ -1,7 +1,7 @@
 
 ---
 
-# Cenário 7: Acesso e visualização do Dashboard.
+## Cenário 7: Acesso e visualização do Dashboard.
 
 ### Caso de Teste 01: Navegação para a Tela de Dashboard e Alternância Dinâmica de Cores ao Recarregar
 ---
