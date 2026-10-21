@@ -1,13 +1,10 @@
 
 ---
 
-# Cenário 8: Gerenciamento de Check-ins.
-
-**Descrição:** Validação do módulo de gerenciamento de check-ins, englobando a navegação entre abas, busca por clientes na tabela principal, acionamento do botão "Registrar entrada", fluxo de entrada rápida e o cadastro de check-in manual com observação.
-
----
+## Cenário 8: Gerenciamento de Check-ins.
 
 ## Caso de Teste 01: Filtro de Busca por Código ou Nome na Tabela de Check-ins
+---
 
 | ID | Descrição |
 | --- | --- |
