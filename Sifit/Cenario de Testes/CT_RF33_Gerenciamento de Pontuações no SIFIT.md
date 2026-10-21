@@ -1,12 +1,4 @@
-# Cenário 33: Gerenciamento de Pontuações no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário Gerenciamento de Pontuações** do menu **Gestão > Pontuação** do sistema **SIFIT**. O objetivo é validar a pesquisa de pontuações por Código, Nome e Status, o cadastro de novas pontuações (campanhas) com período e produtos de resgate, a vinculação de atividades a uma pontuação, a consulta do ranking de participantes, a exclusão de pontuações e o tratamento das mensagens de erro exibidas quando o servidor falha ao salvar ou processar uma ação.
-
----
-
-## 2. Casos de Teste
+## Cenário 33: Gerenciamento de Pontuações no SIFIT
 
 ### Caso de Teste 01: Buscar pontuações por Código, Nome ou Status
 
