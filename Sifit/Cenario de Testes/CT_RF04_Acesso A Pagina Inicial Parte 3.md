@@ -2,7 +2,7 @@
 # Cenário 4: Página Inicial (Parte 3)
 
 ### Caso de Teste 01: Ações Recomendadas - Falar com Alunos Inativos
-
+---
 | ID | Descrição |
 | --- | --- |
 | **C04-CT01** | Validar a abertura do modal "Falar com inativos" a partir da seção "Ações recomendadas para hoje", a busca por alunos, personalização de mensagem e seleção do canal de envio. |
