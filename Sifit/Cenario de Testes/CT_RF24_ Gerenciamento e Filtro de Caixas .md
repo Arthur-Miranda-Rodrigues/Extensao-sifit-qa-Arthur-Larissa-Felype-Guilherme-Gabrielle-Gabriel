@@ -1,15 +1,4 @@
-
----
-
-# Cenário 24: Gerenciamento e Filtro de Caixas no Módulo Financeiro
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 24: Gerenciamento e Filtro de Caixas** no sistema **SiFit**. O objetivo é validar as operações de abertura de caixa, filtros por status e período, visualização de entradas e saídas, conferência física com obrigatoriedade de motivo, tratamento de erros na busca de contas e emissão/impressão de relatórios de fechamento de caixa.
-
----
-
-## 2. Cenários de Teste
+## Cenário 24: Gerenciamento e Filtro de Caixas no Módulo Financeiro
 
 ### Caso de Teste 01: Abertura de Novo Caixa com Local Válido
 
