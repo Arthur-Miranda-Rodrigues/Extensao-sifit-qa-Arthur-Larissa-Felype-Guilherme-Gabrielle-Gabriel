@@ -3,6 +3,12 @@
 
 # Cenário 9: Consulta e Filtragem de Presenças de Clientes
 
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 9: Consulta e Filtragem de Presenças de Clientes** no sistema **SiFit**. O objetivo é validar as funcionalidades de busca e filtragem de registros de presença e check-ins dos alunos, abrangendo a pesquisa textual por nome ou parte do nome do cliente, a consulta direta por número ou código identificador, o uso de filtros rápidos pré-configurados (*"Hoje"*, *"Esta semana"* e *"Este mês"*) com ajuste automático de intervalos, e a seleção manual de datas customizadas por meio de calendário com navegação livre entre meses, garantindo o correto recálculo das métricas nos cards de resumo e a exibição precisa dos registros na listagem.
+
+---
+
 ### Caso de Teste 01: Consulta de Presenças por Nome do Cliente
 
 | ID | Descrição |
