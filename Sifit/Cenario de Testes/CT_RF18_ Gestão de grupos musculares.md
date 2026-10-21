@@ -1,5 +1,5 @@
 ## Cenário 18: Gestão de Grupos Musculares
----
+
 ### Caso de Teste 01: Filtragem e Busca de Grupos Musculares
 
 | ID | Descrição |
