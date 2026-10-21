@@ -1,15 +1,4 @@
-
----
-
-# Cenário 27: Geração e Filtragem de Relatórios Operacionais e Financeiros
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Relatórios** do sistema **SiFit**. O objetivo é validar a emissão de relatórios operacionais e financeiros (Avaliações, Clientes, Colaboradores, Matrículas, Contas a Receber, Contas a Pagar e Caixas), testando a aplicação de filtros por período, tipos de planos, status de pagamento, formas de pagamento, bem como a alteração entre formatos normais e detalhados.
-
----
-
-## 2. Cenários de Teste
+## Cenário 27: Geração e Filtragem de Relatórios Operacionais e Financeiros
 
 ### Caso de Teste 01: Visualização do Painel Geral de Relatórios e Navegação de Tipos
 
