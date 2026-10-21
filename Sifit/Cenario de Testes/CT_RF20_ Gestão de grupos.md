@@ -1,13 +1,4 @@
-
----
-
-# Cenário 20: Gestão de Grupos
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 20: Gestão de Grupos** do módulo **Treinamento > Grupos** do sistema **SiFit**. O objetivo é validar a filtragem e pesquisa por múltiplos parâmetros, o cadastro de novos grupos, a edição e atualização de registros (incluindo a validação do comportamento de status), e o tratamento de integridade referencial em tentativas de exclusão de registros vinculados.
-
----
+## Cenário 20: Gestão de Grupos
 
 ## 2. Cenários de Teste
 
