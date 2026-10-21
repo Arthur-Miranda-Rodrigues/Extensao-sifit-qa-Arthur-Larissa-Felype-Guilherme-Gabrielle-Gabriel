@@ -3,16 +3,8 @@
 
 # Cenário 7: Acesso e visualização do Dashboard.
 
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 7: Acesso e visualização do Dashboard** no sistema **SiFit**. O objetivo é validar a navegação para o painel principal através do menu lateral, o comportamento dinâmico de alteração de temas/cores ao atualizar a página, a interatividade dos gráficos com exibição de etiquetas informativas (*tooltips*) ao passar o cursor, além do redirecionamento para o painel de **Resultados da Inteligência** e a atualização dinâmica dos indicadores de desempenho mediante a alteração de filtros temporais (como *Hoje*, *Últimos 7 dias*, *Últimos 30 dias* e *Últimos 90 dias*).
-
----
-
-## 2. Cenários de Teste
-
 ### Caso de Teste 01: Navegação para a Tela de Dashboard e Alternância Dinâmica de Cores ao Recarregar
-
+---
 | ID | Descrição |
 | --- | --- |
 | **C07-CT01** | Verificar o direcionamento para a tela "Dashboard" pelo menu lateral, a correta renderização dos painéis e o comportamento de alternância/mudança de tema de cores ao recarregar a página. |
