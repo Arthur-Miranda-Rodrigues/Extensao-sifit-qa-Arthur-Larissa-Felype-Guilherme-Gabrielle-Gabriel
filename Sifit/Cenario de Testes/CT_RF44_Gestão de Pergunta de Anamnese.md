@@ -1,86 +1,144 @@
 
 ---
 
-## Cenário de 44: Gestão de Pergunta de Anamnese
+# Cenário 44: Gestão de Pergunta de Anamnese no Sistema SIFIT
 
-### Caso de Teste 01: Cadastrar pergunta e validar erro ao alterar tipo de resposta.
+## 1. Descrição
 
-| ID | Descrição |
-| --- | --- |
-| **C44-CT01** | O sistema deve permitir o cadastro de uma nova pergunta, mas deve exibir uma mensagem de erro ao tentar salvar uma alteração do tipo de resposta não permitida. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar autenticado no sistema SIFIT e na tela de Perguntas Anamnese. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela de "Perguntas Anamnese"
-
- |
-| **E** clica no botão "Nova Pergunta"
-
- |
-| **E** preenche o Nome com "Qual é o nome da academia" e Pergunta com "Qual é o nome da academia"
-
- |
-| **E** define o Número como "5" e clica em "Salvar" |
-| **QUANDO** o usuário tenta editar a pergunta recém-criada e altera o Tipo Resposta para "Se Sim, qual?" |
-| **E** clica no botão "Salvar" |
-| **ENTÃO** o sistema deve exibir a mensagem de erro "Erro ao salvar pergunta" |
-
-| **Critérios de aceitação** |
-| --- |
-| O registro inicial é salvo com sucesso, porém a tentativa de alteração do Tipo Resposta é bloqueada exibindo um modal de erro. |
+Este documento especifica os casos de teste referentes ao **Cenário 44: Gestão de Pergunta de Anamnese** no sistema **SiFit**. O objetivo é validar as operações de cadastro de novas perguntas, tratamento de exceções/erros ao alterar o tipo de resposta de um registro já existente, exclusão de perguntas com confirmação via modal, e filtragem avançada por códigos, nomes e status na listagem principal.
 
 ---
 
-### Caso de Teste 02: Exclusão de pergunta da lista.
+## 2. Cenários de Teste
+
+### Caso de Teste 01: Exclusão de Pergunta da Lista
 
 | ID | Descrição |
 | --- | --- |
-| **C44-CT02** | O sistema deve permitir a exclusão de uma pergunta existente mediante confirmação. |
+| **C44-CT01** | Validar a exibição do modal de confirmação de exclusão e a remoção definitiva de uma pergunta da listagem do sistema. |
 
 | **Pré-condições** |
 | --- |
-| Deve haver pelo menos uma pergunta cadastrada na listagem de Perguntas Anamnese.
-
- |
+| O usuário deve estar autenticado e posicionado na tela **Perguntas Anamnese** com registros cadastrados. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário visualiza a lista de Perguntas Anamnese |
-| **E** clica no ícone de exclusão (lixeira) de uma pergunta (ex: "Qual é o exercício?") |
-| **QUANDO** o modal de confirmação "Deseja deletar esta pergunta?" for exibido |
-| **E** o usuário clicar em "Confirmar" |
-| **ENTÃO** o registro deve ser removido da listagem e a contagem de perguntas atualizada |
+| **DADO** que o usuário visualiza a lista de perguntas de anamnese<br> |
+| **QUANDO** clica no ícone de exclusão (lixeira) de uma pergunta (ex.: "Qual é o exercício?") |
+| **E** visualiza o modal de confirmação "Deseja deletar esta pergunta?" e clica em **"Confirmar"**<br><br> |
+| **ENTÃO** o registro deve ser removido da listagem e a contagem de perguntas atualizada na interface. |
 
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A pergunta selecionada é excluída permanentemente e deixa de ser exibida na tabela. |
+| * A pergunta selecionada deve ser excluída permanentemente e deixar de ser exibida na tabela após a confirmação. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/131widQ4Ml1kO-jQLVhkbOs4qOyy1blw3/view?usp=sharing |
 
 ---
 
-
-### Caso de Teste 03: Filtrar perguntas por Código e por Nome.
+### Caso de Teste 02: Validação de Erro ao Tentar Editar Pergunta Existente
 
 | ID | Descrição |
 | --- | --- |
-| **C44-CT03** | O sistema deve filtrar corretamente as perguntas exibidas conforme os critérios de busca inseridos nos campos Código ou Nome. |
+| **C44-CT02** | Validar o comportamento do sistema ao tentar alterar o tipo de resposta de uma pergunta cadastrada, exibindo a mensagem de erro correspondente. |
 
 | **Pré-condições** |
 | --- |
-| Existem perguntas cadastradas na listagem (ex: códigos "3", "4" ou "5"). |
+| O usuário estar na tela de gerenciamento de **Perguntas Anamnese** com registros existentes. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário informa um código no campo de busca "Código" (ex: "3") e clica em "Buscar" |
-| **QUANDO** o sistema processar a busca |
-| **ENTÃO** deve exibir a mensagem "Nenhuma pergunta encontrada." caso o código não corresponda a nenhum registro |
-| **E** ao buscar por um código/nome existente e clicar em "Buscar", deve filtrar e exibir apenas os registros correspondentes na tabela |
+| **DADO** que o usuário clica no ícone de edição de uma pergunta na tabela (ex.: código 4) <br> |
+| **QUANDO** altera o "Tipo Resposta" (ex.: de "Sim e Não" para "Sim, Não e Não Sei") e clica em **"Salvar"**<br><br> |
+| **ENTÃO** o sistema exibe o indicador de salvamento e apresenta um modal com a mensagem de erro **"Erro ao salvar pergunta"**. |
 
-| **Critérios de aceitação** |
+| **Critérios de Aceitação** |
 | --- |
-| A listagem deve refletir precisamente o filtro aplicado e atualizar o total de registros encontrados. |
+| * O sistema deve bloquear alterações não permitidas no tipo de resposta, exibindo um pop-up de alerta de erro para o operador. |
 
-https://jam.dev/c/51a1cf79-bb03-45b5-8ee5-c79b9a4c2491
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1YFPpJy7qa9TTkabG3R07Z8GTdehrgKVb/view?usp=sharing |
+
+---
+
+### Caso de Teste 03: Cadastro de Nova Pergunta de Anamnese
+
+| ID | Descrição |
+| --- | --- |
+| **C44-CT03** | Validar o fluxo de cadastro de uma nova pergunta de anamnese preenchendo o código, nome, texto da pergunta e selecionando o tipo de resposta.|
+
+| **Pré-condições** |
+| --- |
+| O usuário estar posicionado na tela principal de **Perguntas Anamnese**. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário clica no botão **"Nova Pergunta"** no canto superior direito<br> |
+| **QUANDO** preenche os campos de código, nome, texto da pergunta e define o tipo de resposta (ex.: "Sim e Não") |
+| **E** clica no botão **"Salvar"**<br><br> |
+| **ENTÃO** a nova pergunta deve ser gravada com sucesso e adicionada à listagem principal. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * O novo registro deve ser persistido corretamente e refletir os dados informados nos cards de resumo e na tabela. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1QpyYGvuLut-t7-kfwXJkrM31yfr3NldF/view?usp=sharing |
+
+---
+
+### Caso de Teste 04: Validação de Campos Obrigatórios no Cadastro de Pergunta
+
+| ID | Descrição |
+| --- | --- |
+| **C44-CT04** | O sistema deve validar o preenchimento obrigatório dos campos ao tentar salvar uma nova pergunta com dados incompletos. |
+
+| **Pré-condições** |
+| --- |
+| O usuário estar na tela de **Perguntas Anamnese** com o modal de nova pergunta aberto. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário abre o modal **"Nova Pergunta"**<br><br>|
+| **QUANDO** tenta prosseguir e clicar em **"Salvar"** sem preencher os campos obrigatórios (como Nome ou o enunciado da Pergunta)<br> |
+| **ENTÃO** o sistema deve impedir o registro e sinalizar visualmente as pendências de preenchimento obrigatório, mas cadastra mesmo assim.|
+
+
+| **Critérios de Aceitação** |
+| --- |
+| * O salvamento deve ser bloqueado caso os campos essenciais não estejam devidamente preenchidos. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1ULFkiN2npCTMc3TF9CY7l_JA7ZvzFiUY/view?usp=sharing |
+
+---
+
+### Caso de Teste 05: Filtragem de Perguntas por Código, Nome e Status
+
+| ID | Descrição |
+| --- | --- |
+| **C44-CT05** | Validar a filtragem de perguntas na listagem principal utilizando os campos de busca por código, nome e filtros de status (Ativo/Inativo). |
+
+| **Pré-condições** |
+| --- |
+| O usuário estar na página principal de **Perguntas Anamnese** com múltiplos registros cadastrados. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário visualiza a barra de filtros no topo da tela<br> |
+| **QUANDO** preenche o campo "Código" ou "Nome da pergunta" e altera o filtro de "Status" (ex.: Ativo, Inativo ou Todos) |
+| **E** clica no botão **"Buscar"**<br><br> |
+| **ENTÃO** a tabela deve ser atualizada dinamicamente para exibir apenas os registros que correspondem rigorosamente aos critérios de busca. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * Os filtros devem retornar os resultados com precisão e atualizar o contador de registros exibidos na tabela. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1wVl2TUPuf7LYtu_L4KHSkWi5GsJNXRly/view?usp=sharing |
