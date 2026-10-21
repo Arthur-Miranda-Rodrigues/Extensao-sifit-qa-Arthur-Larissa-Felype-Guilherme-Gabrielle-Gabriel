@@ -1,15 +1,4 @@
-
----
-
-# Cenário 36: Gestão e consulta de leads no módulo Prospecção
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Prospecção** do sistema **SiFit**. O objetivo é validar as funcionalidades de pesquisa de leads por nome/termo, filtragem por estágios do funil de vendas, cadastro de novos leads com validação de campos obrigatórios, visualização/edição de dados cadastrados e exclusão de registros na plataforma.
-
----
-
-## 2. Cenários de Teste
+## Cenário 36: Gestão e consulta de leads no módulo Prospecção
 
 ### Caso de Teste 01: Pesquisa de Lead por Nome ou Termo
 
