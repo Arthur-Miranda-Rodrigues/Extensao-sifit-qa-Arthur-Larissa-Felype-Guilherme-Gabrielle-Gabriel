@@ -1,15 +1,4 @@
-
----
-
-# Cenário 25: Gestão Financeira e Cobranças via Pagar.me no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 25: Gestão Financeira e Cobranças via Pagar.me** no sistema **SiFit**. O objetivo é validar as funcionalidades de solicitação de saque, consulta de valores em processamento, recebíveis futuros, visualização de relatórios completos de assinaturas, filtros dinâmicos no gráfico de recebimentos, criação de novas cobranças avulsas, acesso às configurações de integração, consulta ao extrato de transações, visualização de repasses e análise de chargebacks.
-
----
-
-## 2. Cenários de Teste
+## Cenário 25: Gestão Financeira e Cobranças via Pagar.me no SIFIT
 
 ### Caso de Teste 01: Consulta de Valores em Processamento
 
