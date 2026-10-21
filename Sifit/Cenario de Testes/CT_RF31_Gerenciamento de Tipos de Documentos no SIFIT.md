@@ -1,15 +1,4 @@
-
----
-
-# Cenário 31: Gerenciamento de Tipos de Documentos no SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Configurações > Tipos de Documentos** do sistema **SiFit**. O objetivo é validar as funcionalidades de busca de tipos de documentos por código, nome e aplicação, o cadastro de novos tipos de documentos com validação de campos obrigatórios, a edição de registros existentes, a visualização detalhada de dados e a tentativa de exclusão de registros na plataforma.
-
----
-
-## 2. Cenários de Teste
+## Cenário 31: Gerenciamento de Tipos de Documentos no SIFIT
 
 ### Caso de Teste 01: Pesquisa de Tipos de Documentos por Código, Nome ou Aplicação
 
