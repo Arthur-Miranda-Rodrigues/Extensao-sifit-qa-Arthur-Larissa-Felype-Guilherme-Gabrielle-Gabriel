@@ -2,7 +2,7 @@
 
 ---
 
-# Cenário: Login na plataforma
+# Cenário 1: Login na plataforma
 
 ## 1. Descrição
 
