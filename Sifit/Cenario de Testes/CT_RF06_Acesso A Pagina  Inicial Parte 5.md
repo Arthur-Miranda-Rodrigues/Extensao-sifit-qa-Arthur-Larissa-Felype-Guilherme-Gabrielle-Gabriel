@@ -3,6 +3,14 @@
 
 # Cenário 6: Página Inicial (Parte 5)
 
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 6: Página Inicial (Parte 5)** no sistema **SiFit**. O objetivo é validar operações complementares e fluxos detalhados a partir da dashboard e dos perfis de clientes, abrangendo o redirecionamento para a tela de visualização de clientes e profissionais a partir do modal de personais, a execução e finalização completa de anamneses diretamente no perfil do aluno, a consulta ao histórico detalhado de presenças e a validação do status financeiro com o tratamento e exibição de alertas informativos quando o aluno não possui débitos ou pendências de pagamento registradas.
+
+---
+
+## 2. Cenários de Teste
+
 ### Caso de Teste 01: Acesso ao Perfil do Cliente a partir do Modal de Personais
 
 | ID | Descrição |
