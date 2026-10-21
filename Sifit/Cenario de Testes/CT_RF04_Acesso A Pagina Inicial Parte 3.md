@@ -1,6 +1,15 @@
 ---
 # Cenário 4: Página Inicial (Parte 3)
 ---
+
+## 1. Descrição
+
+Este documento especifica os casos de teste referentes ao **Cenário 4: Página Inicial (Parte 3)** no sistema **SiFit**. O objetivo é validar as funcionalidades avançadas de retenção, ações recomendadas e acompanhamento operacional na dashboard principal, abrangendo a abertura e configuração dos modais de comunicação para alunos inativos e devedores com pagamento em aberto (incluindo busca, templates e canais de envio), a consulta e filtragem da listagem de aniversariantes do dia por período e navegação mensal no calendário, o redirecionamento operacional para a tela de presenças através das últimas entradas na academia, além da navegação para a Central de Automações na Inteligência de Retenção com a verificação de relatórios detalhados de risco de evasão e regras de execução manual.
+
+
+## 2. Cenários de Teste
+
+---
 ### Caso de Teste 01: Ações Recomendadas - Falar com Alunos Inativos
 
 | ID | Descrição |
