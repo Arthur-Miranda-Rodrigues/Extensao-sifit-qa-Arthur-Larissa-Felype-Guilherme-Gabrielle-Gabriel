@@ -1,4 +1,4 @@
-# Cenario 22: Gestão de Categorias Crossfit
+## Cenario 22: Gestão de Categorias Crossfit
 
 ### Caso de Teste 01: Pesquisa/Filtro de Categoria por Código
 
