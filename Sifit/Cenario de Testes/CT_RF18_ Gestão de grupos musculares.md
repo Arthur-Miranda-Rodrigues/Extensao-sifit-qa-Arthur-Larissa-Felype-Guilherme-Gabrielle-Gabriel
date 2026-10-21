@@ -1,11 +1,6 @@
 ## Cenário 18: Gestão de Grupos Musculares
 ---
-
-## 2. Cenários de Teste
-
-### Cenário 01: Gestão e Operações em Grupos Musculares
-
-#### Caso de Teste 01: Filtragem e Busca de Grupos Musculares
+### Caso de Teste 01: Filtragem e Busca de Grupos Musculares
 
 | ID | Descrição |
 | --- | --- |
@@ -38,7 +33,7 @@
 
 ---
 
-#### Caso de Teste 02: Cadastro de Novo Grupo Muscular
+### Caso de Teste 02: Cadastro de Novo Grupo Muscular
 
 | ID | Descrição |
 | --- | --- |
@@ -72,7 +67,7 @@
 
 ---
 
-#### Caso de Teste 03: Edição de Grupo Muscular com Troca de Imagem
+### Caso de Teste 03: Edição de Grupo Muscular com Troca de Imagem
 
 | ID | Descrição |
 | --- | --- |
@@ -105,7 +100,7 @@
 
 ---
 
-#### Caso de Teste 04: Cadastro de Grupo Muscular Sem Preencher Nome e Tipo Membro
+### Caso de Teste 04: Cadastro de Grupo Muscular Sem Preencher Nome e Tipo Membro
 
 | ID | Descrição |
 | --- | --- |
@@ -137,7 +132,7 @@
 
 ---
 
-#### Caso de Teste 05: Exclusão de Grupo Muscular
+### Caso de Teste 05: Exclusão de Grupo Muscular
 
 | ID | Descrição |
 | --- | --- |
