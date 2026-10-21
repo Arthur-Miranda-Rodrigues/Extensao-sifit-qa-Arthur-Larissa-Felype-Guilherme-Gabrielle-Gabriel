@@ -1,15 +1,4 @@
-
----
-
-# Cenário 19: Gerenciamento de Objetivos Treino
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 19: Gerenciamento de Objetivos Treino** do módulo **Treinamento > Objetivos** do sistema **SiFit**. O objetivo é validar o comportamento do cadastro de novos objetivos com validação de erros e o funcionamento dos filtros de busca por nome.
-
----
-
-## 2. Casos de Teste
+## Cenário 19: Gerenciamento de Objetivos Treino
 
 ### Caso de Teste 01: Validação de Erro no Cadastro de Novo Objetivo
 
