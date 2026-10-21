@@ -2,7 +2,7 @@
 
 ---
 
-## Cenário de teste: Visualização e Filtragem do Dashboard de Resultados da Inteligência
+## Cenário 46: Visualização e Filtragem do Dashboard de Resultados da Inteligência
 
 ### Caso de Teste 01: Filtragem do dashboard por período temporal
 
