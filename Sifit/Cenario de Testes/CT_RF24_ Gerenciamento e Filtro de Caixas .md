@@ -69,9 +69,7 @@
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário abre o painel de fechamento do caixa e seleciona o local correspondente (ex: "Caixa Academia")
-
-<br> |
+| **DADO** que o usuário abre o painel de fechamento do caixa e seleciona o local correspondente (ex: "Caixa Academia")<br> |
 | **QUANDO** clicar no botão **"Ver Entradas"**<br><br> |
 | **ENTÃO** o sistema deve carregar e exibir os dados consolidados e o detalhamento das entradas vinculadas ao período e local de contas. |
 
