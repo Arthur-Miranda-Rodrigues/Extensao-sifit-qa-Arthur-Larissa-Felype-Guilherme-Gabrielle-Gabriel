@@ -2,15 +2,7 @@
 
 ---
 
-# Cenário 1: Login na plataforma
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao módulo de **Autenticação / Login** do sistema **SiFit**. O objetivo é validar o comportamento da tela de acesso ao sistema sob diferentes cenários, incluindo a autenticação bem-sucedida com credenciais válidas, falhas com credenciais incorretas, validação de campos obrigatórios em branco e a funcionalidade de recuperação de senha.
-
----
-
-## 2. Cenários de Teste
+## Cenário 1: Login na plataforma
 
 ### Caso de Teste 01: Login com as credenciais válidas.
 
