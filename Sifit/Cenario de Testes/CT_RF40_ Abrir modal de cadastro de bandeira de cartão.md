@@ -1,15 +1,4 @@
-
----
-
-# Cenário 40: Gestão de Bandeiras de Cartão no Sistema SIFIT
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Cenário 40: Gestão de Bandeiras de Cartão** no sistema **SiFit**. O objetivo é validar o gerenciamento de bandeiras de cartão de crédito e débito, abrangendo a abertura do modal de cadastro com validação de campos obrigatórios, configuração de taxas adicionais, taxas de débito e regras de parcelamento, além de consultas e filtros por código ou nome na tabela principal.
-
----
-
-## 2. Cenários de Teste
+## Cenário 40: Gestão de Bandeiras de Cartão no Sistema SIFIT
 
 ### Caso de Teste 01: Validação de Campos Obrigatórios e Abertura do Modal de Nova Bandeira
 
