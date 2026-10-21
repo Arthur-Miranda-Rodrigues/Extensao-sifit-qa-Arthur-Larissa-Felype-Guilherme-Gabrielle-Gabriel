@@ -1,10 +1,6 @@
 ## Cenário 20: Gestão de Grupos
 
-## 2. Cenários de Teste
-
-### Cenário 01: Operações e Gestão de Grupos
-
-#### Caso de Teste 01: Filtragem e Pesquisa de Grupos
+### Caso de Teste 01: Filtragem e Pesquisa de Grupos
 
 | ID | Descrição |
 | --- | --- |
@@ -35,7 +31,7 @@
 
 ---
 
-#### Caso de Teste 02: Inclusão de Novo Grupo
+### Caso de Teste 02: Inclusão de Novo Grupo
 
 | ID | Descrição |
 | --- | --- |
@@ -66,7 +62,7 @@
 
 ---
 
-#### Caso de Teste 03: Inclusão de Grupo com Preenchimento Obrigatório e Validação
+### Caso de Teste 03: Inclusão de Grupo com Preenchimento Obrigatório e Validação
 
 | ID | Descrição |
 | --- | --- |
@@ -95,7 +91,7 @@
 
 ---
 
-#### Caso de Teste 04: Edição e Atualização de Grupo Existente
+### Caso de Teste 04: Edição e Atualização de Grupo Existente
 
 | ID | Descrição |
 | --- | --- |
