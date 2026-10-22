@@ -4,7 +4,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C45-CT01 | O sistema deve permitir que o usuário realize o check-in do aluno com sucesso. |
+| C47-CT01 | O sistema deve permitir que o usuário realize o check-in do aluno com sucesso. |
 
 | **Pré-condições** |
 | --- |
@@ -27,7 +27,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C45-CT02 | O sistema deve ocultar ou restringir o check-in manual caso o controle seja exclusivo por Biometria. |
+| C47-CT02 | O sistema deve ocultar ou restringir o check-in manual caso o controle seja exclusivo por Biometria. |
 
 | **Pré-condições** |
 | --- |
@@ -49,7 +49,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C45-CT03 | O sistema deve permitir a consulta do histórico de presenças e check-ins. |
+| C47-CT03 | O sistema deve permitir a consulta do histórico de presenças e check-ins. |
 
 | **Pré-condições** |
 | --- |
