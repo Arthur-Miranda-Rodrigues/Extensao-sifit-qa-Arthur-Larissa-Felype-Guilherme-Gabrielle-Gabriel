@@ -22,7 +22,7 @@
 | --- |
 | O redirecionamento para a Página Inicial ("Bom dia, Jair!") deve ocorrer corretamente. |
 
-| **Evidências** |
+| **Evidência** |
 | --- |
 | https://drive.google.com/file/d/12YnKA9VnajzPptMiPn6LI3pPnC87LwmF/view?usp=sharing   |
 
@@ -51,7 +51,7 @@
 | --- |
 | A mensagem de alerta "O nome de usuário e senha não correspondem." deve ser exibida ao usuário. |
 
-| **Evidências** |
+| **Evidência** |
 | --- |
 |  https://drive.google.com/file/d/18LbwX2OkkQhCwBqHVwqWjKxsCmdd2GdA/view?usp=sharing  |
 
