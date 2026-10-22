@@ -9,7 +9,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C06-CT01 | O sistema deve permitir a execução da automação de Risco de Evasão e exibir o relatório detalhado dos alunos com os respetivos scores de risco. |
+| C45-CT01 | O sistema deve permitir a execução da automação de Risco de Evasão e exibir o relatório detalhado dos alunos com os respetivos scores de risco. |
 
 | **Pré-condições** |
 | --- |
@@ -33,7 +33,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| C06-CT02 | O sistema deve exibir mensagem informativa ao tentar executar manualmente uma automação que não suporta acionamento manual. |
+| C45-CT02 | O sistema deve exibir mensagem informativa ao tentar executar manualmente uma automação que não suporta acionamento manual. |
 
 | **Pré-condições** |
 | --- |
