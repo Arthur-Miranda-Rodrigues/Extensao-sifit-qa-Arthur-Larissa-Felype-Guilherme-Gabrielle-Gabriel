@@ -15,6 +15,9 @@
 | **DADO** que o usuário navega pelo menu principal e seleciona a opção "Inteligência & Automação".<br> |
 | **QUANDO** a página for carregada.<br> |
 | **ENTÃO** o sistema deve exibir a "Central de Automações" com os indicadores superiores, os painéis de "Automações ativas" (*Risco de Evasão* e *Aniversariantes*) e a barra de "Atividade recente". |
+| **QUANDO** desativa as Automações e clicar no botão de atualizar, os indicadores superiores, os painéis de "Automações ativas" aparede zerado e vice versa.<br> |
+
+
 
 | **Critérios de Aceitação** |
 | --- |
@@ -22,7 +25,7 @@
 
 | **Evidência** |
 | --- |
-| https://drive.google.com/file/d/1ROln9z52cwGh8n1Qy_PVnQzSZL8B3s7Z/view?usp=sharing |
+| https://drive.google.com/file/d/1-FrJ4VrDAQSRj3Zg778VKgeIlxjYuemb/view?usp=sharing |
 
 ---
 
