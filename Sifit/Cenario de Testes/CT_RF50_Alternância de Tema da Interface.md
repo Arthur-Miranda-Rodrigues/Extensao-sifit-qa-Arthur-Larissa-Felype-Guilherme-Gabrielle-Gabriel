@@ -1,94 +1,53 @@
+## Cenário 50: Alternância de Tema da Interface (Claro / Escuro)
 
----
-
-# Cenário de teste:Alternância de Tema da Interface (Claro / Escuro)
-
-## 1. Descrição
-
-Este documento especifica os casos de teste referentes ao **Requisito Funcional 19 (RF19) - Alternância de Tema da Interface** no sistema **SiFit**. O objetivo é validar o funcionamento da alteração do modo de visualização entre o tema claro e o tema escuro (Dark Mode) por meio dos botões de navegação e do painel superior.
-
----
-
-## 2. Cenários de Teste
-
-### Cenário 01: Operações e Gestão do Tema da Interface
-
-#### Caso de Teste 01: Alternância para o Tema Escuro (Dark Mode)
+### Caso de Teste 01: Alternância para o Tema Escuro (Dark Mode)
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT01** | Validar a alteração do tema visual da interface do modo Claro para o modo Escuro.
-
- |
+| **C50-CT01** | Validar a alteração do tema visual da interface do modo Claro para o modo Escuro. |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado no sistema SiFit com a interface em modo Claro.
-
- |
+| O usuário deve estar autenticado no SIFIT, posicionado na tela do módulo **Aplicativo** (`/aplicativo`) com a interface em modo Claro. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está navegando no sistema SiFit com o tema Claro ativo
-
- |
-| **QUANDO** clicar no botão/seletor de tema escuro (ícone da lua no menu lateral ou no botão "Escuro" do cabeçalho)
-
- |
-| **ENTÃO** a interface do sistema deve aplicar o esquema de cores escuro em todas as telas e componentes visuais
-
- |
-| **E** o estado do tema deve persistir ao navegar entre os diferentes módulos do sistema (ex.: Contas a Pagar).
-
- |
+| **DADO** que o usuário está na tela do **Aplicativo** com o tema Claro ativo.<br> |
+| **QUANDO** clicar no botão **"Escuro"** do cabeçalho.<br> |
+| **ENTÃO** a interface deve aplicar imediatamente o esquema de cores escuro, alterando o fundo da página, os cards, as tabelas e os textos.<br> |
+| **E** o botão **"Escuro"** deve ficar destacado como opção ativa, com o seletor do menu lateral refletindo o mesmo estado. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * As cores de fundo, cards, menus e textos devem mudar imediatamente para o padrão escuro.
+| As cores de fundo, cards, tabelas, menus e textos devem mudar imediatamente para o padrão escuro, sem recarregar a página e mantendo a legibilidade do conteúdo. |
 
- |
-| * A preferência de tema deve ser mantida durante a navegação entre as páginas.
-
- |
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1DsVebJeP_qkUDGnHqzXE7el8buGOz9H1/view?usp=sharing |
 
 ---
 
-#### Caso de Teste 02: Alternância para o Tema Claro (Light Mode)
+### Caso de Teste 02: Alternância para o Tema Claro (Light Mode)
 
 | ID | Descrição |
 | --- | --- |
-| **C01-CT02** | Validar o retorno da interface do modo Escuro para o modo Claro.
-
- |
+| **C50-CT02** | Validar o retorno da interface do modo Escuro para o modo Claro. |
 
 | **Pré-condições** |
 | --- |
-| Usuário autenticado no sistema SiFit com a interface em modo Escuro.
-
- |
+| O usuário deve estar autenticado no SIFIT, posicionado na tela do módulo **Aplicativo** (`/aplicativo`) com a interface em modo Escuro. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está navegando no sistema SiFit com o tema Escuro ativo
-
- |
-| **QUANDO** clicar no botão/seletor de tema claro (ícone do sol no menu lateral ou no botão "Claro" do cabeçalho)
-
- |
-| **ENTÃO** a interface do sistema deve aplicar o esquema de cores claro em todas as telas e componentes visuais
-
- |
-| **E** a tabela de dados e elementos de navegação devem retornar ao contraste original.
-
- |
+| **DADO** que o usuário está na tela do **Aplicativo** com o tema Escuro ativo.<br> |
+| **QUANDO** clicar no botão **"Claro"** do cabeçalho.<br> |
+| **ENTÃO** a interface deve aplicar imediatamente o esquema de cores claro, restaurando o fundo, os cards, as tabelas e os textos ao contraste original.<br> |
+| **E** o botão **"Claro"** deve ficar destacado como opção ativa, com o seletor do menu lateral refletindo o mesmo estado. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * O layout deve ser re-renderizado instantaneamente para a versão clara.
+| O layout deve ser renderizado instantaneamente na versão clara, e todos os textos e botões de ação devem manter a legibilidade adequada. |
 
- |
-| * Todos os textos e botões de ação devem manter a legibilidade adequada.
-
- |
-
-https://jam.dev/c/21696cd1-a6e3-4a85-8f07-1fb3bc46b5c3
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1UZvsqtUhsUy0FRVqNGc0NLelvH8lja4d/view?usp=sharing |
