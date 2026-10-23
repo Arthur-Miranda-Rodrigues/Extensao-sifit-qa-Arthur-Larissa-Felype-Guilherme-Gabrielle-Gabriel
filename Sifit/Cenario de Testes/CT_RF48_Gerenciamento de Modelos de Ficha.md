@@ -1,77 +1,55 @@
+## Cenário 48: Gerenciamento de Modelos de Ficha
 
-
----
-
-## Cenário: Gerenciamento de Modelos de Ficha
-
-### Caso de Teste 01: Criar modelo de ficha com dados válidos e tratamento de erro na gravação
+### Caso de Teste 01: Criação de novo modelo de ficha e tratamento de erro na gravação
 
 | ID | Descrição |
 | --- | --- |
-| **CT-01** | Validar o comportamento do sistema ao tentar salvar um novo modelo de ficha preenchendo os campos obrigatórios. |
+| **C48-CT01** | Validar o comportamento do sistema ao preencher o formulário de cadastro de um novo modelo de ficha e submeter a gravação. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar autenticado no sistema SiFit com permissão de acesso ao menu **Modelos de Ficha**. |
+| O usuário deve estar autenticado no sistema SiFit e posicionado no menu **Modelos de Ficha**. |
 
 | **Passos** |
 | --- |
-| **DADO** que o usuário está na tela de **Modelos de Ficha** |
-| **E** clica no botão de adicionar um novo modelo **(+)** |
-| **QUANDO** preencher o campo "Nome do Modelo" (ex: "Lux") |
-| **E** selecionar um personal no campo "Personal" (ex: "Gabriella") |
-| **E** clicar em **Criar Modelo** |
-| **ENTÃO** o sistema deve processar a requisição e, em caso de erro na API/servidor, exibir a mensagem *"Erro ao salvar modelo"* em um modal de alerta. |
+| **DADO** que o usuário está na tela de **Modelos de Ficha** e clica no botão de adicionar um novo modelo **(+)**. <br>|
+| **QUANDO** preencher o campo "Nome do Modelo" (ex.: "Hipertorfia") e selecionar um personal no campo correspondente (ex.: "Gabriella").<br> |
+| **E** clicar no botão **Criar Modelo**.<br> |
+| **ENTÃO** o sistema deve processar a requisição e, em caso de falha de comunicação com o servidor, exibir um modal de alerta com a mensagem *"Erro ao salvar modelo"*. |
 
 | **Critérios de Aceitação** |
 | --- |
-| * O modal de erro deve ser exibido claramente ao usuário com a opção de fechar/tentar novamente. |
-| * Se a gravação for bem-sucedida, o modal deve fechar e a nova ficha deve ser exibida na listagem de modelos. |
+| O modal de erro deve ser apresentado claramente com a opção de fechar, permitindo retornar à tela de listagem de modelos. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1oDvPksSC7n5nHmVQXFQ5rCnqqPbTm7zS/view?usp=sharing |
 
 ---
 
-### Caso de Teste 02: Tentar criar modelo de ficha sem preencher campos obrigatórios
+### Caso de Teste 02: Filtragem e Pesquisa de Modelos de Ficha por Parâmetros
 
 | ID | Descrição |
 | --- | --- |
-| **CT-02** | Validar se o sistema exibe mensagens de validação ao tentar criar um modelo com campos em branco. |
+| **C48-CT02** | Validar a busca e filtragem de registros na listagem de modelos de ficha utilizando os campos de código, título e criador. |
 
 | **Pré-condições** |
 | --- |
-| O usuário deve estar na tela do modal **Novo Modelo de Ficha**. |
+| O usuário estar na tela de gerenciamento de **Modelos de Ficha**. |
 
 | **Passos** |
 | --- |
-| **DADO** que a janela modal "Novo Modelo de Ficha" está aberta |
-| **QUANDO** o usuário não preencher os campos "Nome do Modelo" ou "Personal" |
-| **E** clicar no botão **Criar Modelo** |
-| **ENTÃO** o sistema deve impedir o envio do formulário e indicar os campos obrigatórios pendentes de preenchimento. |
+| **DADO** que o usuário visualiza a listagem de modelos de ficha.<br> |
+| **QUANDO** preencher os campos de filtro de pesquisa (como *Código*, *Título do modelo* ou *Nome do criador*).<br> |
+| **E** acionar o botão de busca (ícone de lupa).<br> |
+| **ENTÃO** o sistema deve consultar a base de dados e atualizar os resultados na tabela ou exibir a mensagem de estado vazio *"Nenhum modelo de ficha encontrado"*.|
 
 | **Critérios de Aceitação** |
 | --- |
-| * O botão "Criar Modelo" não deve submeter a requisição se os dados mínimos não forem informados. |
+| Os campos de filtro devem processar as consultas informadas e atualizar a interface de acordo com os critérios definidos.
 
----
+ |
 
-### Caso de Teste 03: Filtrar/Pesquisar modelos de ficha por parâmetros
-
-| ID | Descrição |
-| --- | --- |
-| **CT-03** | Validar a busca e filtragem na listagem de modelos de ficha. |
-
-| **Pré-condições** |
+| **Evidência** |
 | --- |
-| Estar na tela inicial de **Modelos de Ficha**. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário acessa a listagem de modelos de ficha |
-| **QUANDO** preencher um dos filtros ("Código", "Título do modelo" ou "Nome do criador") |
-| **E** clicar no botão de pesquisa (ícone de lupa) |
-| **ENTÃO** a tabela abaixo deve atualizar e exibir apenas os registros correspondentes aos critérios informados. |
-
-| **Critérios de Aceitação** |
-| --- |
-| * Se não houver correspondências, a mensagem *"Nenhum modelo de ficha encontrado"* deve continuar visível na listagem. |
-
-https://jam.dev/c/1ba229ab-a763-4087-892b-b06d1a84b7a3
+| https://drive.google.com/file/d/191k97YZRlvUkOogX6qtUE1B2dytOaP0Y/view?usp=sharing |
