@@ -385,7 +385,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| Evidência não registrada no cenário |
+| https://drive.google.com/file/d/1zmLTSjJmBhcbql_hep55h1l-ekmKXc3B/view?usp=sharing |
 
 ---
 
