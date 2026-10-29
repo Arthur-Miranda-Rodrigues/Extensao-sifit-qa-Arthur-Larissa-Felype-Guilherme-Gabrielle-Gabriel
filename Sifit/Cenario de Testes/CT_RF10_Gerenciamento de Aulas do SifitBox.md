@@ -3,60 +3,7 @@
 
 ## Cenário 10: Gerenciamento de Aulas do SifitBox
 
-### Caso de Teste 01: Busca por Período Digitando a Data Manualmente
----
 
-| ID | Descrição |
-| --- | --- |
-| **C10-CT01** | Validar a tentativa de filtragem de aulas inserindo o intervalo de datas de forma manual nos campos correspondentes. |
-
-| **Pré-condições** |
-| --- |
-| Usuário autenticado no sistema SiFit e localizado na página **SifitBox - Aulas** (`/sifitbox/aulas`). |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela **SifitBox - Aulas**<br> |
-| **QUANDO** digitar manualmente uma nova data inicial e/ou final nos campos de período (ex.: alterando os dias ou anos pelo teclado). |
-| **E** clicar no botão **Buscar**<br> |
-| **ENTÃO** o sistema não executa a filtragem esperada ou mantém o comportamento estático onde **nada acontece** na tela. |
-
-| **Critérios de Aceitação** |
-| --- |
-| A funcionalidade de digitação manual de datas deve processar a pesquisa corretamente ou registrar o comportamento atual de ausência de resposta para ajuste futuro. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1ur0S1lqeUewf-7JjUdG8A7UQDedM6fG-/view?usp=sharing |
-
----
-
-### Caso de Teste 02: Busca por Período Selecionando as Opções de Calendário
-
-| ID | Descrição |
-| --- | --- |
-| **C10-CT02** | Validar a tentativa de filtragem de aulas utilizando o componente de calendário interativo para escolha das datas. |
-
-| **Pré-condições** |
-| --- |
-| Usuário posicionado na tela **SifitBox - Aulas**. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela **SifitBox - Aulas**<br> |
-| **QUANDO** clicar no ícone de calendário e selecionar os dias/meses desejados através do pop-up (ex.: navegando entre diferentes meses e anos). |
-| **E** confirmar a seleção e clicar em **Buscar**<br> |
-| **ENTÃO** o sistema exibe o calendário interativo, mas ao submeter a busca **nada acontece** na grade de resultados.|
-
-| **Critérios de Aceitação** |
-| --- |
-| A seleção de datas via calendário deve atualizar a listagem de aulas de forma integrada e responsiva. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1UIIlC-LJzgxh4_FljfFwLVdNQu6s38rs/view?usp=sharing |
-
----
 
 ### Caso de Teste 03: Validação de Data Inválida (Data Final Anterior à Inicial)
 
