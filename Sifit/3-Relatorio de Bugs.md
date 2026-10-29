@@ -77,7 +77,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1UVEJmPtjgyMDTs_6nrJcX1i0ldW5D671/view?usp=sharing) |
+| (https://drive.google.com/file/d/1UVEJmPtjgyMDTs_6nrJcX1i0ldW5D671/view?usp=sharing) |
 
 ---
 
@@ -111,8 +111,8 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1ur0S1lqeUewf-7JjUdG8A7UQDedM6fG-/view?usp=sharing) |
-| [Vídeo 2](https://drive.google.com/file/d/1UIIlC-LJzgxh4_FljfFwLVdNQu6s38rs/view?usp=sharing) |
+| (https://drive.google.com/file/d/1ur0S1lqeUewf-7JjUdG8A7UQDedM6fG-/view?usp=sharing) |
+| (https://drive.google.com/file/d/1UIIlC-LJzgxh4_FljfFwLVdNQu6s38rs/view?usp=sharing) |
 
 ---
 
@@ -146,7 +146,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1nk7_GCZVk_qjFUQzqTWe3PwbjEzkIzDi/view?usp=sharing) |
+| (https://drive.google.com/file/d/1nk7_GCZVk_qjFUQzqTWe3PwbjEzkIzDi/view?usp=sharing) |
 
 ---
 
@@ -179,7 +179,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1eYJda_JSQM0i3tcBcWGAhPR-JWK89ElN/view?usp=sharing) |
+| (https://drive.google.com/file/d/1eYJda_JSQM0i3tcBcWGAhPR-JWK89ElN/view?usp=sharing) |
 
 ---
 
@@ -213,8 +213,8 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1V7sDdPIEofzjCAJTtkYiNBRupi0qRDVc/view?usp=sharing) |
-| [Vídeo 2](https://drive.google.com/file/d/1TxdKmCaGbufBF7FS42Sx4AtkSjMvqGQ0/view?usp=sharing) |
+| (https://drive.google.com/file/d/1V7sDdPIEofzjCAJTtkYiNBRupi0qRDVc/view?usp=sharing) |
+| (https://drive.google.com/file/d/1TxdKmCaGbufBF7FS42Sx4AtkSjMvqGQ0/view?usp=sharing) |
 
 ---
 
@@ -248,7 +248,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/16umD_rrlyjFLRKMBB-g0nF2_dc9_e5V8/view?usp=sharing) |
+| (https://drive.google.com/file/d/16umD_rrlyjFLRKMBB-g0nF2_dc9_e5V8/view?usp=sharing) |
 
 ---
 
@@ -282,7 +282,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1wpRtpZh2PcQYruuJJ6-HUbECbztA2b22/view?usp=sharing) |
+| (https://drive.google.com/file/d/1wpRtpZh2PcQYruuJJ6-HUbECbztA2b22/view?usp=sharing) |
 
 ---
 
@@ -316,7 +316,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1Y9xnEYWxzUPnp7z-_3xtDQlSkx0yHOH5/view?usp=sharing) |
+| (https://drive.google.com/file/d/1Y9xnEYWxzUPnp7z-_3xtDQlSkx0yHOH5/view?usp=sharing) |
 
 ---
 
@@ -350,7 +350,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1ZherjpC1oDDIsjo2h2qQNwKXn08A0_39/view?usp=sharing) |
+| (https://drive.google.com/file/d/1ZherjpC1oDDIsjo2h2qQNwKXn08A0_39/view?usp=sharing) |
 
 ---
 
@@ -419,7 +419,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/17rlYxRcvmZSKIoensH0pldTBkU3NX06o/view?usp=sharing) |
+| (https://drive.google.com/file/d/17rlYxRcvmZSKIoensH0pldTBkU3NX06o/view?usp=sharing) |
 
 ---
 
@@ -452,7 +452,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1Ne4ay4CW_VtSYdFDLJzXFM_QZNMIB3yc/view?usp=sharing) |
+| (https://drive.google.com/file/d/1Ne4ay4CW_VtSYdFDLJzXFM_QZNMIB3yc/view?usp=sharing) |
 
 ---
 
@@ -487,7 +487,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/1RbssKnL6GfKSsI4xUpaL4lWxSkU8wSD8/view?usp=sharing) |
+| (https://drive.google.com/file/d/1RbssKnL6GfKSsI4xUpaL4lWxSkU8wSD8/view?usp=sharing) |
 
 ---
 
@@ -521,7 +521,7 @@ Foram registrados **23 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| [Vídeo 1](https://drive.google.com/file/d/15PBazaM8Wsb8qpbfW-f0oBQXLwXogc9p/view?usp=sharing) |
+| (https://drive.google.com/file/d/15PBazaM8Wsb8qpbfW-f0oBQXLwXogc9p/view?usp=sharing) |
 
 ---
 
