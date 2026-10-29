@@ -82,29 +82,4 @@
 | --- |
 | https://drive.google.com/file/d/15jQmL5k1DMN9DpuNNUPi9_B7Yh9MQPnx/view?usp=sharing  |
 
-### Caso de Teste 04: Acesso à Funcionalidade de Recuperação de Senha (Extra)
-
-| ID | Descrição |
-| --- | --- |
-| **C01-CT04** | O sistema deve redirecionar o usuário para a interface de recuperação/redefinição de senha ao acionar o link correspondente na tela de login. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar na página inicial de autenticação do SIFIT. |
-
-| **Passos** |
-| --- |
-| **DADO** que estamos na página de login do SIFIT |
-| **QUANDO** clicamos no link "Esqueci minha senha" |
-| **ENTÃO** o sistema deve direcionar o usuário para a tela ou modal de recuperação de senha da aplicação. |
-| **E** nada acontece. |
-
-| **Critérios de Aceitação** |
-| --- |
-| * O link de recuperação de senha deve estar funcional e direcionar o usuário para o fluxo adequado de redefinição de credenciais. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1UVEJmPtjgyMDTs_6nrJcX1i0ldW5D671/view?usp=sharing |
-  
 
