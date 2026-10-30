@@ -1,48 +1,6 @@
----
-
 ## Cenário 15: Registro de Contas a Pagar
 
----
-
-## Caso de Teste 01: Cadastro de Conta a Pagar com Busca de Fornecedor
-
-| ID | Descrição |
-| --- | --- |
-| **C15-CT01** | Validar o registro de uma nova conta a pagar por meio do botão **Nova Conta**, utilizando o modal **Buscar Fornecedor** e o preenchimento dos dados da conta e do documento. |
-
-| **Pré-condições** |
-| --- |
-| Usuário autenticado e posicionado na página de **Contas a Pagar** do SIFIT; fornecedor cadastrado (ex.: 205 – Centrion Web). |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário acessa o módulo de "Contas a Pagar" |
-| **QUANDO** clicar no botão **Nova Conta** |
-| **ENTÃO** o modal **Cadastrar Conta a Pagar** deve abrir com o cadastrante (ex.: 11 – Jair), a data (13/10/2026), o *Status* "Pendente", o *Tipo Despesa* "Variável" e o *Tipo* "Contas e Despesas" |
-| **E QUANDO** clicar em **Pesquisar** ao lado do campo "Fornecedor" |
-| **ENTÃO** deve abrir o modal **Buscar Fornecedor**, permitindo digitar o nome (ex.: "Centrion Web"), clicar em **Buscar** e selecionar o registro (código 205), com a moeda "BRL — Real" |
-| **E QUANDO** o fornecedor for selecionado |
-| **ENTÃO** o código (205) e o nome (Centrion Web) devem ser preenchidos no cadastro |
-| **E QUANDO** preencher o **Tipo Doc.** (ex.: "salário"), o **Doc. Fornecedor** (ex.: "205"), a **Categoria** (ex.: "Pix") e o **Valor a Pagar** (ex.: "200,00") |
-| **E** manter a **Data Emissão** e a **Data Vencimento** (13/10/2026) |
-| **E** clicar em **Salvar** |
-| **ENTÃO** a conta deve ser gravada e exibida na listagem com o status **PENDENTE**. |
-
-| **Critérios de aceitação** |
-| --- |
-| O modal de fornecedor deve localizar e selecionar o fornecedor, e a nova conta deve ser persistida e listada sem falhas. |
-
-| **Resultado obtido** |
-| --- |
-| A busca e a seleção do fornecedor funcionaram e a conta foi salva, aparecendo na listagem como **#24 – Centrion Web – R$ 200,00 – Valor Pago R$ 0,00 – PENDENTE** (indicador "Contas Listadas" passou de 2 para 3). **Observações:** o cadastro foi concluído com o campo **Título** em branco e sem **Local Pagamento** selecionado ("— Selecione —"), ou seja, nenhum dos dois foi exigido. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1zmLTSjJmBhcbql_hep55h1l-ekmKXc3B/view?usp=sharing |
-
----
-
-## Caso de Teste 02: Filtros e Consultas na Listagem
+### Caso de Teste 02: Filtros e Consultas na Listagem
 
 | ID | Descrição |
 | --- | --- |
@@ -83,7 +41,7 @@
 
 ---
 
-## Caso de Teste 03: Visualização Detalhada da Conta a Pagar
+### Caso de Teste 03: Visualização Detalhada da Conta a Pagar
 
 | ID | Descrição |
 | --- | --- |
@@ -116,7 +74,7 @@
 
 ---
 
-## Caso de Teste 04: Exclusão de Conta a Pagar
+### Caso de Teste 04: Exclusão de Conta a Pagar
 
 | ID | Descrição |
 | --- | --- |
