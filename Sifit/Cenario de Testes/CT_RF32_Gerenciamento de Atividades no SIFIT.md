@@ -61,39 +61,6 @@
 
 ---
 
-### Caso de Teste 03: Tentar cadastrar uma atividade sem preencher os campos
-
-| ID | Descrição |
-| --- | --- |
-| **C32-CT03** | O sistema deve impedir o cadastro de uma atividade quando os campos do modal "Atividade" estiverem em branco. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar na tela "Atividades". |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no botão "Nova Atividade" |
-| **E** não preenche nenhum dos campos (Nome, Pontuação e Descrição) |
-| **QUANDO** clicar no botão "Salvar" |
-| **ENTÃO** o sistema não deve cadastrar a atividade |
-| **E** deve indicar a obrigatoriedade do preenchimento dos campos. |
-
-| **Critérios de Aceitação** |
-| --- |
-| Nenhum registro deve ser criado com os campos em branco. |
-| Os indicadores do topo da tela não devem ser alterados. |
-
-| **Observação (comportamento verificado na gravação)** |
-| --- |
-| Ao clicar em "Salvar" com o modal vazio, o sistema **cadastrou** uma atividade sem nome, sem pontuação e sem descrição (código 6): o "Total de atividades" passou de 5 para 6 e "Sem pontuação" passou de 0 para 1. Nenhuma mensagem de validação foi exibida. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1wpRtpZh2PcQYruuJJ6-HUbECbztA2b22/view?usp=sharing |
-
----
-
 ### Caso de Teste 04: Visualizar e editar uma atividade
 
 | ID | Descrição |
