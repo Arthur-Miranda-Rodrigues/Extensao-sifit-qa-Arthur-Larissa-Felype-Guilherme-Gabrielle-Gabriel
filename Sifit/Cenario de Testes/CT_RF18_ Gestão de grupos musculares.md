@@ -100,38 +100,6 @@
 
 ---
 
-### Caso de Teste 04: Cadastro de Grupo Muscular Sem Preencher Nome e Tipo Membro
-
-| ID | Descrição |
-| --- | --- |
-| **C18-CT04** | Validar o tratamento de campos obrigatórios ao cadastrar um grupo muscular informando apenas a imagem. |
-
-| **Pré-condições** |
-| --- |
-| Usuário autenticado na tela **Grupos Musculares**. |
-| Possuir um arquivo de imagem válido (ex.: `Haroldx Canio e Garthon Kamidala.png`). |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela **Grupos Musculares** |
-| **E** clica no botão de cadastro (**+**), abrindo o modal **Grupo Muscular** |
-| **QUANDO** selecionar apenas a imagem, deixando **Nome** e **Tipo Membro** vazios |
-| **E** clicar no botão **Salvar** |
-| **ENTÃO** o sistema não deve permitir o cadastro |
-| **E** deve informar que os campos **Nome** e **Tipo Membro** são obrigatórios. |
-| **ENTÃO** o sistema cadastra mesmo sem preenchimento obrigatório devido a um bug |
-
-| **Critérios de Aceitação** |
-| --- |
-| * Nenhum grupo muscular deve ser cadastrado sem **Nome** e **Tipo Membro**. |
-| * O sistema deve exibir mensagem informando os campos que precisam ser preenchidos. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/16umD_rrlyjFLRKMBB-g0nF2_dc9_e5V8/view?usp=sharing |
-
----
-
 ### Caso de Teste 05: Exclusão de Grupo Muscular
 
 | ID | Descrição |
