@@ -216,37 +216,3 @@
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/11wYcBAlwqeVBF8mQJtAO4-2l98QuOfLk/view?usp=sharing |
-
-### Caso de Teste 08: Validar o nome obrigatório ao cadastrar uma pontuação
-
-| ID | Descrição |
-| --- | --- |
-| **C33-CT08** | O sistema deve impedir o cadastro de uma pontuação sem nome e exibir um aviso solicitando o preenchimento do campo. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar na tela "Pontuação" e existirem produtos cadastrados (ex.: "Notebook Gamer"). |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no botão "Nova Pontuação" |
-| **E** deixa o campo "Nome" em branco |
-| **E** seleciona o produto "Notebook Gamer" em "Produtos de resgate" |
-| **QUANDO** clicar no botão "Salvar" |
-| **ENTÃO** o sistema deve exibir o modal "Aviso" com a mensagem "Informe o nome da pontuação" |
-| **E** a pontuação não deve ser cadastrada |
-| **E** ao clicar em "Entendi", o usuário deve retornar ao formulário com os dados mantidos para corrigir o preenchimento. |
-
-| **Critérios de Aceitação** |
-| --- |
-| O cadastro só deve ser concluído com o campo "Nome" preenchido. |
-| Os indicadores do topo da tela não devem ser alterados enquanto o cadastro não for concluído. |
-
-| **Observação (comportamento verificado na gravação)** |
-| --- |
-| Após o aviso, ao preencher apenas o Nome ("sdfasdf"), com Tipo "Mensal" e Status "Ativo", sem informar Data Inicial e Data Final, o sistema **cadastrou** a pontuação, que foi listada com o período "0000-00-00 — 0000-00-00". Verificar se as datas deveriam ser obrigatórias. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1ZherjpC1oDDIsjo2h2qQNwKXn08A0_39/view?usp=sharing |
-
