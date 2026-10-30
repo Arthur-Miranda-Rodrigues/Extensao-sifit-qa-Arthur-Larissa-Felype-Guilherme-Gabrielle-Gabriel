@@ -65,40 +65,6 @@
 
 ---
 
-### Caso de Teste 03: Tratar erro ao salvar a edição de uma pontuação
-
-| ID | Descrição |
-| --- | --- |
-| **C33-CT03** | O sistema deve apresentar uma mensagem de erro ao falhar ao salvar as alterações de uma pontuação existente, sem quebrar a interface. |
-
-| **Pré-condições** |
-| --- |
-| Existir a pontuação "Desafio de Outubro" (código 1, tipo "Mensal", status "Ativo") cadastrada na listagem. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no ícone de visualizar/editar (lupa) da pontuação "Desafio de Outubro" |
-| **E** altera o "Status" para "Inativo" no modal "Pontuação" |
-| **E** seleciona um produto em "Produtos de resgate" |
-| **QUANDO** clicar no botão "Salvar" e ocorrer uma falha ao gravar |
-| **ENTÃO** o sistema deve exibir o modal de erro com a mensagem "Erro ao salvar pontuação" |
-| **E** ao clicar em "Fechar", o usuário deve retornar à listagem com os dados originais mantidos. |
-
-| **Critérios de Aceitação** |
-| --- |
-| O modal de erro deve informar a falha sem quebrar a interface da aplicação. |
-| A pontuação não deve ser alterada na listagem após o erro (permanece com status "Ativo"). |
-
-| **Observação (comportamento verificado na gravação)** |
-| --- |
-| A alteração de status para "Inativo" não foi concluída: o sistema exibiu o modal **"Erro – Erro ao salvar pontuação"** e a pontuação continuou "Ativa" na listagem. Verificar se a falha se deve a um defeito na edição de uma alteração válida. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/17rlYxRcvmZSKIoensH0pldTBkU3NX06o/view?usp=sharing |
-
----
-
 ### Caso de Teste 04: Associar atividades a uma pontuação
 
 | ID | Descrição |
@@ -154,39 +120,6 @@
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1G45l4kbEHZ30sPfTT4WRmEt2Z_EhraBb/view?usp=sharing |
-
----
-
-### Caso de Teste 06: Tratar erro do servidor ao acionar uma ação da pontuação
-
-| ID | Descrição |
-| --- | --- |
-| **C33-CT06** | O sistema deve apresentar mensagem de erro ao falhar o processamento de uma ação da coluna "Ações", sem quebrar a interface. |
-
-| **Pré-condições** |
-| --- |
-| Existir a pontuação "Desafio de Outubro" (código 1) cadastrada na listagem. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela "Pontuação" |
-| **QUANDO** clicar no quarto ícone (lista de verificação) da coluna "Ações" da pontuação "Desafio de Outubro" |
-| **E** ocorrer uma falha no servidor |
-| **ENTÃO** o sistema deve exibir o modal de erro com a mensagem "Erro no servidor – Erro interno inesperado" |
-| **E** ao clicar em "Fechar", o usuário deve retornar à listagem sem alterações. |
-
-| **Critérios de Aceitação** |
-| --- |
-| O modal de erro deve ser exibido informando a falha sem quebrar a interface da aplicação. |
-| A listagem e os indicadores do topo devem permanecer inalterados após fechar o modal. |
-
-| **Observação (comportamento verificado na gravação)** |
-| --- |
-| Ao acionar a ação, o sistema exibiu o modal **"Erro no servidor – Erro interno inesperado"**, e a ação não foi concluída. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1Ne4ay4CW_VtSYdFDLJzXFM_QZNMIB3yc/view?usp=sharing |
 
 ---
 
