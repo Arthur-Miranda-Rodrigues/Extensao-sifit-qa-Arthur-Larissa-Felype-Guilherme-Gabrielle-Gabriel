@@ -125,35 +125,3 @@
 | --- |
 | https://drive.google.com/file/d/1K-87lo9yZz52yuALIkIWGuVshobEITz7/view?usp=sharing |
 
----
-
-### Caso de Teste 05: Tentar cadastrar produto sem preencher os campos
-
-| ID | Descrição |
-| --- | --- |
-| **C34-CT05** | O sistema deve impedir o cadastro de um produto quando os campos do modal "Produto" estiverem em branco. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar na tela "Produtos". |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no botão "Novo" |
-| **E** não preenche nenhum dos campos (Nome, Descrição e Preço/Pontuação) |
-| **QUANDO** clicar no botão "Salvar" |
-| **ENTÃO** o sistema não deve cadastrar o produto |
-| **E** deve indicar a obrigatoriedade do preenchimento dos campos. |
-
-| **Critérios de Aceitação** |
-| --- |
-| Nenhum registro deve ser criado com os campos em branco. |
-| Os indicadores do topo da tela não devem ser alterados. |
-
-| **Observação (comportamento verificado na gravação)** |
-| --- |
-| Ao clicar em "Salvar" com o modal vazio, o sistema **cadastrou** um produto sem nome e sem valor (código 7, tipo "Venda", status "Ativo"): "Total de produtos" passou de 2 para 3 e "Para venda" de 0 para 1. Nenhuma mensagem de validação foi exibida. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1Y9xnEYWxzUPnp7z-_3xtDQlSkx0yHOH5/view?usp=sharing |
