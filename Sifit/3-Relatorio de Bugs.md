@@ -45,6 +45,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 | BUG-021 | Filtro de status (Pago/Vencido) não é aplicado em Contas a Pagar | Contas a Pagar | Média | Alta |
 | BUG-022 | Totais financeiros incorretos na listagem de Contas a Pagar | Contas a Pagar | Alta | Alta |
 | BUG-023 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa |
+| BUG-024 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | Dashboard | Média | Média |
 
 ---
 
