@@ -2,6 +2,13 @@
 
 **Sistema testado:** SIFIT — Sistema de gestão para academia/box  
 **Responsável:** Arthur Miranda Rodrigues — RA 14538  
+Larissa Fernanda O. RA:14536
+Felype Augusto Dos Santos Silva 
+RA: 14537
+Guilherme: Guilherme Felipe de Morais 
+RA: 5608
+Gabrielle Bonini Barbosa 
+RA: 14506
 **Data do relatório:** 29/10/2026  
 **Ambiente:** Aplicação web de testes  
 
