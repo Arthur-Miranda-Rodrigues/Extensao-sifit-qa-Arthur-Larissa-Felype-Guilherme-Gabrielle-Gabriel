@@ -109,46 +109,6 @@
 
 ---
 
-### Caso de Teste 04: Edição e Atualização de Turma Existente
-
-| ID | Descrição |
-| --- | --- |
-| **C21-CT04** | Verificar a alteração do nome e das configurações de personal de uma turma já cadastrada no sistema. |
-
-| **Pré-condições** |
-| --- |
-| Existir a turma "Teste" (Código 1) cadastrada, com plano "AVA", personal "Mátila Rhana Souza" e dias "Ter, Qui". |
-| Existir o personal "Marcelo Longo Zandonadi" cadastrado no sistema. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário localiza a turma "Teste" (Código 1) na listagem de turmas |
-| **QUANDO** clicar no ícone de edição (Lápis) |
-| **E** alterar o campo **Nome** para "Teste2" no modal **Editar Turma** |
-| **E** alterar o campo **Tem Personal** para "Não" e clicar em **Salvar** |
-| **E** fechar o aviso de erro, alterar novamente o campo **Tem Personal** para "Sim" e selecionar o **Nome do Personal** "Marcelo Longo Zandonadi" |
-| **E** clicar no botão **Salvar** |
-| **ENTÃO** as alterações da turma devem ser gravadas com sucesso |
-| **E** a listagem deve exibir a turma de Código 1 com o nome "Teste2" e o personal "Marcelo Longo Zandonadi". |
-
-| **Critérios de Aceitação** |
-| --- |
-| * As modificações realizadas no modal devem persistir no banco de dados. |
-| * A listagem principal deve refletir o novo nome e o novo personal após o salvamento. |
-| * O sistema não deve exibir erro ao salvar uma edição válida. |
-
-| **Observações** |
-| --- |
-| * Ao abrir o modal **Editar Turma**, o campo **Status** é exibido vazio, sem refletir o status atual ("Ativo") da turma. |
-| * Ao salvar com **Tem Personal** = "Não", o sistema exibiu o modal de **Erro** com a mensagem *"Erro ao salvar turma."*. |
-| * Após o salvamento bem-sucedido, o modal exibiu momentaneamente a tela **Cadastrar Turma** vazia antes de retornar à listagem. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1niaHnjS3nIgZb3nC8leo1kYPb05Dd_o_/view?usp=sharing |
-
----
-
 ### Caso de Teste 05: Exclusão de Turma
 
 | ID | Descrição |
