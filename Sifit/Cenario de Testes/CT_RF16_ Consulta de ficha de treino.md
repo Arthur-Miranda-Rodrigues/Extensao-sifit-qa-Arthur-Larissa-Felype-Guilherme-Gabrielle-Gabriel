@@ -33,28 +33,3 @@
 
 ---
 
-### Caso de Teste 02: Tentativa de Cadastro de Nova Ficha de Treino e Tratamento de Erro no Servidor
-
-| ID | Descrição |
-| --- | --- |
-| **C16-CT02** | Validar o fluxo de abertura do formulário de cadastro de ficha, preenchimento dos dados (aluno, personal, datas, objetivo e observação) e o tratamento de falha ao submeter o registro. |
-
-| **Pré-condições** |
-| --- |
-| Usuário na página **Fichas de Treino** do SIFIT. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no botão **Cadastrar Ficha**<br> |
-| **QUANDO** selecionar o aluno (ex.: *Marcelo Longo Zandonadi*), o personal (*Gabriella*), definir o período de datas, preencher o objetivo (*Perder peso*) e a observação. |
-| **E** clicar no botão **Criar Nova Ficha**<br> |
-| **ENTÃO** o sistema deve tentar gravar o registro, mas exibir um modal de erro com a mensagem: *"Erro: Erro ao salvar ficha"* acompanhado do botão **Fechar**. |
-
-| **Critérios de Aceitação** |
-| --- |
-| * O formulário deve permitir o preenchimento de todos os campos de controle da ficha de treino. |
-| * Em caso de falha de persistência no backend, o sistema deve exibir uma mensagem de erro clara ao operador sem corromper a navegação. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1LALWrCOEkAcFrakPxBBUhDb7UygDZnAY/view?usp=sharing |
