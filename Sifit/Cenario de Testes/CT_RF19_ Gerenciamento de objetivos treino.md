@@ -1,34 +1,5 @@
 ## Cenário 19: Gerenciamento de Objetivos Treino
 
-### Caso de Teste 01: Validação de Erro no Cadastro de Novo Objetivo
-
-| ID | Descrição |
-| --- | --- |
-| **C19-CT01** | Verificar o comportamento do sistema ao tentar cadastrar um novo objetivo de treino e simular uma mensagem de erro no processamento. |
-
-| **Pré-condições** |
-| --- |
-| Usuário autenticado no sistema SiFit e localizado na página **Objetivos Treino**. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário está na tela **Objetivos Treino**<br> |
-| **E** clica no botão **+ Novo Objetivo**<br> |
-| **QUANDO** preencher o campo **Nome** com "Perder Peso" no modal **Objetivo**<br> |
-| **E** preencher o campo **Descrição** com "Perder Peso". |
-| **E** clicar no botão **Salvar**<br> |
-| **ENTÃO** o sistema deve exibir um modal de alerta informando falha ao salvar (ex.: *"Erro: Erro ao salvar objetivo"*). |
-
-| **Critérios de Aceitação** |
-| --- |
-| * O sistema deve tratar falhas de gravação exibindo uma mensagem de erro clara em formato modal com opção de fechamento. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1tYtIn2lU4Xf79VkMmJ1bmJ-wGZJWbfy3/view?usp=sharing |
-
----
-
 ### Caso de Teste 02: Filtragem e Busca por Nome de Objetivo de Treino
 
 | ID | Descrição |
