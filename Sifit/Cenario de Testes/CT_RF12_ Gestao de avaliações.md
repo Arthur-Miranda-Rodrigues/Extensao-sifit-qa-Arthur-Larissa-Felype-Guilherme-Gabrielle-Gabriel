@@ -1,6 +1,6 @@
 ---
 
-## Cenário 13: Gerenciamento de Avaliações Físicas
+## Cenário 12: Gerenciamento de Avaliações Físicas
 
 ## Caso de Teste 01: Filtros de Busca e Indicadores na Listagem de Avaliações
 ---
