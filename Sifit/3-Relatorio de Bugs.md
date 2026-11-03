@@ -42,10 +42,8 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 | BUG-018 | Campo Status vazio ao abrir “Editar Turma” | Turmas | Média | Média |
 | BUG-019 | Erro “Erro ao salvar turma” ao editar com “Tem Personal” = Não | Turmas | Média | Média |
 | BUG-020 | Modal “Cadastrar Turma” vazio aparece brevemente após salvar a edição | Turmas | Baixa | Baixa |
-| BUG-021 | Filtro de status (Pago/Vencido) não é aplicado em Contas a Pagar | Contas a Pagar | Média | Alta |
-| BUG-022 | Totais financeiros incorretos na listagem de Contas a Pagar | Contas a Pagar | Alta | Alta |
-| BUG-023 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa |
-| BUG-024 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | Dashboard | Média | Média |
+| BUG-021 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa |
+| BUG-022 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | Dashboard | Média | Média |
 
 ---
 
@@ -730,75 +728,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 21: Filtro de status (Pago/Vencido) não é aplicado em Contas a Pagar**
-
-| **ID** | **Descrição** |
-| ------ | ------------- |
-| BUG-021 | Ao filtrar por status “Pago” ou “Vencido”, a grade continua mostrando apenas contas PENDENTE. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :---: | :---: | :---: |
-| Média | Alta | Aberto |
-
-| **Passo a passo para simular o bug** |
-| --- |
-| 1. Acessar Contas a Pagar |
-| 2. Selecionar o status “Pago” (e depois “Vencido”) |
-| 3. Clicar em buscar |
-
-| **Comportamento Esperado** | **Comportamento Obtido** |
-| :---: | :---: |
-| A listagem deve exibir somente contas do status escolhido. | A grade segue exibindo apenas contas PENDENTE. |
-
-| **Ambiente** |
-| --- |
-| Ambiente de testes do SIFIT (aplicação web). |
-
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
-| :---: | :---: |
-| Filtros de contas a pagar | C15-CT02: Filtros e consultas na listagem |
-
-| **Evidência(s)** |
-| :---: |
-| (https://drive.google.com/file/d/1pe00FBa5cAaZT2N24IScniBUCc-O-urr/view?usp=sharing) |
-
----
-
-### 🐞 **Bug 22: Totais financeiros incorretos na listagem de Contas a Pagar**
-
-| **ID** | **Descrição** |
-| ------ | ------------- |
-| BUG-022 | Os cards “Total a Pagar” e “Valor Restante” permanecem em R$ 0 com contas de R$ 170,00 listadas, e contas PENDENTE exibem “Valor Pago” de R$ 170,00. |
-
-| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
-| :---: | :---: | :---: |
-| Alta | Alta | Aberto |
-
-| **Passo a passo para simular o bug** |
-| --- |
-| 1. Acessar Contas a Pagar com contas de R$ 170,00 listadas |
-| 2. Observar os cards Total a Pagar e Valor Restante |
-| 3. Observar a coluna Valor Pago das contas PENDENTE |
-
-| **Comportamento Esperado** | **Comportamento Obtido** |
-| :---: | :---: |
-| Os cards devem refletir os valores listados e contas pendentes devem ter Valor Pago zerado. | Cards zerados e Valor Pago de R$ 170,00 em contas PENDENTE. |
-
-| **Ambiente** |
-| --- |
-| Ambiente de testes do SIFIT (aplicação web). |
-
-| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
-| :---: | :---: |
-| Indicadores financeiros de contas a pagar | C15-CT02: Filtros e consultas na listagem |
-
-| **Evidência(s)** |
-| :---: |
-| (https://drive.google.com/file/d/1pe00FBa5cAaZT2N24IScniBUCc-O-urr/view?usp=sharing) |
-
----
-
-### 🐞 **Bug 23: Modal “Visualizar Conta a Pagar” exibe dados sem tratamento**
+### 🐞 **Bug 21: Modal “Visualizar Conta a Pagar” exibe dados sem tratamento**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -831,7 +761,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 24: Baixo contraste nos títulos e informações dos gráficos do Dashboard**
+### 🐞 **Bug 22: Baixo contraste nos títulos e informações dos gráficos do Dashboard**
 **QA responsável:**  Larissa Fernanda
 
 **Data:** 18/10/2026 
