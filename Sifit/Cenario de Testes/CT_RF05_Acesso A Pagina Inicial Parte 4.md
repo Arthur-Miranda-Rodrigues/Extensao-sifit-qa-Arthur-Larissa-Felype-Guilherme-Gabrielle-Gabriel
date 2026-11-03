@@ -118,7 +118,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C02-CT05** | Garantir o correto direcionamento da ação rápida "Ver avaliações" no card de Ações Recomendadas para a tela de gestão de Avaliações. |
+| **C05-CT05** | Garantir o correto direcionamento da ação rápida "Ver avaliações" no card de Ações Recomendadas para a tela de gestão de Avaliações. |
 
 | **Pré-condições** |
 | --- |

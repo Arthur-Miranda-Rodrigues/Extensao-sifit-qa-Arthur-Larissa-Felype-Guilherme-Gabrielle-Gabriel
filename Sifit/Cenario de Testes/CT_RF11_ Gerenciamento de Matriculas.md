@@ -8,7 +8,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C12-CT01** | Validar a filtragem da listagem de matrículas utilizando os campos de busca por nome (ex.: "Rafaela Andrade") e por código numérico (ex.: "232"). |
+| **C11-CT01** | Validar a filtragem da listagem de matrículas utilizando os campos de busca por nome (ex.: "Rafaela Andrade") e por código numérico (ex.: "232"). |
 
 | **Pré-condições** |
 | --- |
@@ -34,7 +34,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C12-CT02** | Garantir que o sistema bloqueie a gravação e exiba aviso quando o utilizador tentar cadastrar uma matrícula sem selecionar um cliente associado. |
+| **C11-CT02** | Garantir que o sistema bloqueie a gravação e exiba aviso quando o utilizador tentar cadastrar uma matrícula sem selecionar um cliente associado. |
 
 | **Pré-condições** |
 | --- |
@@ -62,7 +62,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C12-CT03** | Verificar se é possível abrir os detalhes de uma matrícula existente, habilitar a edição, alterar o campo de observação e persistir as modificações. |
+| **C11-CT03** | Verificar se é possível abrir os detalhes de uma matrícula existente, habilitar a edição, alterar o campo de observação e persistir as modificações. |
 
 | **Pré-condições** |
 | --- |
@@ -91,7 +91,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C12-CT04** | Validar o fluxo de cancelamento de uma matrícula ativa através da ação específica na listagem de registros. |
+| **C11-CT04** | Validar o fluxo de cancelamento de uma matrícula ativa através da ação específica na listagem de registros. |
 
 | **Pré-condições** |
 | --- |
@@ -118,7 +118,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C12-CT05** | Validar o comportamento do sistema ao acionar a exclusão de um registro de matrícula na listagem, tratando eventuais falhas do servidor (*Erro no servidor*). |
+| **C11-CT05** | Validar o comportamento do sistema ao acionar a exclusão de um registro de matrícula na listagem, tratando eventuais falhas do servidor (*Erro no servidor*). |
 
 | **Pré-condições** |
 | --- |
