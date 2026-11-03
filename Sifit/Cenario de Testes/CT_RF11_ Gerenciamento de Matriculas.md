@@ -1,7 +1,7 @@
 
 ---
 
-## Cenário 12: Gerenciamento de Matrículas
+## Cenário 11: Gerenciamento de Matrículas
 
 ## Caso de Teste 01: Pesquisa de Matrículas por Nome e por Código
 ---
