@@ -7,7 +7,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT01** | Validar os filtros por Código, Nome e Status (Todos / Pendente / Realizado) e a exibição dos indicadores no topo da tela "Avaliações". |
+| **C12-CT01** | Validar os filtros por Código, Nome e Status (Todos / Pendente / Realizado) e a exibição dos indicadores no topo da tela "Avaliações". |
 
 | **Pré-condições** |
 | --- |
@@ -37,7 +37,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT02** | Validar o fluxo do modal "Cadastrar Avaliação": busca do aluno por código ou nome, seleção do personal responsável, data e hora. |
+| **C12-CT02** | Validar o fluxo do modal "Cadastrar Avaliação": busca do aluno por código ou nome, seleção do personal responsável, data e hora. |
 
 | **Pré-condições** |
 | --- |
@@ -69,7 +69,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT03** | Verificar as mensagens de aviso ao tentar salvar a avaliação sem aluno, sem personal ou sem hora. |
+| **C12-CT03** | Verificar as mensagens de aviso ao tentar salvar a avaliação sem aluno, sem personal ou sem hora. |
 
 | **Pré-condições** |
 | --- |
@@ -101,7 +101,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT04** | Validar o lançamento das medidas em centímetros e milímetros e a exibição automática da aba "Composição" na avaliação de um aluno. |
+| **C12-CT04** | Validar o lançamento das medidas em centímetros e milímetros e a exibição automática da aba "Composição" na avaliação de um aluno. |
 
 | **Pré-condições** |
 | --- |
@@ -129,7 +129,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT05** | Validar o modal "Alterar Data / Hora da avaliação" para uma avaliação com status Pendente. |
+| **C12-CT05** | Validar o modal "Alterar Data / Hora da avaliação" para uma avaliação com status Pendente. |
 
 | **Pré-condições** |
 | --- |
@@ -157,7 +157,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT06** | Validar o preenchimento da aba "IMC" (idade, altura e peso) em uma avaliação pendente e a mudança de status ao salvar. |
+| **C12-CT06** | Validar o preenchimento da aba "IMC" (idade, altura e peso) em uma avaliação pendente e a mudança de status ao salvar. |
 
 | **Pré-condições** |
 | --- |
@@ -184,7 +184,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT07** | Validar o modal "Comparar Avaliação" entre uma avaliação antiga e uma nova do mesmo aluno. |
+| **C12-CT07** | Validar o modal "Comparar Avaliação" entre uma avaliação antiga e uma nova do mesmo aluno. |
 
 | **Pré-condições** |
 | --- |
@@ -215,7 +215,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT08** | Validar a página "Sua Avaliação Física" com dados pessoais, nível de gordura, composição corporal, índices e gráficos. |
+| **C12-CT08** | Validar a página "Sua Avaliação Física" com dados pessoais, nível de gordura, composição corporal, índices e gráficos. |
 
 | **Pré-condições** |
 | --- |
@@ -242,7 +242,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT09** | Validar a geração e o download do relatório "avaliação completa" em PDF pelo botão verde da linha. |
+| **C12-CT09** | Validar a geração e o download do relatório "avaliação completa" em PDF pelo botão verde da linha. |
 
 | **Pré-condições** |
 | --- |
@@ -269,7 +269,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT10** | Validar o relatório "Avaliação Física" (Dados Básicos, Circunferências, Dobras Subcutâneas e Composição Corporal) aberto pela ação de impressão da linha. |
+| **C12-CT10** | Validar o relatório "Avaliação Física" (Dados Básicos, Circunferências, Dobras Subcutâneas e Composição Corporal) aberto pela ação de impressão da linha. |
 
 | **Pré-condições** |
 | --- |
@@ -295,7 +295,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C13-CT11** | Validar a exclusão de uma avaliação mediante confirmação no modal. |
+| **C12-CT11** | Validar a exclusão de uma avaliação mediante confirmação no modal. |
 
 | **Pré-condições** |
 | --- |
