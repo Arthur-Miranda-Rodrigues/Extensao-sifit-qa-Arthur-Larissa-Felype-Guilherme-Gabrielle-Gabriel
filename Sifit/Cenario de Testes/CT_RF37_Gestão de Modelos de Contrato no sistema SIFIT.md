@@ -179,33 +179,3 @@
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1VYqXn2Gvn6XOrhzlMQVCdLzgTDKtu3_B/view?usp=sharing |
-
----
-
-Aqui está o Caso de Teste reformulado para representar o comportamento de erro/inconsistência observado no vídeo (em que a tela de listagem de **Modelos Contrato** fica em branco após clicar em **Salvar modelo**):
-
----
-
-### Caso de Teste 08: Falha/Erro ao Salvar Novo Modelo de Contrato (Tela em Branco)
-
-| ID | Descrição |
-| --- | --- |
-| **C37-CT08** | Verificar o comportamento do sistema ao salvar um modelo de contrato preenchido (com título, status inativo/ativo e texto) e validar o redirecionamento para a listagem principal. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar logado no sistema e com os campos do modelo de contrato preenchidos. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário preenche o "Título do modelo", define o status do modelo e redige o conteúdo contratual no editor<br>
-<br>**QUANDO** clica no botão **Salvar modelo**<br>
-<br>**ENTÃO** o sistema redireciona o usuário para a página de **Modelos Contrato**, porém a listagem permanece em branco/sem exibição dos dados salvos (*Comportamento observado no teste*). |
-
-| **Critérios de Aceitação** |
-| --- |
-| * O sistema não exibe os modelos de contrato cadastrados na listagem principal após o salvamento, apresentando a tela em branco/sem registros. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/12P2uS8dl4YBUixY1DvnlzWbtJkUEMj_d/view?usp=sharing |
