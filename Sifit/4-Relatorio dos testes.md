@@ -126,6 +126,7 @@ Gabriel de Abreu da Silva — RA 14525
 | BUG-021 | Filtro de status (Pago/Vencido) não é aplicado em Contas a Pagar | Contas a Pagar | Média | Alta | Aberto |
 | BUG-022 | Totais financeiros incorretos na listagem de Contas a Pagar | Contas a Pagar | Alta | Alta | Aberto |
 | BUG-023 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa | Aberto |
+| BUG-024 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa | Aberto |
 
 ### 📈 Distribuição por severidade
 
