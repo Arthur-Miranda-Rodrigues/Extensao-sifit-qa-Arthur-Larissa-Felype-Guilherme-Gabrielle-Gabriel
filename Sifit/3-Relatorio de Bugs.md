@@ -811,8 +811,42 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 |                **Evidência(s)**               |
 | :-------------------------------------------: |
-Vídeo da execução:
-https://jam.dev/c/97986eeb-3c8c-4cfe-bf54-7b1155e95f28
+| **Evidência(s)** |
+| :---: |
+| https://jam.dev/c/97986eeb-3c8c-4cfe-bf54-7b1155e95f28 | 
+
+---
+
+### 🐞 **BUG-023: Erro ao salvar modelo de contrato (aba/listagem permanece em branco)**
+
+| **ID** | **Descrição** |
+| ------ | ------------- |
+| BUG-023 | Ao preencher o formulário de cadastro de modelo de contrato e clicar em "Salvar modelo", o sistema redireciona para a tela de Modelos Contrato, porém a listagem fica inteiramente em branco. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :---: | :---: | :---: |
+| Alta | Alta | Aberto |
+
+| **Passo a Passo para Reproduzir** |
+| --- |
+| 1. Acessar o módulo de Modelos de Contrato. |
+| 2. Preencher o Título do Modelo, selecionar o Status e redigir o corpo do contrato no editor. |
+| 3. Clicar no botão **Salvar modelo**. |
+| 4. Observar a tela de retorno da aplicação. |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| :---: | :---: |
+| O contrato deve ser salvo e listado corretamente na tabela principal de Modelos de Contrato. | O sistema redireciona para a página `/modelos-contrato`, mas a listagem/tabela é exibida completamente vazia/em branco. |
+
+| **Ambiente** | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :--- | :--- | :--- |
+| Ambiente Web de Testes do SIFIT | Comercial – Modelos de Contrato | C37-CT08: Salvamento de modelo de contrato |
+
+| **Evidência(s)** |
+| :---: |
+| (https://drive.google.com/file/d/12P2uS8dl4YBUixY1DvnlzWbtJkUEMj_d/view?usp=sharing) |
+
+---
 
 
 
