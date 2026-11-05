@@ -3,7 +3,8 @@
 🏋️ **Projeto:** SIFIT — Sistema de gestão para academia/box  
 📄 **Documento:** Análise de Requisitos Funcionais e Não Funcionais  
 🧪 **Base de elaboração:** 49 arquivos de cenários de teste fornecidos no projeto de QA do SIFIT  
-👨‍💻 **Responsável pelo trabalho:** Arthur Miranda Rodrigues  
+👨‍💻 **Responsável pelo trabalho:** Arthur Miranda Rodrigues 
+Larissa Fernanda O. Felype Augusto Dos Santos Silva Guilherme Felipe de Morais  Gabrielle Bonini Barbosa  Gabriel de Abreu da Silva
 🔖 **Versão:** 1.0  
 📅 **Data:** 23/10/2026
 
