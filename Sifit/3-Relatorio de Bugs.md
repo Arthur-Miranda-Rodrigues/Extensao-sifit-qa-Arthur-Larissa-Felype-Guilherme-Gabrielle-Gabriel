@@ -848,7 +848,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 21: Erro ao filtrar status em Contas a Pagar**
+### 🐞 **Bug 24: Erro ao filtrar status em Contas a Pagar**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -880,7 +880,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 | **Evidência(s)** |
 | :---: |
-| (https://drive.google.com/file/d/1pe00FBa5cAaZT2N24IScniBUCc-O-urr/view?usp=sharing) |
+| (https://drive.google.com/file/d/1Up4ktSX250_G9l6ig_TXmISv9kXwxdMa/view?usp=sharing) |
 
 ---
 
