@@ -848,6 +848,42 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
+### 🐞 **Bug 21: Erro ao filtrar status em Contas a Pagar**
+
+| **ID** | **Descrição** |
+| ------ | ------------- |
+| BUG-021 | Na tela Contas a Pagar, ao selecionar o status “Vencido” (ou “Pago”) e clicar em “Buscar”, o filtro de status não é aplicado: a grade continua listando as mesmas 5 contas, com status PAGO e PENDENTE, e o indicador “Contas Atrasadas” permanece em 0. O resultado não muda ao alternar o Tipo de Data entre Pagamento e Vencimento. |
+
+| **Severidade do Bug** | **Prioridade de Correção** | **Status** |
+| :---: | :---: | :---: |
+| Média | Alta | Aberto |
+
+| **Passo a passo para simular o bug** |
+| --- |
+| 1. Acessar Contas a Pagar |
+| 2. Informar o nome “centrion” e o período de 14/10/2026 a 30/11/2026 |
+| 3. Selecionar o status “Vencido” |
+| 4. Alternar o Tipo de Data entre “Pagamento” e “Vencimento” |
+| 5. Clicar em “Buscar” |
+
+| **Comportamento Esperado** | **Comportamento Obtido** |
+| :---: | :---: |
+| A listagem deve exibir somente as contas com o status selecionado (ou a mensagem de lista vazia, se não houver nenhuma). | A grade continua exibindo as 5 contas (#28 e #27 PAGO; #25, #24 e #20 PENDENTE), sem aplicar o filtro de status. |
+
+| **Ambiente** |
+| --- |
+| Ambiente de testes do SIFIT (aplicação web). |
+
+| **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
+| :---: | :---: |
+| Filtros de contas a pagar | C15-CT02: Filtros e consultas na listagem |
+
+| **Evidência(s)** |
+| :---: |
+| (https://drive.google.com/file/d/1pe00FBa5cAaZT2N24IScniBUCc-O-urr/view?usp=sharing) |
+
+---
+
 
 
 
