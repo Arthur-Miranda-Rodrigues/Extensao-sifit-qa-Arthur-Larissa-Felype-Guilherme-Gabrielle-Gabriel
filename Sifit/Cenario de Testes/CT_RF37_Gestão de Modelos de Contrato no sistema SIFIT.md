@@ -202,7 +202,7 @@ Aqui está o Caso de Teste reformulado para representar o comportamento de erro/
 <br>**QUANDO** clica no botão **Salvar modelo**<br>
 <br>**ENTÃO** o sistema redireciona o usuário para a página de **Modelos Contrato**, porém a listagem permanece em branco/sem exibição dos dados salvos (*Comportamento observado no teste*). |
 
-| **Critérios de Aceitação / Ponto de Validação Observado** |
+| **Critérios de Aceitação** |
 | --- |
 | * O sistema não exibe os modelos de contrato cadastrados na listagem principal após o salvamento, apresentando a tela em branco/sem registros. |
 
