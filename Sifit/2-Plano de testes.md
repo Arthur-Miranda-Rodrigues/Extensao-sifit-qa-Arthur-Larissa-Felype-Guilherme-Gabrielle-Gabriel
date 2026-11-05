@@ -1,6 +1,6 @@
 # 🧪 **Plano de Testes — SIFIT**
 
-> Documento de planejamento dos testes manuais do sistema **SIFIT** (gestão de academia/box), consolidando os **50 cenários de teste** (RF01–RF50) e os **254 casos de teste** documentados no repositório.
+> Documento de planejamento dos testes manuais do sistema **SIFIT** (gestão de academia/box), consolidando os **49 cenários de teste** (RF01–RF49) e os **254 casos de teste** documentados no repositório.
 
 ---
 
