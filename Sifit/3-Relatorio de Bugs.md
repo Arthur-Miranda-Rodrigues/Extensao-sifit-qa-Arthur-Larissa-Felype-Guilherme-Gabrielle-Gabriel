@@ -15,7 +15,7 @@ Gabriel de Abreu da Silva — RA 14525
 
 **Data:** 29.10.26
 
-**Base de análise:** 50 cenários de teste (CT_RF01 a CT_RF50), com o comportamento verificado registrado em cada caso e o vídeo de evidência vinculado
+**Base de análise:** 49 cenários de teste (CT_RF01 a CT_RF50), com o comportamento verificado registrado em cada caso e o vídeo de evidência vinculado
 
 ---
 
