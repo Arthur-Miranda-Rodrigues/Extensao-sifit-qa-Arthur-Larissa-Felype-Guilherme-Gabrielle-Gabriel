@@ -15,7 +15,7 @@ Gabriel de Abreu da Silva — RA 14525
 
 **Data:** 29.10.26
 
-**Base de análise:** 49 cenários de teste (CT_RF01 a CT_RF50), com o comportamento verificado registrado em cada caso e o vídeo de evidência vinculado
+**Base de análise:** 49 cenários de teste (CT_RF01 a CT_RF49), com o comportamento verificado registrado em cada caso e o vídeo de evidência vinculado
 
 ---
 
@@ -26,7 +26,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 | Severidade | Quantidade |
 | :--- | :---: |
 | Alta | 10 |
-| Média | 10 |
+| Média | 11 |
 | Baixa | 3 |
 
 | ID | Bug | Módulo | Severidade | Prioridade |
@@ -53,10 +53,12 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 | BUG-020 | Modal “Cadastrar Turma” vazio aparece brevemente após salvar a edição | Turmas | Baixa | Baixa |
 | BUG-021 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | Contas a Pagar | Baixa | Baixa |
 | BUG-022 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | Dashboard | Média | Média |
+| BUG-023 | Erro ao salvar modelo de contrato (listagem permanece em branco) | Modelos de Contrato | Alta | Alta |
+| BUG-024 | Filtro de status (Vencido/Pago) não é aplicado em Contas a Pagar | Contas a Pagar | Média | Alta |
 
 ---
 
-### 🐞 **Bug 01: Link “Esqueci minha senha” não executa nenhuma ação**
+### 🐞 **BUG-001: Link “Esqueci minha senha” não executa nenhuma ação**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -89,7 +91,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 02: Botão “Buscar” não filtra as aulas por período (data digitada ou calendário)**
+### 🐞 **BUG-002: Botão “Buscar” não filtra as aulas por período (data digitada ou calendário)**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -124,7 +126,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 03: Sistema aceita data final anterior à data inicial sem exibir validação**
+### 🐞 **BUG-003: Sistema aceita data final anterior à data inicial sem exibir validação**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -158,7 +160,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 04: Botão “Gerar aulas” não executa nenhum fluxo**
+### 🐞 **BUG-004: Botão “Gerar aulas” não executa nenhum fluxo**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -191,7 +193,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 05: “Finalizar Anamnese” não conclui a ficha**
+### 🐞 **BUG-005: “Finalizar Anamnese” não conclui a ficha**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -226,7 +228,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 06: Grupo muscular é cadastrado sem Nome e sem Tipo Membro**
+### 🐞 **BUG-006: Grupo muscular é cadastrado sem Nome e sem Tipo Membro**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -260,7 +262,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 07: Atividade é cadastrada com todos os campos em branco**
+### 🐞 **BUG-007: Atividade é cadastrada com todos os campos em branco**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -294,7 +296,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 08: Produto é cadastrado sem nome e sem valor**
+### 🐞 **BUG-008: Produto é cadastrado sem nome e sem valor**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -328,7 +330,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 09: Pontuação é cadastrada sem datas (período 0000-00-00)**
+### 🐞 **BUG-009: Pontuação é cadastrada sem datas (período 0000-00-00)**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -362,7 +364,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 10: Conta a pagar é cadastrada sem Título e sem Local de Pagamento**
+### 🐞 **BUG-010: Conta a pagar é cadastrada sem Título e sem Local de Pagamento**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -397,7 +399,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 11: Erro ao salvar a edição de uma pontuação (alteração válida)**
+### 🐞 **BUG-011: Erro ao salvar a edição de uma pontuação (alteração válida)**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -431,7 +433,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 12: “Erro no servidor” ao acionar ação da coluna Ações em Pontuação**
+### 🐞 **BUG-012: “Erro no servidor” ao acionar ação da coluna Ações em Pontuação**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -464,7 +466,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 13: Cadastro de enquete com dados válidos retorna “Erro ao salvar enquete”**
+### 🐞 **BUG-013: Cadastro de enquete com dados válidos retorna “Erro ao salvar enquete”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -499,7 +501,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 14: Edição de enquete existente retorna “Erro ao salvar enquete”**
+### 🐞 **BUG-014: Edição de enquete existente retorna “Erro ao salvar enquete”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -533,7 +535,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 15: Exclusão de enquete retorna “Erro ao deletar Enquete”**
+### 🐞 **BUG-015: Exclusão de enquete retorna “Erro ao deletar Enquete”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -567,7 +569,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 16: Cadastro de ficha de treino com dados válidos retorna “Erro ao salvar ficha”**
+### 🐞 **BUG-016: Cadastro de ficha de treino com dados válidos retorna “Erro ao salvar ficha”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -601,7 +603,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 17: Cadastro de objetivo de treino retorna “Erro ao salvar objetivo”**
+### 🐞 **BUG-017: Cadastro de objetivo de treino retorna “Erro ao salvar objetivo”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -635,7 +637,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 18: Campo Status vazio ao abrir “Editar Turma”**
+### 🐞 **BUG-018: Campo Status vazio ao abrir “Editar Turma”**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -669,7 +671,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 19: Erro “Erro ao salvar turma” ao editar com “Tem Personal” = Não**
+### 🐞 **BUG-019: Erro “Erro ao salvar turma” ao editar com “Tem Personal” = Não**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -703,7 +705,7 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 20: Modal “Cadastrar Turma” vazio aparece brevemente após salvar a edição**
+### 🐞 **BUG-020: Modal “Cadastrar Turma” vazio aparece brevemente após salvar a edição**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
@@ -737,11 +739,11 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 21: Modal “Visualizar Conta a Pagar” exibe dados sem tratamento**
+### 🐞 **BUG-021: Modal “Visualizar Conta a Pagar” exibe dados sem tratamento**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
-| BUG-023 | O modal mostra valores técnicos e crus: Tipo “DESPESA_FORNECEDOR”, data “2025-10-01”, Categoria “13”, Tipo do documento “1”, campos Código e Doc. Fornecedor vazios e rótulos “Informacoes”/“Observacao” sem acento. |
+| BUG-021 | O modal mostra valores técnicos e crus: Tipo “DESPESA_FORNECEDOR”, data “2025-10-01”, Categoria “13”, Tipo do documento “1”, campos Código e Doc. Fornecedor vazios e rótulos “Informacoes”/“Observacao” sem acento. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :---: | :---: | :---: |
@@ -770,13 +772,13 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 22: Baixo contraste nos títulos e informações dos gráficos do Dashboard**
+### 🐞 **BUG-022: Baixo contraste nos títulos e informações dos gráficos do Dashboard**
 **QA responsável:**  Larissa Fernanda
 
 **Data:** 18/10/2026 
 | **ID**     | **Descrição**                                                                                                                                             |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BUG-001    | Ao acessar o Dashboard do SIFIT, alguns títulos e textos dos gráficos apresentam cores muito próximas às do fundo, dificultando a leitura e a interpretação das informações gerenciais da academia.|
+| BUG-022    | Ao acessar o Dashboard do SIFIT, alguns títulos e textos dos gráficos apresentam cores muito próximas às do fundo, dificultando a leitura e a interpretação das informações gerenciais da academia.|
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :-------------------: | :------------------------: | :--------: |
@@ -848,11 +850,11 @@ Foram registrados **24 bugs** a partir dos casos de teste cujo comportamento obt
 
 ---
 
-### 🐞 **Bug 24: Erro ao filtrar status em Contas a Pagar**
+### 🐞 **BUG-024: Erro ao filtrar status em Contas a Pagar**
 
 | **ID** | **Descrição** |
 | ------ | ------------- |
-| BUG-021 | Na tela Contas a Pagar, ao selecionar o status “Vencido” (ou “Pago”) e clicar em “Buscar”, o filtro de status não é aplicado: a grade continua listando as mesmas 5 contas, com status PAGO e PENDENTE, e o indicador “Contas Atrasadas” permanece em 0. O resultado não muda ao alternar o Tipo de Data entre Pagamento e Vencimento. |
+| BUG-024 | Na tela Contas a Pagar, ao selecionar o status “Vencido” (ou “Pago”) e clicar em “Buscar”, o filtro de status não é aplicado: a grade continua listando as mesmas 5 contas, com status PAGO e PENDENTE, e o indicador “Contas Atrasadas” permanece em 0. O resultado não muda ao alternar o Tipo de Data entre Pagamento e Vencimento. |
 
 | **Severidade do Bug** | **Prioridade de Correção** | **Status** |
 | :---: | :---: | :---: |
