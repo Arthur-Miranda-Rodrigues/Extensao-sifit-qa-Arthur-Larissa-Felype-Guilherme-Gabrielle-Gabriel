@@ -1,6 +1,6 @@
 # 🧪 **Plano de Testes — SIFIT**
 
-> Documento de planejamento dos testes manuais do sistema **SIFIT** (gestão de academia/box), consolidando os **49 cenários de teste** (RF01–RF49) e os **254 casos de teste** documentados no repositório.
+> Documento de planejamento dos testes manuais do sistema **SIFIT** (gestão de academia/box), consolidando os **49 cenários de teste** (RF01–RF49) da pasta `Cenario de Testes`, com **232 casos de teste**, além de **22 casos** documentados apenas no Relatório de Bugs (24 bugs registrados).
 
 ---
 
@@ -14,8 +14,8 @@
 | **Ambiente de Testes** | [https://sifitalfa.centrion.com.br](https://sifitalfa.centrion.com.br) |
 | **Tipo de Teste** | Teste funcional manual (caixa-preta) |
 | **Repositório** | `Extensao-sifit-qa` — GitHub (autor: Arthur-Miranda-Rodrigues), pasta `Sifit/` |
-| **Data do Documento** | 24/10/2026 |
-| **Versão do Documento** | 1.0 |
+| **Data do Documento** | 08/11/2026 (atualizado; versão original de 24/10/2026) |
+| **Versão do Documento** | 1.1 |
 | **Responsável** | Arthur Miranda Rodrigues — RA 14538  
 Larissa Fernanda O. RA:14536
 Felype Augusto Dos Santos Silva 
@@ -36,11 +36,11 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ## 🧩 3. Escopo
 
-### ✅ Incluído (50 cenários / 254 casos de teste)
+### ✅ Incluído (49 cenários / 232 casos de teste na pasta)
 
 * Autenticação e recuperação de senha
 * Página Inicial (5 partes) e Dashboard
-* Check-ins, presenças e aulas do SifitBox
+* Check-ins e presenças; aulas do SifitBox (cenário documentado apenas no Relatório de Bugs, BUG-002 a BUG-004)
 * Clientes, matrículas e avaliações físicas
 * Financeiro: contas a receber, contas a pagar, caixas, cobranças via Pagar.me, despesas fixas e relatórios
 * Treinos: fichas, exercícios, grupos musculares e objetivos
@@ -97,10 +97,10 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ## 🚦 7. Critérios de Saída (Exit Criteria)
 
-* Os 254 casos de teste dos 50 cenários foram executados e possuem evidência (vídeo/print).
+* Os 232 casos de teste dos 49 cenários da pasta, mais os 22 casos registrados apenas no Relatório de Bugs, foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
-* Requisitos (RF01–RF50) rastreáveis até os arquivos de cenário.
+* Requisitos (RF01–RF49) rastreáveis até os arquivos de cenário.
 
 ## ⏸️ 8. Critérios de Suspensão e Retomada
 
@@ -133,87 +133,91 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | 22/10 | RF45 a RF47 — inteligência, dashboard de resultados e configurações |
 | 23/10 | RF48 a RF50; `1-Analise de requistos.md`; atualização do `README.md` |
 | 24/10 | Elaboração deste Plano de Testes; próximos: Relatório de Bugs e Relatório dos Testes |
+| 29/10 | Relatório de Bugs (24 bugs) e Relatório dos Testes |
+| 08/11 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais |
+
+> Os números RF citados nas linhas acima seguem a numeração vigente à época de cada commit. A numeração atual (RF01–RF49) é a da seção 10.
 
 ---
 
 ## 📋 10. Cenários de Teste (Rastreabilidade RF → CT)
 
-| RF | Cenário | Módulo | Casos de teste | Prioridade* | Arquivo de origem |
-|---|---|---|:---:|:---:|---|
-| RF01 | Login na plataforma | Autenticação | 4 | Alta | `CT_RF01_Login na plataforma.md` |
-| RF02 | Página Inicial (Parte 1) | Página Inicial e Dashboard | 5 | Média | `CT_RF02_Acesso A Pagina Inicial Parte 1.md` |
-| RF03 | Página Inicial (Parte 2) | Página Inicial e Dashboard | 5 | Média | `CT_RF03_Acesso A Pagina Inicial Parte 2.md` |
-| RF04 | Página Inicial (Parte 3) | Página Inicial e Dashboard | 5 | Média | `CT_RF04_Acesso A Pagina Inicial Parte 3.md` |
-| RF05 | Página Inicial (Parte 4) | Página Inicial e Dashboard | 5 | Média | `CT_RF05_Acesso A Pagina Inicial Parte 4.md` |
-| RF06 | Página Inicial (Parte 5) | Página Inicial e Dashboard | 4 | Média | `CT_RF06_Acesso A Pagina  Inicial Parte 5.md` |
-| RF07 | Acesso e visualização do Dashboard | Página Inicial e Dashboard | 3 | Média | `CT_RF07_ Acesso e visualização do Dashboard.md` |
-| RF08 | Gerenciamento de Check-ins | Check-ins, Presenças e Aulas | 4 | Média | `CT_RF08_ Gerenciamento de Check ins.md` |
-| RF09 | Consulta e Filtragem de Presenças de Clientes | Check-ins, Presenças e Aulas | 4 | Média | `CT_RF09_Consulta e Filtragem de Presenças de Clientes.md` |
-| RF10 | Gerenciamento de Aulas do SifitBox | Check-ins, Presenças e Aulas | 4 | Média | `CT_RF10_Gerenciamento de Aulas do SifitBox.md` |
-| RF11 | Gestão de Clientes | Clientes, Matrículas e Avaliações | 5 | Alta | `CT_RF11_ Gestão de clientes.md` |
-| RF12 | Gerenciamento de Matrículas | Clientes, Matrículas e Avaliações | 5 | Alta | `CT_RF12_ Gerenciamento de Matriculas.md` |
-| RF13 | Gerenciamento de Avaliações Físicas | Clientes, Matrículas e Avaliações | 11 | Média | `CT_RF13_ Gestao de avaliações.md` |
-| RF14 | Registro e Gestão de Contas a Receber | Financeiro e Relatórios | 6 | Alta | `CT_RF14_ Registro de contas a receber.md` |
-| RF15 | Registro de Contas a Pagar | Financeiro e Relatórios | 4 | Alta | `CT_RF15_ Registro de contas a pagar.md` |
-| RF16 | Gerenciamento de Fichas de Treino | Treinos e Exercícios | 2 | Média | `CT_RF16_ Consulta de ficha de treino.md` |
-| RF17 | Gerenciamento de Exercícios | Treinos e Exercícios | 3 | Média | `CT_RF17_ Gerenciamento de Exercícios.md` |
-| RF18 | Gestão de Grupos Musculares | Treinos e Exercícios | 5 | Baixa | `CT_RF18_ Gestão de grupos musculares.md` |
-| RF19 | Gerenciamento de Objetivos Treino | Treinos e Exercícios | 2 | Baixa | `CT_RF19_ Gerenciamento de objetivos treino.md` |
-| RF20 | Gestão de Grupos | Turmas, Grupos e Box | 5 | Baixa | `CT_RF20_ Gestão de grupos.md` |
-| RF21 | Gestão de Turmas | Turmas, Grupos e Box | 5 | Média | `CT_RF21_ Gestão de turmas.md` |
-| RF22 | Gestão de Categorias Crossfit | Turmas, Grupos e Box | 6 | Baixa | `CT_RF22_Gestão de Categorias Crossfit.md` |
-| RF23 | Gestão de Box – Turmas e Modalidades | Turmas, Grupos e Box | 6 | Média | `CT_RF23_Gestão de Box - Turmas.md` |
-| RF24 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Financeiro e Relatórios | 7 | Alta | `CT_RF24_ Gerenciamento e Filtro de Caixas .md` |
-| RF25 | Gestão Financeira e Cobranças via Pagar.me no SIFIT | Financeiro e Relatórios | 10 | Alta | `CT_RF25_Gestão Financeira e Cobranças via Pagar.me.md` |
-| RF26 | Gerenciamento e Cadastro de Despesas Fixas | Financeiro e Relatórios | 5 | Alta | `CT_RF26_Gerenciamento e Cadastro de Despesas Fixas.md` |
-| RF27 | Geração e Filtragem de Relatórios Operacionais e Financeiros | Financeiro e Relatórios | 8 | Alta | `CT_RF27_Geração e Filtragem de Relatórios Operacionais e Financeiros.md` |
-| RF28 | Gestão de Colaboradores via Sistema SIFIT | Colaboradores, Funções e Cadastros de apoio | 7 | Alta | `CT_RF28_ Gestão de colaboradores via sistema SIFIT.md` |
-| RF29 | Gestão de Funções | Colaboradores, Funções e Cadastros de apoio | 5 | Alta | `CT_RF29_Gestão de Funções.md` |
-| RF30 | Gerenciamento de Fornecedores no SIFIT | Colaboradores, Funções e Cadastros de apoio | 5 | Média | `CT_RF30_Gerenciamento de Fornecedores no SIFIT.md` |
-| RF31 | Gerenciamento de Tipos de Documentos no SIFIT | Colaboradores, Funções e Cadastros de apoio | 5 | Baixa | `CT_RF31_Gerenciamento de Tipos de Documentos no SIFIT.md` |
-| RF32 | Gerenciamento de Atividades no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 5 | Baixa | `CT_RF32_Gerenciamento de Atividades no SIFIT.md` |
-| RF33 | Gerenciamento de Pontuações no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 8 | Baixa | `CT_RF33_Gerenciamento de Pontuações no SIFIT.md` |
-| RF34 | Gerenciamento de Produtos no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 5 | Baixa | `CT_RF34_Gerenciamento de Produtos no SIFIT.md` |
-| RF35 | Módulo de Enquetes (filtro por Código, Nome e Status) | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | Baixa | `CT_RF35_Filtrar Enquetes por Código, Nome e Status.md` |
-| RF36 | Gestão e consulta de leads no módulo Prospecção | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | Média | `CT_RF36_Gestão e consulta de leads no módulo Prospecção.md` |
-| RF37 | Gestão e consulta de planos no sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | Alta | `CT_RF37_Gestão e consulta de planos no sistema SIFIT.md` |
-| RF38 | Gestão de Modelos de Contrato no sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 8 | Média | `CT_RF38_Gestão de Modelos de Contrato no sistema SIFIT.md` |
-| RF39 | Gestão de Tipos de Pagamento no Sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | Alta | `CT_RF39_Gestão de Tipos de Pagamento no sistema SIFIT.md` |
-| RF40 | Gestão de Bandeiras de Cartão (modal de cadastro) | Comercial (Leads, Planos, Contratos, Pagamentos) | 3 | Média | `CT_RF40_ Abrir modal de cadastro de bandeira de cartão.md` |
-| RF41 | Aplicação de Fichas de Anamnese no sistema SIFIT | Anamnese | 3 | Média | `CT_RF41_ Aplicação de Fichas de Anamnese no sistema SIFIT.md` |
-| RF42 | Gerenciamento de Modelos de Anamnese no Sistema SIFIT | Anamnese | 5 | Média | `CT_RF42_ Gerenciamento de Modelos de Anamnese no sistema SIFIT.md` |
-| RF43 | Gerenciamento de Categorias de Anamnese no sistema SIFIT | Anamnese | 5 | Média | `CT_RF43_Gerenciamento de Categorias de Anamnese no sistema SIFIT.md` |
-| RF44 | Gestão de Pergunta de Anamnese no Sistema SIFIT | Anamnese | 5 | Média | `CT_RF44_Gestão de Pergunta de Anamnese.md` |
-| RF45 | Módulo Inteligência & Automação e Gestão de Clientes | Inteligência, Automação e Configurações | 9 | Média | `CT_RF45_ Gestões de inteligência.md` |
-| RF46 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | Inteligência, Automação e Configurações | 1 | Média | `CT_RF46_ Visualização e Filtragem do Dashboard de Resultados da Inteligência.md` |
-| RF47 | Gestão de configurações | Inteligência, Automação e Configurações | 7 | Alta | `CT_RF47_ Gestões de configurações.md` |
-| RF48 | Gerenciamento de Modelos de Ficha | Inteligência, Automação e Configurações | 2 | Baixa | `CT_RF48_Gerenciamento de Modelos de Ficha.md` |
-| RF49 | Gerenciamento de Notificações | Aplicativo e Notificações | 7 | Média | `CT_RF49_ Gerenciamento de Notificações e Conteúdos do Aplicativo.md` |
-| RF50 | Alternância de Tema da Interface (Claro / Escuro) | Interface (Tema) | 2 | Baixa | `CT_RF50_Alternância de Tema da Interface.md` |
-| **Total** | **50 cenários** | | **254** | | |
+| RF | Cenário | Módulo | Casos na pasta | Só no Relatório de Bugs | Prioridade* | Arquivo de origem |
+|---|---|---|:---:|:---:|:---:|---|
+| RF01 | Login na plataforma | Autenticação | 3 | 1 | Alta | `CT_RF01_Login na plataforma.md` |
+| RF02 | Página Inicial (Parte 1) | Página Inicial e Dashboard | 5 | — | Média | `CT_RF02_Acesso A Pagina Inicial Parte 1.md` |
+| RF03 | Página Inicial (Parte 2) | Página Inicial e Dashboard | 5 | — | Média | `CT_RF03_Acesso A Pagina Inicial Parte 2.md` |
+| RF04 | Página Inicial (Parte 3) | Página Inicial e Dashboard | 5 | — | Média | `CT_RF04_Acesso A Pagina Inicial Parte 3.md` |
+| RF05 | Página Inicial (Parte 4) | Página Inicial e Dashboard | 5 | — | Média | `CT_RF05_Acesso A Pagina Inicial Parte 4.md` |
+| RF06 | Página Inicial (Parte 5) | Página Inicial e Dashboard | 4 | — | Média | `CT_RF06_Acesso A Pagina  Inicial Parte 5.md` |
+| RF07 | Acesso e visualização do Dashboard | Página Inicial e Dashboard | 3 | — | Média | `CT_RF07_ Acesso e visualização do Dashboard.md` |
+| RF08 | Gerenciamento de Check-ins | Check-ins e Presenças | 4 | — | Média | `CT_RF08_ Gerenciamento de Check ins.md` |
+| RF09 | Consulta e Filtragem de Presenças de Clientes | Check-ins e Presenças | 4 | — | Média | `CT_RF09_Consulta e Filtragem de Presenças de Clientes.md` |
+| RF10 | Gestão de Clientes | Clientes, Matrículas e Avaliações | 5 | — | Alta | `CT_RF10_ Gestão de clientes.md` |
+| RF11 | Gerenciamento de Matrículas | Clientes, Matrículas e Avaliações | 5 | — | Alta | `CT_RF11_ Gerenciamento de Matriculas.md` |
+| RF12 | Gerenciamento de Avaliações Físicas | Clientes, Matrículas e Avaliações | 11 | — | Média | `CT_RF12_ Gestao de avaliações.md` |
+| RF13 | Registro e Gestão de Contas a Receber | Financeiro e Relatórios | 6 | — | Alta | `CT_RF13_ Registro de contas a receber.md` |
+| RF14 | Registro de Contas a Pagar | Financeiro e Relatórios | 1 | 3 | Alta | `CT_RF14_ Registro de contas a pagar.md` |
+| RF15 | Gerenciamento de Fichas de Treino | Treinos e Exercícios | 1 | 1 | Média | `CT_RF15_ Consulta de ficha de treino.md` |
+| RF16 | Gerenciamento de Exercícios | Treinos e Exercícios | 3 | — | Média | `CT_RF16_ Gerenciamento de Exercícios.md` |
+| RF17 | Gestão de Grupos Musculares | Treinos e Exercícios | 4 | 1 | Baixa | `CT_RF17_ Gestão de grupos musculares.md` |
+| RF18 | Gerenciamento de Objetivos Treino | Treinos e Exercícios | 1 | 1 | Baixa | `CT_RF18_ Gerenciamento de objetivos treino.md` |
+| RF19 | Gestão de Grupos | Turmas, Grupos e Box | 5 | — | Baixa | `CT_RF19_ Gestão de grupos.md` |
+| RF20 | Gestão de Turmas | Turmas, Grupos e Box | 4 | 1 | Média | `CT_RF20_ Gestão de turmas.md` |
+| RF21 | Gestão de Categorias Crossfit | Turmas, Grupos e Box | 6 | — | Baixa | `CT_RF21_Gestão de Categorias Crossfit.md` |
+| RF22 | Gestão de Box (Turmas e Modalidades) | Turmas, Grupos e Box | 6 | — | Média | `CT_RF22_Gestão de Box - Turmas.md` |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Financeiro e Relatórios | 7 | — | Alta | `CT_RF23_ Gerenciamento e Filtro de Caixas .md` |
+| RF24 | Gestão Financeira e Cobranças via Pagar.me no SIFIT | Financeiro e Relatórios | 10 | — | Alta | `CT_RF24_Gestão Financeira e Cobranças via Pagar.me.md` |
+| RF25 | Gerenciamento e Cadastro de Despesas Fixas | Financeiro e Relatórios | 5 | — | Alta | `CT_RF25_Gerenciamento e Cadastro de Despesas Fixas.md` |
+| RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | Financeiro e Relatórios | 8 | — | Alta | `CT_RF26_Geração e Filtragem de Relatórios Operacionais e Financeiros.md` |
+| RF27 | Gestão de Colaboradores via Sistema SIFIT | Colaboradores, Funções e Cadastros de apoio | 7 | — | Alta | `CT_RF27_ Gestão de colaboradores via sistema SIFIT.md` |
+| RF28 | Gestão de Funções | Colaboradores, Funções e Cadastros de apoio | 5 | — | Alta | `CT_RF28_Gestão de Funções.md` |
+| RF29 | Gerenciamento de Fornecedores no SIFIT | Colaboradores, Funções e Cadastros de apoio | 5 | — | Média | `CT_RF29_Gerenciamento de Fornecedores no SIFIT.md` |
+| RF30 | Gerenciamento de Tipos de Documentos no SIFIT | Colaboradores, Funções e Cadastros de apoio | 5 | — | Baixa | `CT_RF30_Gerenciamento de Tipos de Documentos no SIFIT.md` |
+| RF31 | Gerenciamento de Atividades no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 1 | Baixa | `CT_RF31_Gerenciamento de Atividades no SIFIT.md` |
+| RF32 | Gerenciamento de Pontuações no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 5 | 3 | Baixa | `CT_RF32_Gerenciamento de Pontuações no SIFIT.md` |
+| RF33 | Gerenciamento de Produtos no SIFIT | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 1 | Baixa | `CT_RF33_Gerenciamento de Produtos no SIFIT.md` |
+| RF34 | Módulo de Enquetes | Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 2 | 2 | Baixa | `CT_RF34_Filtrar Enquetes por Código, Nome e Status.md` |
+| RF35 | Gestão e consulta de leads no módulo Prospecção | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | — | Média | `CT_RF35_Gestão e consulta de leads no módulo Prospecção.md` |
+| RF36 | Gestão e consulta de planos no sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | — | Alta | `CT_RF36_Gestão e consulta de planos no sistema SIFIT.md` |
+| RF37 | Gestão de Modelos de Contrato no sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 7 | 1 | Média | `CT_RF37_Gestão de Modelos de Contrato no sistema SIFIT.md` |
+| RF38 | Gestão de Tipos de Pagamento no Sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | — | Alta | `CT_RF38_Gestão de Tipos de Pagamento no sistema SIFIT.md` |
+| RF39 | Gestão de Bandeiras de Cartão no Sistema SIFIT | Comercial (Leads, Planos, Contratos, Pagamentos) | 3 | — | Média | `CT_RF39_ Abrir modal de cadastro de bandeira de cartão.md` |
+| RF40 | Aplicação de Fichas de Anamnese no sistema SIFIT | Anamnese | 1 | 2 | Média | `CT_RF40_ Aplicação de Fichas de Anamnese no sistema SIFIT.md` |
+| RF41 | Gerenciamento de Modelos de Anamnese no Sistema SIFIT | Anamnese | 5 | — | Média | `CT_RF41_ Gerenciamento de Modelos de Anamnese no sistema SIFIT.md` |
+| RF42 | Gerenciamento de Categorias de Anamnese no sistema SIFIT | Anamnese | 5 | — | Média | `CT_RF42_Gerenciamento de Categorias de Anamnese no sistema SIFIT.md` |
+| RF43 | Gestão de Pergunta de Anamnese no Sistema SIFIT | Anamnese | 5 | — | Média | `CT_RF43_Gestão de Pergunta de Anamnese.md` |
+| RF44 | Módulo Inteligência & Automação e Gestão de Clientes | Inteligência, Automação e Configurações | 9 | — | Média | `CT_RF44_ Gestões de inteligência.md` |
+| RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | Inteligência, Automação e Configurações | 1 | — | Média | `CT_RF45_ Visualização e Filtragem do Dashboard de Resultados da Inteligência.md` |
+| RF46 | Gestão de configurações | Inteligência, Automação e Configurações | 7 | — | Alta | `CT_RF46_ Gestões de configurações.md` |
+| RF47 | Gerenciamento de Modelos de Ficha | Inteligência, Automação e Configurações | 2 | — | Baixa | `CT_RF47_Gerenciamento de Modelos de Ficha.md` |
+| RF48 | Gerenciamento de Notificações | Aplicativo e Notificações | 7 | — | Média | `CT_RF48_ Gerenciamento de Notificações e Conteúdos do Aplicativo.md` |
+| RF49 | Alternância de Tema da Interface (Claro / Escuro) | Interface (Tema) | 2 | — | Baixa | `CT_RF49_Alternância de Tema da Interface.md` |
+| **Total** | **49 cenários** | | **232** | **18** | | |
 
 \* Prioridade **proposta** pelo responsável do teste com base em criticidade para o negócio (acesso, dinheiro, dados de clientes); pode ser revista com o professor/responsável pelo produto.
 
 ### 📊 Resumo por módulo
 
-| Módulo | Cenários | Casos de teste |
-|---|:---:|:---:|
-| Autenticação | 1 | 4 |
-| Página Inicial e Dashboard | 6 | 27 |
-| Check-ins, Presenças e Aulas | 3 | 12 |
-| Clientes, Matrículas e Avaliações | 3 | 21 |
-| Financeiro e Relatórios | 6 | 40 |
-| Treinos e Exercícios | 4 | 12 |
-| Turmas, Grupos e Box | 4 | 22 |
-| Colaboradores, Funções e Cadastros de apoio | 4 | 22 |
-| Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 22 |
-| Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | 26 |
-| Anamnese | 4 | 18 |
-| Inteligência, Automação e Configurações | 4 | 19 |
-| Aplicativo e Notificações | 1 | 7 |
-| Interface (Tema) | 1 | 2 |
-| **Total** | **50** | **254** |
+| Módulo | Cenários | Casos na pasta | Só no Relatório de Bugs |
+|---|:---:|:---:|:---:|
+| Autenticação | 1 | 3 | 1 |
+| Página Inicial e Dashboard | 6 | 27 | — |
+| Check-ins e Presenças | 2 | 8 | — |
+| Clientes, Matrículas e Avaliações | 3 | 21 | — |
+| Financeiro e Relatórios | 6 | 37 | 3 |
+| Treinos e Exercícios | 4 | 9 | 3 |
+| Turmas, Grupos e Box | 4 | 21 | 1 |
+| Colaboradores, Funções e Cadastros de apoio | 4 | 22 | — |
+| Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 15 | 7 |
+| Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | 25 | 1 |
+| Anamnese | 4 | 16 | 2 |
+| Inteligência, Automação e Configurações | 4 | 19 | — |
+| Aplicativo e Notificações | 1 | 7 | — |
+| Interface (Tema) | 1 | 2 | — |
+| **Total** | **49** | **232** | **18** |
 
+> **Como ler as contagens:** “Casos na pasta” é o número de casos presentes hoje nos arquivos de `Cenario de Testes/` (49 arquivos). “Só no Relatório de Bugs” são casos que existiam no planejamento anterior (254 casos) e hoje aparecem apenas no `3-Relatorio de Bugs.md` — 18 em cenários da pasta e 4 do cenário **Gerenciamento de Aulas do SifitBox**, que não possui arquivo na pasta e por isso não tem número RF na tabela acima.
 
 ---
 
@@ -234,21 +238,30 @@ Comportamentos descritos nos próprios cenários como falha, erro de gravação 
 
 | Cenário | Casos | Observação registrada |
 |---|---|---|
-| RF01 — Login | C01-CT04 | Link de recuperação de senha: nada acontece ao clicar |
-| RF10 — Aulas do SifitBox | CT01–CT04 | Filtro por datas e botão "Gerar aulas" sem efeito visível; data final anterior à inicial não é bloqueada |
-| RF11 — Clientes | CT04 | Exclusão retorna "Erro no servidor – Erro interno inesperado" |
-| RF12 — Matrículas | CT05 | Exclusão retorna "Erro no servidor – Erro interno inesperado" |
-| RF16 — Fichas de treino | CT01, CT02 | Filtros por código/status não retornam registros; cadastro falha com "Erro ao salvar ficha" |
-| RF19 — Objetivos de treino | CT01, CT02 | Cadastro falha com "Erro ao salvar objetivo"; busca sem resultados |
-| RF33 — Pontuações | CT03, CT06 | "Erro ao salvar pontuação" e "Erro no servidor" em ação da coluna Ações |
-| RF35 — Enquetes | CT02–CT04 | "Erro ao salvar enquete" (cadastro e edição) e "Erro ao deletar Enquete" |
-| RF40 — Bandeiras de cartão | CT02 | Ao salvar, nada acontece e a lista continua vazia |
-| RF41 — Anamnese (aplicação) | CT01, CT02 | "Finalizar Anamnese" sem efeito; "Erro no servidor" ao finalizar |
-| RF44 — Perguntas de anamnese | CT02 | Alteração do tipo de resposta retorna "Erro ao salvar pergunta" |
-| RF47 — Configurações | CT01–CT07 | Todas as abas retornam erro ao salvar (ex.: "Erro ao salvar configurações") |
-| RF48 — Modelos de ficha | CT01 | Cadastro retorna "Erro ao salvar modelo" |
+| RF01 — Login | C01-CT04 | Link de recuperação de senha: nada acontece ao clicar (BUG-001) |
+| Aulas do SifitBox (sem arquivo na pasta) | CT01–CT04 | Filtro por datas e botão “Gerar aulas” sem efeito visível; data final anterior à inicial não é bloqueada (BUG-002 a BUG-004) |
+| RF10 — Clientes | CT04 | Exclusão retorna “Erro no servidor – Erro interno inesperado” (ponto a confirmar) |
+| RF11 — Matrículas | CT05 | Exclusão retorna “Erro no servidor – Erro interno inesperado” (ponto a confirmar) |
+| RF14 — Contas a Pagar | CT01, CT02, CT03 | Conta cadastrada sem Título e sem Local de Pagamento; filtro de status não aplicado; modal de visualização com dados sem tratamento (BUG-010, BUG-021, BUG-024) |
+| RF15 — Fichas de treino | CT01, CT02 | Filtros por código/status não retornam registros; cadastro falha com “Erro ao salvar ficha” (BUG-016) |
+| RF17 — Grupos musculares | CT04 | Cadastro aceito sem Nome e sem Tipo Membro (BUG-006) |
+| RF18 — Objetivos de treino | CT01, CT02 | Cadastro falha com “Erro ao salvar objetivo”; busca sem resultados (BUG-017) |
+| RF20 — Turmas | CT04 | Status vazio na edição, “Erro ao salvar turma” e modal vazio após salvar (BUG-018 a BUG-020) |
+| RF31 — Atividades | CT03 | Atividade cadastrada com todos os campos em branco (BUG-007) |
+| RF32 — Pontuações | CT03, CT06, CT08 | “Erro ao salvar pontuação”, “Erro no servidor” em ação da coluna Ações e cadastro sem datas (BUG-009, BUG-011, BUG-012) |
+| RF33 — Produtos | CT05 | Produto cadastrado sem nome e sem valor (BUG-008) |
+| RF34 — Enquetes | CT02–CT04 | “Erro ao salvar enquete” (cadastro e edição) e “Erro ao deletar Enquete” (BUG-013 a BUG-015) |
+| RF37 — Modelos de contrato | CT08 | Ao salvar o modelo, a listagem retorna em branco (BUG-023) |
+| RF39 — Bandeiras de cartão | CT02 | Ao salvar, nada acontece e a lista continua vazia |
+| RF40 — Anamnese (aplicação) | CT01, CT02 | “Finalizar Anamnese” sem efeito; “Erro no servidor” ao finalizar (BUG-005) |
+| RF43 — Perguntas de anamnese | CT02 | Alteração do tipo de resposta retorna “Erro ao salvar pergunta” |
+| RF46 — Configurações | CT01–CT07 | Todas as abas retornam erro ao salvar (ex.: “Erro ao salvar configurações”) |
+| RF47 — Modelos de ficha | CT01 | Cadastro retorna “Erro ao salvar modelo” |
+| RF07 — Dashboard | CT01 | Baixo contraste nos títulos e informações dos gráficos (BUG-022) |
 
-**Erros esperados por integridade referencial** (comportamento correto a validar): RF20-CT05 (grupo com vínculos), RF22-CT06 (categoria Crossfit), RF37-CT04 (plano com vínculos) e RF39-CT05 (tipo de pagamento vinculado).
+**Erros esperados por integridade referencial** (comportamento correto a validar): RF19-CT05 (grupo com vínculos), RF21-CT06 (categoria Crossfit), RF36-CT04 (plano com vínculos) e RF38-CT05 (tipo de pagamento vinculado).
+
+Os defeitos confirmados estão consolidados no `3-Relatorio de Bugs.md` (24 bugs: 10 de severidade alta, 11 média e 3 baixa). As linhas sem referência a BUG-xxx acima ainda não possuem bug formal e aparecem como “pontos a confirmar” ou aguardam registro.
 
 ---
 
@@ -281,7 +294,7 @@ Cada defeito será documentado em `3-Relatorio de Bugs.md` com:
 | Bloqueio de acesso ao banco/servidor (já ocorrido com a conta do Workbench) | Médio | Acionar o responsável/coordenação; priorizar testes pela interface web |
 | Dados de teste alterados ou excluídos por outros usuários | Médio | Registrar os dados usados em cada caso e recriar quando necessário |
 | Evidências em links externos (Google Drive) indisponíveis | Médio | Manter links com acesso configurado e guardar cópia dos vídeos |
-| Renumeração de cenários ao longo do projeto (RF04→RF08, RF09→RF11 etc.) | Baixo | Usar a tabela da seção 10 como referência oficial de IDs |
+| Renumeração de cenários ao longo do projeto (o cenário de Aulas deixou de ter arquivo e os demais foram renumerados; o Relatório de Bugs ainda cita parte dos casos pela numeração antiga, ex.: C21-CT04 = RF20-CT04 atual) | Médio | Usar a tabela da seção 10 como referência oficial de IDs e conferir a correspondência de IDs ao consultar o Relatório de Bugs |
 | Falta de especificação oficial do produto | Médio | Basear o resultado esperado no comportamento lógico e na análise de requisitos |
 
 ---
@@ -292,15 +305,15 @@ Cada defeito será documentado em `3-Relatorio de Bugs.md` com:
 
 | Arquivo | Conteúdo | Situação |
 |---|---|---|
-| `1-Analise de requistos.md` | Requisitos funcionais (RF01–RF50) e não funcionais propostos (RNF01–RNF10) | ✅ Concluído (23/10/2026) |
+| `1-Analise de requistos.md` | Requisitos funcionais (RF01–RF49) e não funcionais propostos (RNF01–RNF04) | ✅ Atualizado (versão 2.1, 08/11/2026) |
 | `2-Plano de testes.md` | Este documento | ✅ Elaborado |
-| `Cenario de Testes/CT_RF01 … CT_RF50` | 50 cenários, 254 casos de teste | ✅ Escritos |
-| `3-Relatorio de Bugs.md` | Registro dos defeitos encontrados | ⏳ A preencher |
-| `4-Relatorio dos testes.md` | Relatório final de execução | ⏳ A preencher |
+| `Cenario de Testes/CT_RF01 … CT_RF49` | 49 cenários, 232 casos de teste | ✅ Escritos |
+| `3-Relatorio de Bugs.md` | Registro dos defeitos encontrados (24 bugs) | ✅ Elaborado (29/10/2026) |
+| `4-Relatorio dos testes.md` | Relatório final de execução | ✅ Atualizado (08/11/2026) |
 
 ### Referências
 
-* **Sistema sob teste:** [https://sifitalfa.centrion.com.br](https://sifitalfa.centrion.com.br)
+* **Sistema sob teste:** [https://sifitalfa.centrion.com.br]
 * **Repositório:** `Extensao-sifit-qa` (GitHub — Arthur-Miranda-Rodrigues), branch `main`, commits verificados de 08/10/2026 a 23/10/2026
 * **Evidências:** gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
 * **Modelo de plano:** plano de testes do OrangeHRM (Demo), usado como base estrutural
@@ -312,10 +325,11 @@ Cada defeito será documentado em `3-Relatorio de Bugs.md` com:
 
 | Indicador | Valor |
 |---|:---:|
-| Requisitos funcionais (RF) | 50 |
-| Cenários de teste | 50 |
-| Casos de teste documentados | 254 |
+| Requisitos funcionais (RF) | 49 |
+| Cenários de teste (pasta) | 49 |
+| Casos de teste na pasta | 232 |
+| Casos documentados apenas no Relatório de Bugs | 22 |
+| Bugs registrados | 24 |
 | Módulos funcionais agrupados | 14 |
-| Requisitos não funcionais propostos | 10 |
-| Período de elaboração | 08/10/2026 a 24/10/2026 |
-
+| Requisitos não funcionais propostos | 4 |
+| Período de elaboração | 08/10/2026 a 08/11/2026 |
