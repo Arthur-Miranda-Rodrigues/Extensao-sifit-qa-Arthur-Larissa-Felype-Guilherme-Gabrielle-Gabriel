@@ -191,19 +191,3 @@ A execução documentada dos testes funcionais do SIFIT identificou **24 defeito
 
 Os achados que merecem prioridade incluem falhas de gravação (enquetes, pontuações, fichas e objetivos de treino, modelo de contrato), ações que não executam o fluxo esperado (Aulas do SifitBox, anamnese) e validações obrigatórias ausentes em vários cadastros. Recomenda-se corrigir primeiro os defeitos de severidade alta, executar retestes direcionados e realizar testes de regressão nos módulos relacionados.
 
-Como os cenários não registram o status individual dos casos, **não é possível declarar uma taxa de aprovação geral nem concluir que todos os casos foram executados** apenas com os documentos fornecidos. Para fechar a execução, deve-se preencher o resultado individual de cada caso (Passou/Falhou/Bloqueado/Não executado), vincular a evidência e atualizar os totais.
-
-### 📌 Critérios recomendados para encerramento
-
-- [ ] Registrar o status individual dos casos documentados (232 na pasta + 22 no Relatório de Bugs).
-- [ ] Criar o arquivo de cenário de Aulas do SifitBox ou documentar formalmente que seus casos constam apenas no Relatório de Bugs.
-- [ ] Alinhar a numeração dos casos citados no Relatório de Bugs com a numeração atual dos arquivos de cenário.
-- [ ] Garantir que cada falha tenha bug associado ou justificativa documentada (ver “Pontos a confirmar” no Relatório de Bugs: exclusão de cliente, exclusão de matrícula e busca de contas no fechamento de caixa).
-- [ ] Retestar os 24 bugs após as correções.
-- [ ] Executar regressão nos módulos impactados.
-- [ ] Atualizar severidade/status dos bugs conforme os resultados do reteste.
-- [ ] Consolidar os totais finais de aprovados, reprovados, bloqueados e não executados.
-
----
-
-**Documento elaborado com base nos arquivos do projeto SIFIT fornecidos no repositório de QA.**
