@@ -27,18 +27,7 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 254 (232 na pasta + 22 só no Relatório de Bugs) | Não consolidado | Não consolidado | 24 |
-
-| Indicador | Resultado |
-| --------- | --------: |
-| Cenários documentados (arquivos na pasta) | 49 |
-| Casos de teste na pasta | 232 |
-| Casos registrados apenas no Relatório de Bugs | 24 |
-| Total de casos documentados (pasta + Relatório de Bugs) | 256 |
-| Bugs de severidade alta | 10 |
-| Bugs de severidade média | 11 |
-| Bugs de severidade baixa | 3 |
-| Casos bloqueados | Não consolidado |
+| 256  | 256 | 24 | 24 |
 
 ---
 
