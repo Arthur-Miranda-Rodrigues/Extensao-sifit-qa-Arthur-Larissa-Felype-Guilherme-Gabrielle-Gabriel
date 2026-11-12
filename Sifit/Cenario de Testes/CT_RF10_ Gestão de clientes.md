@@ -1,7 +1,6 @@
 ## Cenário 10: Gestão de Clientes
 
-## Caso de Teste 01: Preenchimento Completo e Cadastro de Novo Cliente
----
+### Caso de Teste 01: Preenchimento Completo e Cadastro de Novo Cliente
 
 | ID | Descrição |
 | --- | --- |
@@ -33,7 +32,7 @@
 
 ---
 
-## Caso de Teste 02: Validação de Campos Obrigatórios em Branco no Cadastro
+### Caso de Teste 02: Validação de Campos Obrigatórios em Branco no Cadastro
 
 | ID | Descrição |
 | --- | --- |
@@ -60,7 +59,7 @@
 
 ---
 
-## Caso de Teste 03: Edição e Atualização de Dados no Perfil do Cliente
+### Caso de Teste 03: Edição e Atualização de Dados no Perfil do Cliente
 
 | ID | Descrição |
 | --- | --- |
@@ -89,7 +88,7 @@
 
 ---
 
-## Caso de Teste 04: Tratamento de Exceção em Tentativa de Exclusão de Cliente
+### Caso de Teste 04: Tratamento de Exceção em Tentativa de Exclusão de Cliente
 
 | ID | Descrição |
 | --- | --- |
@@ -115,7 +114,7 @@
 
 ---
 
-## Caso de Teste 05: Pesquisa Avançada e Filtragem de Clientes por Código e Nome
+### Caso de Teste 05: Pesquisa Avançada e Filtragem de Clientes por Código e Nome
 
 | ID | Descrição |
 | --- | --- |
