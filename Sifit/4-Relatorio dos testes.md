@@ -60,7 +60,7 @@
 | RF12 | Gerenciamento de Avaliações Físicas | 11 | 11 | 0 | - |
 | RF13 | Registro e Gestão de Contas a Receber | 6 | 6 | 0 | - |
 | RF14 | Registro de Contas a Pagar | 1 | 1 | 3 | BUG-010, BUG-021, BUG-024 |
-| RF15 | Gerenciamento de Fichas de Treino | 1 | N/C | 1 | BUG-016 |
+| RF15 | Gerenciamento de Fichas de Treino | 1 | 1 | 1 | BUG-016 |
 | RF16 | Gerenciamento de Exercícios | 3 | 3 | 0 | - |
 | RF17 | Gestão de Grupos Musculares | 4 | 4 | 1 | BUG-006 |
 | RF18 | Gerenciamento de Objetivos Treino | 1 | 1 | 1 | BUG-017 |
