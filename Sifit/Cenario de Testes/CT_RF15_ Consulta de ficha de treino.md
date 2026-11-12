@@ -1,8 +1,4 @@
----
-
 ## Cenário 15: Gerenciamento de Fichas de Treino
-
----
 
 ### Caso de Teste 01: Validação de Filtros da Listagem e Inexistência de Resultados por Código e Status
 
