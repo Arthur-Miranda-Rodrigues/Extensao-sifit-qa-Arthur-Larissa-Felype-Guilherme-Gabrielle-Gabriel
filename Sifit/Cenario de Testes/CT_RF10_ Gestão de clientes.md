@@ -1,6 +1,3 @@
-
----
-
 ## Cenário 10: Gestão de Clientes
 
 ## Caso de Teste 01: Preenchimento Completo e Cadastro de Novo Cliente
