@@ -32,7 +32,7 @@ A estrutura está organizada por pastas, cada uma representando uma etapa da doc
 
 📁 **Relatórios** ↳ Relatório dos testes executados e resultados finais
 
-📁 **Evidências** ↳ Prints e vídeos curtos
+📁 **Evidências** ↳ vídeos curtos do jam ou do próprio sistema de gravar imagens da tela no google drive
 
 ---
 
