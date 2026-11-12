@@ -33,8 +33,8 @@
 | --------- | --------: |
 | Cenários documentados (arquivos na pasta) | 49 |
 | Casos de teste na pasta | 232 |
-| Casos registrados apenas no Relatório de Bugs | 22 |
-| Total de casos documentados (pasta + Relatório de Bugs) | 254 |
+| Casos registrados apenas no Relatório de Bugs | 24 |
+| Total de casos documentados (pasta + Relatório de Bugs) | 256 |
 | Bugs de severidade alta | 10 |
 | Bugs de severidade média | 11 |
 | Bugs de severidade baixa | 3 |
