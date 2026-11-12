@@ -46,56 +46,56 @@
 
 | Código RF | Módulo | Casos Testados | Casos Passaram | Bugs encontrados | Bug(s) Associado(s) |
 | --------- | ------ | :------------: | :------------: | :--------------: | ------------------- |
-| RF01 | Login na plataforma | 3 | N/C | 1 | BUG-001 |
-| RF02 | Página Inicial (Parte 1) | 5 | N/C | 0 | - |
-| RF03 | Página Inicial (Parte 2) | 5 | N/C | 0 | - |
-| RF04 | Página Inicial (Parte 3) | 5 | N/C | 0 | - |
-| RF05 | Página Inicial (Parte 4) | 5 | N/C | 0 | - |
-| RF06 | Página Inicial (Parte 5) | 4 | N/C | 0 | - |
-| RF07 | Acesso e visualização do Dashboard | 3 | N/C | 1 | BUG-022 |
-| RF08 | Gerenciamento de Check-ins | 4 | N/C | 0 | - |
-| RF09 | Consulta e Filtragem de Presenças de Clientes | 4 | N/C | 0 | - |
-| RF10 | Gestão de Clientes | 5 | N/C | 0 | - |
-| RF11 | Gerenciamento de Matrículas | 5 | N/C | 0 | - |
-| RF12 | Gerenciamento de Avaliações Físicas | 11 | N/C | 0 | - |
-| RF13 | Registro e Gestão de Contas a Receber | 6 | N/C | 0 | - |
-| RF14 | Registro de Contas a Pagar | 1 | N/C | 3 | BUG-010, BUG-021, BUG-024 |
+| RF01 | Login na plataforma | 3 | 3 | 1 | BUG-001 |
+| RF02 | Página Inicial (Parte 1) | 5 | 5 | 0 | - |
+| RF03 | Página Inicial (Parte 2) | 5 | 5 | 0 | - |
+| RF04 | Página Inicial (Parte 3) | 5 | 5 | 0 | - |
+| RF05 | Página Inicial (Parte 4) | 5 | 5 | 0 | - |
+| RF06 | Página Inicial (Parte 5) | 4 | 5 | 0 | - |
+| RF07 | Acesso e visualização do Dashboard | 3 | 3 | 1 | BUG-022 |
+| RF08 | Gerenciamento de Check-ins | 4 | 4 | 0 | - |
+| RF09 | Consulta e Filtragem de Presenças de Clientes | 4 | 4 | 0 | - |
+| RF10 | Gestão de Clientes | 5 | 5 | 0 | - |
+| RF11 | Gerenciamento de Matrículas | 5 | 5 | 0 | - |
+| RF12 | Gerenciamento de Avaliações Físicas | 11 | 11 | 0 | - |
+| RF13 | Registro e Gestão de Contas a Receber | 6 | 6 | 0 | - |
+| RF14 | Registro de Contas a Pagar | 1 | 1 | 3 | BUG-010, BUG-021, BUG-024 |
 | RF15 | Gerenciamento de Fichas de Treino | 1 | N/C | 1 | BUG-016 |
-| RF16 | Gerenciamento de Exercícios | 3 | N/C | 0 | - |
-| RF17 | Gestão de Grupos Musculares | 4 | N/C | 1 | BUG-006 |
-| RF18 | Gerenciamento de Objetivos Treino | 1 | N/C | 1 | BUG-017 |
-| RF19 | Gestão de Grupos | 5 | N/C | 0 | - |
-| RF20 | Gestão de Turmas | 4 | N/C | 3 | BUG-018, BUG-019, BUG-020 |
-| RF21 | Gestão de Categorias Crossfit | 6 | N/C | 0 | - |
-| RF22 | Gestão de Box (Turmas e Modalidades) | 6 | N/C | 0 | - |
-| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 7 | N/C | 0 | - |
-| RF24 | Gestão Financeira e Cobranças via Pagar.me | 10 | N/C | 0 | - |
-| RF25 | Gerenciamento e Cadastro de Despesas Fixas | 5 | N/C | 0 | - |
-| RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | 8 | N/C | 0 | - |
-| RF27 | Gestão de Colaboradores via Sistema SIFIT | 7 | N/C | 0 | - |
-| RF28 | Gestão de Funções | 5 | N/C | 0 | - |
-| RF29 | Gerenciamento de Fornecedores | 5 | N/C | 0 | - |
-| RF30 | Gerenciamento de Tipos de Documentos | 5 | N/C | 0 | - |
-| RF31 | Gerenciamento de Atividades | 4 | N/C | 1 | BUG-007 |
-| RF32 | Gerenciamento de Pontuações | 5 | N/C | 3 | BUG-009, BUG-011, BUG-012 |
-| RF33 | Gerenciamento de Produtos | 4 | N/C | 1 | BUG-008 |
-| RF34 | Módulo de Enquetes | 2 | N/C | 3 | BUG-013, BUG-014, BUG-015 |
+| RF16 | Gerenciamento de Exercícios | 3 | 3 | 0 | - |
+| RF17 | Gestão de Grupos Musculares | 4 | 4 | 1 | BUG-006 |
+| RF18 | Gerenciamento de Objetivos Treino | 1 | 1 | 1 | BUG-017 |
+| RF19 | Gestão de Grupos | 5 | 5 | 0 | - |
+| RF20 | Gestão de Turmas | 4 | 4 | 3 | BUG-018, BUG-019, BUG-020 |
+| RF21 | Gestão de Categorias Crossfit | 6 | 6 | 0 | - |
+| RF22 | Gestão de Box (Turmas e Modalidades) | 6 | 6 | 0 | - |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 7 | 7 | 0 | - |
+| RF24 | Gestão Financeira e Cobranças via Pagar.me | 10 | 10 | 0 | - |
+| RF25 | Gerenciamento e Cadastro de Despesas Fixas | 5 | 5 | 0 | - |
+| RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | 8 | 8 | 0 | - |
+| RF27 | Gestão de Colaboradores via Sistema SIFIT | 7 | 7 | 0 | - |
+| RF28 | Gestão de Funções | 5 | 5 | 0 | - |
+| RF29 | Gerenciamento de Fornecedores | 5 | 5 | 0 | - |
+| RF30 | Gerenciamento de Tipos de Documentos | 5 | 5 | 0 | - |
+| RF31 | Gerenciamento de Atividades | 4 | 4 | 1 | BUG-007 |
+| RF32 | Gerenciamento de Pontuações | 5 | 5 | 3 | BUG-009, BUG-011, BUG-012 |
+| RF33 | Gerenciamento de Produtos | 4 | 4 | 1 | BUG-008 |
+| RF34 | Módulo de Enquetes | 2 | 2 | 3 | BUG-013, BUG-014, BUG-015 |
 | RF35 | Gestão e consulta de leads no módulo Prospecção | 5 | N/C | 0 | - |
-| RF36 | Gestão e consulta de planos | 5 | N/C | 0 | - |
-| RF37 | Gestão de Modelos de Contrato | 7 | N/C | 1 | BUG-023 |
-| RF38 | Gestão de Tipos de Pagamento | 5 | N/C | 0 | - |
-| RF39 | Gestão de Bandeiras de Cartão | 3 | N/C | 0 | - |
-| RF40 | Aplicação de Fichas de Anamnese | 1 | N/C | 1 | BUG-005 |
-| RF41 | Gerenciamento de Modelos de Anamnese | 5 | N/C | 0 | - |
-| RF42 | Gerenciamento de Categorias de Anamnese | 5 | N/C | 0 | - |
-| RF43 | Gestão de Pergunta de Anamnese | 5 | N/C | 0 | - |
-| RF44 | Módulo Inteligência & Automação e Gestão de Clientes | 9 | N/C | 0 | - |
-| RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | 1 | N/C | 0 | - |
+| RF36 | Gestão e consulta de planos | 5 | 5 | 0 | - |
+| RF37 | Gestão de Modelos de Contrato | 7 | 7 | 1 | BUG-023 |
+| RF38 | Gestão de Tipos de Pagamento | 5 | 5 | 0 | - |
+| RF39 | Gestão de Bandeiras de Cartão | 3 | 3 | 0 | - |
+| RF40 | Aplicação de Fichas de Anamnese | 1 | 1 | 1 | BUG-005 |
+| RF41 | Gerenciamento de Modelos de Anamnese | 5 | 5 | 0 | - |
+| RF42 | Gerenciamento de Categorias de Anamnese | 5 | 5 | 0 | - |
+| RF43 | Gestão de Pergunta de Anamnese | 5 | 5 | 0 | - |
+| RF44 | Módulo Inteligência & Automação e Gestão de Clientes | 9 | 9 | 0 | - |
+| RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | 1 | 1 | 0 | - |
 | RF46 | Gestão de configurações | 7 | N/C | 0 | - |
-| RF47 | Gerenciamento de Modelos de Ficha | 2 | N/C | 0 | - |
-| RF48 | Gerenciamento de Notificações | 7 | N/C | 0 | - |
-| RF49 | Alternância de Tema da Interface (Claro / Escuro) | 2 | N/C | 0 | - |
-| — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | N/C | 3 | BUG-002, BUG-003, BUG-004 |
+| RF47 | Gerenciamento de Modelos de Ficha | 2 | 2 | 0 | - |
+| RF48 | Gerenciamento de Notificações | 7 | 7 | 0 | - |
+| RF49 | Alternância de Tema da Interface (Claro / Escuro) | 2 | 2 | 0 | - |
+| — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | 3 | 3 | BUG-002, BUG-003, BUG-004 |
 
 ---
 
