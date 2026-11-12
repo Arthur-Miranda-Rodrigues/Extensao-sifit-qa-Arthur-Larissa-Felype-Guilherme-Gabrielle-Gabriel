@@ -27,7 +27,7 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 256  | 256 | 24 | 24 |
+| 256  | 232 | 24 | 24 |
 
 ---
 
