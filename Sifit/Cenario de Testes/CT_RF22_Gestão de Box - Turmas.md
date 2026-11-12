@@ -1,4 +1,4 @@
-# Cenário 22 : Gestão de Box (Turmas e Modalidades)
+## Cenário 22 : Gestão de Box (Turmas e Modalidades)
 
 ### Caso de Teste 01: Cadastro de Nova Modalidade de Treino
 
