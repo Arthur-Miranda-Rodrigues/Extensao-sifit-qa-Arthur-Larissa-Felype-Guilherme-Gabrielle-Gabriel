@@ -1,9 +1,6 @@
-
----
-
 ## Cenário 11: Gerenciamento de Matrículas
 
-## Caso de Teste 01: Pesquisa de Matrículas por Nome e por Código
+### Caso de Teste 01: Pesquisa de Matrículas por Nome e por Código
 ---
 
 | ID | Descrição |
@@ -30,7 +27,7 @@
 
 ---
 
-## Caso de Teste 02: Validação de Obrigatoriedade de Cliente ao Cadastrar Matrícula
+### Caso de Teste 02: Validação de Obrigatoriedade de Cliente ao Cadastrar Matrícula
 
 | ID | Descrição |
 | --- | --- |
@@ -58,7 +55,7 @@
 
 ---
 
-## Caso de Teste 03: Visualização e Edição de Observações da Matrícula
+### Caso de Teste 03: Visualização e Edição de Observações da Matrícula
 
 | ID | Descrição |
 | --- | --- |
@@ -87,7 +84,7 @@
 
 ---
 
-## Caso de Teste 04: Cancelamento de Matrícula Ativa
+### Caso de Teste 04: Cancelamento de Matrícula Ativa
 
 | ID | Descrição |
 | --- | --- |
@@ -114,7 +111,7 @@
 
 ---
 
-## Caso de Teste 05: Tratamento de Exceção na Exclusão de Matrícula
+### Caso de Teste 05: Tratamento de Exceção na Exclusão de Matrícula
 
 | ID | Descrição |
 | --- | --- |
