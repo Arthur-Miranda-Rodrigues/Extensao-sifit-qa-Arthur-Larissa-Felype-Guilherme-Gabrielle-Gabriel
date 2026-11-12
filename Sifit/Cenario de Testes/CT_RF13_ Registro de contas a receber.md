@@ -1,8 +1,5 @@
----
-
 ## Cenário 13: Registro e Gestão de Contas a Receber
 
----
 ### Caso de Teste 01: Filtros de Pesquisa por Código, Cliente, Tipo de Data, Período e Status
 
 | ID | Descrição |
