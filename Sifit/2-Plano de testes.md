@@ -129,8 +129,6 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Registro e Report de Bugs (24 bugs) e Relatório dos Testes | 29/10/2026 | 29/10/2026 |
 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais | 08/11/2026 | 08/11/2026 |
 
-> Os números RF citados nas linhas acima seguem a numeração vigente à época de cada commit. A numeração atual (RF01–RF49) é a da seção 9.
-
 ---
 
 ### 📋 9. **Módulos a Serem Testados**
@@ -188,10 +186,6 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF49 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
 | **Total** | **49 cenários** | | **232 (+18)** |
 
-\* Número de casos presentes na pasta `Cenario de Testes/`; o valor entre parênteses indica casos que constam **apenas** no Relatório de Bugs. Prioridade **proposta** pelo responsável do teste com base na criticidade para o negócio (acesso, dinheiro, dados de clientes); pode ser revista com o professor/responsável pelo produto.
-
-Cada RFxx corresponde ao arquivo `CT_RFxx_<descrição>.md`, em `Sifit/Cenario de Testes/`.
-
 **📊 Resumo por módulo**
 
 | Módulo | Cenários | Casos na pasta | Só no Relatório de Bugs |
@@ -211,8 +205,6 @@ Cada RFxx corresponde ao arquivo `CT_RFxx_<descrição>.md`, em `Sifit/Cenario d
 | Aplicativo e Notificações | 1 | 7 | — |
 | Interface (Tema) | 1 | 2 | — |
 | **Total** | **49** | **232** | **18** |
-
-> **Como ler as contagens:** as 18 ocorrências "só no Relatório de Bugs" são casos de cenários da pasta que existiam no planejamento anterior (254 casos) e hoje aparecem apenas no `3-Relatorio de Bugs.md`. Somam-se a elas 4 casos do cenário **Gerenciamento de Aulas do SifitBox**, que não possui arquivo na pasta nem número RF (22 casos no total fora da pasta).
 
 **🧱 Padrão dos Casos de Teste**
 
@@ -270,10 +262,6 @@ Comportamentos descritos nos próprios cenários como falha, erro de gravação 
 | RF43 — Perguntas de anamnese | CT02 | Alteração do tipo de resposta retorna "Erro ao salvar pergunta" |
 | RF46 — Configurações | CT01–CT07 | Todas as abas retornam erro ao salvar (ex.: "Erro ao salvar configurações") |
 | RF47 — Modelos de ficha | CT01 | Cadastro retorna "Erro ao salvar modelo" |
-
-**Erros esperados por integridade referencial** (comportamento correto a validar): RF19-CT05 (grupo com vínculos), RF21-CT06 (categoria Crossfit), RF36-CT04 (plano com vínculos) e RF38-CT05 (tipo de pagamento vinculado).
-
-As linhas sem referência a BUG-xxx ainda não possuem bug formal e aparecem como "pontos a confirmar" ou aguardam registro.
 
 ---
 
