@@ -1,6 +1,3 @@
-
----
-
 ## Cenário 6: Página Inicial (Parte 5)
 
 ### Caso de Teste 01: Acesso ao Perfil do Cliente a partir do Modal de Personais
