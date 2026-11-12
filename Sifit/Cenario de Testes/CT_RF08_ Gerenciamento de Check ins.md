@@ -1,6 +1,3 @@
-
----
-
 ## Cenário 8: Gerenciamento de Check-ins.
 
 ## Caso de Teste 01: Filtro de Busca por Código ou Nome na Tabela de Check-ins
