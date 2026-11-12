@@ -134,8 +134,8 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 229
-* ❌ Falharam: 3
+* ✅ Passaram: 232
+* ❌ Falharam: 24
 
 **Severidade dos bugs:**
 
