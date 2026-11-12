@@ -1,7 +1,5 @@
 ## Cenário 27: Gestão de Colaboradores via Sistema SIFIT
 
-## 2. Cenários de Teste
-
 ### Caso de Teste 01: Pesquisa de Colaborador por Código ou Nome
 
 | ID | Descrição |
