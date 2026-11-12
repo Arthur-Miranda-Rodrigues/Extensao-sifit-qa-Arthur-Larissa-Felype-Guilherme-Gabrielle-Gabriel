@@ -1,8 +1,6 @@
----
-
 ## Cenário 12: Gerenciamento de Avaliações Físicas
 
-## Caso de Teste 01: Filtros de Busca e Indicadores na Listagem de Avaliações
+### Caso de Teste 01: Filtros de Busca e Indicadores na Listagem de Avaliações
 ---
 
 | ID | Descrição |
@@ -33,7 +31,7 @@
 
 ---
 
-## Caso de Teste 02: Cadastro de Avaliação com Busca de Aluno e Seleção do Personal
+### Caso de Teste 02: Cadastro de Avaliação com Busca de Aluno e Seleção do Personal
 
 | ID | Descrição |
 | --- | --- |
@@ -65,7 +63,7 @@
 
 ---
 
-## Caso de Teste 03: Validação dos Campos Obrigatórios no Cadastro de Avaliação
+### Caso de Teste 03: Validação dos Campos Obrigatórios no Cadastro de Avaliação
 
 | ID | Descrição |
 | --- | --- |
@@ -97,7 +95,7 @@
 
 ---
 
-## Caso de Teste 04: Preenchimento de Circunferências, Subcutâneas e Composição Corporal
+### Caso de Teste 04: Preenchimento de Circunferências, Subcutâneas e Composição Corporal
 
 | ID | Descrição |
 | --- | --- |
@@ -125,7 +123,7 @@
 
 ---
 
-## Caso de Teste 05: Alteração de Data e Hora de uma Avaliação Pendente
+### Caso de Teste 05: Alteração de Data e Hora de uma Avaliação Pendente
 
 | ID | Descrição |
 | --- | --- |
@@ -153,7 +151,7 @@
 
 ---
 
-## Caso de Teste 06: Registro de IMC e Conclusão de Avaliação Pendente
+### Caso de Teste 06: Registro de IMC e Conclusão de Avaliação Pendente
 
 | ID | Descrição |
 | --- | --- |
@@ -180,7 +178,7 @@
 
 ---
 
-## Caso de Teste 07: Comparação entre Avaliações
+### Caso de Teste 07: Comparação entre Avaliações
 
 | ID | Descrição |
 | --- | --- |
@@ -211,7 +209,7 @@
 
 ---
 
-## Caso de Teste 08: Visualização Detalhada da Avaliação Física
+### Caso de Teste 08: Visualização Detalhada da Avaliação Física
 
 | ID | Descrição |
 | --- | --- |
@@ -238,7 +236,7 @@
 
 ---
 
-## Caso de Teste 09: Download do PDF da Avaliação Completa
+### Caso de Teste 09: Download do PDF da Avaliação Completa
 
 | ID | Descrição |
 | --- | --- |
@@ -265,7 +263,7 @@
 
 ---
 
-## Caso de Teste 10: Impressão do Relatório "Avaliação Física"
+### Caso de Teste 10: Impressão do Relatório "Avaliação Física"
 
 | ID | Descrição |
 | --- | --- |
@@ -291,7 +289,7 @@
 
 ---
 
-## Caso de Teste 11: Exclusão de Avaliação
+### Caso de Teste 11: Exclusão de Avaliação
 
 | ID | Descrição |
 | --- | --- |
