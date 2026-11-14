@@ -28,8 +28,6 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🧩 3. **Escopo**
 
-**Incluído (49 cenários / 232 casos de teste na pasta):**
-
 * Autenticação e recuperação de senha
 * Página Inicial (5 partes) e Dashboard
 * Check-ins e presenças; aulas do SifitBox (cenário documentado apenas no Relatório de Bugs, BUG-002 a BUG-004)
@@ -168,7 +166,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF31 | Gerenciamento de Atividades | Baixa | 4 (+1) |
 | RF32 | Gerenciamento de Pontuações | Baixa | 5 (+3) |
 | RF33 | Gerenciamento de Produtos | Baixa | 4 (+1) |
-| RF34 | Módulo de Enquetes | Baixa | 2 (+2) |
+| RF34 | Módulo de Enquetes | Baixa | 1 (+3) |
 | RF35 | Gestão e consulta de leads no módulo Prospecção | Média | 5 |
 | RF36 | Gestão e consulta de planos | Alta | 5 |
 | RF37 | Gestão de Modelos de Contrato | Média | 7 (+1) |
@@ -198,7 +196,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Treinos e Exercícios | 4 | 9 | 3 |
 | Turmas, Grupos e Box | 4 | 21 | 1 |
 | Colaboradores, Funções e Cadastros de apoio | 4 | 22 | — |
-| Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 15 | 7 |
+| Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 14 | 8 |
 | Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | 25 | 1 |
 | Anamnese | 4 | 16 | 2 |
 | Inteligência, Automação e Configurações | 4 | 19 | — |
