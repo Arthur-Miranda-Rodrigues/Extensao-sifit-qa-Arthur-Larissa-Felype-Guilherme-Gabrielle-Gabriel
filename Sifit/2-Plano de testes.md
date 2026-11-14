@@ -88,7 +88,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 232 casos de teste dos 49 cenários da pasta, mais os 22 casos registrados apenas no Relatório de Bugs, foram executados e possuem evidência (vídeo/print).
+* Os 231 casos de teste dos 49 cenários da pasta, mais os 23 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
 * Requisitos (RF01–RF49) rastreáveis até os arquivos de cenário.
@@ -182,7 +182,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF47 | Gerenciamento de Modelos de Ficha | Baixa | 2 |
 | RF48 | Gerenciamento de Notificações | Média | 7 |
 | RF49 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
-| **Total** | **49 cenários** | | **232 (+18)** |
+| **Total** | **49 cenários** | | **231 (+19)** |
 
 **📊 Resumo por módulo**
 
@@ -202,7 +202,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Inteligência, Automação e Configurações | 4 | 19 | — |
 | Aplicativo e Notificações | 1 | 7 | — |
 | Interface (Tema) | 1 | 2 | — |
-| **Total** | **49** | **232** | **18** |
+| **Total** | **49** | **231** | **19** |
 
 **🧱 Padrão dos Casos de Teste**
 
@@ -254,7 +254,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`) .
 * **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 49 cenários, 232 casos ·
+* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 49 cenários, 231 casos ·
 * **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 24 bugs ·
 * **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
