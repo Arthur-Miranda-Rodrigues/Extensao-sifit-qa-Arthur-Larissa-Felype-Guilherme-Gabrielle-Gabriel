@@ -174,7 +174,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Aplicação de fichas de anamnese | C41-CT01: Buscar aluno e selecionar modelo de anamnese<br>C41-CT02: Finalização com erro no servidor e salvamento de rascunho |
+| Aplicação de fichas de anamnese | C40-CT01: Buscar aluno e selecionar modelo de anamnese<br>C41-CT02: Finalização com erro no servidor e salvamento de rascunho |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -209,7 +209,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de grupos musculares | C18-CT04: Cadastro sem preencher Nome e Tipo Membro |
+| Cadastro de grupos musculares | C17-CT04: Cadastro sem preencher Nome e Tipo Membro |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -243,7 +243,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de atividades | C32-CT03: Cadastrar atividade sem preencher os campos |
+| Cadastro de atividades | C31-CT03: Cadastrar atividade sem preencher os campos |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -277,7 +277,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de produtos | C33-CT05: Cadastrar produto sem preencher os campos |
+| Cadastro de produtos | C32-CT05: Cadastrar produto sem preencher os campos |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -311,7 +311,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de pontuações | C33-CT08: Validar o nome obrigatório ao cadastrar uma pontuação |
+| Cadastro de pontuações | C32-CT08: Validar o nome obrigatório ao cadastrar uma pontuação |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -346,7 +346,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de contas a pagar | C15-CT01: Cadastro de conta a pagar com busca de fornecedor |
+| Cadastro de contas a pagar | C14-CT01: Cadastro de conta a pagar com busca de fornecedor |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -380,7 +380,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Edição de pontuações | C33-CT03: Tratar erro ao salvar a edição de uma pontuação |
+| Edição de pontuações | C32-CT03: Tratar erro ao salvar a edição de uma pontuação |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -413,7 +413,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Ações da listagem de pontuações | C33-CT06: Tratar erro do servidor ao acionar uma ação da pontuação |
+| Ações da listagem de pontuações | C32-CT06: Tratar erro do servidor ao acionar uma ação da pontuação |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -550,7 +550,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de fichas de treino | C16-CT02: Cadastro de nova ficha de treino e tratamento de erro |
+| Cadastro de fichas de treino | C15-CT02: Cadastro de nova ficha de treino e tratamento de erro |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -584,7 +584,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de objetivos de treino | C19-CT01: Validação de erro no cadastro de novo objetivo |
+| Cadastro de objetivos de treino | C18-CT01: Validação de erro no cadastro de novo objetivo |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -618,7 +618,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Edição de turmas | C21-CT04: Edição e atualização de turma existente |
+| Edição de turmas | C20-CT04: Edição e atualização de turma existente |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -652,7 +652,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Edição de turmas | C21-CT04: Edição e atualização de turma existente |
+| Edição de turmas | C20-CT04: Edição e atualização de turma existente |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -686,7 +686,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Edição de turmas | C21-CT04: Edição e atualização de turma existente |
+| Edição de turmas | C20-CT04: Edição e atualização de turma existente |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -719,7 +719,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Visualização de contas a pagar | C15-CT03: Dados do registro no modal Visualizar Conta a Pagar |
+| Visualização de contas a pagar | C14-CT03: Dados do registro no modal Visualizar Conta a Pagar |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -796,7 +796,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Comercial – Modelos de Contrato | C37-CT08: Salvamento de modelo de contrato |
+| Comercial – Modelos de Contrato | C36-CT08: Salvamento de modelo de contrato |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -832,7 +832,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Filtros de contas a pagar | C15-CT02: Filtros e consultas na listagem |
+| Filtros de contas a pagar | C14-CT02: Filtros e consultas na listagem |
 
 | **Evidência(s)** |
 | :--------------: |
