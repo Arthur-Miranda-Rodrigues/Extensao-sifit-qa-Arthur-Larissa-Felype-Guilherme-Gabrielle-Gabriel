@@ -448,7 +448,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de enquetes | C35-CT02: Tratar erro ao cadastrar uma nova enquete |
+| Cadastro de enquetes | C34-CT02: Tratar erro ao cadastrar uma nova enquete |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -482,7 +482,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Edição de enquetes | C35-CT03: Tratar erro ao editar uma enquete existente |
+| Edição de enquetes | C34-CT03: Tratar erro ao editar uma enquete existente |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -516,7 +516,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Exclusão de enquetes | C35-CT04: Tratar erro ao excluir uma enquete com confirmação |
+| Exclusão de enquetes | C34-CT04: Tratar erro ao excluir uma enquete com confirmação |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -761,7 +761,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Dashboard / Visualização de indicadores e gráficos | C02-CT04: Acesso ao Dashboard após login bem-sucedido |
+| Dashboard / Visualização de indicadores e gráficos | C07-CT04: Acesso ao Dashboard após login bem-sucedido |
 
 | **Evidência(s)** |
 | :--------------: |
