@@ -72,7 +72,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| SifitBox – filtro de aulas por período | C10-CT01: Busca por período digitando a data<br>C10-CT02: Busca por período pelo calendário |
+| SifitBox – filtro de aulas por período | SifitBox-CT01: Busca por período digitando a data<br>SifitBox-CT02: Busca por período pelo calendário (cenário sem arquivo na pasta) |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -107,7 +107,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| SifitBox – validação de período | C10-CT03: Validação de data inválida (data final anterior à inicial) |
+| SifitBox – validação de período | SifitBox-CT03: Validação de data inválida (data final anterior à inicial) |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -140,7 +140,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| SifitBox – geração de aulas | C10-CT04: Acionamento da funcionalidade de gerar aulas |
+| SifitBox – geração de aulas | SifitBox-CT04: Acionamento da funcionalidade de gerar aulas |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -174,7 +174,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Aplicação de fichas de anamnese | C40-CT01: Buscar aluno e selecionar modelo de anamnese<br>C41-CT02: Finalização com erro no servidor e salvamento de rascunho |
+| Aplicação de fichas de anamnese | C40-CT01: Buscar aluno e selecionar modelo de anamnese<br>C40-CT02: Finalização com erro no servidor e salvamento de rascunho |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -277,7 +277,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de produtos | C32-CT05: Cadastrar produto sem preencher os campos |
+| Cadastro de produtos | C33-CT05: Cadastrar produto sem preencher os campos |
 
 | **Evidência(s)** |
 | :--------------: |
