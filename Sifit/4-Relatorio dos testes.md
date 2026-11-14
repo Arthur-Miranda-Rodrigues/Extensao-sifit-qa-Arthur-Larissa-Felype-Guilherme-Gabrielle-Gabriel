@@ -68,7 +68,7 @@
 | RF31 | Gerenciamento de Atividades | 4 | 4 | 1 | BUG-007 |
 | RF32 | Gerenciamento de Pontuações | 5 | 5 | 3 | BUG-009, BUG-011, BUG-012 |
 | RF33 | Gerenciamento de Produtos | 4 | 4 | 1 | BUG-008 |
-| RF34 | Módulo de Enquetes | 2 | 2 | 3 | BUG-013, BUG-014, BUG-015 |
+| RF34 | Módulo de Enquetes | 1 | 1 | 3 | BUG-013, BUG-014, BUG-015 |
 | RF35 | Gestão e consulta de leads no módulo Prospecção | 5 | N/C | 0 | - |
 | RF36 | Gestão e consulta de planos | 5 | 5 | 0 | - |
 | RF37 | Gestão de Modelos de Contrato | 7 | 7 | 1 | BUG-023 |
@@ -123,7 +123,7 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 232
+* ✅ Passaram: 231
 * ❌ Falharam: 24
 
 **Severidade dos bugs:**
