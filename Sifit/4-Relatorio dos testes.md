@@ -27,7 +27,9 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 256  | 232 | 24 | 24 |
+| 254 (231 na pasta + 23 só no Relatório de Bugs) | 230 | 24 | 24 |
+
+> **Como ler:** os 24 reprovados são os 23 casos registrados só no Relatório de Bugs (4 deles do SifitBox – Aulas, sem arquivo na pasta) mais o C07-CT01 (BUG-022). Os demais 230 casos foram considerados aprovados. A coluna "Casos Testados" da cobertura conta apenas os casos da pasta.
 
 ---
 
@@ -40,8 +42,8 @@
 | RF03 | Página Inicial (Parte 2) | 5 | 5 | 0 | - |
 | RF04 | Página Inicial (Parte 3) | 5 | 5 | 0 | - |
 | RF05 | Página Inicial (Parte 4) | 5 | 5 | 0 | - |
-| RF06 | Página Inicial (Parte 5) | 4 | 5 | 0 | - |
-| RF07 | Acesso e visualização do Dashboard | 3 | 3 | 1 | BUG-022 |
+| RF06 | Página Inicial (Parte 5) | 4 | 4 | 0 | - |
+| RF07 | Acesso e visualização do Dashboard | 3 | 2 | 1 | BUG-022 |
 | RF08 | Gerenciamento de Check-ins | 4 | 4 | 0 | - |
 | RF09 | Consulta e Filtragem de Presenças de Clientes | 4 | 4 | 0 | - |
 | RF10 | Gestão de Clientes | 5 | 5 | 0 | - |
@@ -69,7 +71,7 @@
 | RF32 | Gerenciamento de Pontuações | 5 | 5 | 3 | BUG-009, BUG-011, BUG-012 |
 | RF33 | Gerenciamento de Produtos | 4 | 4 | 1 | BUG-008 |
 | RF34 | Módulo de Enquetes | 1 | 1 | 3 | BUG-013, BUG-014, BUG-015 |
-| RF35 | Gestão e consulta de leads no módulo Prospecção | 5 | N/C | 0 | - |
+| RF35 | Gestão e consulta de leads no módulo Prospecção | 5 | 5 | 0 | - |
 | RF36 | Gestão e consulta de planos | 5 | 5 | 0 | - |
 | RF37 | Gestão de Modelos de Contrato | 7 | 7 | 1 | BUG-023 |
 | RF38 | Gestão de Tipos de Pagamento | 5 | 5 | 0 | - |
@@ -80,11 +82,11 @@
 | RF43 | Gestão de Pergunta de Anamnese | 5 | 5 | 0 | - |
 | RF44 | Módulo Inteligência & Automação e Gestão de Clientes | 9 | 9 | 0 | - |
 | RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | 1 | 1 | 0 | - |
-| RF46 | Gestão de configurações | 7 | N/C | 0 | - |
+| RF46 | Gestão de configurações | 7 | 7 | 0 | - |
 | RF47 | Gerenciamento de Modelos de Ficha | 2 | 2 | 0 | - |
 | RF48 | Gerenciamento de Notificações | 7 | 7 | 0 | - |
 | RF49 | Alternância de Tema da Interface (Claro / Escuro) | 2 | 2 | 0 | - |
-| — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | 3 | 3 | BUG-002, BUG-003, BUG-004 |
+| — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | 0 | 3 | BUG-002, BUG-003, BUG-004 |
 
 ---
 
@@ -93,9 +95,9 @@
 | ID | Título | Caso de teste (numeração atual) | Severidade | Prioridade | Status |
 | -- | ------ | ------------------------------- | ---------- | ---------- | ------ |
 | BUG-001 | Link “Esqueci minha senha” não executa nenhuma ação | C01-CT04 | Média | Média | Aberto |
-| BUG-002 | Botão “Buscar” não filtra as aulas por período (data digitada ou calendário) | C10-CT01, C10-CT02* | Alta | Alta | Aberto |
-| BUG-003 | Sistema aceita data final anterior à data inicial sem exibir validação | C10-CT03* | Baixa | Média | Aberto |
-| BUG-004 | Botão “Gerar aulas” não executa nenhum fluxo | C10-CT04* | Alta | Alta | Aberto |
+| BUG-002 | Botão “Buscar” não filtra as aulas por período (data digitada ou calendário) | SifitBox-CT01, CT02* | Alta | Alta | Aberto |
+| BUG-003 | Sistema aceita data final anterior à data inicial sem exibir validação | SifitBox-CT03* | Baixa | Média | Aberto |
+| BUG-004 | Botão “Gerar aulas” não executa nenhum fluxo | SifitBox-CT04* | Alta | Alta | Aberto |
 | BUG-005 | “Finalizar Anamnese” não conclui a ficha | C40-CT01, C40-CT02 | Alta | Alta | Aberto |
 | BUG-006 | Grupo muscular é cadastrado sem Nome e sem Tipo Membro | C17-CT04 | Média | Alta | Aberto |
 | BUG-007 | Atividade é cadastrada com todos os campos em branco | C31-CT03 | Média | Alta | Aberto |
@@ -117,13 +119,15 @@
 | BUG-023 | Erro ao salvar modelo de contrato (listagem permanece em branco) | C37-CT08 | Alta | Alta | Aberto |
 | BUG-024 | Filtro de status (Vencido/Pago) não é aplicado em Contas a Pagar | C14-CT02 | Média | Alta | Aberto |
 
+\* Casos do cenário SifitBox – Aulas, que não possui arquivo na pasta de cenários.
+
 ---
 
 ## 📈 **Gráfico de Resultado (Texto Alternativo)**
 
 **Casos por status:**
 
-* ✅ Passaram: 231
+* ✅ Passaram: 230
 * ❌ Falharam: 24
 
 **Severidade dos bugs:**
