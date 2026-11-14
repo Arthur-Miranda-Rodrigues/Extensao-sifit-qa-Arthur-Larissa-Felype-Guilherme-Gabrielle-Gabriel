@@ -88,7 +88,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 231 casos de teste dos 49 cenários da pasta, mais os 23 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
+* Os 231 casos de teste dos 49 cenários da pasta, mais os 24 casos registrados apenas no Relatório de Bugs (255 no total), foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
 * Requisitos (RF01–RF49) rastreáveis até os arquivos de cenário.
@@ -139,7 +139,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF04 | Página Inicial (Parte 3) | Média | 5 |
 | RF05 | Página Inicial (Parte 4) | Média | 5 |
 | RF06 | Página Inicial (Parte 5) | Média | 4 |
-| RF07 | Acesso e visualização do Dashboard | Média | 3 |
+| RF07 | Acesso e visualização do Dashboard | Média | 3 (+1) |
 | RF08 | Gerenciamento de Check-ins | Média | 4 |
 | RF09 | Consulta e Filtragem de Presenças de Clientes | Média | 4 |
 | RF10 | Gestão de Clientes | Alta | 5 |
@@ -182,14 +182,14 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF47 | Gerenciamento de Modelos de Ficha | Baixa | 2 |
 | RF48 | Gerenciamento de Notificações | Média | 7 |
 | RF49 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
-| **Total** | **49 cenários** | | **231 (+19)** |
+| **Total** | **49 cenários** | | **231 (+20)** |
 
 **📊 Resumo por módulo**
 
 | Módulo | Cenários | Casos na pasta | Só no Relatório de Bugs |
 | ------ | :------: | :------------: | :---------------------: |
 | Autenticação | 1 | 3 | 1 |
-| Página Inicial e Dashboard | 6 | 27 | — |
+| Página Inicial e Dashboard | 6 | 27 | 1 |
 | Check-ins e Presenças | 2 | 8 | — |
 | Clientes, Matrículas e Avaliações | 3 | 21 | — |
 | Financeiro e Relatórios | 6 | 37 | 3 |
@@ -202,7 +202,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Inteligência, Automação e Configurações | 4 | 19 | — |
 | Aplicativo e Notificações | 1 | 7 | — |
 | Interface (Tema) | 1 | 2 | — |
-| **Total** | **49** | **231** | **19** |
+| **Total** | **49** | **231** | **20** |
 
 **🧱 Padrão dos Casos de Teste**
 
