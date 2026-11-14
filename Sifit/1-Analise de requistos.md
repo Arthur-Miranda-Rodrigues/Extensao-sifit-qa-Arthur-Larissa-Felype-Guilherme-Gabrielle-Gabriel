@@ -465,8 +465,7 @@
 * **Funcionalidades esperadas**:
 
   * Filtrar enquetes por Código, Nome e Status (Todos/Ativo/Inativo). (C34-CT01)
-  * Solicitar confirmação antes da exclusão e reportar a falha caso o registro não possa ser removido. (C34-CT04)
-
+ 
 ---
 
 ### 📣 **RF35 - Gestão e Consulta de Leads (Prospecção)**
