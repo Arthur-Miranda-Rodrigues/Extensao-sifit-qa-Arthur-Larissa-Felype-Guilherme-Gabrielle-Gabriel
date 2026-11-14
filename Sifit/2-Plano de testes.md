@@ -236,32 +236,6 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | **Média** | Filtro, validação ou mensagem incorretos, com contorno possível |
 | **Baixa** | Problema visual, de texto ou de usabilidade |
 
-**⚠️ Pontos de Atenção Observados nos Cenários**
-
-Comportamentos descritos nos próprios cenários como falha, erro de gravação ou ausência de resposta. Devem ser confirmados e detalhados no Relatório de Bugs; não são tratados como requisito de funcionamento correto.
-
-| Cenário | Casos | Observação registrada |
-| ------- | ----- | --------------------- |
-| RF01 — Login | C01-CT04 | Link de recuperação de senha: nada acontece ao clicar (BUG-001) |
-| Aulas do SifitBox (sem arquivo na pasta) | CT01–CT04 | Filtro por datas e botão "Gerar aulas" sem efeito visível; data final anterior à inicial não é bloqueada (BUG-002 a BUG-004) |
-| RF07 — Dashboard | CT01 | Baixo contraste nos títulos e informações dos gráficos (BUG-022) |
-| RF10 — Clientes | CT04 | Exclusão retorna "Erro no servidor – Erro interno inesperado" (ponto a confirmar) |
-| RF11 — Matrículas | CT05 | Exclusão retorna "Erro no servidor – Erro interno inesperado" (ponto a confirmar) |
-| RF14 — Contas a Pagar | CT01, CT02, CT03 | Conta cadastrada sem Título e sem Local de Pagamento; filtro de status não aplicado; modal de visualização com dados sem tratamento (BUG-010, BUG-021, BUG-024) |
-| RF15 — Fichas de treino | CT01, CT02 | Filtros por código/status não retornam registros; cadastro falha com "Erro ao salvar ficha" (BUG-016) |
-| RF17 — Grupos musculares | CT04 | Cadastro aceito sem Nome e sem Tipo Membro (BUG-006) |
-| RF18 — Objetivos de treino | CT01, CT02 | Cadastro falha com "Erro ao salvar objetivo"; busca sem resultados (BUG-017) |
-| RF20 — Turmas | CT04 | Status vazio na edição, "Erro ao salvar turma" e modal vazio após salvar (BUG-018 a BUG-020) |
-| RF31 — Atividades | CT03 | Atividade cadastrada com todos os campos em branco (BUG-007) |
-| RF32 — Pontuações | CT03, CT06, CT08 | "Erro ao salvar pontuação", "Erro no servidor" em ação da coluna Ações e cadastro sem datas (BUG-009, BUG-011, BUG-012) |
-| RF33 — Produtos | CT05 | Produto cadastrado sem nome e sem valor (BUG-008) |
-| RF34 — Enquetes | CT02–CT04 | "Erro ao salvar enquete" (cadastro e edição) e "Erro ao deletar Enquete" (BUG-013 a BUG-015) |
-| RF37 — Modelos de contrato | CT08 | Ao salvar o modelo, a listagem retorna em branco (BUG-023) |
-| RF39 — Bandeiras de cartão | CT02 | Ao salvar, nada acontece e a lista continua vazia |
-| RF40 — Anamnese (aplicação) | CT01, CT02 | "Finalizar Anamnese" sem efeito; "Erro no servidor" ao finalizar (BUG-005) |
-| RF43 — Perguntas de anamnese | CT02 | Alteração do tipo de resposta retorna "Erro ao salvar pergunta" |
-| RF46 — Configurações | CT01–CT07 | Todas as abas retornam erro ao salvar (ex.: "Erro ao salvar configurações") |
-| RF47 — Modelos de ficha | CT01 | Cadastro retorna "Erro ao salvar modelo" |
 
 ---
 
