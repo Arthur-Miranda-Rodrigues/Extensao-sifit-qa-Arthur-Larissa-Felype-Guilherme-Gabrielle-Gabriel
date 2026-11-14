@@ -796,7 +796,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Comercial – Modelos de Contrato | C36-CT08: Salvamento de modelo de contrato |
+| Comercial – Modelos de Contrato | C37-CT08: Salvamento de modelo de contrato |
 
 | **Evidência(s)** |
 | :--------------: |
