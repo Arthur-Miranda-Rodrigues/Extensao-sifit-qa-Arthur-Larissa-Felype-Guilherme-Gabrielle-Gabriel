@@ -277,7 +277,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de produtos | C34-CT05: Cadastrar produto sem preencher os campos |
+| Cadastro de produtos | C33-CT05: Cadastrar produto sem preencher os campos |
 
 | **Evidência(s)** |
 | :--------------: |
