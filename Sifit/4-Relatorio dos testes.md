@@ -27,9 +27,9 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 254 (231 na pasta + 23 só no Relatório de Bugs) | 230 | 24 | 24 |
+| 255 (231 na pasta + 24 só no Relatório de Bugs) | 231 | 24 | 24 |
 
-> **Como ler:** os 24 reprovados são os 23 casos registrados só no Relatório de Bugs (4 deles do SifitBox – Aulas, sem arquivo na pasta) mais o C07-CT01 (BUG-022). Os demais 230 casos foram considerados aprovados. A coluna "Casos Testados" da cobertura conta apenas os casos da pasta.
+> **Como ler:** os 24 reprovados são os 24 casos registrados só no Relatório de Bugs (4 deles do SifitBox – Aulas, sem arquivo na pasta; o BUG-022 é o C07-CT04). Os 231 casos da pasta foram considerados aprovados. A coluna "Casos Testados" da cobertura conta apenas os casos da pasta.
 
 ---
 
@@ -43,7 +43,7 @@
 | RF04 | Página Inicial (Parte 3) | 5 | 5 | 0 | - |
 | RF05 | Página Inicial (Parte 4) | 5 | 5 | 0 | - |
 | RF06 | Página Inicial (Parte 5) | 4 | 4 | 0 | - |
-| RF07 | Acesso e visualização do Dashboard | 3 | 2 | 1 | BUG-022 |
+| RF07 | Acesso e visualização do Dashboard | 3 | 3 | 1 | BUG-022 |
 | RF08 | Gerenciamento de Check-ins | 4 | 4 | 0 | - |
 | RF09 | Consulta e Filtragem de Presenças de Clientes | 4 | 4 | 0 | - |
 | RF10 | Gestão de Clientes | 5 | 5 | 0 | - |
@@ -115,7 +115,7 @@
 | BUG-019 | Erro “Erro ao salvar turma” ao editar com “Tem Personal” = Não | C20-CT04 | Média | Média | Aberto |
 | BUG-020 | Modal “Cadastrar Turma” vazio aparece brevemente após salvar a edição | C20-CT04 | Baixa | Baixa | Aberto |
 | BUG-021 | Modal “Visualizar Conta a Pagar” exibe dados sem tratamento | C14-CT03 | Baixa | Baixa | Aberto |
-| BUG-022 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | C07-CT01 | Média | Média | Aberto |
+| BUG-022 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | C07-CT04 | Média | Média | Aberto |
 | BUG-023 | Erro ao salvar modelo de contrato (listagem permanece em branco) | C37-CT08 | Alta | Alta | Aberto |
 | BUG-024 | Filtro de status (Vencido/Pago) não é aplicado em Contas a Pagar | C14-CT02 | Média | Alta | Aberto |
 
@@ -127,7 +127,7 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 230
+* ✅ Passaram: 231
 * ❌ Falharam: 24
 
 **Severidade dos bugs:**
