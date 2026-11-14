@@ -729,8 +729,6 @@
 
 ### 🐞 **Bug 22: Baixo contraste nos títulos e informações dos gráficos do Dashboard**
 
-**QA responsável:** Larissa Fernanda
-
 **Data:** 18/10/2026
 
 | **ID**  | **Descrição** |
@@ -763,7 +761,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Dashboard / Visualização de indicadores e gráficos | C02-CT01: Acesso ao Dashboard após login bem-sucedido |
+| Dashboard / Visualização de indicadores e gráficos | C02-CT04: Acesso ao Dashboard após login bem-sucedido |
 
 | **Evidência(s)** |
 | :--------------: |
