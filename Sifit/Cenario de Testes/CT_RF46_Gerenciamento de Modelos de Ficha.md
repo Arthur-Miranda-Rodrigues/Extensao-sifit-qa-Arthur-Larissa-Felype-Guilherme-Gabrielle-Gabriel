@@ -4,7 +4,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C47-CT02** | Validar a busca e filtragem de registros na listagem de modelos de ficha utilizando os campos de código, título e criador. |
+| **C46-CT02** | Validar a busca e filtragem de registros na listagem de modelos de ficha utilizando os campos de código, título e criador. |
 
 | **Pré-condições** |
 | --- |
