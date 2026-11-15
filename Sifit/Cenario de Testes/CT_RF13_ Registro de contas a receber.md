@@ -141,7 +141,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **RFC14-CT05** | Validar a visualização dos detalhes de uma conta recebida e a edição dos valores com o aviso de **Ajuste Administrativo**. |
+| **C13-CT05** | Validar a visualização dos detalhes de uma conta recebida e a edição dos valores com o aviso de **Ajuste Administrativo**. |
 
 | **Pré-condições** |
 | --- |
