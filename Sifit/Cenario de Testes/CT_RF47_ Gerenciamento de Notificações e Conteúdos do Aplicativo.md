@@ -4,7 +4,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT01** | Validar a abertura e o fechamento do modal "Todas as notificações" e a exibição do estado da seção de Denúncias. |
+| **C47-CT01** | Validar a abertura e o fechamento do modal "Todas as notificações" e a exibição do estado da seção de Denúncias. |
 
 | **Pré-condições** |
 | --- |
@@ -32,7 +32,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT02** | Validar o modal "Todas as postagens" e a alternância dos filtros "Ver todas" e "Só pendentes" nas seções de Postagens e Denúncias. |
+| **C47-CT02** | Validar o modal "Todas as postagens" e a alternância dos filtros "Ver todas" e "Só pendentes" nas seções de Postagens e Denúncias. |
 
 | **Pré-condições** |
 | --- |
@@ -59,7 +59,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT03** | Validar a abertura do modal de criação, o preenchimento da mensagem com prévia no celular e o envio do aviso aos alunos. |
+| **C47-CT03** | Validar a abertura do modal de criação, o preenchimento da mensagem com prévia no celular e o envio do aviso aos alunos. |
 
 | **Pré-condições** |
 | --- |
@@ -87,7 +87,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT04** | Validar a abertura do painel de notificações pelo ícone de sino e a alternância entre as abas "Tudo" e "Não lidas". |
+| **C47-CT04** | Validar a abertura do painel de notificações pelo ícone de sino e a alternância entre as abas "Tudo" e "Não lidas". |
 
 | **Pré-condições** |
 | --- |
@@ -114,7 +114,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT05** | Validar a transição do modal "Todas as notificações" para o modal de criação e o bloqueio do envio com a mensagem vazia. |
+| **C47-CT05** | Validar a transição do modal "Todas as notificações" para o modal de criação e o bloqueio do envio com a mensagem vazia. |
 
 | **Pré-condições** |
 | --- |
@@ -141,7 +141,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT06** | Validar a exibição do modal de detalhes de uma notificação já enviada através do ícone de lupa. |
+| **C47-CT06** | Validar a exibição do modal de detalhes de uma notificação já enviada através do ícone de lupa. |
 
 | **Pré-condições** |
 | --- |
@@ -168,7 +168,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C48-CT07** | Validar a exclusão de uma notificação a partir do ícone de lixeira na listagem. |
+| **C47-CT07** | Validar a exclusão de uma notificação a partir do ícone de lixeira na listagem. |
 
 | **Pré-condições** |
 | --- |
