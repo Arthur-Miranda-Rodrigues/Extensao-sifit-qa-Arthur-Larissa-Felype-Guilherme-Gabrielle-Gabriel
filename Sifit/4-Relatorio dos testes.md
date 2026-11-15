@@ -11,7 +11,7 @@
 * Gabrielle Bonini Barbosa — RA 14506
 * Gabriel de Abreu da Silva — RA 14525
 
-**Data de execução:** outubro/2026
+**Data de execução:** 08/10/2026
 
 **Data do relatório:** 08/11/2026 (atualização da versão de 29/10/2026)
 
