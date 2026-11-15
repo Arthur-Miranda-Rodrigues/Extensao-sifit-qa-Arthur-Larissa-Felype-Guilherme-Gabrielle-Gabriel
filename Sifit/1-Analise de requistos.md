@@ -614,12 +614,11 @@
 
 ### 🧩 **RF46 - Gerenciamento de Modelos de Ficha**
 
-**Descrição**: O sistema deve permitir cadastrar e consultar modelos de ficha de treino.
+**Descrição**: O sistema deve permitir consultar modelos de ficha de treino.
 
 * **Funcionalidades esperadas**:
 
-  * Preencher o formulário de um novo modelo de ficha e submeter a gravação. (C47-CT01)
-  * Buscar e filtrar a listagem por código, título e criador. (C47-CT02)
+  * Buscar e filtrar a listagem por código, título e criador. (C46-CT02)
 
 ---
 
@@ -629,13 +628,13 @@
 
 * **Funcionalidades esperadas**:
 
-  * Abrir e fechar o modal "Todas as notificações" e exibir o estado da seção de Denúncias. (C48-CT01)
-  * Abrir o modal "Todas as postagens" e alternar "Ver todas" e "Só pendentes" em Postagens e Denúncias. (C48-CT02)
-  * Abrir o modal de criação, preencher a mensagem com prévia no celular e enviar o aviso aos alunos. (C48-CT03)
-  * Abrir o painel de notificações pelo ícone de sino e alternar entre "Tudo" e "Não lidas". (C48-CT04)
-  * Transitar do modal "Todas as notificações" para o de criação e bloquear o envio com mensagem vazia. (C48-CT05)
-  * Exibir os detalhes de uma notificação enviada pelo ícone de lupa. (C48-CT06)
-  * Excluir notificação pelo ícone de lixeira na listagem. (C48-CT07)
+  * Abrir e fechar o modal "Todas as notificações" e exibir o estado da seção de Denúncias. (C47-CT01)
+  * Abrir o modal "Todas as postagens" e alternar "Ver todas" e "Só pendentes" em Postagens e Denúncias. (C47-CT02)
+  * Abrir o modal de criação, preencher a mensagem com prévia no celular e enviar o aviso aos alunos. (C47-CT03)
+  * Abrir o painel de notificações pelo ícone de sino e alternar entre "Tudo" e "Não lidas". (C47-CT04)
+  * Transitar do modal "Todas as notificações" para o de criação e bloquear o envio com mensagem vazia. (C47-CT05)
+  * Exibir os detalhes de uma notificação enviada pelo ícone de lupa. (C47-CT06)
+  * Excluir notificação pelo ícone de lixeira na listagem. (C47-CT07)
 
 ---
 
@@ -645,7 +644,7 @@
 
 * **Funcionalidades esperadas**:
 
-  * Alterar o tema do modo Claro para o modo Escuro. (C49-CT01)
-  * Retornar o tema do modo Escuro para o modo Claro. (C49-CT02)
+  * Alterar o tema do modo Claro para o modo Escuro. (C48-CT01)
+  * Retornar o tema do modo Escuro para o modo Claro. (C48-CT02)
 
 
