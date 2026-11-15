@@ -19,9 +19,7 @@
 
 | **Critérios de Aceitação** |
 | --- |
-| Os campos de filtro devem processar as consultas informadas e atualizar a interface de acordo com os critérios definidos.
-
- |
+| Os campos de filtro devem processar as consultas informadas e atualizar a interface de acordo com os critérios definidos. |
 
 | **Evidência** |
 | --- |
