@@ -27,32 +27,6 @@
 
 ---
 
-### Caso de Teste 02: Validação de Erro ao Tentar Editar Pergunta Existente
-
-| ID | Descrição |
-| --- | --- |
-| **C43-CT02** | Validar o comportamento do sistema ao tentar alterar o tipo de resposta de uma pergunta cadastrada, exibindo a mensagem de erro correspondente. |
-
-| **Pré-condições** |
-| --- |
-| O usuário estar na tela de gerenciamento de **Perguntas Anamnese** com registros existentes. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário clica no ícone de edição de uma pergunta na tabela (ex.: código 4) <br> |
-| **QUANDO** altera o "Tipo Resposta" (ex.: de "Sim e Não" para "Sim, Não e Não Sei") e clica em **"Salvar"**<br><br> |
-| **ENTÃO** o sistema exibe o indicador de salvamento e apresenta um modal com a mensagem de erro **"Erro ao salvar pergunta"**. |
-
-| **Critérios de Aceitação** |
-| --- |
-| * O sistema deve bloquear alterações não permitidas no tipo de resposta, exibindo um pop-up de alerta de erro para o operador. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1YFPpJy7qa9TTkabG3R07Z8GTdehrgKVb/view?usp=sharing |
-
----
-
 ### Caso de Teste 03: Cadastro de Nova Pergunta de Anamnese
 
 | ID | Descrição |
