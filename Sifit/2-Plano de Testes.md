@@ -88,7 +88,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 217 casos de teste dos 48 cenários da pasta, mais os 37 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
+* Os 218 casos de teste dos 48 cenários da pasta, mais os 37 casos registrados apenas no Relatório de Bugs (255 no total), foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
 * Requisitos (RF01–RF48) rastreáveis até os arquivos de cenário.
@@ -156,7 +156,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF20 | Gestão de Turmas | Média | 4 (+1) |
 | RF21 | Gestão de Categorias Crossfit | Baixa | 6 |
 | RF22 | Gestão de Box (Turmas e Modalidades) | Média | 6 |
-| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Alta | 5 (+1) |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Alta | 6 (+1) |
 | RF24 | Gestão Financeira e Cobranças via Pagar.me | Alta | 10 |
 | RF25 | Gerenciamento e Cadastro de Despesas Fixas | Alta | 5 |
 | RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | Alta | 8 |
@@ -182,7 +182,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF46 | Gerenciamento de Modelos de Ficha | Baixa | 1 (+1) |
 | RF47 | Gerenciamento de Notificações | Média | 7 |
 | RF48 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
-| **Total** | **48 cenários** | | **217 (+26)** |
+| **Total** | **48 cenários** | | **218 (+26)** |
 
 
 ---
@@ -228,7 +228,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`) .
 * **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 217 casos ·
+* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 218 casos ·
 * **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs ·
 * **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
