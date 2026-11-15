@@ -4,7 +4,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C49-CT01** | Validar a alteração do tema visual da interface do modo Claro para o modo Escuro. |
+| **C48-CT01** | Validar a alteração do tema visual da interface do modo Claro para o modo Escuro. |
 
 | **Pré-condições** |
 | --- |
@@ -31,7 +31,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **C49-CT02** | Validar o retorno da interface do modo Escuro para o modo Claro. |
+| **C48-CT02** | Validar o retorno da interface do modo Escuro para o modo Claro. |
 
 | **Pré-condições** |
 | --- |
