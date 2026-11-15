@@ -1,4 +1,4 @@
-## Cenário 49: Alternância de Tema da Interface (Claro / Escuro)
+## Cenário 48: Alternância de Tema da Interface (Claro / Escuro)
 
 ### Caso de Teste 01: Alternância para o Tema Escuro (Dark Mode)
 
