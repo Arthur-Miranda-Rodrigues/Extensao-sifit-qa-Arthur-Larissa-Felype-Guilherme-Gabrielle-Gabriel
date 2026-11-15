@@ -109,28 +109,3 @@
 | --- |
 | https://drive.google.com/file/d/1tN4gYpZwr3xkNc7ptgtGyCn7iGhnZGvp/view?usp=sharing |
 
----
-
-### Caso de Teste 05: Tratamento de Exceção na Exclusão de Matrícula
-
-| ID | Descrição |
-| --- | --- |
-| **C11-CT05** | Validar o comportamento do sistema ao acionar a exclusão de um registro de matrícula na listagem, tratando eventuais falhas do servidor (*Erro no servidor*). |
-
-| **Pré-condições** |
-| --- |
-| Usuário na tela de listagem de matrículas. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário localiza um registro na tabela de matrículas. |
-| **QUANDO** clicar no ícone de exclusão (lixeira) e confirmar a ação no modal de aviso ("Confirmar").  |
-| **ENTÃO** caso ocorra instabilidade ou restrição no backend, o sistema deve capturar a exceção e exibir o modal de erro com a mensagem: *"Erro no servidor - Erro interno inesperado"* acompanhado do botão **Fechar**. |
-
-| **Critérios de aceitação** |
-| --- |
-| Erros de exclusão no servidor devem ser tratados de maneira controlada, exibindo uma interface de feedback amigável ao utilizador. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1X9xK6XSKGRbmEC3EHtsq96WgOTXHjnoK/view?usp=sharing |
