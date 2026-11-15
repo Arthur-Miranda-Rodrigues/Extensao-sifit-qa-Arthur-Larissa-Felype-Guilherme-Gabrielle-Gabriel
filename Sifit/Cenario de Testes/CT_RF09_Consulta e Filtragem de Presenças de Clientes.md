@@ -5,7 +5,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT09-01** | Validar a busca de registros de presença informando o nome ou parte do nome do cliente no campo "Buscar por cliente..." (ex.: pesquisando por "gabrielli bononi" ou "albetro"), conferindo a atualização dos cards de resumo e o feedback da listagem. |
+| **C09-CT01** | Validar a busca de registros de presença informando o nome ou parte do nome do cliente no campo "Buscar por cliente..." (ex.: pesquisando por "gabrielli bononi" ou "albetro"), conferindo a atualização dos cards de resumo e o feedback da listagem. |
 
 | **Pré-condições** |
 | --- |
@@ -32,7 +32,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT09-02** | Validar a busca de registros de presença informando o número ou código identificador do aluno no campo de pesquisa. |
+| **C09-CT02** | Validar a busca de registros de presença informando o número ou código identificador do aluno no campo de pesquisa. |
 
 | **Pré-condições** |
 | --- |
@@ -59,7 +59,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT09-03** | Validar o preenchimento automático das datas e a atualização imediata das métricas ao acionar os três botões de filtro rápido de período disponíveis (*"Hoje"*, *"Esta semana"* e *"Este mês"*). |
+| **C09-CT03** | Validar o preenchimento automático das datas e a atualização imediata das métricas ao acionar os três botões de filtro rápido de período disponíveis (*"Hoje"*, *"Esta semana"* e *"Este mês"*). |
 
 | **Pré-condições** |
 | --- |
@@ -86,7 +86,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT09-04** | Validar a seleção manual de datas customizadas nos campos "DE" e "ATÉ", incluindo a navegação pelos meses através do componente de calendário (ex.: alternando entre setembro, agosto e outubro) e a aplicação da busca. |
+| **C09-CT04** | Validar a seleção manual de datas customizadas nos campos "DE" e "ATÉ", incluindo a navegação pelos meses através do componente de calendário (ex.: alternando entre setembro, agosto e outubro) e a aplicação da busca. |
 
 | **Pré-condições** |
 | --- |
