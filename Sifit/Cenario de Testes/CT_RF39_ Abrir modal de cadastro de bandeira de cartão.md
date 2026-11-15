@@ -29,35 +29,6 @@
 
 ---
 
-### Caso de Teste 02: Cadastro de Nova Bandeira com Taxas e Regras de Parcelamento
-
-| ID | Descrição |
-| --- | --- |
-| **C39-CT02** | O sistema deve permitir o preenchimento do nome, taxas adicionais, taxa de débito e a adição de regras de parcelamento para uma nova bandeira. |
-
-| **Pré-condições** |
-| --- |
-| O modal "Nova Bandeira" deve estar aberto na tela. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário preenche o campo **"Nome"** da bandeira (ex.: "Bandeira Azul")<br>|
-| **QUANDO** informa a **"Taxa Adicional"** (ex.: "20,00") e a **"Taxa Débito"** (ex.: "10,00") |
-| **E** clica no botão **"+ Adicionar Parcela"** preenchendo o número da parcela e a taxa correspondente, confirmando com o ícone de check |
-| **E** clica no botão **"Salvar"** para concluir o cadastro<br> |
-| **ENTÃO** a nova bandeira e suas respectivas configurações de taxas e parcelas devem ser gravadas no sistema. |
-| **E** ao clica no botão **"Salvar"** nada acontece e continua vazio com a mensagem **Nenhuma bandeira encontrada.**<br> |
-
-| **Critérios de Aceitação** |
-| --- |
-| * As informações de taxas de débito, adicionais e parcelas configuradas devem ser vinculadas com sucesso ao registro da bandeira. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1C8jVC7gSKOwovdkp4g04xzEWm9ywy1Vp/view?usp=sharing |
-
----
-
 ### Caso de Teste 03: Consulta e Filtragem de Bandeiras de Cartão
 
 | ID | Descrição |
