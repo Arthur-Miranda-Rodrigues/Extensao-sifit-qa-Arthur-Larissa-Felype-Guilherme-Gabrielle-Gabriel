@@ -134,3 +134,28 @@
 | **Evidência** |
 | --- |
 | https://drive.google.com/file/d/1D2vdCLqQ1EHUMnbm0_raP5tVUB7p6NRs/view?usp=sharing |
+
+### Caso de Teste 07: Impressão / Emissão do Relatório de Fechamento de Caixa
+
+| ID | Descrição |
+| --- | --- |
+| **C23-CT07** | Validar a funcionalidade de geração e impressão do relatório oficial de fechamento de caixa em formato PDF. |
+
+| **Pré-condições** |
+| --- |
+| O usuário estar visualizando os detalhes de um caixa fechado/conferido na listagem principal. |
+
+| **Passos** |
+| --- |
+| **DADO** que o usuário clica no ícone de relatório/impressão na coluna de Ações correspondente<br>|
+| **QUANDO** o sistema abrir a pré-visualização do documento de **Relatório de Fechamento de Caixa**<br> |
+| **E** selecionar as opções de impressão ou salvamento em PDF e acionar **"Imprimir"**<br><br> |
+| **ENTÃO** o relatório contendo o resumo financeiro, entradas, saídas e dados do operador deve ser gerado e impresso com sucesso. |
+
+| **Critérios de Aceitação** |
+| --- |
+| * O relatório gerado deve conter todas as informações consolidadas do caixa selecionado sem falhas de formatação. |
+
+| **Evidência** |
+| --- |
+| https://drive.google.com/file/d/1SwYWWnkaBmViE8A8wtdoKl5o9cW7DvdA/view?usp=sharing |
