@@ -128,7 +128,6 @@
   * Cadastrar novo cliente informando identificação, documentos, foto, contatos, endereço, biometria, credenciais de aplicativo e informações complementares/responsável. (C10-CT01)
   * Impedir a submissão do cadastro com campos obrigatórios em branco. (C10-CT02)
   * Atualizar o cadastro de um cliente existente (endereço, biometria, aplicativo e dados complementares). (C10-CT03)
-  * Acionar a exclusão de um cliente na listagem, tratando falhas de servidor (*Erro no servidor*). (C10-CT04)
   * Consultar clientes combinando filtros de código e nome na listagem. (C10-CT05)
 
 ---
@@ -143,7 +142,6 @@
   * Bloquear a gravação e exibir aviso ao cadastrar matrícula sem cliente associado. (C11-CT02)
   * Abrir os detalhes de uma matrícula, habilitar a edição, alterar a observação e persistir. (C11-CT03)
   * Cancelar uma matrícula ativa pela ação específica da listagem. (C11-CT04)
-  * Acionar a exclusão de uma matrícula, tratando falhas de servidor (*Erro no servidor*). (C11-CT05)
 
 ---
 
@@ -305,8 +303,6 @@
   * Visualizar as entradas na aba **Ver Entradas** do painel de fechamento. (C23-CT03)
   * Visualizar as saídas/despesas na aba **Ver Saídas** do painel de fechamento. (C23-CT04)
   * Obrigar o preenchimento do campo **"Motivo"** ao registrar divergência na conferência física do caixa. (C23-CT05)
-  * Tratar a busca de contas com parâmetros ou locais que gerem conflito na janela de fechamento. (C23-CT06)
-  * Gerar e imprimir o relatório oficial de fechamento de caixa em PDF. (C23-CT07)
 
 ---
 
@@ -533,7 +529,6 @@
 * **Funcionalidades esperadas**:
 
   * Abrir o modal "Nova Bandeira" com campos limpos e validar o nome obrigatório ao salvar. (C39-CT01)
-  * Preencher nome, taxas adicionais, taxa de débito e adicionar regras de parcelamento. (C39-CT02)
   * Consultar e filtrar bandeiras cadastradas pelos campos de busca. (C39-CT03)
 
 ---
@@ -583,7 +578,6 @@
 * **Funcionalidades esperadas**:
 
   * Exibir o modal de confirmação e remover definitivamente uma pergunta. (C43-CT01)
-  * Exibir a mensagem de erro correspondente ao tentar alterar o tipo de resposta de uma pergunta cadastrada. (C43-CT02)
   * Cadastrar pergunta com código, nome, texto e tipo de resposta. (C43-CT03)
   * Validar o preenchimento obrigatório ao salvar com dados incompletos. (C43-CT04)
   * Filtrar por código, nome e status (Ativo/Inativo). (C43-CT05)
@@ -618,23 +612,7 @@
 
 ---
 
-### ⚙️ **RF46 - Gestão de Configurações**
-
-**Descrição**: O sistema deve permitir configurar parâmetros gerais, integrações e identidade visual.
-
-* **Funcionalidades esperadas**:
-
-  * Alterar parâmetros de acesso e presença na aba "Home", com a mensagem de erro ao persistir. (C46-CT01)
-  * Preencher IP, porta e modelo da catraca na aba "Biometria" e salvar. (C46-CT02)
-  * Alterar regras de avaliação (cobrança, tipo e dias de validade) na aba "Avaliação". (C46-CT03)
-  * Habilitar e editar templates de aniversário (WhatsApp, SMS, E-mail) na aba "Aniversário". (C46-CT04)
-  * Alterar parâmetros de pagamento online e inserir token de integração na aba "Pagamento". (C46-CT05)
-  * Gerir integrações de API na aba "Integrações", preenchendo credenciais do WhatsApp. (C46-CT06)
-  * Alterar cores principais/secundárias e enviar logotipo e capa na aba "Design". (C46-CT07)
-
----
-
-### 🧩 **RF47 - Gerenciamento de Modelos de Ficha**
+### 🧩 **RF46 - Gerenciamento de Modelos de Ficha**
 
 **Descrição**: O sistema deve permitir cadastrar e consultar modelos de ficha de treino.
 
@@ -645,7 +623,7 @@
 
 ---
 
-### 🔔 **RF48 - Gerenciamento de Notificações**
+### 🔔 **RF47 - Gerenciamento de Notificações**
 
 **Descrição**: O sistema deve permitir consultar, criar, enviar e excluir notificações e conteúdos do aplicativo.
 
@@ -661,7 +639,7 @@
 
 ---
 
-### 🌗 **RF49 - Alternância de Tema da Interface (Claro / Escuro)**
+### 🌗 **RF48 - Alternância de Tema da Interface (Claro / Escuro)**
 
 **Descrição**: O sistema deve permitir alternar o tema visual da interface.
 
