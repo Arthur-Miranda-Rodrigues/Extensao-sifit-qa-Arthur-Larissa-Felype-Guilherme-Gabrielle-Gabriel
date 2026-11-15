@@ -27,9 +27,9 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 255 (231 na pasta + 24 só no Relatório de Bugs) | 231 | 24 | 24 |
+| 255 (231 na pasta + 24 só no Relatório de Bugs) | 218 | 37 | 37 |
 
-> **Como ler:** os 24 reprovados são os 24 casos registrados só no Relatório de Bugs (4 deles do SifitBox – Aulas, sem arquivo na pasta; o BUG-022 é o C07-CT04). Os 231 casos da pasta foram considerados aprovados. A coluna "Casos Testados" da cobertura conta apenas os casos da pasta.
+> **Como ler:** os 37 reprovados são os 24 casos registrados só no Relatório de Bugs (4 deles do SifitBox – Aulas, sem arquivo na pasta; o BUG-022 é o C07-CT04) mais 13 casos da pasta (C10-CT04, C11-CT05, C23-CT06, C39-CT02, C43-CT02, C46-CT01 a C46-CT07 e C47-CT01). Os 218 casos restantes da pasta foram considerados aprovados. A coluna "Casos Testados" da cobertura conta apenas os casos da pasta.
 
 ---
 
@@ -46,8 +46,8 @@
 | RF07 | Acesso e visualização do Dashboard | 3 | 3 | 1 | BUG-022 |
 | RF08 | Gerenciamento de Check-ins | 4 | 4 | 0 | - |
 | RF09 | Consulta e Filtragem de Presenças de Clientes | 4 | 4 | 0 | - |
-| RF10 | Gestão de Clientes | 5 | 5 | 0 | - |
-| RF11 | Gerenciamento de Matrículas | 5 | 5 | 0 | - |
+| RF10 | Gestão de Clientes | 5 | 4 | 1 | BUG-025 |
+| RF11 | Gerenciamento de Matrículas | 5 | 4 | 1 | BUG-026 |
 | RF12 | Gerenciamento de Avaliações Físicas | 11 | 11 | 0 | - |
 | RF13 | Registro e Gestão de Contas a Receber | 6 | 6 | 0 | - |
 | RF14 | Registro de Contas a Pagar | 1 | 1 | 3 | BUG-010, BUG-021, BUG-024 |
@@ -59,7 +59,7 @@
 | RF20 | Gestão de Turmas | 4 | 4 | 3 | BUG-018, BUG-019, BUG-020 |
 | RF21 | Gestão de Categorias Crossfit | 6 | 6 | 0 | - |
 | RF22 | Gestão de Box (Turmas e Modalidades) | 6 | 6 | 0 | - |
-| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 7 | 7 | 0 | - |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 7 | 6 | 1 | BUG-027 |
 | RF24 | Gestão Financeira e Cobranças via Pagar.me | 10 | 10 | 0 | - |
 | RF25 | Gerenciamento e Cadastro de Despesas Fixas | 5 | 5 | 0 | - |
 | RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | 8 | 8 | 0 | - |
@@ -75,15 +75,15 @@
 | RF36 | Gestão e consulta de planos | 5 | 5 | 0 | - |
 | RF37 | Gestão de Modelos de Contrato | 7 | 7 | 1 | BUG-023 |
 | RF38 | Gestão de Tipos de Pagamento | 5 | 5 | 0 | - |
-| RF39 | Gestão de Bandeiras de Cartão | 3 | 3 | 0 | - |
+| RF39 | Gestão de Bandeiras de Cartão | 3 | 2 | 1 | BUG-028 |
 | RF40 | Aplicação de Fichas de Anamnese | 1 | 1 | 1 | BUG-005 |
 | RF41 | Gerenciamento de Modelos de Anamnese | 5 | 5 | 0 | - |
 | RF42 | Gerenciamento de Categorias de Anamnese | 5 | 5 | 0 | - |
-| RF43 | Gestão de Pergunta de Anamnese | 5 | 5 | 0 | - |
+| RF43 | Gestão de Pergunta de Anamnese | 5 | 4 | 1 | BUG-029 |
 | RF44 | Módulo Inteligência & Automação e Gestão de Clientes | 9 | 9 | 0 | - |
 | RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | 1 | 1 | 0 | - |
-| RF46 | Gestão de configurações | 7 | 7 | 0 | - |
-| RF47 | Gerenciamento de Modelos de Ficha | 2 | 2 | 0 | - |
+| RF46 | Gestão de configurações | 7 | 0 | 7 | BUG-030, BUG-031, BUG-032, BUG-033, BUG-034, BUG-035, BUG-036 |
+| RF47 | Gerenciamento de Modelos de Ficha | 2 | 1 | 1 | BUG-037 |
 | RF48 | Gerenciamento de Notificações | 7 | 7 | 0 | - |
 | RF49 | Alternância de Tema da Interface (Claro / Escuro) | 2 | 2 | 0 | - |
 | — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | 0 | 3 | BUG-002, BUG-003, BUG-004 |
@@ -118,6 +118,19 @@
 | BUG-022 | Baixo contraste nos títulos e informações dos gráficos do Dashboard | C07-CT04 | Média | Média | Aberto |
 | BUG-023 | Erro ao salvar modelo de contrato (listagem permanece em branco) | C37-CT08 | Alta | Alta | Aberto |
 | BUG-024 | Filtro de status (Vencido/Pago) não é aplicado em Contas a Pagar | C14-CT02 | Média | Alta | Aberto |
+| BUG-025 | Exclusão de cliente retorna “Erro no servidor – Erro interno inesperado” | C10-CT04 | Média | Média | Aberto |
+| BUG-026 | Exclusão de matrícula retorna “Erro no servidor – Erro interno inesperado” | C11-CT05 | Média | Média | Aberto |
+| BUG-027 | Busca de contas no fechamento de caixa retorna “Erro ao buscar contas” | C23-CT06 | Média | Média | Aberto |
+| BUG-028 | Cadastro de bandeira de cartão não salva e a listagem continua vazia | C39-CT02 | Alta | Alta | Aberto |
+| BUG-029 | Edição do tipo de resposta de pergunta de anamnese retorna “Erro ao salvar pergunta” | C43-CT02 | Alta | Alta | Aberto |
+| BUG-030 | Erro ao salvar configurações gerais na aba Home | C46-CT01 | Alta | Alta | Aberto |
+| BUG-031 | Erro ao salvar configurações de biometria e catraca | C46-CT02 | Alta | Alta | Aberto |
+| BUG-032 | Erro ao salvar parâmetros de avaliação física nas configurações | C46-CT03 | Alta | Alta | Aberto |
+| BUG-033 | Erro ao salvar mensagens automáticas de aniversário nas configurações | C46-CT04 | Média | Média | Aberto |
+| BUG-034 | Erro ao salvar pagamento online e token de integração nas configurações | C46-CT05 | Alta | Alta | Aberto |
+| BUG-035 | Erro de conectividade/servidor ao salvar integração com WhatsApp nas configurações | C46-CT06 | Média | Média | Aberto |
+| BUG-036 | Erro ao salvar identidade visual (cores, logotipo e capa) nas configurações | C46-CT07 | Média | Média | Aberto |
+| BUG-037 | Cadastro de modelo de ficha retorna “Erro ao salvar modelo” | C47-CT01 | Alta | Alta | Aberto |
 
 \* Casos do cenário SifitBox – Aulas, que não possui arquivo na pasta de cenários.
 
@@ -127,13 +140,13 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 231
-* ❌ Falharam: 24
+* ✅ Passaram: 218
+* ❌ Falharam: 37
 
 **Severidade dos bugs:**
 
-* 🟥 Alta: 10
-* 🟨 Média: 11
+* 🟥 Alta: 17
+* 🟨 Média: 17
 * 🟩 Baixa: 3
 
 ---
@@ -150,6 +163,6 @@
 
 ## ✅ **Conclusão**
 
-A execução documentada dos testes funcionais do SIFIT identificou **24 defeitos** distribuídos entre os módulos de autenticação, aulas do SifitBox, anamnese, cadastros de apoio, engajamento, fichas/objetivos de treino, turmas, modelos de contrato, dashboard e financeiro. A distribuição registrada é de **10 bugs de severidade alta, 11 média e 3 baixa**, indicando que há problemas que podem afetar fluxos operacionais e a confiabilidade dos dados.
+A execução documentada dos testes funcionais do SIFIT identificou **37 defeitos** distribuídos entre os módulos de autenticação, aulas do SifitBox, anamnese, cadastros de apoio, engajamento, fichas/objetivos de treino, turmas, modelos de contrato e de ficha, bandeiras de cartão, configurações, dashboard e financeiro. A distribuição registrada é de **17 bugs de severidade alta, 17 média e 3 baixa**, indicando que há problemas que podem afetar fluxos operacionais e a confiabilidade dos dados.
 
-Os achados que merecem prioridade incluem falhas de gravação (enquetes, pontuações, fichas e objetivos de treino, modelo de contrato), ações que não executam o fluxo esperado (Aulas do SifitBox, anamnese) e validações obrigatórias ausentes em vários cadastros. Recomenda-se corrigir primeiro os defeitos de severidade alta, executar retestes direcionados e realizar testes de regressão nos módulos relacionados.
+Os achados que merecem prioridade incluem falhas de gravação (configurações do sistema em todas as abas, enquetes, pontuações, fichas e objetivos de treino, modelos de contrato e de ficha, bandeiras de cartão), ações que não executam o fluxo esperado (Aulas do SifitBox, anamnese) e validações obrigatórias ausentes em vários cadastros. Recomenda-se corrigir primeiro os defeitos de severidade alta, executar retestes direcionados e realizar testes de regressão nos módulos relacionados.
