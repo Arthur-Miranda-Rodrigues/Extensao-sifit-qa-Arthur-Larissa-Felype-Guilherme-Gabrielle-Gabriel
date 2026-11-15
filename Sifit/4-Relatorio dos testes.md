@@ -121,16 +121,16 @@
 | BUG-027 | Busca de contas no fechamento de caixa retorna “Erro ao buscar contas” | C23-CT06 | Média | Média | Aberto |
 | BUG-028 | Cadastro de bandeira de cartão não salva e a listagem continua vazia | C39-CT02 | Alta | Alta | Aberto |
 | BUG-029 | Edição do tipo de resposta de pergunta de anamnese retorna “Erro ao salvar pergunta” | C43-CT02 | Alta | Alta | Aberto |
-| BUG-030 | Erro ao salvar configurações gerais na aba Home | Configurações-CT01 | Alta | Alta | Aberto |
-| BUG-031 | Erro ao salvar configurações de biometria e catraca |  Configurações-CT02 | Alta | Alta | Aberto |
-| BUG-032 | Erro ao salvar parâmetros de avaliação física nas configurações |  Configurações-CT03 | Alta | Alta | Aberto |
-| BUG-033 | Erro ao salvar mensagens automáticas de aniversário nas configurações |  Configurações-CT04 | Média | Média | Aberto |
-| BUG-034 | Erro ao salvar pagamento online e token de integração nas configurações |  Configurações-CT05 | Alta | Alta | Aberto |
-| BUG-035 | Erro de conectividade/servidor ao salvar integração com WhatsApp nas configurações |  Configurações-CT06 | Média | Média | Aberto |
-| BUG-036 | Erro ao salvar identidade visual (cores, logotipo e capa) nas configurações |  Configurações-CT07 | Média | Média | Aberto |
-| BUG-037 | Cadastro de modelo de ficha retorna “Erro ao salvar modelo” | C46-CT01 | Alta | Alta | Aberto |
+| BUG-030 | Erro ao salvar configurações gerais na aba Home | C46-CT01 | Alta | Alta | Aberto |
+| BUG-031 | Erro ao salvar configurações de biometria e catraca | C46-CT02 | Alta | Alta | Aberto |
+| BUG-032 | Erro ao salvar parâmetros de avaliação física nas configurações | C46-CT03 | Alta | Alta | Aberto |
+| BUG-033 | Erro ao salvar mensagens automáticas de aniversário nas configurações | C46-CT04 | Média | Média | Aberto |
+| BUG-034 | Erro ao salvar pagamento online e token de integração nas configurações | C46-CT05 | Alta | Alta | Aberto |
+| BUG-035 | Erro de conectividade/servidor ao salvar integração com WhatsApp nas configurações | C46-CT06 | Média | Média | Aberto |
+| BUG-036 | Erro ao salvar identidade visual (cores, logotipo e capa) nas configurações | C46-CT07 | Média | Média | Aberto |
+| BUG-037 | Cadastro de modelo de ficha retorna “Erro ao salvar modelo” | C47-CT01 | Alta | Alta | Aberto |
 
-\* Casos do cenário SifitBox – Aulas e do Gestão de Configurações, que não possuem arquivos na pasta de cenários.
+\* Casos do cenário SifitBox – Aulas e do Gestão de configurações, que não possui arquivo na pasta de cenários.
 
 ---
 
