@@ -88,10 +88,10 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 218 casos de teste dos 48 cenários da pasta, mais os 36 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
+* Os 217 casos de teste dos 48 cenários da pasta, mais os 37 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
-* Requisitos (RF01–RF49, exceto o RF46, que não possui arquivo de cenário na pasta) rastreáveis até os arquivos de cenário.
+* Requisitos (RF01–RF48) rastreáveis até os arquivos de cenário.
 
 **⏸️ Critérios de Suspensão e Retomada**
 
@@ -126,7 +126,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Elaboração do Plano de Testes | 24/10/2026 | 24/10/2026 |
 | Registro e Report de Bugs (24 bugs) e Relatório dos Testes | 29/10/2026 | 29/10/2026 |
 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais | 08/11/2026 | 08/11/2026 |
-| Inclusão dos casos com erro como bugs (BUG-025 a BUG-037), remoção do cenário RF46 da pasta (48 cenários) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
+| Inclusão dos casos com erro como bugs (BUG-025 a BUG-037), remoção do cenário de Configurações da pasta, renumeração dos cenários (48 cenários, RF01–RF48) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
 
 ---
 
@@ -179,10 +179,10 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF43 | Gestão de Pergunta de Anamnese | Média | 4 (+1) |
 | RF44 | Módulo Inteligência & Automação e Gestão de Clientes | Média | 9 |
 | RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | Média | 1 |
-| RF46 | Gerenciamento de Modelos de Ficha | Baixa | 2 |
+| RF46 | Gerenciamento de Modelos de Ficha | Baixa | 1 (+1) |
 | RF47 | Gerenciamento de Notificações | Média | 7 |
 | RF48 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
-| **Total** | **48 cenários** | | **218 (+25)** |
+| **Total** | **48 cenários** | | **217 (+26)** |
 
 
 ---
@@ -228,7 +228,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`) .
 * **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 48 cenários, 218 casos ·
+* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 217 casos ·
 * **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs ·
 * **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
