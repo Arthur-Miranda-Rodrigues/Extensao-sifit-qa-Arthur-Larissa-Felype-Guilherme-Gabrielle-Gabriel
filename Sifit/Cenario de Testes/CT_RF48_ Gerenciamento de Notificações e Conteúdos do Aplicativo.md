@@ -1,4 +1,4 @@
-## Cenário 48: Gerenciamento de Notificações
+## Cenário 47: Gerenciamento de Notificações
 
 ### Caso de Teste 01: Consulta ao Histórico Completo de Notificações e Seção de Denúncias
 
