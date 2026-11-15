@@ -80,7 +80,7 @@
 | RF43 | Gestão de Pergunta de Anamnese | 4 | 4 | 1 | BUG-029 |
 | RF44 | Módulo Inteligência & Automação e Gestão de Clientes | 9 | 9 | 0 | - |
 | RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | 1 | 1 | 0 | - |
-| RF46 | Gerenciamento de Modelos de Ficha | 2 | 1 | 1 | BUG-037 |
+| RF46 | Gerenciamento de Modelos de Ficha | 1 | 1 | 1 | BUG-037 |
 | RF47 | Gerenciamento de Notificações | 7 | 7 | 0 | - |
 | RF48 | Alternância de Tema da Interface (Claro / Escuro) | 2 | 2 | 0 | - |
 | — | Gerenciamento de Aulas do SifitBox *(sem arquivo na pasta)* | 0 | 0 | 3 | BUG-002, BUG-003, BUG-004 |
