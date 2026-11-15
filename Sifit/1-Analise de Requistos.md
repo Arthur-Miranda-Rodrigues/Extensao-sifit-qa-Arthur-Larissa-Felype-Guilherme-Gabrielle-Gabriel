@@ -303,6 +303,7 @@
   * Visualizar as entradas na aba **Ver Entradas** do painel de fechamento. (C23-CT03)
   * Visualizar as saídas/despesas na aba **Ver Saídas** do painel de fechamento. (C23-CT04)
   * Obrigar o preenchimento do campo **"Motivo"** ao registrar divergência na conferência física do caixa. (C23-CT05)
+  * Gerar e imprimir o relatório oficial de fechamento de caixa em PDF. (C23-CT07)
 
 ---
 
