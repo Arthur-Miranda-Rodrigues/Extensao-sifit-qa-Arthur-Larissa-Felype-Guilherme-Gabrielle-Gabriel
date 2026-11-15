@@ -27,7 +27,7 @@
 
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
-| 254  | 217 | 37 | 37 |
+| 255  | 218 | 37 | 37 |
 
 ---
 
@@ -57,7 +57,7 @@
 | RF20 | Gestão de Turmas | 4 | 4 | 3 | BUG-018, BUG-019, BUG-020 |
 | RF21 | Gestão de Categorias Crossfit | 6 | 6 | 0 | - |
 | RF22 | Gestão de Box (Turmas e Modalidades) | 6 | 6 | 0 | - |
-| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 5 | 5 | 1 | BUG-027 |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | 6 | 6 | 1 | BUG-027 |
 | RF24 | Gestão Financeira e Cobranças via Pagar.me | 10 | 10 | 0 | - |
 | RF25 | Gerenciamento e Cadastro de Despesas Fixas | 5 | 5 | 0 | - |
 | RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | 8 | 8 | 0 | - |
@@ -138,7 +138,7 @@
 
 **Casos por status:**
 
-* ✅ Passaram: 217
+* ✅ Passaram: 218
 * ❌ Falharam: 37
 
 **Severidade dos bugs:**
