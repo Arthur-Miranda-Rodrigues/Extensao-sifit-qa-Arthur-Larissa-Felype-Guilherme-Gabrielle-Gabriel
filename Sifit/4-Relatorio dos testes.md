@@ -19,7 +19,7 @@
 
 * Sistema operacional: não especificado de forma única nos artefatos de execução disponíveis.
 * Navegador: Chrome/Firefox/Brave, conforme ferramentas previstas no plano; versão exata não consolidada.
-* URL: [https://sifitalfa.centrion.com.br].
+* URL: https://sifitalfa.centrion.com.br
 
 ---
 
