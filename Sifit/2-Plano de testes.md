@@ -39,7 +39,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 * Engajamento: atividades, pontuações, produtos e enquetes
 * Comercial: leads (Prospecção), planos, modelos de contrato, tipos de pagamento e bandeiras de cartão
 * Anamnese: aplicação de fichas, modelos, categorias e perguntas
-* Inteligência & Automação, dashboard de resultados, configurações e modelos de ficha
+* Inteligência & Automação, dashboard de resultados, configurações e modelos de ficha (o cenário de configurações está documentado apenas no Relatório de Bugs, BUG-030 a BUG-036)
 * Notificações/conteúdos do aplicativo e alternância de tema (claro/escuro)
 
 **Excluído:**
@@ -88,10 +88,10 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 231 casos de teste dos 49 cenários da pasta, mais os 24 casos registrados apenas no Relatório de Bugs (255 no total), foram executados e possuem evidência (vídeo/print).
+* Os 218 casos de teste dos 48 cenários da pasta, mais os 36 casos registrados apenas no Relatório de Bugs (254 no total), foram executados e possuem evidência (vídeo/print).
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
-* Requisitos (RF01–RF49) rastreáveis até os arquivos de cenário.
+* Requisitos (RF01–RF49, exceto o RF46, que não possui arquivo de cenário na pasta) rastreáveis até os arquivos de cenário.
 
 **⏸️ Critérios de Suspensão e Retomada**
 
@@ -126,7 +126,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Elaboração do Plano de Testes | 24/10/2026 | 24/10/2026 |
 | Registro e Report de Bugs (24 bugs) e Relatório dos Testes | 29/10/2026 | 29/10/2026 |
 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais | 08/11/2026 | 08/11/2026 |
-| Inclusão dos casos com erro como bugs (BUG-025 a BUG-037) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
+| Inclusão dos casos com erro como bugs (BUG-025 a BUG-037), remoção do cenário RF46 da pasta (48 cenários) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
 
 ---
 
@@ -143,8 +143,8 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF07 | Acesso e visualização do Dashboard | Média | 3 (+1) |
 | RF08 | Gerenciamento de Check-ins | Média | 4 |
 | RF09 | Consulta e Filtragem de Presenças de Clientes | Média | 4 |
-| RF10 | Gestão de Clientes | Alta | 5 |
-| RF11 | Gerenciamento de Matrículas | Alta | 5 |
+| RF10 | Gestão de Clientes | Alta | 4 (+1) |
+| RF11 | Gerenciamento de Matrículas | Alta | 4 (+1) |
 | RF12 | Gerenciamento de Avaliações Físicas | Média | 11 |
 | RF13 | Registro e Gestão de Contas a Receber | Alta | 6 |
 | RF14 | Registro de Contas a Pagar | Alta | 1 (+3) |
@@ -156,7 +156,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF20 | Gestão de Turmas | Média | 4 (+1) |
 | RF21 | Gestão de Categorias Crossfit | Baixa | 6 |
 | RF22 | Gestão de Box (Turmas e Modalidades) | Média | 6 |
-| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Alta | 7 |
+| RF23 | Gerenciamento e Filtro de Caixas no Módulo Financeiro | Alta | 5 (+1) |
 | RF24 | Gestão Financeira e Cobranças via Pagar.me | Alta | 10 |
 | RF25 | Gerenciamento e Cadastro de Despesas Fixas | Alta | 5 |
 | RF26 | Geração e Filtragem de Relatórios Operacionais e Financeiros | Alta | 8 |
@@ -172,45 +172,18 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | RF36 | Gestão e consulta de planos | Alta | 5 |
 | RF37 | Gestão de Modelos de Contrato | Média | 7 (+1) |
 | RF38 | Gestão de Tipos de Pagamento | Alta | 5 |
-| RF39 | Gestão de Bandeiras de Cartão | Média | 3 |
+| RF39 | Gestão de Bandeiras de Cartão | Média | 2 (+1) |
 | RF40 | Aplicação de Fichas de Anamnese | Média | 1 (+2) |
 | RF41 | Gerenciamento de Modelos de Anamnese | Média | 5 |
 | RF42 | Gerenciamento de Categorias de Anamnese | Média | 5 |
-| RF43 | Gestão de Pergunta de Anamnese | Média | 5 |
+| RF43 | Gestão de Pergunta de Anamnese | Média | 4 (+1) |
 | RF44 | Módulo Inteligência & Automação e Gestão de Clientes | Média | 9 |
 | RF45 | Visualização e Filtragem do Dashboard de Resultados da Inteligência | Média | 1 |
-| RF46 | Gestão de configurações | Alta | 7 |
-| RF47 | Gerenciamento de Modelos de Ficha | Baixa | 2 |
-| RF48 | Gerenciamento de Notificações | Média | 7 |
-| RF49 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
-| **Total** | **49 cenários** | | **231 (+20)** |
+| RF46 | Gerenciamento de Modelos de Ficha | Baixa | 2 |
+| RF47 | Gerenciamento de Notificações | Média | 7 |
+| RF48 | Alternância de Tema da Interface (Claro / Escuro) | Baixa | 2 |
+| **Total** | **48 cenários** | | **218 (+25)** |
 
-**📊 Resumo por módulo**
-
-| Módulo | Cenários | Casos na pasta | Só no Relatório de Bugs |
-| ------ | :------: | :------------: | :---------------------: |
-| Autenticação | 1 | 3 | 1 |
-| Página Inicial e Dashboard | 6 | 27 | 1 |
-| Check-ins e Presenças | 2 | 8 | — |
-| Clientes, Matrículas e Avaliações | 3 | 21 | — |
-| Financeiro e Relatórios | 6 | 37 | 3 |
-| Treinos e Exercícios | 4 | 9 | 3 |
-| Turmas, Grupos e Box | 4 | 21 | 1 |
-| Colaboradores, Funções e Cadastros de apoio | 4 | 22 | — |
-| Engajamento (Atividades, Pontuações, Produtos, Enquetes) | 4 | 14 | 8 |
-| Comercial (Leads, Planos, Contratos, Pagamentos) | 5 | 25 | 1 |
-| Anamnese | 4 | 16 | 2 |
-| Inteligência, Automação e Configurações | 4 | 19 | — |
-| Aplicativo e Notificações | 1 | 7 | — |
-| Interface (Tema) | 1 | 2 | — |
-| **Total** | **49** | **231** | **20** |
-
-**🧱 Padrão dos Casos de Teste**
-
-* **Nome do arquivo:** `CT_RFxx_<descrição>.md`
-* **ID do caso:** `Cxx-CTyy` (cenário `xx`, caso `yy`) — ex.: `C01-CT04`
-* **Estrutura:** ID/Descrição → Pré-condições → Passos (**DADO / QUANDO / ENTÃO**) → Critérios de aceitação → Evidência (link de vídeo no Google Drive)
-* **Regra de elaboração:** 1 caso de teste por gravação de tela, quando o cenário é derivado de vídeos.
 
 ---
 
@@ -255,7 +228,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`) .
 * **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 49 cenários, 231 casos ·
+* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 48 cenários, 218 casos ·
 * **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs ·
 * **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
