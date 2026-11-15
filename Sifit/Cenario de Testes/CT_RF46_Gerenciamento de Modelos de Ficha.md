@@ -1,4 +1,4 @@
-## Cenário 47: Gerenciamento de Modelos de Ficha
+## Cenário 46: Gerenciamento de Modelos de Ficha
 
 ### Caso de Teste 02: Filtragem e Pesquisa de Modelos de Ficha por Parâmetros
 
