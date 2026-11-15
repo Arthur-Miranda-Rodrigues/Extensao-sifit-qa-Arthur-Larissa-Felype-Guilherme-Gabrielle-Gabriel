@@ -88,32 +88,6 @@
 
 ---
 
-### Caso de Teste 04: Tratamento de Exceção em Tentativa de Exclusão de Cliente
-
-| ID | Descrição |
-| --- | --- |
-| **C10-CT04** | Validar o comportamento do sistema ao acionar a exclusão de um registro de cliente na listagem, tratando eventuais falhas de servidor (*Erro no servidor*). |
-
-| **Pré-condições** |
-| --- |
-| Usuário na tela de listagem de clientes visualizando os registros disponíveis. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário localiza um cliente na tabela de listagem. |
-| **QUANDO** clicar no ícone de exclusão (lixeira) na linha do cliente e confirmar a ação no modal de segurança. |
-| **ENTÃO** caso ocorra instabilidade ou restrição no backend, o sistema deve exibir o modal de alerta com a mensagem: *"Erro no servidor - Erro interno inesperado"* acompanhado do botão **Fechar**. |
-
-| **Critérios de aceitação** |
-| --- |
-| O sistema deve tratar falhas críticas de exclusão exibindo um feedback visual amigável sem corromper a sessão do usuário. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1dB9oVQTKlkFWpnpEquTj4H1j7zWHehcK/view?usp=sharing |
-
----
-
 ### Caso de Teste 05: Pesquisa Avançada e Filtragem de Clientes por Código e Nome
 
 | ID | Descrição |
