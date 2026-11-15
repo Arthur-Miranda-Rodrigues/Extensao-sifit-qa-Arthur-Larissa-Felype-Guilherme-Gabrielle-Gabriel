@@ -1040,7 +1040,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Home | C46-CT01: Configurações gerais do sistema (aba Home) |
+| Configurações – aba Home | Configurações-CT01: Configurações gerais do sistema (aba Home) |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1074,7 +1074,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Biometria | C46-CT02: Configuração de biometria e integração com catraca |
+| Configurações – aba Biometria | Configurações-CT02: Configuração de biometria e integração com catraca |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1108,7 +1108,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Avaliação | C46-CT03: Configurações de parâmetros de avaliação física |
+| Configurações – aba Avaliação | Configurações-CT03: Configurações de parâmetros de avaliação física |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1142,7 +1142,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Aniversário | C46-CT04: Configuração de mensagens automáticas de aniversário |
+| Configurações – aba Aniversário | Configurações-CT04: Configuração de mensagens automáticas de aniversário |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1176,7 +1176,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Pagamento | C46-CT05: Configuração de pagamento online e integração de gateway |
+| Configurações – aba Pagamento | Configurações-CT05: Configuração de pagamento online e integração de gateway |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1210,7 +1210,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Integrações | C46-CT06: Configuração e conexão de integrações (WhatsApp Business) |
+| Configurações – aba Integrações | Configurações-CT06: Configuração e conexão de integrações (WhatsApp Business) |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1244,7 +1244,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Configurações – aba Design | C46-CT07: Personalização de identidade visual e design da academia |
+| Configurações – aba Design | Configurações-CT07: Personalização de identidade visual e design da academia |
 
 | **Evidência(s)** |
 | :--------------: |
@@ -1278,7 +1278,7 @@
 
 | **Funcionalidade Afetada** | **Caso de Teste Relacionado** |
 | :------------------------: | :---------------------------: |
-| Cadastro de modelos de ficha | C47-CT01: Criação de novo modelo de ficha e tratamento de erro na gravação |
+| Cadastro de modelos de ficha | C46-CT01: Criação de novo modelo de ficha e tratamento de erro na gravação |
 
 | **Evidência(s)** |
 | :--------------: |
