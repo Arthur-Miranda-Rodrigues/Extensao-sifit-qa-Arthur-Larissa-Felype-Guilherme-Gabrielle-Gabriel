@@ -126,6 +126,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Elaboração do Plano de Testes | 24/10/2026 | 24/10/2026 |
 | Registro e Report de Bugs (24 bugs) e Relatório dos Testes | 29/10/2026 | 29/10/2026 |
 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais | 08/11/2026 | 08/11/2026 |
+| Inclusão dos casos com erro como bugs (BUG-025 a BUG-037) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
 
 ---
 
@@ -225,7 +226,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
   * Gravidade (Crítica, Alta, Média, Baixa)
   * Prioridade e situação (Aberto, Em análise, Corrigido, Reteste)
 * Ferramenta utilizada: Relatório de Bugs em Markdown (`3-Relatorio de Bugs.md`)
-* Defeitos confirmados: **24 bugs** (10 de severidade alta, 11 média e 3 baixa)
+* Defeitos confirmados: **37 bugs** (17 de severidade alta, 17 média e 3 baixa)
 
 | Severidade | Critério |
 | ---------- | -------- |
@@ -256,7 +257,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 * **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
 * **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF49`) — 49 cenários, 231 casos ·
 * **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
-* **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 24 bugs ·
+* **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs ·
 * **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
 
 
