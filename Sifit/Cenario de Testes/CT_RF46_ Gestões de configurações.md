@@ -1,32 +1,5 @@
 ## Cenário 46: Gestão de configurações
 
-### Caso de Teste 01: Configurações Gerais do Sistema (Aba Home)
-
-| ID | Descrição |
-| --- | --- |
-| **C46-CT01** | Validar a alteração de parâmetros gerais de acesso e presença na aba "Home" e a mensagem de erro ao tentar persistir as configurações. |
-
-| **Pré-condições** |
-| --- |
-| O usuário deve estar autenticado no SIFIT e posicionado no menu **Configurações > Home**. |
-
-| **Passos** |
-| --- |
-| **DADO** que o usuário acessa as configurações na aba "Home".<br> |
-| **QUANDO** alterar campos como plano, controle de presença, cobrança de multa ou regras de dias de tolerância.<br> |
-| **E** clicar no botão **"Salvar Configurações"**.<br> |
-| **ENTÃO** o sistema deve tentar processar a solicitação e exibir o modal com a mensagem de erro *"Erro ao salvar configurações"*. |
-
-| **Critérios de Aceitação** |
-| --- |
-| Os campos devem aceitar alteração de valores na interface, mas registrar a falha padrão de salvamento do servidor ao submeter. |
-
-| **Evidência** |
-| --- |
-| https://drive.google.com/file/d/1Ue_F9SKo6he9NbKaP6uEFCGlV0Dm25ND/view?usp=sharing |
-
----
-
 ### Caso de Teste 02: Configuração de Biometria e Integração com Catraca
 
 | ID | Descrição |
