@@ -1,11 +1,10 @@
 ## Cenário 8: Gerenciamento de Check-ins.
 
-## Caso de Teste 01: Filtro de Busca por Código ou Nome na Tabela de Check-ins
----
+### Caso de Teste 01: Filtro de Busca por Código ou Nome na Tabela de Check-ins
 
 | ID | Descrição |
 | --- | --- |
-| **CT08-CT01** | Validar a busca por código ou nome diretamente no campo de pesquisa da listagem principal de check-ins. |
+| **C08-CT01** | Validar a busca por código ou nome diretamente no campo de pesquisa da listagem principal de check-ins. |
 
 | **Pré-condições** |
 | --- |
@@ -28,11 +27,11 @@
 
 ---
 
-## Caso de Teste 02: Registro Direto de Entrada pela Tabela Principal
+### Caso de Teste 02: Registro Direto de Entrada pela Tabela Principal
 
 | ID | Descrição |
 | --- | --- |
-| **CT08-CT02** | Confirmar a confirmação de presença clicando na ação "Registrar entrada" na linha do aluno com status Pendente.|
+| **C08-CT02** | Confirmar a confirmação de presença clicando na ação "Registrar entrada" na linha do aluno com status Pendente.|
 
 | **Pré-condições** |
 | --- |
@@ -59,7 +58,7 @@
 
 | ID | Descrição |
 | --- | --- |
-| **CT08-CT03** | Validar o comportamento do painel lateral "Entrada rápida" ao inserir um código de cliente e acionar "Realizar check-in". |
+| **C08-CT03** | Validar o comportamento do painel lateral "Entrada rápida" ao inserir um código de cliente e acionar "Realizar check-in". |
 
 | **Pré-condições** |
 | --- |
@@ -83,11 +82,11 @@
 
 ---
 
-## Caso de Teste 04: Processamento de Check-in Manual com Busca e Observação
+### Caso de Teste 04: Processamento de Check-in Manual com Busca e Observação
 
 | ID | Descrição |
 | --- | --- |
-| **CT08-CT04** | Validar o fluxo completo do modal "+ Check-in manual", incluindo busca por cliente, seleção e inserção de observação opcional. |
+| **C08-CT04** | Validar o fluxo completo do modal "+ Check-in manual", incluindo busca por cliente, seleção e inserção de observação opcional. |
 
 | **Pré-condições** |
 | --- |
