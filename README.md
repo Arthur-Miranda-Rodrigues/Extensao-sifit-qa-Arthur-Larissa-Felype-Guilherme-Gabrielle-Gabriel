@@ -2,6 +2,15 @@
 
 Trabalho de extensão em Qualidade de Software sobre o sistema SIFIT. Este repositório reúne requisitos, planejamento, casos de teste, defeitos e resultados da execução manual feita pelo grupo.
 
+## Integrantes do grupo
+
+- Arthur Miranda Rodrigues — RA 14538
+- Larissa Fernanda O. — RA 14536
+- Felype Augusto Dos Santos Silva — RA 14537
+- Guilherme Felipe de Morais — RA 5608
+- Gabrielle Bonini Barbosa — RA 14506
+- Gabriel de Abreu da Silva — RA 14525
+
 ## Documentos
 
 - [Análise de requisitos](Sifit/1-Analise%20de%20Requisitos.md)
