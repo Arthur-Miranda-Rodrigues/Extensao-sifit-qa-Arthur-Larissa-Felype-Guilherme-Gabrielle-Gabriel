@@ -14,8 +14,6 @@ Documentação dos testes manuais do SIFIT para a atividade de extensão em Qual
 
 Os **48 cenários** documentam **218 casos**. Outros **37 casos falhos distintos** constam no relatório de bugs: **255 casos no total**. Os links de vídeo e print ficam junto dos respectivos casos ou bugs.
 
-**Evidência pendente:** C47-CT01 não tem vídeo ou print vinculado. O resultado desse caso consta na consolidação, mas ainda precisa de comprovação.
-
 ## Organização
 
 ```text
