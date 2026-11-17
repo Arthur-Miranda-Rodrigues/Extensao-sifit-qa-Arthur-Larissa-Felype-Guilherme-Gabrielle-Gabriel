@@ -5,10 +5,10 @@
 * **Nome do Projeto**: SIFIT - Sistema de gestão para academia/box
 * **Projeto de QA**: Extensão em Qualidade de Software — testes manuais do SIFIT
 * **Versão Avaliada**: Demo pública
-* **Ambiente de Testes**: [https://sifitalfa.centrion.com.br]
+* **Ambiente de Testes**: https://sifitalfa.centrion.com.br
 * **Tipo de Teste**: Teste Funcional Manual
-* **Data do Documento**: 08/11/2026
-* **Versão do Documento**: 1.2
+* **Data da revisão documental**: 16/11/2026
+* **Versão do Documento**: 1.3
 * **Responsáveis**:
 
   * Arthur Miranda Rodrigues — RA 14538
@@ -88,7 +88,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 218 casos de teste dos 48 cenários da pasta, mais os 37 casos registrados apenas no Relatório de Bugs (255 no total), foram executados e possuem evidência (vídeo/print).
+* Os 218 casos de teste dos 48 cenários da pasta, mais os 37 casos distintos registrados apenas no Relatório de Bugs (255 no total), devem ter resultado e evidência identificável. Na revisão documental de 16/11/2026, **C47-CT01 ainda não possui link de vídeo ou print**; a comprovação desse caso permanece pendente.
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
 * Requisitos (RF01–RF48) rastreáveis até os arquivos de cenário.
@@ -105,7 +105,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### ⏱️ 8. **Cronograma Realizado**
 
-Linha do tempo reconstruída a partir do histórico de commits do repositório (outubro/2026).
+Linha do tempo reconstruída a partir do histórico de commits do repositório (outubro e novembro de 2026).
 
 | Atividade | Data Início | Data Fim |
 | --------- | ----------- | -------- |
@@ -127,6 +127,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 | Registro e Report de Bugs (24 bugs) e Relatório dos Testes | 29/10/2026 | 29/10/2026 |
 | Atualização da Análise de Requisitos, do Plano e do Relatório dos Testes conforme os 49 cenários e os 24 bugs atuais | 08/11/2026 | 08/11/2026 |
 | Inclusão dos casos com erro como bugs (BUG-025 a BUG-037), remoção do cenário de Configurações da pasta, renumeração dos cenários (48 cenários, RF01–RF48) e atualização dos relatórios | 14/11/2026 | 14/11/2026 |
+| Revisão documental, correção de links e registro separado dos achados do trabalho individual anterior | 16/11/2026 | 16/11/2026 |
 
 ---
 
@@ -226,11 +227,12 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 ### 📁 12. **Entregáveis**
 
-* **Análise de Requisitos** (`1-Analise de Requisitos.md`) .
-* **Plano de Testes** (`2-Plano de testes.md`) — este documento · 
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 218 casos ·
-* **Evidências de Execução** — gravações de tela hospedadas no Google Drive, linkadas dentro de cada caso de teste
-* **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs ·
-* **Relatório Final de Execução** (`4-Relatorio dos testes.md`) ·
+* **Análise de Requisitos** (`1-Analise de Requisitos.md`).
+* **Plano de Testes** (`2-Plano de Testes.md`) — este documento.
+* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 218 casos.
+* **Evidências de Execução** — gravações e prints referenciados nos casos e bugs; C47-CT01 ainda precisa de vínculo com a evidência.
+* **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs.
+* **Relatório Final de Execução** (`4-Relatorio de Testes.md`).
+* **Achados complementares do trabalho anterior** (`5-Achados complementares do trabalho anterior.md`) — histórico separado, fora da contagem do grupo.
 
 

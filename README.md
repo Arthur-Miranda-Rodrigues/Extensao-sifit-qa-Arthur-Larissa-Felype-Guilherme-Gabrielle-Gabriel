@@ -1,58 +1,20 @@
-# 🧪 SIFIT — Testes Manuais
+# SIFIT — documentação de testes manuais
 
-Repositório dedicado ao estudo, prática e documentação de testes manuais do sistema **SIFIT**, com foco em:
+Trabalho de extensão em Qualidade de Software sobre o sistema SIFIT. Este repositório reúne requisitos, planejamento, casos de teste, defeitos e resultados da execução manual feita pelo grupo.
 
-* Aprendizado de QA
-* Organização de casos de teste
-* Melhoria contínua na análise e cobertura de testes
+## Documentos
 
----
+- [Análise de requisitos](Sifit/1-Analise%20de%20Requisitos.md)
+- [Plano de testes](Sifit/2-Plano%20de%20Testes.md)
+- [Cenários e casos de teste](Sifit/Cenario%20de%20Testes/)
+- [Relatório de bugs](Sifit/3-Relatorio%20de%20Bugs.md)
+- [Relatório de execução](Sifit/4-Relatorio%20de%20Testes.md)
+- [Achados complementares do trabalho individual anterior](Sifit/5-Achados%20complementares%20do%20trabalho%20anterior.md)
 
-## 🎯 Objetivo
+## Escopo e estado
 
-Este projeto foi criado com o objetivo de:
+Os 48 arquivos de cenário documentam 218 casos. O relatório de bugs registra outros 37 casos falhos distintos; o total consolidado é de 255 casos. Os vídeos e prints são referenciados nos próprios casos e bugs.
 
-* Consolidar conhecimentos de testes manuais
-* Simular testes em sistemas reais e ambientes públicos
-* Criar um portfólio técnico bem estruturado para futuras oportunidades profissionais
+**Pendência de evidência:** o caso C47-CT01 não tem link de gravação ou print identificado. Seu resultado consta na consolidação do grupo, mas a comprovação desse caso ainda precisa ser localizada e vinculada. A revisão documental não equivale a um reteste do sistema nem à validação do acesso a todos os links externos.
 
----
-
-## 🧱 Estrutura do repositório
-
-A estrutura está organizada por pastas, cada uma representando uma etapa da documentação e execução dos testes:
-
-📁 **Requisitos** ↳ Levantamento e análise dos requisitos do SIFIT
-
-📁 **Plano de Testes** ↳ Escopo, estratégia, critérios e cronograma dos testes
-
-📁 **Cenario de Testes** ↳ Cenários e casos de teste (ex.: CT_RF14 – Gestão de turmas, CT_RF15 – Gestão financeira)
-
-📁 **Bugs** ↳ Relatórios de bug encontrados durante a execução
-
-📁 **Relatórios** ↳ Relatório dos testes executados e resultados finais
-
-📁 **Evidências** ↳ vídeos curtos do jam ou do próprio sistema de gravar imagens da tela no google drive
-
----
-
-## 🧪 Metodologia
-
-* **Técnicas aplicadas:** Testes Positivos, Negativos, Exploratório, Funcional
-* **Ferramentas:** Markdown, GitHub
-* **Formatos:** BDD (Gherkin), Tabelas e Checklist
-* **Processos:** Planejamento de Teste, Execução e Relatório
-
----
-
-## 📌 Status do Projeto
-
-✅ Ativo e em constante evolução
-
-📋 Feedbacks são bem-vindos!
-
----
-
-## 🚀 Sites interessantes para prática
-
-* **SIFIT:** (https://sifitalfa.centrion.com.br)
+O [manual do sistema exigido para o trabalho em grupo](https://docs.google.com/document/d/1_DrvjEBYbNv-c4Z-IgYSq38t17iIv9HAx9Vvx0tgoCs/edit?usp=drivesdk) é um entregável separado desta documentação de QA.

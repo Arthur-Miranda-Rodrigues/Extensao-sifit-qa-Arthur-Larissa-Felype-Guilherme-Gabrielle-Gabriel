@@ -11,9 +11,11 @@
 * Gabrielle Bonini Barbosa — RA 14506
 * Gabriel de Abreu da Silva — RA 14525
 
-**Data de execução:** 08/10/2026 a 23/10/2026.
+**Período de execução informado nos cenários:** 08/10/2026 a 23/10/2026. O registro e a consolidação dos bugs foram atualizados posteriormente, até 14/11/2026.
 
-**Data do relatório:** 08/11/2026 (atualização da versão de 29/10/2026)
+**Data inicial do relatório:** 29/10/2026
+
+**Revisão documental:** 16/11/2026
 
 **Ambiente:** Aplicação web de testes
 
@@ -28,6 +30,8 @@
 | Total de Casos de Teste | Casos Passaram | Casos Falharam | Bugs Registrados |
 | ----------------------- | -------------- | -------------- | ---------------- |
 | 255  | 218 | 37 | 37 |
+
+Os totais refletem o registro de execução do grupo. Na revisão documental de 16/11/2026, **C47-CT01** ainda não tinha link de vídeo ou print; sua aprovação declarada não pôde ser conferida por evidência neste repositório. A abertura dos demais links externos e os resultados do sistema não foram revalidados nesta revisão.
 
 ---
 
@@ -151,11 +155,12 @@
 
 ## 📁 **Evidências e Documentos**
 
-* ✔️ [Análise de Requisitos (Markdown)]
-* ✔️ [Plano de Testes (Markdown)]
-* ✔️ [Casos de Teste (Markdown)]
-* 🐛 [Relatório de Bugs com Evidências em Vídeo] 
-* 📹 Evidências em vídeo/prints hospedadas no Google Drive e no Jam.dev, linkadas nos arquivos de cenário e no relatório de bugs
+* ✔️ [Análise de requisitos](1-Analise%20de%20Requisitos.md)
+* ✔️ [Plano de testes](2-Plano%20de%20Testes.md)
+* ✔️ [Cenários e casos de teste](Cenario%20de%20Testes/)
+* 🐛 [Relatório de bugs com evidências](3-Relatorio%20de%20Bugs.md)
+* 📹 Vídeos e prints estão referenciados nos casos e bugs. Falta vincular a evidência de C47-CT01.
+* 📎 [Achados complementares do trabalho individual anterior](5-Achados%20complementares%20do%20trabalho%20anterior.md) — fora dos totais deste relatório.
 
 ---
 

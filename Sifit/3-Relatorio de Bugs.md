@@ -11,7 +11,9 @@
 * Gabrielle Bonini Barbosa — RA 14506
 * Gabriel de Abreu da Silva — RA 14525
 
-**Data:** 29.10.26
+**Data inicial:** 29/10/2026
+
+**Revisão documental:** 16/11/2026 (inclui os registros adicionados após a data inicial)
 
 ### 🐞 **Bug 01: Link “Esqueci minha senha” não executa nenhuma ação**
 

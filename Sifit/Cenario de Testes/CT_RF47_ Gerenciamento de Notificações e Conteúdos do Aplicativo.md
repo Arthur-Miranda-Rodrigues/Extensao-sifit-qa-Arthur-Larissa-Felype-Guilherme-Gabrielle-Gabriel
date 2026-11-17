@@ -24,7 +24,7 @@
 
 | **Evidência** |
 | --- |
-| Consulta ao Histórico Completo de Notificações e Seção de Denúncias |
+| **Pendente:** não foi localizado link de vídeo ou print deste caso. Vincular a evidência real antes de considerá-lo comprovado. |
 
 ---
 
