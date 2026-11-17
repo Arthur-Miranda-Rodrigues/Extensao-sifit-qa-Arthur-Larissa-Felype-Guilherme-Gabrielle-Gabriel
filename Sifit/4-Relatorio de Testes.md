@@ -157,10 +157,10 @@ Os totais refletem o registro de execução do grupo. Na revisão documental de 
 
 * ✔️ [Análise de requisitos](1-Analise%20de%20Requisitos.md)
 * ✔️ [Plano de testes](2-Plano%20de%20Testes.md)
-* ✔️ [Cenários e casos de teste](Cenario%20de%20Testes/)
+* ✔️ [Índice dos cenários e casos de teste](Cenario%20de%20Testes/README.md)
 * 🐛 [Relatório de bugs com evidências](3-Relatorio%20de%20Bugs.md)
 * 📹 Vídeos e prints estão referenciados nos casos e bugs. Falta vincular a evidência de C47-CT01.
-* 📎 [Achados complementares do trabalho individual anterior](5-Achados%20complementares%20do%20trabalho%20anterior.md) — fora dos totais deste relatório.
+* 📎 [Achados complementares do trabalho individual anterior](Historico/Achados%20do%20trabalho%20individual%20anterior.md) — fora dos totais deste relatório.
 
 ---
 

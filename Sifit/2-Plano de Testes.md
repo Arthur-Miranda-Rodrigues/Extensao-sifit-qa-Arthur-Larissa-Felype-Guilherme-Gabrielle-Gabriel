@@ -229,10 +229,10 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`).
 * **Plano de Testes** (`2-Plano de Testes.md`) — este documento.
-* **Casos de Teste** (`Cenario de Testes/CT_RF01 … CT_RF48`) — 48 cenários, 218 casos.
+* **Casos de Teste** ([índice dos cenários](Cenario%20de%20Testes/README.md)) — 48 cenários, 218 casos.
 * **Evidências de Execução** — gravações e prints referenciados nos casos e bugs; C47-CT01 ainda precisa de vínculo com a evidência.
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs.
 * **Relatório Final de Execução** (`4-Relatorio de Testes.md`).
-* **Achados complementares do trabalho anterior** (`5-Achados complementares do trabalho anterior.md`) — histórico separado, fora da contagem do grupo.
+* **Achados complementares do trabalho anterior** ([histórico](Historico/Achados%20do%20trabalho%20individual%20anterior.md)) — fora da contagem do grupo.
 
 
