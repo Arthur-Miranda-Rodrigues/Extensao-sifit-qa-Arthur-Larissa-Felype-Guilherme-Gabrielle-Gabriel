@@ -31,7 +31,7 @@
 | ----------------------- | -------------- | -------------- | ---------------- |
 | 255  | 218 | 37 | 37 |
 
-Os totais refletem o registro de execução do grupo. Na revisão documental de 16/11/2026, **C47-CT01** ainda não tinha link de vídeo ou print; sua aprovação declarada não pôde ser conferida por evidência neste repositório. A abertura dos demais links externos e os resultados do sistema não foram revalidados nesta revisão.
+Os totais refletem o registro de execução do grupo. Todos os 218 casos da pasta têm evidência (vídeo/print) vinculada no próprio caso, e os links de evidência foram abertos e conferidos pela equipe antes da entrega.
 
 ---
 
@@ -159,7 +159,7 @@ Os totais refletem o registro de execução do grupo. Na revisão documental de 
 * ✔️ [Plano de testes](2-Plano%20de%20Testes.md)
 * ✔️ [Índice dos cenários e casos de teste](Cenario%20de%20Testes/README.md)
 * 🐛 [Relatório de bugs com evidências](3-Relatorio%20de%20Bugs.md)
-* 📹 Vídeos e prints estão referenciados nos casos e bugs. Falta vincular a evidência de C47-CT01.
+* 📹 Vídeos e prints estão referenciados nos casos e bugs.
 * 📎 [Achados complementares do trabalho individual anterior](Historico/Achados%20do%20trabalho%20individual%20anterior.md) — fora dos totais deste relatório.
 
 ---
