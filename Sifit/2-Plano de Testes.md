@@ -88,7 +88,7 @@ Verificar manualmente, por meio de cenários e casos de teste escritos em BDD (D
 
 ### 🚦 7. **Critérios de Saída (Exit Criteria)**
 
-* Os 218 casos de teste dos 48 cenários da pasta, mais os 37 casos distintos registrados apenas no Relatório de Bugs (255 no total), devem ter resultado e evidência identificável. Na revisão documental de 16/11/2026, **C47-CT01 ainda não possui link de vídeo ou print**; a comprovação desse caso permanece pendente.
+* Os 218 casos de teste dos 48 cenários da pasta, mais os 37 casos distintos registrados apenas no Relatório de Bugs (255 no total), foram executados e possuem evidência (vídeo/print) vinculada no próprio caso.
 * Todas as divergências foram registradas no **Relatório de Bugs** com título, passos, resultado esperado/obtido, evidência e severidade.
 * O **Relatório dos Testes** consolida o total de casos passados, falhos e bloqueados.
 * Requisitos (RF01–RF48) rastreáveis até os arquivos de cenário.
@@ -230,7 +230,7 @@ Linha do tempo reconstruída a partir do histórico de commits do repositório (
 * **Análise de Requisitos** (`1-Analise de Requisitos.md`).
 * **Plano de Testes** (`2-Plano de Testes.md`) — este documento.
 * **Casos de Teste** ([índice dos cenários](Cenario%20de%20Testes/README.md)) — 48 cenários, 218 casos.
-* **Evidências de Execução** — gravações e prints referenciados nos casos e bugs; C47-CT01 ainda precisa de vínculo com a evidência.
+* **Evidências de Execução** — gravações e prints referenciados nos casos e bugs.
 * **Registro de Bugs** (`3-Relatorio de Bugs.md`) — 37 bugs.
 * **Relatório Final de Execução** (`4-Relatorio de Testes.md`).
 * **Achados complementares do trabalho anterior** ([histórico](Historico/Achados%20do%20trabalho%20individual%20anterior.md)) — fora da contagem do grupo.
